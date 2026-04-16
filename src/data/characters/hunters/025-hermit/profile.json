@@ -1,0 +1,12 @@
+{
+  "id": "hermit",
+  "name": "隐士",
+  "englishName": "Hermit",
+  "type": "hunter",
+  "camp": "hunter",
+  "role": "控场型",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_hunter.png/120px-placeholder_hunter.png",
+  "background": "阿尔瓦·洛伦兹是一位隐士，他的电磁力场能远距离干扰求生者的破译与移动。"
+}

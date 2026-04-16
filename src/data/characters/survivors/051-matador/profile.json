@@ -1,0 +1,12 @@
+{
+  "id": "matador",
+  "name": "斗牛士",
+  "englishName": "Matador",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "牵制位",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "一位来自伊比利亚的斗牛士，他的红布与身姿是庄园中独特的风景。"
+}

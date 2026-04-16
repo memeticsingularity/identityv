@@ -1,0 +1,12 @@
+{
+  "id": "bloody_queen",
+  "name": "红夫人",
+  "englishName": "Bloody Queen",
+  "type": "hunter",
+  "camp": "hunter",
+  "role": "追击型",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_hunter.png/120px-placeholder_hunter.png",
+  "background": "玛丽·安托瓦内特是法国皇后，她的水镜能制造出镜像进行远距离攻击。"
+}

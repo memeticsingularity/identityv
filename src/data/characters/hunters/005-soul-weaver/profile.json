@@ -1,0 +1,12 @@
+{
+  "id": "soul_weaver",
+  "name": "蜘蛛",
+  "englishName": "Soul Weaver",
+  "type": "hunter",
+  "camp": "hunter",
+  "role": "追击型",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_hunter.png/120px-placeholder_hunter.png",
+  "background": "瓦尔莱塔是一位蜘蛛形体的马戏团演员，她的蛛丝能大幅减缓求生者的速度。"
+}

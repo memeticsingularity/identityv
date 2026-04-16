@@ -26,7 +26,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import CharacterCard from '../components/CharacterCard.vue'
-import characters from '../data/characters.json'
+import { characters } from '../data/characters/index.js'
 
 const tabs = [
   { label: '全部', value: 'all' },

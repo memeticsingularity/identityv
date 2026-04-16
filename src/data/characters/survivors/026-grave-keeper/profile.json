@@ -1,0 +1,12 @@
+{
+  "id": "grave_keeper",
+  "name": "守墓人",
+  "englishName": "Grave Keeper",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "救援位",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "安德鲁·克雷斯习惯与墓穴为伴，他的铁铲能让他潜入地下躲避追击。"
+}

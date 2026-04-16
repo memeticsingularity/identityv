@@ -1,0 +1,12 @@
+{
+  "id": "journalist",
+  "name": "记者",
+  "englishName": "Journalist",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "辅助位",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "爱丽丝·德罗斯是一位记者，她的相机能召唤出幻影干扰监管者。"
+}

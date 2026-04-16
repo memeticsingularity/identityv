@@ -1,0 +1,12 @@
+{
+  "id": "knight",
+  "name": "\"骑士\"",
+  "englishName": "Knight",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "救援位",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "理查德·斯特林是一位骑士，他的荣誉与剑术让他成为队友可靠的守护者。"
+}

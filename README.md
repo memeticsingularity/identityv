@@ -35,15 +35,27 @@ npm run dev
 
 ```
 src/
-├── assets/           # 全局样式
-├── components/       # 公共组件
-├── data/             # mock 数据
-│   ├── characters.json   # 角色总表（求生者 / 监管者 / NPC）
-│   ├── stories.json      # 剧情总表
-│   ├── maps.json         # 地图/场景总表
-│   └── analyses.json     # 剧情分析文章总表
-├── router/           # 路由配置
-├── views/            # 页面组件
+├── assets/              # 全局样式
+├── components/          # 公共组件
+├── data/                # mock 数据
+│   ├── characters/          # 角色数据（按阵营+序号分目录）
+│   │   ├── index.js         # 聚合器，统一导出角色数组
+│   │   ├── survivors/       # 求生者
+│   │   │   ├── 017-seer/        # 先知示例
+│   │   │   │   ├── profile.json
+│   │   │   │   ├── abilities.json
+│   │   │   │   ├── stories.json
+│   │   │   │   └── gameplay.json
+│   │   │   └── ...
+│   │   ├── hunters/         # 监管者
+│   │   │   └── ...
+│   │   └── npcs/            # 剧情 NPC
+│   │       └── ...
+│   ├── stories.json         # 活动剧情总表
+│   ├── maps.json            # 地图/场景总表
+│   └── analyses.json        # 剧情分析文章总表
+├── router/              # 路由配置
+├── views/               # 页面组件
 │   ├── HomeView.vue
 │   ├── CharacterListView.vue
 │   ├── CharacterDetailView.vue
@@ -73,6 +85,9 @@ src/
 - [001 项目初始化](docs/dev/001-20250417-project-init.md)
 - [002 nvm / Node.js 环境配置排错](docs/troubleshooting/002-20250417-nvm-node-setup.md)
 - [003 Wiki 内容扩展：NPC、地图与剧情分析](docs/dev/003-20250417-wiki-expansion.md)
+- [004 数据层重构：按角色分目录拆分](docs/dev/004-20250417-data-refactor.md)
+- [005 数据层再重构：按阵营+序号分目录](docs/dev/005-20250417-camp-indexed-refactor.md)
+- [006 角色详情页 UI 规范](docs/dev/006-20250417-character-detail-ui-spec.md)
 
 ## 技术栈
 

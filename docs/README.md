@@ -23,3 +23,6 @@
 | 001 | [2025-04-17 项目初始化](dev/001-20250417-project-init.md) | 开发记录 | Vite + Vue 3 工程搭建、角色图鉴与剧情收录页面、mock 数据设计 |
 | 002 | [2025-04-17 nvm / Node.js 环境配置](troubleshooting/002-20250417-nvm-node-setup.md) | 问题排查 | PowerShell 执行策略导致 `npm` 无法运行的问题与解决 |
 | 003 | [2025-04-17 Wiki 内容扩展](dev/003-20250417-wiki-expansion.md) | 开发记录 | 新增 NPC、地图、剧情分析模块及双向关联设计 |
+| 004 | [2025-04-17 数据层重构](dev/004-20250417-data-refactor.md) | 开发记录 | 按角色分目录拆分 `characters.json`，建立可扩展的 mock 数据架构 |
+| 005 | [2025-04-17 数据层再重构](dev/005-20250417-camp-indexed-refactor.md) | 开发记录 | 按阵营+序号分目录，为全部 89 位角色预生成模板 |
+| 006 | [2025-04-17 角色详情页 UI 规范](dev/006-20250417-character-detail-ui-spec.md) | 项目规范 | 角色详情页 Tab 划分、折叠面板与表格交互规范 |

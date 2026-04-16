@@ -1,0 +1,12 @@
+{
+  "id": "toy_merchant",
+  "name": "玩具商",
+  "englishName": "Toy Merchant",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "辅助位",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "安妮·莱斯特是一位玩具商，她的弹射板车和玩具箱能为团队创造便利。"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "entomologist",
+  "name": "昆虫学者",
+  "englishName": "Entomologist",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "辅助位",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "梅莉·普林尼常年与昆虫为伴，她能驱使蜂群干扰监管者的行动。"
+}

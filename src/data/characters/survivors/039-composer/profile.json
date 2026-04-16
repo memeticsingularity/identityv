@@ -1,0 +1,12 @@
+{
+  "id": "composer",
+  "name": "作曲家",
+  "englishName": "Composer",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "解码位",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "弗雷德里克·克雷伯格是一位作曲家，他的音叉能帮他快速破译密码机。"
+}

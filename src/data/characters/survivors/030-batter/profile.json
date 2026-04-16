@@ -1,0 +1,12 @@
+{
+  "id": "batter",
+  "name": "击球手",
+  "englishName": "Batter",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "ob位",
+  "difficulty": 3,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "甘吉·古普塔是一位板球运动员，他的板球能击退监管者，守护队友。"
+}

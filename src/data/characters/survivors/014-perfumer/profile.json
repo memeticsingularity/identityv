@@ -1,0 +1,12 @@
+{
+  "id": "perfumer",
+  "name": "调香师",
+  "englishName": "Perfumer",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "牵制位",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "薇拉·奈尔调制的“忘忧之香”能让她回溯到过去的状态，摆脱伤痛。"
+}

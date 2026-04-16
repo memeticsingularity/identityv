@@ -59,7 +59,7 @@
 <script setup>
 import { computed } from 'vue'
 import analyses from '../data/analyses.json'
-import characters from '../data/characters.json'
+import { characters } from '../data/characters/index.js'
 import maps from '../data/maps.json'
 
 const props = defineProps({

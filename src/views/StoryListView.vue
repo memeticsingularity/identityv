@@ -38,7 +38,7 @@
 <script setup>
 import { computed } from 'vue'
 import eventStories from '../data/stories.json'
-import characters from '../data/characters.json'
+import { characters } from '../data/characters/index.js'
 
 const charactersWithStories = computed(() =>
   characters.filter((c) => c.stories && c.stories.length > 0)

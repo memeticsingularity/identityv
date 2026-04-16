@@ -1,0 +1,12 @@
+{
+  "id": "geisha",
+  "name": "红蝶",
+  "englishName": "Geisha",
+  "type": "hunter",
+  "camp": "hunter",
+  "role": "追击型",
+  "difficulty": 3,
+  "releaseDate": "2018-05-17",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_hunter.png/120px-placeholder_hunter.png",
+  "background": "美智子曾是一位知名的艺伎，她的舞姿令无数人为之倾倒。然而，在嫁给一位外国军官后，她饱受歧视与冷遇，最终消失在了异国他乡的庄园中。"
+}

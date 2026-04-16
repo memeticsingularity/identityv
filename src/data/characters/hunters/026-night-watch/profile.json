@@ -1,0 +1,12 @@
+{
+  "id": "night_watch",
+  "name": "守夜人",
+  "englishName": "Night Watch",
+  "type": "hunter",
+  "camp": "hunter",
+  "role": "追击型",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_hunter.png/120px-placeholder_hunter.png",
+  "background": "伊塔库亚是一位守夜人，他的风域能让他高速滑行并快速接近猎物。"
+}

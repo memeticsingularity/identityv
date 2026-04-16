@@ -1,0 +1,12 @@
+{
+  "id": "queen_bee",
+  "name": "\"女王蜂\"",
+  "englishName": "Queen Bee",
+  "type": "hunter",
+  "camp": "hunter",
+  "role": "控场型",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_hunter.png/120px-placeholder_hunter.png",
+  "background": "蜂群的女王，她能召唤蜂群笼罩战场，让求生者无处可逃。"
+}

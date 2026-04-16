@@ -1,0 +1,12 @@
+{
+  "id": "postman",
+  "name": "邮差",
+  "englishName": "Postman",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "辅助位",
+  "difficulty": 1,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "维克多·葛兰兹是一位羞涩的邮差，他的信件能为队友带来各种增益效果。"
+}

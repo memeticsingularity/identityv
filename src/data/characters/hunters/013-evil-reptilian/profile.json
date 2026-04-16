@@ -1,0 +1,12 @@
+{
+  "id": "evil_reptilian",
+  "name": "孽蜥",
+  "englishName": "Evil Reptilian",
+  "type": "hunter",
+  "camp": "hunter",
+  "role": "追击型",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_hunter.png/120px-placeholder_hunter.png",
+  "background": "卢基诺·迪鲁西因实验变成了蜥蜴人，他的跳跃能跨越各种地形。"
+}
