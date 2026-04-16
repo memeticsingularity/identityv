@@ -1,0 +1,200 @@
+[
+  {
+    "id": "mercenary",
+    "name": "佣兵",
+    "englishName": "Mercenary",
+    "type": "survivor",
+    "camp": "survivor",
+    "role": "救援位",
+    "difficulty": 2,
+    "releaseDate": "2018-04-02",
+    "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+    "background": "奈布曾经是一名效力于东印度公司的廓尔喀雇佣兵，在战场上历经生死考验。他擅长利用地形和装备进行快速移动，并以极强的生存能力闻名。退役后，他收到了来自欧利蒂丝庄园的邀请函。",
+    "abilities": [
+      { "name": "钢铁冲刺", "desc": "佣兵随身携带护肘，可快速冲刺翻越窗户或木板，最多使用6次。" },
+      { "name": "久经训练", "desc": "在战场上的历练使佣兵不畏疼痛，在椅子上能坚持更久，且被治疗后恢复速度更快。" },
+      { "name": "坚强", "desc": "佣兵受过专业训练，在狂欢之椅上坚持时间增加30%。" },
+      { "name": "战争后遗症", "desc": "过去的战争给佣兵留下心理阴影，破译密码机速度降低25%。" }
+    ],
+    "talents": ["化险为夷", "回光返照", "绝处逢生", "膝跳反射"],
+    "tags": ["位移", "铁屁股", "修机慢"],
+    "stories": [
+      { "title": "推演一·入伍", "content": "年轻的廓尔喀士兵第一次踏上战场，他握紧手中的弯刀，知道从此生存将成为唯一的信念。" },
+      { "title": "推演十·邀请函", "content": "退役后的日子平静而乏味，直到那封烫金邀请函送到他手中，庄园的名字让他想起了某个遥远的传说。" },
+      { "title": "生日信", "content": "信件上的字迹工整而冷漠，邀请他参加一场‘特别的游戏’，并许诺他想要的答案。" }
+    ]
+  },
+  {
+    "id": "mechanic",
+    "name": "机械师",
+    "englishName": "Mechanic",
+    "type": "survivor",
+    "camp": "survivor",
+    "role": "修机位",
+    "difficulty": 3,
+    "releaseDate": "2018-04-02",
+    "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+    "background": "特蕾西·列兹尼克自幼展现出非凡的机械天赋，在父亲去世后，她继承了父亲的钟表店，并沉迷于发明各种机械装置。为了追寻某个秘密，她带着自己心爱的机械玩偶来到了庄园。",
+    "abilities": [
+      { "name": "机械操控", "desc": "随身携带机械玩偶，可远程操控玩偶进行破译、治疗、救人等操作。" },
+      { "name": "羸弱", "desc": "身体羸弱，板窗交互速度降低30%。" },
+      { "name": "机械大师", "desc": "破译速度增加35%，且在队友使用她的玩偶时也能提供破译加成。" },
+      { "name": "胆怯", "desc": "当有队友受伤或被放上狂欢之椅时，破译速度降低45%（可叠加）。" }
+    ],
+    "talents": ["回光返照", "破窗理论", "绝处逢生", "寒意"],
+    "tags": ["双修", "羸弱", "意识要求高"],
+    "stories": [
+      { "title": "推演一·诊所", "content": "特蕾西在父亲的工作台前度过了整个童年，那些精密的齿轮和发条比任何玩具都更令她着迷。" },
+      { "title": "生日信", "content": "父亲的遗物中有一封未寄出的信，提到了欧利蒂丝庄园和一项足以改变世界的发明。" }
+    ]
+  },
+  {
+    "id": "doctor",
+    "name": "医生",
+    "englishName": "Doctor",
+    "type": "survivor",
+    "camp": "survivor",
+    "role": "辅助位",
+    "difficulty": 1,
+    "releaseDate": "2018-04-02",
+    "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+    "background": "艾米丽·黛儿曾是一名备受尊敬的医生，但在一场医疗事故后，她的生活发生了翻天覆地的变化。为了逃避过去，她来到了欧利蒂丝庄园。",
+    "abilities": [
+      { "name": "医药专精", "desc": "随身携带镇静剂，可无限次自我治疗。" },
+      { "name": "医术高超", "desc": "治疗队友速度增加60%。" },
+      { "name": "上等人", "desc": "出身优渥，板窗交互速度降低15%。" },
+      { "name": "记忆丧失", "desc": "由于事故导致部分记忆缺失，破译校准概率增加10%，校准难度增加。" }
+    ],
+    "talents": ["回光返照", "化险为夷", "绝处逢生", "旁观者"],
+    "tags": ["自疗", "奶量足", "交互慢"]
+  },
+  {
+    "id": "hell_ember",
+    "name": "厂长",
+    "englishName": "Hell Ember",
+    "type": "hunter",
+    "camp": "hunter",
+    "role": "控场型",
+    "difficulty": 1,
+    "releaseDate": "2018-04-02",
+    "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_hunter.png/120px-placeholder_hunter.png",
+    "background": "里奥·贝克原本是一位经营纺织厂的善良父亲，但在遭遇背叛和破产后，他在工厂里纵火结束了自己的生命。然而，他似乎并未真正死去，而是以另一种形态回到了这个世界。",
+    "abilities": [
+      { "name": "傀儡操控", "desc": "可放置傀儡进行传送和巡逻，二阶后可放置黄色傀儡并增加移动速度。" },
+      { "name": "传火", "desc": "将怨火传递给傀儡，使其自动追击附近的求生者。" },
+      { "name": "怨恨", "desc": "被拆掉的傀儡会为厂长提供存在感。" }
+    ],
+    "talents": ["张狂", "挽留", "耳鸣", "拘禁狂"],
+    "tags": ["传送", "双刀", "新手友好"],
+    "stories": [
+      { "title": "推演一·工厂", "content": "里奥的纺织厂曾是镇上最大的产业，他以此为荣，直到那封匿名的举报信毁了一切。" },
+      { "title": "推演十·灰烬", "content": "火焰吞噬了整个工厂，里奥站在火海中，看着妻子和朋友的背影，心中只剩下无尽的怨恨。" }
+    ]
+  },
+  {
+    "id": "ripper",
+    "name": "开膛手",
+    "englishName": "The Ripper",
+    "type": "hunter",
+    "camp": "hunter",
+    "role": "追击型",
+    "difficulty": 2,
+    "releaseDate": "2018-04-02",
+    "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_hunter.png/120px-placeholder_hunter.png",
+    "background": "杰克是伦敦雾都中最令人闻风丧胆的存在。他在浓雾中优雅地狩猎，用锋利的爪子撕裂猎物。没人知道面具下那张脸的真实模样。",
+    "abilities": [
+      { "name": "雾隐", "desc": "进入雾隐状态后移动速度大幅提升，且求生者难以察觉。进行攻击或交互会退出雾隐。" },
+      { "name": "雾刃", "desc": "在雾隐状态下可释放远距离雾刃攻击求生者。" },
+      { "name": "幽隐", "desc": "二阶后雾隐冷却时间大幅缩短，追击能力极强。" }
+    ],
+    "talents": ["张狂", "挽留", "耳鸣", "追猎"],
+    "tags": ["隐身", "远程刀", "追击强"]
+  },
+  {
+    "id": "geisha",
+    "name": "红蝶",
+    "englishName": "Geisha",
+    "type": "hunter",
+    "camp": "hunter",
+    "role": "追击型",
+    "difficulty": 3,
+    "releaseDate": "2018-05-17",
+    "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_hunter.png/120px-placeholder_hunter.png",
+    "background": "美智子曾是一位知名的艺伎，她的舞姿令无数人为之倾倒。然而，在嫁给一位外国军官后，她饱受歧视与冷遇，最终消失在了异国他乡的庄园中。",
+    "abilities": [
+      { "name": "刹那生灭", "desc": "红蝶可快速瞬移至视野中的求生者面前，是极强的追击技能。" },
+      { "name": "离魂移魄", "desc": "红蝶可切换美人相与般若相，美人相移动速度快但无法攻击，般若相可攻击但速度降低。" },
+      { "name": "苦海翩跹", "desc": "放置燕尾蝶，求生者经过会被标记，红蝶可瞬移到被标记的求生者身边。" }
+    ],
+    "talents": ["张狂", "挽留", "耳鸣", "追猎"],
+    "tags": ["瞬移", "双形态", "熟练度要求高"],
+    "stories": [
+      { "title": "推演一·艺伎", "content": "美智子的舞姿如梦似幻，她以为嫁给自己心爱的人就能逃离这个囚笼般的世界。" },
+      { "title": "推演十·般若", "content": "在无数个被冷落的夜晚后，她终于明白，那座异国庄园里没有人会为一只蝴蝶驻足。" },
+      { "title": "生日信", "content": "信中只有一张褪色的照片，照片背面写着：‘我在庄园等你，美智子。’" }
+    ]
+  },
+  {
+    "id": "detective_orpheus",
+    "name": "侦探·奥尔菲斯",
+    "englishName": "Detective Orpheus",
+    "type": "npc",
+    "camp": "npc",
+    "role": "主线叙事者",
+    "difficulty": 0,
+    "releaseDate": "2018-04-02",
+    "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_npc.png/120px-placeholder_npc.png",
+    "background": "一位落魄的私家侦探，受雇前往欧利蒂丝庄园寻找一位失踪的小女孩。在调查过程中，他逐渐发现自己的记忆与庄园有着某种不可名状的联系。他撰写的小说似乎能影响现实，而他本人也可能是这场游戏中被遗忘的参与者。",
+    "abilities": [
+      { "name": "记忆重构", "desc": "通过阅读和推演，逐步恢复对庄园过往的记忆碎片。" },
+      { "name": "小说创作", "desc": "奥尔菲斯笔下的小说似乎能映射出庄园中某些角色的真实经历。" }
+    ],
+    "talents": [],
+    "tags": ["主线核心", "失忆", "小说家"],
+    "stories": [
+      { "title": "主线·记忆余烬", "content": "奥尔菲斯在庄园的书房里翻阅一本厚重的日记，随着烟雾的弥漫，现实与幻觉的界限逐渐模糊。" },
+      { "title": "生日信", "content": "‘当你读到这封信时，我可能已经不再是原来的我了。但请相信，真相就藏在那些最不可思议的故事里。’" }
+    ]
+  },
+  {
+    "id": "game_master",
+    "name": "庄园主",
+    "englishName": "Game Master",
+    "type": "npc",
+    "camp": "npc",
+    "role": "幕后操控者",
+    "difficulty": 0,
+    "releaseDate": "2018-04-02",
+    "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_npc.png/120px-placeholder_npc.png",
+    "background": "欧利蒂丝庄园的主人，从未以真实面貌示人。他（或她、或他们）通过邀请函召集各路有着悲惨过去的人来到庄园，组织一场场残酷的‘游戏’。庄园主的真正目的似乎与某种关于人类心理的极端实验有关。",
+    "abilities": [
+      { "name": "邀请函", "desc": "向世界各地的特殊个体发出烫金邀请函，以不同的诱饵吸引他们来到庄园。" },
+      { "name": "游戏规则", "desc": "制定并监督庄园内的一切规则，包括监管者的存在方式和游戏的胜负条件。" }
+    ],
+    "talents": [],
+    "tags": ["幕后黑手", "神秘", "实验"],
+    "stories": [
+      { "title": "档案·邀请函", "content": "每一封邀请函都经过精心设计，它了解收信人最隐秘的欲望和最深的恐惧。" },
+      { "title": "推演·观察者", "content": "庄园主从不直接干预游戏，只是通过无数的眼睛和耳朵，静静地记录着一切。" }
+    ]
+  },
+  {
+    "id": "martha",
+    "name": "玛莎",
+    "englishName": "Martha",
+    "type": "npc",
+    "camp": "npc",
+    "role": "剧情人物",
+    "difficulty": 0,
+    "releaseDate": "2018-04-02",
+    "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_npc.png/120px-placeholder_npc.png",
+    "background": "里奥·贝克的妻子，丽莎的母亲。在里奥破产后，她与里奥的朋友弗雷迪·莱利一起离开了里奥，最终却在纺织厂的大火中丧生。她的死是里奥化为厂长的直接导火索，也是主线中关于背叛与复仇的重要线索。",
+    "abilities": [],
+    "talents": [],
+    "tags": ["悲剧", "背叛", "厂长的妻子"],
+    "stories": [
+      { "title": "日记·玛莎", "content": "‘我不是不爱你，里奥。只是贫穷让我害怕，我害怕跟着你一起沉沦。’" },
+      { "title": "推演·离别", "content": "玛莎牵着丽莎的手走出家门时，没有回头。她不知道那将是她们最后一次见到活着的里奥。" }
+    ]
+  }
+]
