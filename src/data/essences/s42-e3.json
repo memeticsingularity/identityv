@@ -1,0 +1,64 @@
+{
+  "id": "s42-e3",
+  "contents": {
+    "legendary": [
+      { "ref": "character", "characterId": "hullabaloo", "itemType": "skin", "name": "黑鹫" }
+    ],
+    "epic": [
+      { "ref": "character", "characterId": "female_dancer", "itemType": "skin", "name": "\"巫云\"" },
+      { "ref": "character", "characterId": "aeroplanist", "itemType": "skin", "name": "螺旋翼" }
+    ],
+    "unique": [
+      { "ref": "character", "characterId": "entomologist", "itemType": "skin", "name": "\"蒲公英\"" },
+      { "ref": "character", "characterId": "goatman", "itemType": "skin", "name": "\"安全线\"" },
+      { "ref": "character", "characterId": "cheerleader", "itemType": "skin", "name": "\"小知了\"" },
+      { "ref": "character", "characterId": "peddler", "itemType": "skin", "name": "利多多" },
+      { "ref": "common", "id": "emote-u-breaking-wheel-visit" },
+      { "ref": "common", "id": "emote-u-novelist-rest" },
+      { "ref": "common", "id": "emote-u-professor-dance" },
+      { "ref": "common", "id": "emote-u-nightmare-threat" }
+    ],
+    "rare": [
+      { "ref": "character", "characterId": "weeping_clown", "itemType": "skin", "name": "鲜明绿" },
+      { "ref": "character", "characterId": "clerk", "itemType": "skin", "name": "平等绿" },
+      { "ref": "character", "characterId": "nightmare", "itemType": "skin", "name": "深渊蓝" },
+      { "ref": "character", "characterId": "professor", "itemType": "skin", "name": "探索蓝" },
+      { "ref": "character", "characterId": "composer", "itemType": "skin", "name": "纤弱青" },
+      { "ref": "character", "characterId": "antiquarian", "itemType": "skin", "name": "丁香紫" },
+      { "ref": "character", "characterId": "aeroplanist", "itemType": "skin", "name": "理想红" },
+      { "ref": "character", "characterId": "journalist", "itemType": "skin", "name": "坚韧棕" },
+      { "ref": "character", "characterId": "night_watch", "itemType": "skin", "name": "沙土褐" },
+      { "ref": "character", "characterId": "hermit", "itemType": "skin", "name": "庄重蓝" },
+      { "ref": "character", "characterId": "opera_singer", "itemType": "skin", "name": "偏执绿" },
+      { "ref": "common", "id": "emote-r-minds-eye-wait" },
+      { "ref": "common", "id": "emote-r-mechanic-wait" },
+      { "ref": "common", "id": "emote-r-minds-eye-rest" },
+      { "ref": "common", "id": "emote-r-mechanic-rest" },
+      { "ref": "common", "id": "emote-r-explorer-rest" },
+      { "ref": "common", "id": "emote-r-weeping-clown-lie" },
+      { "ref": "common", "id": "emote-r-entomologist-provoke" },
+      { "ref": "common", "id": "emote-r-novelist-shout" },
+      { "ref": "common", "id": "emote-r-professor-shame" },
+      { "ref": "common", "id": "avatar-r-bw-painter" },
+      { "ref": "common", "id": "avatar-r-bw-batter" },
+      { "ref": "common", "id": "avatar-r-bw-toy-merchant" },
+      { "ref": "common", "id": "graffiti-r-naiad-personality" },
+      { "ref": "common", "id": "graffiti-r-patient-personality" },
+      { "ref": "common", "id": "graffiti-r-batter-personality" },
+      { "ref": "common", "id": "graffiti-r-psychologist-personality" }
+    ],
+    "common": [
+      { "ref": "common", "id": "avatar-c-color-hermit" },
+      { "ref": "common", "id": "avatar-c-color-composer" },
+      { "ref": "common", "id": "avatar-c-color-antiquarian" },
+      { "ref": "common", "id": "avatar-c-color-professor" },
+      { "ref": "common", "id": "graffiti-c-painter-cute" },
+      { "ref": "common", "id": "graffiti-c-first-officer-cute" },
+      { "ref": "common", "id": "graffiti-c-priestess-cute" },
+      { "ref": "common", "id": "graffiti-c-explorer-cute" },
+      { "ref": "common", "id": "graffiti-c-cowboy-cute" },
+      { "ref": "common", "id": "graffiti-c-thief-cute" },
+      { "ref": "common", "id": "graffiti-c-prisoner-cute" }
+    ]
+  }
+}

@@ -1,7 +1,12 @@
+<!-- ===== 顶部导航栏 ===== -->
+<!-- 全站通用，包含主站导航链接 + 右侧个人中心入口（显示当前回声数） -->
 <template>
   <header class="nav-header">
     <div class="container nav-inner">
+      <!-- Logo -->
       <router-link to="/" class="logo">第五人格 Wiki</router-link>
+
+      <!-- 主导航链接 -->
       <nav class="nav-links">
         <router-link to="/">首页</router-link>
         <router-link to="/characters">角色图鉴</router-link>
@@ -10,7 +15,10 @@
         <router-link to="/analyses">剧情分析</router-link>
         <router-link to="/recharge">回声充值</router-link>
         <router-link to="/gacha">珍宝抽取</router-link>
+        <router-link to="/collection">收藏图鉴</router-link>
       </nav>
+
+      <!-- 个人中心入口（显示当前回声余额） -->
       <router-link to="/profile" class="profile-link">
         <el-icon><User /></el-icon>
         <span v-if="store.echoes > 0" class="echoes-badge">{{ store.echoes }}</span>
@@ -27,6 +35,7 @@ const store = useAppStore()
 </script>
 
 <style scoped>
+/* ===== 导航栏整体 ===== */
 .nav-header {
   background: var(--bg-card);
   border-bottom: 1px solid var(--border);

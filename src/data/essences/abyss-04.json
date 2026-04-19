@@ -1,0 +1,228 @@
+{
+  "id": "abyss-04",
+  "contents": {
+    "legendary": [
+      {
+        "ref": "character",
+        "characterId": "gamekeeper",
+        "itemType": "skin",
+        "name": "熔铁猎犬"
+      }
+    ],
+    "epic": [
+      {
+        "ref": "character",
+        "characterId": "barmaid",
+        "itemType": "skin",
+        "name": "助燃剂"
+      },
+      {
+        "ref": "character",
+        "characterId": "priestess",
+        "itemType": "skin",
+        "name": "反光镜"
+      },
+      {
+        "ref": "character",
+        "characterId": "acrobat",
+        "itemType": "skin",
+        "name": "气胎"
+      },
+      {
+        "ref": "character",
+        "characterId": "prospector",
+        "itemType": "skin",
+        "name": "公路骑士"
+      }
+    ],
+    "unique": [
+      {
+        "ref": "character",
+        "characterId": "sculptor",
+        "itemType": "skin",
+        "name": "轮椅车手"
+      },
+      {
+        "ref": "character",
+        "characterId": "prisoner",
+        "itemType": "skin",
+        "name": "赛车机师"
+      },
+      {
+        "ref": "character",
+        "characterId": "postman",
+        "itemType": "skin",
+        "name": "报童"
+      },
+      {
+        "ref": "character",
+        "characterId": "axe_boy",
+        "itemType": "skin",
+        "name": "狂热观众"
+      },
+      {
+        "ref": "character",
+        "characterId": "mad_eyes",
+        "itemType": "skin",
+        "name": "拆卸工"
+      },
+      {
+        "ref": "character",
+        "characterId": "violinist",
+        "itemType": "emote",
+        "name": "拜访"
+      },
+      {
+        "ref": "character",
+        "characterId": "grave_keeper",
+        "itemType": "emote",
+        "name": "准备"
+      },
+      {
+        "ref": "character",
+        "characterId": "painter",
+        "itemType": "emote",
+        "name": "起身"
+      }
+    ],
+    "rare": [
+      {
+        "ref": "character",
+        "characterId": "grave_keeper",
+        "itemType": "skin",
+        "name": "红沙土"
+      },
+      {
+        "ref": "character",
+        "characterId": "prisoner",
+        "itemType": "skin",
+        "name": "黄土墙"
+      },
+      {
+        "ref": "character",
+        "characterId": "violinist",
+        "itemType": "skin",
+        "name": "蓝金调"
+      },
+      {
+        "ref": "character",
+        "characterId": "entomologist",
+        "itemType": "skin",
+        "name": "灰蝶"
+      },
+      {
+        "ref": "character",
+        "characterId": "entomologist",
+        "itemType": "skin",
+        "name": "枯叶蝶"
+      },
+      {
+        "ref": "character",
+        "characterId": "sculptor",
+        "itemType": "skin",
+        "name": "绀"
+      },
+      {
+        "ref": "character",
+        "characterId": "painter",
+        "itemType": "skin",
+        "name": "绘蓝"
+      },
+      {
+        "ref": "character",
+        "characterId": "painter",
+        "itemType": "skin",
+        "name": "涂绿"
+      },
+      {
+        "ref": "character",
+        "characterId": "magician",
+        "itemType": "emote",
+        "name": "羞愧"
+      },
+      {
+        "ref": "character",
+        "characterId": "explorer",
+        "itemType": "emote",
+        "name": "羞愧"
+      },
+      {
+        "ref": "character",
+        "characterId": "lawyer",
+        "itemType": "emote",
+        "name": "羞愧"
+      },
+      {
+        "ref": "character",
+        "characterId": "doctor",
+        "itemType": "emote",
+        "name": "羞愧"
+      },
+      {
+        "ref": "character",
+        "characterId": "cowboy",
+        "itemType": "emote",
+        "name": "羞愧"
+      },
+      {
+        "ref": "character",
+        "characterId": "the_minds_eye",
+        "itemType": "emote",
+        "name": "羞愧"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-abyss4-熔铁猎犬"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-barmaid-助燃剂"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-priestess-反光镜"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-acrobat-气胎"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-prospector-公路骑士"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-female_dancer-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-seer-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-embalmer-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-prospector-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-photographer-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-mad_eyes-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-dream_witch-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-axe_boy-other"
+      }
+    ],
+    "common": []
+  }
+}

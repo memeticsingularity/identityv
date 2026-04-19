@@ -1,0 +1,222 @@
+{
+  "id": "abyss-01",
+  "contents": {
+    "legendary": [
+      {
+        "ref": "character",
+        "characterId": "hell_ember",
+        "itemType": "skin",
+        "name": "嗜金海怪[限定]"
+      }
+    ],
+    "epic": [
+      {
+        "ref": "character",
+        "characterId": "hell_ember",
+        "itemType": "skin",
+        "name": "海怪船长[限定]"
+      },
+      {
+        "ref": "character",
+        "characterId": "doctor",
+        "itemType": "skin",
+        "name": "海盗巫医[限定]"
+      },
+      {
+        "ref": "character",
+        "characterId": "lawyer",
+        "itemType": "skin",
+        "name": "海盗领航员[限定]"
+      },
+      {
+        "ref": "character",
+        "characterId": "gardener",
+        "itemType": "skin",
+        "name": "海盗船匠[限定]"
+      },
+      {
+        "ref": "character",
+        "characterId": "thief",
+        "itemType": "skin",
+        "name": "海盗远望者[限定]"
+      },
+      {
+        "ref": "character",
+        "characterId": "coordinator",
+        "itemType": "skin",
+        "name": "海盗枪手[限定]"
+      },
+      {
+        "ref": "character",
+        "characterId": "doctor",
+        "itemType": "accessory",
+        "name": "海盗酒壶[限定]"
+      },
+      {
+        "ref": "character",
+        "characterId": "lawyer",
+        "itemType": "accessory",
+        "name": "海盗罗盘[限定]"
+      },
+      {
+        "ref": "character",
+        "characterId": "gardener",
+        "itemType": "accessory",
+        "name": "海盗旗[限定]"
+      }
+    ],
+    "unique": [
+      {
+        "ref": "character",
+        "characterId": "soul_weaver",
+        "itemType": "skin",
+        "name": "刺痛[限定]"
+      },
+      {
+        "ref": "character",
+        "characterId": "mechanic",
+        "itemType": "skin",
+        "name": "船舶技师[限定]"
+      },
+      {
+        "ref": "common",
+        "id": "pet-u-pointy-nose"
+      },
+      {
+        "ref": "common",
+        "id": "pet-u-round-ears"
+      },
+      {
+        "ref": "character",
+        "characterId": "mechanic",
+        "itemType": "emote",
+        "name": "起身"
+      },
+      {
+        "ref": "character",
+        "characterId": "explorer",
+        "itemType": "emote",
+        "name": "起身"
+      },
+      {
+        "ref": "character",
+        "characterId": "coordinator",
+        "itemType": "emote",
+        "name": "起身"
+      },
+      {
+        "ref": "character",
+        "characterId": "forward",
+        "itemType": "emote",
+        "name": "起身"
+      }
+    ],
+    "rare": [
+      {
+        "ref": "character",
+        "characterId": "mechanic",
+        "itemType": "emote",
+        "name": "挑衅"
+      },
+      {
+        "ref": "character",
+        "characterId": "coordinator",
+        "itemType": "emote",
+        "name": "呼喊"
+      },
+      {
+        "ref": "character",
+        "characterId": "forward",
+        "itemType": "emote",
+        "name": "躺地"
+      },
+      {
+        "ref": "character",
+        "characterId": "forward",
+        "itemType": "emote",
+        "name": "呼喊"
+      },
+      {
+        "ref": "character",
+        "characterId": "the_minds_eye",
+        "itemType": "emote",
+        "name": "呼喊"
+      },
+      {
+        "ref": "character",
+        "characterId": "the_minds_eye",
+        "itemType": "emote",
+        "name": "躺地"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-lawyer-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-thief-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-gardener-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-doctor-other"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-pirate-flag"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-pirate-flask"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-pirate-coordinator"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-pirate-lawyer"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-pirate-thief"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-pirate-doctor"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-pirate-gardener"
+      },
+      {
+        "ref": "character",
+        "characterId": "forward",
+        "itemType": "skin",
+        "name": "生机绿"
+      },
+      {
+        "ref": "character",
+        "characterId": "mechanic",
+        "itemType": "skin",
+        "name": "可爱粉"
+      },
+      {
+        "ref": "character",
+        "characterId": "priestess",
+        "itemType": "skin",
+        "name": "淡粉桃"
+      },
+      {
+        "ref": "character",
+        "characterId": "geisha",
+        "itemType": "skin",
+        "name": "黄袖"
+      }
+    ],
+    "common": []
+  }
+}

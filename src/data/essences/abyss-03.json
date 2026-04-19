@@ -1,0 +1,236 @@
+{
+  "id": "abyss-03",
+  "contents": {
+    "legendary": [
+      {
+        "ref": "character",
+        "characterId": "smiley_face",
+        "itemType": "skin",
+        "name": "异界行者"
+      }
+    ],
+    "epic": [
+      {
+        "ref": "character",
+        "characterId": "mechanic",
+        "itemType": "skin",
+        "name": "人偶师"
+      },
+      {
+        "ref": "character",
+        "characterId": "cowboy",
+        "itemType": "skin",
+        "name": "教鞭"
+      },
+      {
+        "ref": "character",
+        "characterId": "embalmer",
+        "itemType": "skin",
+        "name": "嬉命人"
+      },
+      {
+        "ref": "character",
+        "characterId": "seer",
+        "itemType": "skin",
+        "name": "观测者"
+      }
+    ],
+    "unique": [
+      {
+        "ref": "character",
+        "characterId": "wildling",
+        "itemType": "skin",
+        "name": "保镖"
+      },
+      {
+        "ref": "character",
+        "characterId": "geisha",
+        "itemType": "skin",
+        "name": "碎裂瓷人"
+      },
+      {
+        "ref": "character",
+        "characterId": "priestess",
+        "itemType": "skin",
+        "name": "接线员"
+      },
+      {
+        "ref": "character",
+        "characterId": "photographer",
+        "itemType": "skin",
+        "name": "拍卖师"
+      },
+      {
+        "ref": "character",
+        "characterId": "prospector",
+        "itemType": "skin",
+        "name": "补丁"
+      },
+      {
+        "ref": "character",
+        "characterId": "first_officer",
+        "itemType": "emote",
+        "name": "起舞"
+      },
+      {
+        "ref": "character",
+        "characterId": "wildling",
+        "itemType": "emote",
+        "name": "起舞"
+      },
+      {
+        "ref": "character",
+        "characterId": "acrobat",
+        "itemType": "emote",
+        "name": "起舞"
+      }
+    ],
+    "rare": [
+      {
+        "ref": "character",
+        "characterId": "cowboy",
+        "itemType": "skin",
+        "name": "枯草黄"
+      },
+      {
+        "ref": "character",
+        "characterId": "prospector",
+        "itemType": "skin",
+        "name": "朱褐石"
+      },
+      {
+        "ref": "character",
+        "characterId": "acrobat",
+        "itemType": "skin",
+        "name": "花紫"
+      },
+      {
+        "ref": "character",
+        "characterId": "first_officer",
+        "itemType": "skin",
+        "name": "帆布白"
+      },
+      {
+        "ref": "character",
+        "characterId": "barmaid",
+        "itemType": "skin",
+        "name": "大麦酒"
+      },
+      {
+        "ref": "character",
+        "characterId": "barmaid",
+        "itemType": "skin",
+        "name": "蓝香橙"
+      },
+      {
+        "ref": "character",
+        "characterId": "guard_26",
+        "itemType": "skin",
+        "name": "湖蓝漆"
+      },
+      {
+        "ref": "character",
+        "characterId": "guard_26",
+        "itemType": "skin",
+        "name": "紫钢"
+      },
+      {
+        "ref": "character",
+        "characterId": "enchantress",
+        "itemType": "emote",
+        "name": "躺地"
+      },
+      {
+        "ref": "character",
+        "characterId": "enchantress",
+        "itemType": "emote",
+        "name": "挑衅"
+      },
+      {
+        "ref": "character",
+        "characterId": "prospector",
+        "itemType": "emote",
+        "name": "躺地"
+      },
+      {
+        "ref": "character",
+        "characterId": "prospector",
+        "itemType": "emote",
+        "name": "挑衅"
+      },
+      {
+        "ref": "character",
+        "characterId": "embalmer",
+        "itemType": "emote",
+        "name": "躺地"
+      },
+      {
+        "ref": "character",
+        "characterId": "seer",
+        "itemType": "emote",
+        "name": "躺地"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-smiley_face-异界行者"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-mechanic-人偶师"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-cowboy-教鞭"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-embalmer-嬉命人"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-female_dancer-恶之花"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-photographer-拍卖师"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-seer-观测者"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-priestess-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-cowboy-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-perfumer-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-lucky_guy-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-geisha-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-soul_weaver-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-wu_chang-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-the_feaster-other"
+      }
+    ],
+    "common": []
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "id": "abyss-07",
+  "contents": {
+    "legendary": [
+      {
+        "ref": "character",
+        "characterId": "the_feaster",
+        "itemType": "skin",
+        "name": "灾厄之主"
+      }
+    ],
+    "epic": [
+      {
+        "ref": "character",
+        "characterId": "patient",
+        "itemType": "skin",
+        "name": "稀缺病案"
+      },
+      {
+        "ref": "character",
+        "characterId": "psychologist",
+        "itemType": "skin",
+        "name": "末世搜救"
+      },
+      {
+        "ref": "character",
+        "characterId": "composer",
+        "itemType": "skin",
+        "name": "先驱探索"
+      },
+      {
+        "ref": "character",
+        "characterId": "antiquarian",
+        "itemType": "skin",
+        "name": "菌丝研究"
+      }
+    ],
+    "unique": [
+      {
+        "ref": "character",
+        "characterId": "lucky_guy",
+        "itemType": "skin",
+        "name": "机构齿轮"
+      },
+      {
+        "ref": "character",
+        "characterId": "disciple",
+        "itemType": "skin",
+        "name": "末世信仰"
+      },
+      {
+        "ref": "character",
+        "characterId": "clerk",
+        "itemType": "skin",
+        "name": "菌丝专著"
+      },
+      {
+        "ref": "character",
+        "characterId": "aeroplanist",
+        "itemType": "skin",
+        "name": "失败的探索"
+      },
+      {
+        "ref": "character",
+        "characterId": "journalist",
+        "itemType": "skin",
+        "name": "官方报道"
+      },
+      {
+        "ref": "character",
+        "characterId": "nightmare",
+        "itemType": "emote",
+        "name": "大笑"
+      },
+      {
+        "ref": "character",
+        "characterId": "clerk",
+        "itemType": "emote",
+        "name": "拜访"
+      },
+      {
+        "ref": "character",
+        "characterId": "professor",
+        "itemType": "emote",
+        "name": "小憩"
+      },
+      {
+        "ref": "character",
+        "characterId": "antiquarian",
+        "itemType": "emote",
+        "name": "起身"
+      }
+    ],
+    "rare": [
+      {
+        "ref": "character",
+        "characterId": "composer",
+        "itemType": "skin",
+        "name": "高傲黄"
+      },
+      {
+        "ref": "character",
+        "characterId": "antiquarian",
+        "itemType": "skin",
+        "name": "风铃蓝"
+      },
+      {
+        "ref": "character",
+        "characterId": "aeroplanist",
+        "itemType": "skin",
+        "name": "怯懦白"
+      },
+      {
+        "ref": "character",
+        "characterId": "journalist",
+        "itemType": "skin",
+        "name": "自信红"
+      },
+      {
+        "ref": "character",
+        "characterId": "night_watch",
+        "itemType": "skin",
+        "name": "丛林绿"
+      },
+      {
+        "ref": "character",
+        "characterId": "hermit",
+        "itemType": "skin",
+        "name": "悲观青"
+      },
+      {
+        "ref": "character",
+        "characterId": "opera_singer",
+        "itemType": "skin",
+        "name": "魅惑红"
+      },
+      {
+        "ref": "character",
+        "characterId": "cheerleader",
+        "itemType": "skin",
+        "name": "活力黄"
+      },
+      {
+        "ref": "character",
+        "characterId": "patient",
+        "itemType": "emote",
+        "name": "挑衅"
+      },
+      {
+        "ref": "character",
+        "characterId": "antiquarian",
+        "itemType": "emote",
+        "name": "呼喊"
+      },
+      {
+        "ref": "character",
+        "characterId": "weeping_clown",
+        "itemType": "emote",
+        "name": "呼喊"
+      },
+      {
+        "ref": "character",
+        "characterId": "entomologist",
+        "itemType": "emote",
+        "name": "躺地"
+      },
+      {
+        "ref": "character",
+        "characterId": "painter",
+        "itemType": "emote",
+        "name": "挑衅"
+      },
+      {
+        "ref": "character",
+        "characterId": "novelist",
+        "itemType": "emote",
+        "name": "躺地"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-composer-先驱探索"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-psychologist-末世搜救"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-patient-稀缺病案"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-antiquarian-菌丝研究"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-professor-紧急运输"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-weeping_clown-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-color-journalist"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-hermit-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-clerk-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-journalist-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-antiquarian-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-professor-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-composer-other"
+      }
+    ],
+    "common": []
+  }
+}

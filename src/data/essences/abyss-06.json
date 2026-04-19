@@ -1,0 +1,234 @@
+{
+  "id": "abyss-06",
+  "contents": {
+    "legendary": [
+      {
+        "ref": "character",
+        "characterId": "wu_chang",
+        "itemType": "skin",
+        "name": "亘古双星"
+      }
+    ],
+    "epic": [
+      {
+        "ref": "character",
+        "characterId": "entomologist",
+        "itemType": "skin",
+        "name": "生态圈"
+      },
+      {
+        "ref": "character",
+        "characterId": "weeping_clown",
+        "itemType": "skin",
+        "name": "炮弹飞船"
+      },
+      {
+        "ref": "character",
+        "characterId": "toy_merchant",
+        "itemType": "skin",
+        "name": "线控信号"
+      },
+      {
+        "ref": "character",
+        "characterId": "grave_keeper",
+        "itemType": "skin",
+        "name": "异星开采"
+      }
+    ],
+    "unique": [
+      {
+        "ref": "character",
+        "characterId": "novelist",
+        "itemType": "skin",
+        "name": "跟组编剧"
+      },
+      {
+        "ref": "character",
+        "characterId": "patient",
+        "itemType": "skin",
+        "name": "安全员"
+      },
+      {
+        "ref": "character",
+        "characterId": "psychologist",
+        "itemType": "skin",
+        "name": "\"服装师\""
+      },
+      {
+        "ref": "character",
+        "characterId": "evil_reptilian",
+        "itemType": "skin",
+        "name": "特效化妆"
+      },
+      {
+        "ref": "character",
+        "characterId": "nightmare",
+        "itemType": "skin",
+        "name": "探班粉丝"
+      },
+      {
+        "ref": "character",
+        "characterId": "patient",
+        "itemType": "emote",
+        "name": "等待"
+      },
+      {
+        "ref": "character",
+        "characterId": "weeping_clown",
+        "itemType": "emote",
+        "name": "张望"
+      },
+      {
+        "ref": "character",
+        "characterId": "weeping_clown",
+        "itemType": "emote",
+        "name": "小憩"
+      },
+      {
+        "ref": "character",
+        "characterId": "psychologist",
+        "itemType": "emote",
+        "name": "等待"
+      }
+    ],
+    "rare": [
+      {
+        "ref": "character",
+        "characterId": "sculptor",
+        "itemType": "skin",
+        "name": "靛"
+      },
+      {
+        "ref": "character",
+        "characterId": "undead",
+        "itemType": "skin",
+        "name": "焦土"
+      },
+      {
+        "ref": "character",
+        "characterId": "batter",
+        "itemType": "skin",
+        "name": "蒙尘"
+      },
+      {
+        "ref": "character",
+        "characterId": "breaking_wheel",
+        "itemType": "skin",
+        "name": "寡言棕"
+      },
+      {
+        "ref": "character",
+        "characterId": "toy_merchant",
+        "itemType": "skin",
+        "name": "秸秆绿"
+      },
+      {
+        "ref": "character",
+        "characterId": "patient",
+        "itemType": "skin",
+        "name": "旧墙褐"
+      },
+      {
+        "ref": "character",
+        "characterId": "naiad",
+        "itemType": "skin",
+        "name": "毒环蓝"
+      },
+      {
+        "ref": "character",
+        "characterId": "psychologist",
+        "itemType": "skin",
+        "name": "追忆灰"
+      },
+      {
+        "ref": "character",
+        "characterId": "postman",
+        "itemType": "emote",
+        "name": "羞愧"
+      },
+      {
+        "ref": "character",
+        "characterId": "batter",
+        "itemType": "emote",
+        "name": "羞愧"
+      },
+      {
+        "ref": "character",
+        "characterId": "toy_merchant",
+        "itemType": "emote",
+        "name": "羞愧"
+      },
+      {
+        "ref": "character",
+        "characterId": "patient",
+        "itemType": "emote",
+        "name": "羞愧"
+      },
+      {
+        "ref": "character",
+        "characterId": "weeping_clown",
+        "itemType": "emote",
+        "name": "羞愧"
+      },
+      {
+        "ref": "character",
+        "characterId": "psychologist",
+        "itemType": "emote",
+        "name": "羞愧"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-toy_merchant-线控信号"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-entomologist-生态圈"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-weeping_clown-炮弹飞船"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-grave_keeper-异星开采"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-batter-迫降专家"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-bloody_queen-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-evil_reptilian-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-guard_26-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-disciple-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-barmaid-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-postman-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-grave_keeper-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-prisoner-other"
+      }
+    ],
+    "common": []
+  }
+}

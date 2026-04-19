@@ -1,0 +1,228 @@
+{
+  "id": "abyss-09",
+  "contents": {
+    "legendary": [
+      {
+        "ref": "character",
+        "characterId": "photographer",
+        "itemType": "skin",
+        "name": "\"恒光\""
+      }
+    ],
+    "epic": [
+      {
+        "ref": "character",
+        "characterId": "painter",
+        "itemType": "skin",
+        "name": "深蓝暗面"
+      },
+      {
+        "ref": "character",
+        "characterId": "fire_investigator",
+        "itemType": "skin",
+        "name": "匣中焰星"
+      },
+      {
+        "ref": "character",
+        "characterId": "faro_lady",
+        "itemType": "skin",
+        "name": "苍白冠冕"
+      },
+      {
+        "ref": "character",
+        "characterId": "knight",
+        "itemType": "skin",
+        "name": "不羁欢歌"
+      }
+    ],
+    "unique": [
+      {
+        "ref": "character",
+        "characterId": "explorer",
+        "itemType": "skin",
+        "name": "阴谋论者"
+      },
+      {
+        "ref": "character",
+        "characterId": "coordinator",
+        "itemType": "skin",
+        "name": "漆黑神官"
+      },
+      {
+        "ref": "character",
+        "characterId": "the_shadow",
+        "itemType": "skin",
+        "name": "惊惧故事集"
+      },
+      {
+        "ref": "character",
+        "characterId": "lanternist",
+        "itemType": "skin",
+        "name": "乐园游人"
+      },
+      {
+        "ref": "character",
+        "characterId": "puppeteer",
+        "itemType": "emote",
+        "name": "起身"
+      },
+      {
+        "ref": "character",
+        "characterId": "aeroplanist",
+        "itemType": "emote",
+        "name": "起身"
+      },
+      {
+        "ref": "character",
+        "characterId": "escapologist",
+        "itemType": "emote",
+        "name": "准备"
+      },
+      {
+        "ref": "character",
+        "characterId": "the_shadow",
+        "itemType": "emote",
+        "name": "拜访"
+      }
+    ],
+    "rare": [
+      {
+        "ref": "character",
+        "characterId": "priestess",
+        "itemType": "skin",
+        "name": "深幽灰"
+      },
+      {
+        "ref": "character",
+        "characterId": "puppeteer",
+        "itemType": "skin",
+        "name": "阴沉蓝"
+      },
+      {
+        "ref": "character",
+        "characterId": "the_shadow",
+        "itemType": "skin",
+        "name": "虚空黑"
+      },
+      {
+        "ref": "character",
+        "characterId": "fire_investigator",
+        "itemType": "skin",
+        "name": "黯影紫"
+      },
+      {
+        "ref": "character",
+        "characterId": "faro_lady",
+        "itemType": "skin",
+        "name": "迷影棕"
+      },
+      {
+        "ref": "character",
+        "characterId": "goatman",
+        "itemType": "skin",
+        "name": "锁链银"
+      },
+      {
+        "ref": "character",
+        "characterId": "knight",
+        "itemType": "skin",
+        "name": "秋叶棕"
+      },
+      {
+        "ref": "character",
+        "characterId": "hullabaloo",
+        "itemType": "skin",
+        "name": "记忆黄"
+      },
+      {
+        "ref": "character",
+        "characterId": "fire_investigator",
+        "itemType": "emote",
+        "name": "羞愧"
+      },
+      {
+        "ref": "character",
+        "characterId": "journalist",
+        "itemType": "emote",
+        "name": "挑衅"
+      },
+      {
+        "ref": "character",
+        "characterId": "knight",
+        "itemType": "emote",
+        "name": "躺地"
+      },
+      {
+        "ref": "character",
+        "characterId": "meteorologist",
+        "itemType": "emote",
+        "name": "羞愧"
+      },
+      {
+        "ref": "character",
+        "characterId": "archer",
+        "itemType": "emote",
+        "name": "欢呼"
+      },
+      {
+        "ref": "character",
+        "characterId": "escapologist",
+        "itemType": "emote",
+        "name": "呼喊"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-night_watch-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-the_shadow-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-puppeteer-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-fire_investigator-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-faro_lady-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-fools_gold-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-aeroplanist-other"
+      },
+      {
+        "ref": "common",
+        "id": "avatar-r-cheerleader-other"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-journalist-巡于归途"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-fire_investigator-匣中焰星"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-painter-深蓝暗面"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-knight-不羁欢歌"
+      },
+      {
+        "ref": "common",
+        "id": "graffiti-r-faro_lady-苍白冠冕"
+      }
+    ],
+    "common": []
+  }
+}

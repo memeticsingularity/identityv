@@ -1,0 +1,64 @@
+{
+  "id": "s42-e1",
+  "contents": {
+    "legendary": [
+      { "ref": "character", "characterId": "matador", "itemType": "skin", "name": "此在无栖" }
+    ],
+    "epic": [
+      { "ref": "character", "characterId": "priestess", "itemType": "skin", "name": "白焰初照" },
+      { "ref": "character", "characterId": "cueist", "itemType": "skin", "name": "幽夜终章" }
+    ],
+    "unique": [
+      { "ref": "character", "characterId": "the_feaster", "itemType": "skin", "name": "永夜之劫" },
+      { "ref": "character", "characterId": "evil_reptilian", "itemType": "skin", "name": "大地行记" },
+      { "ref": "character", "characterId": "composer", "itemType": "skin", "name": "白云歌谣" },
+      { "ref": "character", "characterId": "the_shadow", "itemType": "skin", "name": "永昼之陨" },
+      { "ref": "common", "id": "emote-u-lucky-guy-prepare" },
+      { "ref": "common", "id": "emote-u-cheerleader-rest" },
+      { "ref": "common", "id": "emote-u-opera-singer-bow" },
+      { "ref": "common", "id": "emote-u-fools-gold-threat" }
+    ],
+    "rare": [
+      { "ref": "character", "characterId": "ripper", "itemType": "skin", "name": "黑男爵" },
+      { "ref": "character", "characterId": "doctor", "itemType": "skin", "name": "肃静蓝" },
+      { "ref": "character", "characterId": "magician", "itemType": "skin", "name": "葡萄酒" },
+      { "ref": "character", "characterId": "mechanic", "itemType": "skin", "name": "墨黑" },
+      { "ref": "character", "characterId": "meteorologist", "itemType": "skin", "name": "晴日绿" },
+      { "ref": "character", "characterId": "archer", "itemType": "skin", "name": "离弦绯" },
+      { "ref": "character", "characterId": "peddler", "itemType": "skin", "name": "月桂黄" },
+      { "ref": "character", "characterId": "escapologist", "itemType": "skin", "name": "迷烟青" },
+      { "ref": "character", "characterId": "cueist", "itemType": "skin", "name": "退杆绿" },
+      { "ref": "character", "characterId": "lanternist", "itemType": "skin", "name": "天窗蓝" },
+      { "ref": "character", "characterId": "queen_bee", "itemType": "skin", "name": "蜂毒" },
+      { "ref": "common", "id": "emote-r-magician-rest" },
+      { "ref": "common", "id": "emote-r-thief-prepare" },
+      { "ref": "common", "id": "emote-r-coordinator-rest" },
+      { "ref": "common", "id": "emote-r-lawyer-rest" },
+      { "ref": "common", "id": "emote-r-magician-wait" },
+      { "ref": "common", "id": "emote-r-journalist-cheer" },
+      { "ref": "common", "id": "emote-r-knight-shame" },
+      { "ref": "common", "id": "emote-r-meteorologist-provoke" },
+      { "ref": "common", "id": "emote-r-escapologist-lie" },
+      { "ref": "common", "id": "avatar-r-bw-composer" },
+      { "ref": "common", "id": "avatar-r-bw-journalist" },
+      { "ref": "common", "id": "avatar-r-bw-novelist" },
+      { "ref": "common", "id": "graffiti-r-wax-personality" },
+      { "ref": "common", "id": "graffiti-r-composer-personality" },
+      { "ref": "common", "id": "graffiti-r-antiquarian-personality" },
+      { "ref": "common", "id": "graffiti-r-opera-singer-personality" }
+    ],
+    "common": [
+      { "ref": "common", "id": "avatar-c-color-fire-investigator" },
+      { "ref": "common", "id": "avatar-c-color-faro-lady" },
+      { "ref": "common", "id": "avatar-c-color-fools-gold" },
+      { "ref": "common", "id": "avatar-c-color-goatman" },
+      { "ref": "common", "id": "graffiti-c-composer-color" },
+      { "ref": "common", "id": "graffiti-c-professor-color" },
+      { "ref": "common", "id": "graffiti-c-clerk-color" },
+      { "ref": "common", "id": "graffiti-c-antiquarian-color" },
+      { "ref": "common", "id": "graffiti-c-hermit-color" },
+      { "ref": "common", "id": "graffiti-c-journalist-color" },
+      { "ref": "common", "id": "graffiti-c-lucky-guy-color" }
+    ]
+  }
+}

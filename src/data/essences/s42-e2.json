@@ -1,0 +1,64 @@
+{
+  "id": "s42-e2",
+  "contents": {
+    "legendary": [
+      { "ref": "character", "characterId": "coordinator", "itemType": "skin", "name": "翡色云雀之歌" }
+    ],
+    "epic": [
+      { "ref": "character", "characterId": "lanternist", "itemType": "skin", "name": "知更鸟" },
+      { "ref": "character", "characterId": "gamekeeper", "itemType": "skin", "name": "塞努诺斯" }
+    ],
+    "unique": [
+      { "ref": "character", "characterId": "thief", "itemType": "skin", "name": "鹈鹕" },
+      { "ref": "character", "characterId": "mercenary", "itemType": "skin", "name": "乌雕" },
+      { "ref": "character", "characterId": "little_girl", "itemType": "skin", "name": "银喉" },
+      { "ref": "character", "characterId": "peddler", "itemType": "skin", "name": "枯巢" },
+      { "ref": "common", "id": "emote-u-professor-prepare" },
+      { "ref": "common", "id": "emote-u-antiquarian-look" },
+      { "ref": "common", "id": "emote-u-wax-artist-bow" },
+      { "ref": "common", "id": "emote-u-clerk-threat" }
+    ],
+    "rare": [
+      { "ref": "character", "characterId": "puppeteer", "itemType": "skin", "name": "灰烬红" },
+      { "ref": "character", "characterId": "the_shadow", "itemType": "skin", "name": "幻影紫" },
+      { "ref": "character", "characterId": "fire_investigator", "itemType": "skin", "name": "使命绿" },
+      { "ref": "character", "characterId": "faro_lady", "itemType": "skin", "name": "睿智蓝" },
+      { "ref": "character", "characterId": "goatman", "itemType": "skin", "name": "锈色黄" },
+      { "ref": "character", "characterId": "knight", "itemType": "skin", "name": "骑士蓝" },
+      { "ref": "character", "characterId": "hullabaloo", "itemType": "skin", "name": "美梦紫" },
+      { "ref": "character", "characterId": "cheerleader", "itemType": "skin", "name": "热烈红" },
+      { "ref": "character", "characterId": "fools_gold", "itemType": "skin", "name": "感染绿" },
+      { "ref": "character", "characterId": "novelist", "itemType": "skin", "name": "月影青" },
+      { "ref": "character", "characterId": "little_girl", "itemType": "skin", "name": "初绽杏" },
+      { "ref": "common", "id": "emote-r-forward-rest" },
+      { "ref": "common", "id": "emote-r-explorer-prepare" },
+      { "ref": "common", "id": "emote-r-mercenary-prepare" },
+      { "ref": "common", "id": "emote-r-lawyer-prepare" },
+      { "ref": "common", "id": "emote-r-forward-wait" },
+      { "ref": "common", "id": "emote-r-entomologist-shout" },
+      { "ref": "common", "id": "emote-r-painter-shout" },
+      { "ref": "common", "id": "emote-r-composer-shout" },
+      { "ref": "common", "id": "emote-r-little-girl-shout" },
+      { "ref": "common", "id": "avatar-r-bw-thief" },
+      { "ref": "common", "id": "avatar-r-bw-cowboy" },
+      { "ref": "common", "id": "avatar-r-bw-female-dancer" },
+      { "ref": "common", "id": "graffiti-r-night-watch-cartoon" },
+      { "ref": "common", "id": "graffiti-r-puppeteer-cartoon" },
+      { "ref": "common", "id": "graffiti-r-faro-lady-cartoon" },
+      { "ref": "common", "id": "graffiti-r-fools-gold-cartoon" }
+    ],
+    "common": [
+      { "ref": "common", "id": "avatar-c-color-night-watch" },
+      { "ref": "common", "id": "avatar-c-color-opera-singer" },
+      { "ref": "common", "id": "avatar-c-color-shadow" },
+      { "ref": "common", "id": "avatar-c-color-puppeteer" },
+      { "ref": "common", "id": "graffiti-c-barmaid-gray" },
+      { "ref": "common", "id": "graffiti-c-little-girl-gray" },
+      { "ref": "common", "id": "graffiti-c-naiad-gray" },
+      { "ref": "common", "id": "graffiti-c-weeping-clown-gray" },
+      { "ref": "common", "id": "graffiti-c-composer-gray" },
+      { "ref": "common", "id": "graffiti-c-professor-gray" },
+      { "ref": "common", "id": "graffiti-c-novelist-gray" }
+    ]
+  }
+}
