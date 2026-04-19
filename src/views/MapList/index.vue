@@ -33,7 +33,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import maps from '../data/maps.json'
+import maps from '../../data/maps.json'
 
 const tabs = [
   { label: '全部', value: 'all' },

@@ -275,9 +275,9 @@
 
 <script setup>
 import { ref, computed, watch } from 'vue'
-import { characters } from '../data/characters/index.js'
-import analyses from '../data/analyses.json'
-import CollapsiblePanel from '../components/CollapsiblePanel.vue'
+import { characters } from '../../data/characters/index.js'
+import analyses from '../../data/analyses.json'
+import CollapsiblePanel from '../../components/CollapsiblePanel.vue'
 
 const props = defineProps({
   id: { type: String, required: true },

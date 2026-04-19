@@ -55,15 +55,31 @@ src/
 │   ├── maps.json            # 地图/场景总表
 │   └── analyses.json        # 剧情分析文章总表
 ├── router/              # 路由配置
-├── views/               # 页面组件
-│   ├── HomeView.vue
-│   ├── CharacterListView.vue
-│   ├── CharacterDetailView.vue
-│   ├── StoryListView.vue
-│   ├── MapListView.vue
-│   ├── MapDetailView.vue
-│   ├── AnalysisListView.vue
-│   └── AnalysisDetailView.vue
+├── views/               # 页面组件（按页面分子目录）
+│   ├── Home/
+│   │   └── index.vue
+│   ├── CharacterList/
+│   │   └── index.vue
+│   ├── CharacterDetail/
+│   │   └── index.vue
+│   ├── StoryList/
+│   │   └── index.vue
+│   ├── MapList/
+│   │   └── index.vue
+│   ├── MapDetail/
+│   │   └── index.vue
+│   ├── AnalysisList/
+│   │   └── index.vue
+│   ├── AnalysisDetail/
+│   │   └── index.vue
+│   ├── Recharge/
+│   │   └── index.vue
+│   ├── Gacha/
+│   │   └── index.vue
+│   └── Profile/
+│       └── index.vue
+├── stores/              # Pinia 状态管理
+├── router/              # 路由配置
 ├── App.vue
 └── main.js
 ```

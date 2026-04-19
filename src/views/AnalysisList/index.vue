@@ -35,7 +35,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import analyses from '../data/analyses.json'
+import analyses from '../../data/analyses.json'
 
 const categories = ['全部', '地图考据', '事件分析', '民俗考据', '角色分析', '主线解读']
 const currentCategory = ref('全部')

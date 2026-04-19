@@ -85,10 +85,10 @@ import { characters } from '../data/characters/index.js'
 ## 影响范围
 
 ### 修改的文件
-- `src/views/CharacterListView.vue` — 更新 import 路径
-- `src/views/CharacterDetailView.vue` — 更新 import 路径
-- `src/views/StoryListView.vue` — 更新 import 路径
-- `src/views/AnalysisDetailView.vue` — 更新 import 路径
+- `src/views/CharacterList/index.vue` — 更新 import 路径
+- `src/views/CharacterDetail/index.vue` — 更新 import 路径
+- `src/views/StoryList/index.vue` — 更新 import 路径
+- `src/views/AnalysisDetail/index.vue` — 更新 import 路径
 
 ### 删除的文件
 - `src/data/characters.json` — 由拆分后的目录结构替代

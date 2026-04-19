@@ -48,8 +48,8 @@
 
 <script setup>
 import { computed } from 'vue'
-import maps from '../data/maps.json'
-import analyses from '../data/analyses.json'
+import maps from '../../data/maps.json'
+import analyses from '../../data/analyses.json'
 
 const props = defineProps({
   id: { type: String, required: true },

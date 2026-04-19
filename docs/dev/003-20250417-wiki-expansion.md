@@ -87,15 +87,15 @@ NPC 对象保留与可玩角色相同的字段结构（`id`、`name`、`backgrou
 ### 新增文件
 - `src/data/maps.json`
 - `src/data/analyses.json`
-- `src/views/MapListView.vue`
-- `src/views/MapDetailView.vue`
-- `src/views/AnalysisListView.vue`
-- `src/views/AnalysisDetailView.vue`
+- `src/views/MapList/index.vue`
+- `src/views/MapDetail/index.vue`
+- `src/views/AnalysisList/index.vue`
+- `src/views/AnalysisDetail/index.vue`
 
 ### 修改文件
 - `src/data/characters.json` — 增加 `type` 字段，补充 NPC 示例数据
-- `src/views/CharacterListView.vue` — 增加 NPC 筛选 Tab
-- `src/views/CharacterDetailView.vue` — 增加 "关联分析" 标签页
+- `src/views/CharacterList/index.vue` — 增加 NPC 筛选 Tab
+- `src/views/CharacterDetail/index.vue` — 增加 "关联分析" 标签页
 - `src/components/NavHeader.vue` — 增加地图、剧情分析导航
 - `src/router/index.js` — 注册新增路由
 - `docs/README.md` — 更新文档索引
