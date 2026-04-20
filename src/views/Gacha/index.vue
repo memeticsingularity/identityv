@@ -21,6 +21,11 @@
         <span class="info-label">消耗回声</span>
         <span class="info-value">{{ store.totalEchoesSpent }}</span>
       </div>
+      <div class="info-item">
+        <img src="/assets/fragment.png" alt="碎片" class="fragment-top-icon" />
+        <span class="info-label">本池碎片</span>
+        <span class="info-value" style="color:#9c27b0">{{ store.currentPool.totalShardsReturned || 0 }}</span>
+      </div>
     </div>
 
     <!-- 精华池切换 -->
@@ -278,6 +283,10 @@
               >
                 {{ item.displayName || item.name }}
               </el-tag>
+            </div>
+            <div v-if="record.shardsReturned" class="record-shards">
+              <img src="/assets/fragment.png" class="shard-icon-mini" alt="碎片" />
+              <span>返还 {{ record.shardsReturned }} 碎片（{{ record.duplicateCount }} 个重复）</span>
             </div>
           </el-timeline-item>
         </el-timeline>
@@ -1199,6 +1208,20 @@ async function handleDraw(type) {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+}
+
+.record-shards {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #9c27b0;
+}
+
+.shard-icon-mini {
+  width: 14px;
+  height: 14px;
 }
 
 .expand-bar {

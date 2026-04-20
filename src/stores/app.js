@@ -107,6 +107,7 @@ function createEmptyPool() {
     rarityStats: { common: 0, rare: 0, unique: 0, epic: 0, legendary: 0 },
     obtainedEpics: [],
     lastEpics: [],
+    totalShardsReturned: 0,
   }
 }
 
@@ -470,17 +471,6 @@ export const useAppStore = defineStore('app', () => {
       results.push(_performSingleDraw(pool))
     }
 
-    const record = {
-      id: `dr_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
-      poolId: currentPoolId.value,
-      poolName: currentPoolInfo.value.name,
-      type,
-      cost,
-      results,
-      timestamp: Date.now(),
-    }
-    pool.drawRecords.unshift(record)
-
     // 记录收藏册、碎片、首次获得弹窗
     let shardsReturned = 0
     let duplicateCount = 0
@@ -523,6 +513,20 @@ export const useAppStore = defineStore('app', () => {
       }
     }
 
+    const record = {
+      id: `dr_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
+      poolId: currentPoolId.value,
+      poolName: currentPoolInfo.value.name,
+      type,
+      cost,
+      results,
+      timestamp: Date.now(),
+      shardsReturned,
+      duplicateCount,
+    }
+    pool.drawRecords.unshift(record)
+    pool.totalShardsReturned += shardsReturned
+
     return { success: true, record, shardsReturned, duplicateCount, skinModals }
   }
 
@@ -549,6 +553,14 @@ export const useAppStore = defineStore('app', () => {
       const migrated = migrateOwnedData(ownedItems.value, ownedOrder.value)
       ownedItems.value = migrated.items
       ownedOrder.value = migrated.order
+
+      // 兼容旧数据：补充池子级 totalShardsReturned
+      Object.values(pools.value).forEach(pool => {
+        if (typeof pool.totalShardsReturned !== 'number') {
+          pool.totalShardsReturned = pool.drawRecords.reduce((sum, r) => sum + (r.shardsReturned || 0), 0)
+        }
+      })
+
       isDataLoaded.value = true
     } catch (err) {
       dataLoadError.value = err.message || '数据加载失败'

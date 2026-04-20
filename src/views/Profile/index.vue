@@ -108,6 +108,7 @@
               <span class="mini-num">{{ pool.pity.epic }}/60</span>
             </div>
           </div>
+          <div class="pool-shards">累计碎片 {{ pool.totalShardsReturned }}</div>
         </div>
       </div>
     </div>
@@ -234,11 +235,76 @@
               {{ item.displayName || item.name }}
             </span>
           </div>
+          <div v-if="record.shardsReturned" class="draw-record-shards">
+            <img src="/assets/fragment.png" class="shard-icon-mini" alt="碎片" />
+            <span>返还 {{ record.shardsReturned }} 碎片（{{ record.duplicateCount }} 个重复）</span>
+          </div>
         </div>
       </div>
 
       <div v-if="filteredDrawRecords.length > COLLAPSE_LIMIT && !drawExpanded" class="expand-hint">
         还有 {{ filteredDrawRecords.length - COLLAPSE_LIMIT }} 条记录被收起
+      </div>
+    </div>
+
+    <!-- 碎片获取记录 -->
+    <div class="records-section">
+      <div class="records-header">
+        <h3>
+          碎片获取记录
+          <span class="record-count">（{{ shardRecords.length }} 条）</span>
+        </h3>
+        <div class="header-actions">
+          <el-select v-model="shardFilter" placeholder="全部精华池" style="width: 160px" size="small">
+            <el-option label="全部精华池" value="" />
+            <el-option
+              v-for="pool in ESSENCE_POOLS"
+              :key="pool.id"
+              :label="pool.name"
+              :value="pool.id"
+            />
+          </el-select>
+          <el-button
+            v-if="shardRecords.length > COLLAPSE_LIMIT"
+            text
+            size="small"
+            @click="shardExpanded = !shardExpanded"
+          >
+            {{ shardExpanded ? '收起' : '展开' }}
+            <el-icon><ArrowUp v-if="shardExpanded" /><ArrowDown v-else /></el-icon>
+          </el-button>
+        </div>
+      </div>
+
+      <div v-if="shardRecords.length === 0" class="empty-tip">
+        {{ shardFilter ? '该精华池暂无碎片获取记录' : '暂无碎片获取记录' }}
+      </div>
+
+      <div v-else class="record-list">
+        <div
+          v-for="record in visibleShardRecords"
+          :key="record.id"
+          class="shard-record-card"
+        >
+          <div class="shard-record-header">
+            <div class="shard-record-meta">
+              <el-tag size="small" type="info" effect="dark">{{ record.poolName }}</el-tag>
+              <el-tag :type="record.type === 'ten' ? 'danger' : 'primary'" size="small" effect="dark">
+                {{ record.type === 'ten' ? '十连' : '单抽' }}
+              </el-tag>
+              <span class="shard-record-shards">
+                <img src="/assets/fragment.png" class="shard-icon-mini" alt="碎片" />
+                <span class="shard-count">+{{ record.shardsReturned }}</span>
+                <span class="shard-duplicate">（{{ record.duplicateCount }} 个重复）</span>
+              </span>
+            </div>
+            <span class="draw-time">{{ store.formatDate(record.timestamp) }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div v-if="shardRecords.length > COLLAPSE_LIMIT && !shardExpanded" class="expand-hint">
+        还有 {{ shardRecords.length - COLLAPSE_LIMIT }} 条记录被收起
       </div>
     </div>
 
@@ -311,6 +377,7 @@ const activePools = computed(() => {
       ...pool,
       draws: p.drawCount,
       pity: p.pity,
+      totalShardsReturned: p.totalShardsReturned || 0,
     }
   }).filter(p => p.draws > 0)
 })
@@ -377,6 +444,27 @@ const filteredDrawRecords = computed(() => {
 
   if (!recordFilter.value) return allRecords
   return allRecords.filter(r => r.poolId === recordFilter.value)
+})
+
+const shardFilter = ref('')
+const shardExpanded = ref(false)
+
+const shardRecords = computed(() => {
+  const allRecords = []
+  Object.values(store.pools).forEach(pool => {
+    allRecords.push(...pool.drawRecords)
+  })
+  allRecords.sort((a, b) => b.timestamp - a.timestamp)
+  let list = allRecords.filter(r => r.shardsReturned > 0)
+  if (shardFilter.value) {
+    list = list.filter(r => r.poolId === shardFilter.value)
+  }
+  return list
+})
+
+const visibleShardRecords = computed(() => {
+  if (shardExpanded.value) return shardRecords.value
+  return shardRecords.value.slice(0, COLLAPSE_LIMIT)
 })
 </script>
 
@@ -770,6 +858,69 @@ const filteredDrawRecords = computed(() => {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.draw-record-shards {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #9c27b0;
+}
+
+.shard-icon-mini {
+  width: 14px;
+  height: 14px;
+}
+
+.pool-shards {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #9c27b0;
+}
+
+.shard-record-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 12px 16px;
+  transition: all 0.2s;
+}
+
+.shard-record-card:hover {
+  border-color: #9c27b0;
+}
+
+.shard-record-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shard-record-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.shard-record-shards {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: #9c27b0;
+}
+
+.shard-count {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.shard-duplicate {
+  color: #a89b8c;
+  font-size: 12px;
 }
 
 /* ===== 收藏图鉴入口 ===== */
