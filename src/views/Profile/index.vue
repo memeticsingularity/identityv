@@ -678,6 +678,7 @@ const rateChartOption = computed(() => {
       indicator,
       axisName: { color: '#a89b8c' },
       splitNumber: 4,
+      axisTick: { show: false },
       splitArea: { areaStyle: { color: ['#1a1512', '#1e1916'] } },
       splitLine: { lineStyle: { color: '#3a3028' } },
       axisLine: { lineStyle: { color: '#3a3028' } },
