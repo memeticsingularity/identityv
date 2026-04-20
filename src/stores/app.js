@@ -335,7 +335,7 @@ export const useAppStore = defineStore('app', () => {
 
   function computeStreaks(records, targetRarity, pityThreshold = null) {
     if (!records || records.length === 0) {
-      return { firstAppearPulls: null, firstAppearCost: null, firstAppearRecord: null, firstAppearItem: null, maxStreak: 0, maxStreakEndRecord: null, maxStreakItem: null, pityHistory: [] }
+      return { firstAppearPulls: null, firstAppearCost: null, firstAppearRecord: null, firstAppearItem: null, maxStreak: 0, maxStreakEndRecord: null, maxStreakItem: null, pityHistory: [], intervals: [], intervalCosts: [] }
     }
     const chronological = records.slice().reverse()
 
@@ -349,6 +349,8 @@ export const useAppStore = defineStore('app', () => {
     let firstAppearRecord = null
     let firstAppearItem = null
     const pityHistory = []
+    const intervals = []
+    const intervalCosts = []
 
     for (const record of chronological) {
       const pullCount = record.results.length
@@ -370,14 +372,15 @@ export const useAppStore = defineStore('app', () => {
             firstAppearItem = item
           }
 
-          // 保底历史记录所有出货（含保底）
-          pityHistory.push({
-            record,
-            item,
-            streakBefore: currentStreak,
-            poolName: record.poolName,
-            isPity,
-          })
+          // 保底历史只记录真正触发保底的出货
+          if (isPity) {
+            pityHistory.push({
+              record,
+              item,
+              streakBefore: currentStreak,
+              poolName: record.poolName,
+            })
+          }
 
           // 最慢 streak（剔除保底）
           if (!isPity && currentStreak > maxStreak) {
@@ -385,6 +388,10 @@ export const useAppStore = defineStore('app', () => {
             maxStreakEndRecord = record
             maxStreakItem = item
           }
+
+          // 记录每次出货间隔
+          intervals.push(currentStreak)
+          intervalCosts.push(Math.round(currentCostAccum))
 
           // 重置
           currentStreak = 0
@@ -407,7 +414,7 @@ export const useAppStore = defineStore('app', () => {
       firstAppearItem = pityFirst.item
     }
 
-    return { firstAppearPulls, firstAppearCost, firstAppearRecord, firstAppearItem, maxStreak, maxStreakEndRecord, maxStreakItem, pityHistory }
+    return { firstAppearPulls, firstAppearCost, firstAppearRecord, firstAppearItem, maxStreak, maxStreakEndRecord, maxStreakItem, pityHistory, intervals, intervalCosts }
   }
 
   function computeAnalysis(records, poolId = null) {
@@ -461,10 +468,10 @@ export const useAppStore = defineStore('app', () => {
     const legendaryStreaks = computeStreaks(records, 'legendary', legendaryPity)
     const epicStreaks = computeStreaks(records, 'epic', epicPity)
 
-    const avgLegendaryInterval = rarityCounts.legendary > 0 ? Math.round(totalPulls / rarityCounts.legendary) : null
-    const avgLegendaryCost = rarityCounts.legendary > 0 ? Math.round(totalCost / rarityCounts.legendary) : null
-    const avgEpicInterval = rarityCounts.epic > 0 ? Math.round(totalPulls / rarityCounts.epic) : null
-    const avgEpicCost = rarityCounts.epic > 0 ? Math.round(totalCost / rarityCounts.epic) : null
+    const avgLegendaryInterval = legendaryStreaks.intervals.length > 0 ? Math.round(legendaryStreaks.intervals.reduce((a, b) => a + b, 0) / legendaryStreaks.intervals.length) : null
+    const avgLegendaryCost = legendaryStreaks.intervalCosts.length > 0 ? Math.round(legendaryStreaks.intervalCosts.reduce((a, b) => a + b, 0) / legendaryStreaks.intervalCosts.length) : null
+    const avgEpicInterval = epicStreaks.intervals.length > 0 ? Math.round(epicStreaks.intervals.reduce((a, b) => a + b, 0) / epicStreaks.intervals.length) : null
+    const avgEpicCost = epicStreaks.intervalCosts.length > 0 ? Math.round(epicStreaks.intervalCosts.reduce((a, b) => a + b, 0) / epicStreaks.intervalCosts.length) : null
 
     return {
       totalDraws,
@@ -486,8 +493,8 @@ export const useAppStore = defineStore('app', () => {
 
   function mergeStreaksAcrossPools(poolsMap) {
     const result = {
-      legendaryStreaks: { firstAppearPulls: null, firstAppearCost: null, firstAppearRecord: null, firstAppearItem: null, maxStreak: 0, maxStreakEndRecord: null, maxStreakItem: null, pityHistory: [] },
-      epicStreaks: { firstAppearPulls: null, firstAppearCost: null, firstAppearRecord: null, firstAppearItem: null, maxStreak: 0, maxStreakEndRecord: null, maxStreakItem: null, pityHistory: [] },
+      legendaryStreaks: { firstAppearPulls: null, firstAppearCost: null, firstAppearRecord: null, firstAppearItem: null, maxStreak: 0, maxStreakEndRecord: null, maxStreakItem: null, pityHistory: [], intervals: [], intervalCosts: [] },
+      epicStreaks: { firstAppearPulls: null, firstAppearCost: null, firstAppearRecord: null, firstAppearItem: null, maxStreak: 0, maxStreakEndRecord: null, maxStreakItem: null, pityHistory: [], intervals: [], intervalCosts: [] },
     }
 
     Object.entries(poolsMap).forEach(([pid, pool]) => {
@@ -512,6 +519,8 @@ export const useAppStore = defineStore('app', () => {
         result.legendaryStreaks.maxStreakItem = lStreaks.maxStreakItem
       }
       result.legendaryStreaks.pityHistory.push(...lStreaks.pityHistory)
+      result.legendaryStreaks.intervals.push(...lStreaks.intervals)
+      result.legendaryStreaks.intervalCosts.push(...lStreaks.intervalCosts)
 
       // 最快出紫
       if (eStreaks.firstAppearPulls !== null) {
@@ -529,6 +538,8 @@ export const useAppStore = defineStore('app', () => {
         result.epicStreaks.maxStreakItem = eStreaks.maxStreakItem
       }
       result.epicStreaks.pityHistory.push(...eStreaks.pityHistory)
+      result.epicStreaks.intervals.push(...eStreaks.intervals)
+      result.epicStreaks.intervalCosts.push(...eStreaks.intervalCosts)
     })
 
     result.legendaryStreaks.pityHistory.sort((a, b) => b.record.timestamp - a.record.timestamp)
@@ -549,6 +560,12 @@ export const useAppStore = defineStore('app', () => {
     analysis.epicStreaks = merged.epicStreaks
     analysis.legendaryPityHistory = merged.legendaryStreaks.pityHistory
     analysis.epicPityHistory = merged.epicStreaks.pityHistory
+
+    // 全局平均值基于合并后的 intervals 重新计算（避免跨池空窗期摊入）
+    analysis.avgLegendaryInterval = merged.legendaryStreaks.intervals.length > 0 ? Math.round(merged.legendaryStreaks.intervals.reduce((a, b) => a + b, 0) / merged.legendaryStreaks.intervals.length) : null
+    analysis.avgLegendaryCost = merged.legendaryStreaks.intervalCosts.length > 0 ? Math.round(merged.legendaryStreaks.intervalCosts.reduce((a, b) => a + b, 0) / merged.legendaryStreaks.intervalCosts.length) : null
+    analysis.avgEpicInterval = merged.epicStreaks.intervals.length > 0 ? Math.round(merged.epicStreaks.intervals.reduce((a, b) => a + b, 0) / merged.epicStreaks.intervals.length) : null
+    analysis.avgEpicCost = merged.epicStreaks.intervalCosts.length > 0 ? Math.round(merged.epicStreaks.intervalCosts.reduce((a, b) => a + b, 0) / merged.epicStreaks.intervalCosts.length) : null
 
     return analysis
   })
