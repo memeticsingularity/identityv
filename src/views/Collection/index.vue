@@ -35,7 +35,7 @@
           <el-checkbox
             v-for="key in rarityOrder"
             :key="key"
-            :label="key"
+            :value="key"
             :style="{ '--el-checkbox-checked-text-color': RARITY_CONFIG[key].color }"
           >
             <span :style="{ color: RARITY_CONFIG[key].color }">{{ RARITY_CONFIG[key].label }}</span>
@@ -50,7 +50,7 @@
           :options="characterCascaderOptions"
           :props="{ multiple: true, emitPath: false }"
           filterable
-          show-all-levels="false"
+          :show-all-levels="false"
           collapse-tags
           collapse-tags-tooltip
           :max-collapse-tags="1"
@@ -65,20 +65,20 @@
       <div class="filter-group">
         <span class="filter-label">类型</span>
         <el-checkbox-group v-model="filterItemTypes" size="small">
-          <el-checkbox label="skin">时装</el-checkbox>
-          <el-checkbox label="accessory">随身物品</el-checkbox>
-          <el-checkbox label="emote">个性动作</el-checkbox>
-          <el-checkbox label="avatar">头像</el-checkbox>
-          <el-checkbox label="graffiti">涂鸦</el-checkbox>
+          <el-checkbox value="skin">时装</el-checkbox>
+          <el-checkbox value="accessory">随身物品</el-checkbox>
+          <el-checkbox value="emote">个性动作</el-checkbox>
+          <el-checkbox value="avatar">头像</el-checkbox>
+          <el-checkbox value="graffiti">涂鸦</el-checkbox>
         </el-checkbox-group>
       </div>
 
       <div class="filter-group">
         <span class="filter-label">状态</span>
         <el-radio-group v-model="filterOwned" size="small">
-          <el-radio-button label="">全部</el-radio-button>
-          <el-radio-button label="owned">已获得</el-radio-button>
-          <el-radio-button label="unowned">未获得</el-radio-button>
+          <el-radio-button value="">全部</el-radio-button>
+          <el-radio-button value="owned">已获得</el-radio-button>
+          <el-radio-button value="unowned">未获得</el-radio-button>
         </el-radio-group>
       </div>
 
