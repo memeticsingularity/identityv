@@ -1,9 +1,16 @@
 <template>
   <div class="recharge-page">
-    <div class="echoes-balance">
-      <img src="/assets/echoes.png" alt="回声" class="echoes-balance-icon" />
-      <span class="echoes-label">当前回声</span>
-      <span class="echoes-value">{{ store.echoes }}</span>
+    <div class="balance-bar">
+      <div class="echoes-balance">
+        <img src="/assets/echoes.png" alt="回声" class="echoes-balance-icon" />
+        <span class="echoes-label">当前回声</span>
+        <span class="echoes-value">{{ store.echoes }}</span>
+      </div>
+      <div class="echoes-balance total">
+        <img src="/assets/echoes.png" alt="回声" class="echoes-balance-icon" />
+        <span class="echoes-label">累计充值</span>
+        <span class="echoes-value">¥{{ store.totalRecharged }}</span>
+      </div>
     </div>
 
     <h2 class="page-title">回声充值</h2>
@@ -112,6 +119,13 @@ const visibleRecords = computed(() => {
   padding: 24px 16px;
 }
 
+.balance-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
 .echoes-balance {
   display: flex;
   align-items: center;
@@ -120,8 +134,12 @@ const visibleRecords = computed(() => {
   border: 1px solid #c9a227;
   border-radius: 12px;
   padding: 16px 24px;
-  margin-bottom: 24px;
   color: #c9a227;
+}
+
+.echoes-balance.total {
+  border-color: #8a2c2c;
+  background: linear-gradient(135deg, #2a1818, #3d2e20);
 }
 
 .echoes-label {
