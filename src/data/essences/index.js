@@ -1,36 +1,15 @@
 import { characters } from '../characters/index.js'
 import { getItemById } from '../items/index.js'
 import commonItems from './common-items.json'
-import s1e1 from './s1-e1.json'
-import s42e1 from './s42-e1.json'
-import s42e2 from './s42-e2.json'
-import s42e3 from './s42-e3.json'
-import abyss1 from './abyss-01.json'
-import abyss2 from './abyss-02.json'
-import abyss3 from './abyss-03.json'
-import abyss4 from './abyss-04.json'
-import abyss5 from './abyss-05.json'
-import abyss6 from './abyss-06.json'
-import abyss7 from './abyss-07.json'
-import abyss8 from './abyss-08.json'
-import abyss9 from './abyss-09.json'
 
-// ===== 精华池注册 =====
-const POOL_MAP = new Map([
-  ['s1-e1', s1e1],
-  ['s42-e1', s42e1],
-  ['s42-e2', s42e2],
-  ['s42-e3', s42e3],
-  ['abyss-01', abyss1],
-  ['abyss-02', abyss2],
-  ['abyss-03', abyss3],
-  ['abyss-04', abyss4],
-  ['abyss-05', abyss5],
-  ['abyss-06', abyss6],
-  ['abyss-07', abyss7],
-  ['abyss-08', abyss8],
-  ['abyss-09', abyss9],
-])
+// ===== 精华池注册（运行时注入） =====
+let POOL_MAP = new Map()
+
+export function setPools(pools) {
+  POOL_MAP = new Map(Object.entries(pools))
+  POOL_CONTENTS_CACHE.clear()
+  ITEM_POOL_MAP_CACHE = null
+}
 
 // ===== 精华池内容缓存（解析后缓存，避免重复计算） =====
 const POOL_CONTENTS_CACHE = new Map()

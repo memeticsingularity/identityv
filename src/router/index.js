@@ -1,16 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/Home/index.vue'
-import CharacterListView from '../views/CharacterList/index.vue'
-import CharacterDetailView from '../views/CharacterDetail/index.vue'
-import StoryListView from '../views/StoryList/index.vue'
-import MapListView from '../views/MapList/index.vue'
-import MapDetailView from '../views/MapDetail/index.vue'
-import AnalysisListView from '../views/AnalysisList/index.vue'
-import AnalysisDetailView from '../views/AnalysisDetail/index.vue'
-import RechargeView from '../views/Recharge/index.vue'
-import GachaView from '../views/Gacha/index.vue'
-import ProfileView from '../views/Profile/index.vue'
-import CollectionView from '../views/Collection/index.vue'
+
+const HomeView = () => import('../views/Home/index.vue')
+const CharacterListView = () => import('../views/CharacterList/index.vue')
+const CharacterDetailView = () => import('../views/CharacterDetail/index.vue')
+const StoryListView = () => import('../views/StoryList/index.vue')
+const MapListView = () => import('../views/MapList/index.vue')
+const MapDetailView = () => import('../views/MapDetail/index.vue')
+const AnalysisListView = () => import('../views/AnalysisList/index.vue')
+const AnalysisDetailView = () => import('../views/AnalysisDetail/index.vue')
+const RechargeView = () => import('../views/Recharge/index.vue')
+const GachaView = () => import('../views/Gacha/index.vue')
+const ProfileView = () => import('../views/Profile/index.vue')
+const CollectionView = () => import('../views/Collection/index.vue')
 
 /**
  * 路由配置表

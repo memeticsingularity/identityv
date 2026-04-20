@@ -5,27 +5,27 @@
     <!-- 全局统计卡片 -->
     <div class="stats-grid">
       <div class="stat-card">
-        <el-icon size="32" color="#c9a227"><Coin /></el-icon>
+        <img src="/assets/echoes.png" alt="回声" class="stat-icon" />
         <div class="stat-value">{{ store.echoes }}</div>
         <div class="stat-label">当前回声</div>
       </div>
       <div class="stat-card">
-        <el-icon size="32" color="#9c27b0"><MagicStick /></el-icon>
+        <img src="/assets/fragment.png" alt="碎片" class="stat-icon" />
         <div class="stat-value">{{ store.shards }}</div>
         <div class="stat-label">当前碎片</div>
       </div>
       <div class="stat-card">
-        <el-icon size="32" color="#ff4d4f"><Wallet /></el-icon>
+        <img src="/assets/echoes.png" alt="回声" class="stat-icon" />
         <div class="stat-value">¥{{ store.totalRecharged }}</div>
         <div class="stat-label">累计充值</div>
       </div>
       <div class="stat-card">
-        <el-icon size="32" color="#9c27b0"><Present /></el-icon>
+        <img src="/assets/echoes.png" alt="回声" class="stat-icon" />
         <div class="stat-value">{{ store.totalDraws }}</div>
         <div class="stat-label">总抽取次数</div>
       </div>
       <div class="stat-card">
-        <el-icon size="32" color="#ff9800"><Star /></el-icon>
+        <img src="/assets/echoes.png" alt="回声" class="stat-icon" />
         <div class="stat-value">{{ store.totalEchoesSpent }}</div>
         <div class="stat-label">消耗回声</div>
       </div>
@@ -47,14 +47,46 @@
 
     <!-- 各精华池保底进度 -->
     <div class="pool-pity-panel">
-      <h3>各精华池保底进度</h3>
-      <div class="pool-pity-list">
+      <div class="pool-pity-header-bar">
+        <h3>各精华池保底进度</h3>
+        <div class="pool-pity-filters">
+          <el-input
+            v-model="poolSearch"
+            placeholder="搜索精华池..."
+            size="small"
+            clearable
+            style="width: 160px"
+          />
+          <el-select v-model="poolFilterSeason" placeholder="全部赛季" clearable size="small" style="width: 120px" popper-class="dark-popper">
+            <el-option label="全部赛季" value="" />
+            <el-option
+              v-for="season in poolSeasonOptions"
+              :key="season"
+              :label="`第${season}赛季`"
+              :value="season"
+            />
+          </el-select>
+          <el-select v-model="poolSort" size="small" style="width: 140px" popper-class="dark-popper">
+            <el-option label="默认顺序" value="default" />
+            <el-option label="赛季（新→旧）" value="season-desc" />
+            <el-option label="赛季（旧→新）" value="season-asc" />
+            <el-option label="抽取次数（多→少）" value="draws-desc" />
+            <el-option label="抽取次数（少→多）" value="draws-asc" />
+            <el-option label="上线时间（新→旧）" value="date-desc" />
+            <el-option label="上线时间（旧→新）" value="date-asc" />
+          </el-select>
+        </div>
+      </div>
+      <div v-if="filteredActivePools.length === 0" class="empty-tip">
+        没有找到符合条件的精华池
+      </div>
+      <div v-else class="pool-pity-list">
         <div
-          v-for="pool in activePools"
+          v-for="pool in filteredActivePools"
           :key="pool.id"
           class="pool-pity-card"
           :class="{ active: pool.id === store.currentPoolId }"
-          @click="store.switchPool(pool.id)"
+          @click="goToGachaPool(pool.id)"
         >
           <div class="pool-pity-header">
             <span class="pool-name">{{ pool.name }}</span>
@@ -235,18 +267,30 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import { useRouter } from 'vue-router'
 import { useAppStore, RARITY_CONFIG, ESSENCE_POOLS } from '../../stores/app'
-import { Coin, Wallet, Present, Star, ArrowDown, ArrowUp, ArrowRight } from '@element-plus/icons-vue'
+import { Star, ArrowDown, ArrowUp, ArrowRight } from '@element-plus/icons-vue'
 
 const store = useAppStore()
+const router = useRouter()
 const recordFilter = ref('')
 const rechargeExpanded = ref(false)
 const drawExpanded = ref(false)
 const showResetConfirm = ref(false)
 const COLLAPSE_LIMIT = 3
 
+// 保底进度筛选/排序
+const poolSearch = ref('')
+const poolFilterSeason = ref('')
+const poolSort = ref('default')
+
 function confirmReset() {
   store.resetAccount()
+}
+
+function goToGachaPool(poolId) {
+  store.switchPool(poolId)
+  router.push('/gacha')
 }
 
 const visibleRechargeRecords = computed(() => {
@@ -259,7 +303,7 @@ const visibleDrawRecords = computed(() => {
   return filteredDrawRecords.value.slice(0, COLLAPSE_LIMIT)
 })
 
-// 有抽卡记录的精华池
+// 有抽卡记录的精华池（带筛选/排序）
 const activePools = computed(() => {
   return ESSENCE_POOLS.map(pool => {
     const p = store.pools[pool.id]
@@ -269,6 +313,57 @@ const activePools = computed(() => {
       pity: p.pity,
     }
   }).filter(p => p.draws > 0)
+})
+
+const poolSeasonOptions = computed(() => {
+  const seasons = new Set()
+  for (const pool of activePools.value) {
+    if (pool.season > 0) seasons.add(pool.season)
+  }
+  return Array.from(seasons).sort((a, b) => b - a)
+})
+
+const filteredActivePools = computed(() => {
+  let list = activePools.value
+
+  // 搜索
+  if (poolSearch.value) {
+    const kw = poolSearch.value.toLowerCase()
+    const seasonText = (s) => s > 0 ? `第${s}赛季` : ''
+    list = list.filter(p => {
+      const text = [p.name, seasonText(p.season)].filter(Boolean).join(' ').toLowerCase()
+      return text.includes(kw)
+    })
+  }
+
+  // 赛季筛选
+  if (poolFilterSeason.value) {
+    list = list.filter(p => p.season === poolFilterSeason.value)
+  }
+
+  // 排序
+  switch (poolSort.value) {
+    case 'season-desc':
+      list.sort((a, b) => (b.season || 0) - (a.season || 0))
+      break
+    case 'season-asc':
+      list.sort((a, b) => (a.season || 0) - (b.season || 0))
+      break
+    case 'draws-desc':
+      list.sort((a, b) => b.draws - a.draws)
+      break
+    case 'draws-asc':
+      list.sort((a, b) => a.draws - b.draws)
+      break
+    case 'date-desc':
+      list.sort((a, b) => (b.releaseDate || '').localeCompare(a.releaseDate || ''))
+      break
+    case 'date-asc':
+      list.sort((a, b) => (a.releaseDate || '').localeCompare(b.releaseDate || ''))
+      break
+  }
+
+  return list
 })
 
 // 过滤后的抽卡记录
@@ -330,6 +425,14 @@ const filteredDrawRecords = computed(() => {
   font-size: 14px;
 }
 
+.stat-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
 .pool-pity-panel {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -338,8 +441,24 @@ const filteredDrawRecords = computed(() => {
   margin-bottom: 32px;
 }
 
-.pool-pity-panel h3 {
+.pool-pity-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-bottom: 20px;
+}
+
+.pool-pity-header-bar h3 {
+  margin: 0;
+}
+
+.pool-pity-filters {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .pool-pity-list {

@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
 import { hasRealPool, drawFromPool, buildItemCatalog, getItemKey, getPoolContents } from '../data/essences/index.js'
 import { getItemById, getAllItems } from '../data/items/index.js'
+import { loadGameData } from '../services/data.js'
 
 // ===== 充值档位配置 =====
 export const RECHARGE_TIERS = [
@@ -210,10 +211,9 @@ export const useAppStore = defineStore('app', () => {
   const ownedItems = ref([]) // 存储稳定 key 字符串数组
   const ownedOrder = ref([]) // { key, timestamp }[]
 
-  // 数据迁移（旧 key → 新 item:xxx 格式）
-  const migrated = migrateOwnedData(ownedItems.value, ownedOrder.value)
-  ownedItems.value = migrated.items
-  ownedOrder.value = migrated.order
+  // --- 数据加载状态 ---
+  const isDataLoaded = ref(false)
+  const dataLoadError = ref(null)
 
   // --- 碎片系统 ---
   const shards = ref(0)
@@ -539,6 +539,22 @@ export const useAppStore = defineStore('app', () => {
     skinModalQueue.value.shift()
   }
 
+  async function init() {
+    if (isDataLoaded.value) return
+    try {
+      await loadGameData()
+      // 数据迁移（旧 key → 新 item:xxx 格式）
+      const migrated = migrateOwnedData(ownedItems.value, ownedOrder.value)
+      ownedItems.value = migrated.items
+      ownedOrder.value = migrated.order
+      isDataLoaded.value = true
+    } catch (err) {
+      dataLoadError.value = err.message || '数据加载失败'
+      console.error('[appStore] init failed:', err)
+      throw err
+    }
+  }
+
   function resetAccount() {
     localStorage.removeItem('app')
     location.reload()
@@ -564,11 +580,14 @@ export const useAppStore = defineStore('app', () => {
     totalShardsEarned,
     skinCount,
     skinModalQueue,
+    isDataLoaded,
+    dataLoadError,
     recharge,
     draw,
     switchPool,
     formatDate,
     closeSkinModal,
+    init,
     resetAccount,
   }
 }, {

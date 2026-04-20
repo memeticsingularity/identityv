@@ -48,7 +48,8 @@
         <el-cascader
           v-model="filterCharacters"
           :options="characterCascaderOptions"
-          :props="{ multiple: true, filterable: true, emitPath: false }"
+          :props="{ multiple: true, emitPath: false }"
+          filterable
           show-all-levels="false"
           collapse-tags
           collapse-tags-tooltip
@@ -57,7 +58,7 @@
           placeholder="选择角色"
           size="small"
           style="width: 220px"
-          popper-class="character-cascader-popper"
+          popper-class="dark-popper"
         />
       </div>
 
@@ -83,7 +84,7 @@
 
       <div class="filter-group">
         <span class="filter-label">来源</span>
-        <el-select v-model="filterPool" placeholder="全部精华池" clearable size="small" style="width: 160px">
+        <el-select v-model="filterPool" placeholder="全部精华池" clearable size="small" style="width: 160px" popper-class="dark-popper">
           <el-option label="全部精华池" value="" />
           <el-option
             v-for="pool in realPools"
@@ -94,14 +95,31 @@
         </el-select>
       </div>
 
+      <div class="filter-group" style="flex: 1; min-width: 200px">
+        <span class="filter-label">搜索</span>
+        <el-input
+          v-model="searchKeyword"
+          placeholder="搜索时装、赛季..."
+          size="small"
+          clearable
+          style="width: 100%; max-width: 280px"
+        >
+          <template #prefix>
+            <el-icon><Search /></el-icon>
+          </template>
+        </el-input>
+      </div>
+
       <div class="filter-group">
         <span class="filter-label">排序</span>
-        <el-select v-model="sortBy" size="small" style="width: 140px">
+        <el-select v-model="sortBy" size="small" style="width: 160px" popper-class="dark-popper">
           <el-option label="获得顺序" value="acquired" />
           <el-option label="稀有度（高→低）" value="rarity-desc" />
           <el-option label="稀有度（低→高）" value="rarity-asc" />
           <el-option label="角色名" value="character" />
           <el-option label="精华池" value="pool" />
+          <el-option label="上线时间（新→旧）" value="date-desc" />
+          <el-option label="上线时间（旧→新）" value="date-asc" />
         </el-select>
       </div>
     </div>
@@ -140,13 +158,13 @@
             {{ item.displayName || item.name }}
           </div>
           <div v-if="item.characterName" class="item-character">
-            角色：{{ item.characterName }}
+            角色：<a class="link-text" @click.stop="goToCharacter(item.characterId)">{{ item.characterName }}</a>
           </div>
           <div v-if="item.category" class="item-category">
             类型：{{ categoryLabel(item.category) }}
           </div>
           <div class="item-source">
-            来源：{{ poolName(item.poolId) }}
+            来源：<a class="link-text" @click.stop="goToPool(item.poolId)">{{ poolName(item.poolId) }}</a>
           </div>
           <div v-if="isOwned(item.key) && item.itemType === 'skin'" class="item-acquired">
             <span>第 {{ acquiredIndex(item.key) }} 个获得</span>
@@ -198,6 +216,7 @@
 <script setup>
 import { ref, computed, watch } from 'vue'
 import { useRouter } from 'vue-router'
+import { Search } from '@element-plus/icons-vue'
 import { useAppStore, RARITY_CONFIG, ESSENCE_POOLS } from '../../stores/app'
 import { buildItemCatalog } from '../../data/essences/index.js'
 import characters from '../../data/characters/index.js'
@@ -214,12 +233,13 @@ const filterCharacters = ref([])
 const filterItemTypes = ref([])
 const filterOwned = ref('')
 const filterPool = ref('')
+const searchKeyword = ref('')
 const sortBy = ref('acquired')
 const currentPage = ref(1)
 const pageSize = ref(15)
 
 // 筛选条件变化时重置到第 1 页
-watch([filterRarity, filterCharacters, filterItemTypes, filterOwned, filterPool, sortBy], () => {
+watch([filterRarity, filterCharacters, filterItemTypes, filterOwned, filterPool, searchKeyword, sortBy], () => {
   currentPage.value = 1
 }, { deep: true })
 
@@ -313,6 +333,18 @@ const filteredItems = computed(() => {
     }
     if (filterItemTypes.value.length > 0 && !filterItemTypes.value.includes(getItemCategory(item))) return false
     if (filterPool.value && item.poolId !== filterPool.value) return false
+    if (searchKeyword.value) {
+      const kw = searchKeyword.value.toLowerCase()
+      const pool = ESSENCE_POOLS.find(p => p.id === item.poolId)
+      const seasonText = pool?.season > 0 ? `第${pool.season}赛季` : ''
+      const text = [
+        item.name,
+        item.displayName,
+        pool?.name,
+        seasonText,
+      ].filter(Boolean).join(' ').toLowerCase()
+      if (!text.includes(kw)) return false
+    }
     if (filterOwned.value === 'owned' && !isOwned(item.key)) return false
     if (filterOwned.value === 'unowned' && isOwned(item.key)) return false
     return true
@@ -353,6 +385,16 @@ const filteredItems = computed(() => {
       // 按精华池名称拼音排序
       list.sort((a, b) => poolName(a.poolId).localeCompare(poolName(b.poolId), 'zh-CN'))
       break
+    case 'date-desc': {
+      const poolDate = (poolId) => ESSENCE_POOLS.find(p => p.id === poolId)?.releaseDate || ''
+      list.sort((a, b) => poolDate(b.poolId).localeCompare(poolDate(a.poolId)))
+      break
+    }
+    case 'date-asc': {
+      const poolDate = (poolId) => ESSENCE_POOLS.find(p => p.id === poolId)?.releaseDate || ''
+      list.sort((a, b) => poolDate(a.poolId).localeCompare(poolDate(b.poolId)))
+      break
+    }
   }
 
   return list
@@ -558,6 +600,14 @@ const pagedItems = computed(() => {
   font-size: 12px;
   color: #a89b8c;
   line-height: 1.6;
+}
+
+.link-text {
+  color: var(--accent-gold);
+  cursor: pointer;
+}
+.link-text:hover {
+  text-decoration: underline;
 }
 
 .card-footer {

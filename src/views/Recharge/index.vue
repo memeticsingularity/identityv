@@ -1,7 +1,7 @@
 <template>
   <div class="recharge-page">
     <div class="echoes-balance">
-      <el-icon size="28"><Coin /></el-icon>
+      <img src="/assets/echoes.png" alt="回声" class="echoes-balance-icon" />
       <span class="echoes-label">当前回声</span>
       <span class="echoes-value">{{ store.echoes }}</span>
     </div>
@@ -93,7 +93,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useAppStore, RECHARGE_TIERS } from '../../stores/app'
-import { Coin, ArrowDown, ArrowUp } from '@element-plus/icons-vue'
+import { ArrowDown, ArrowUp } from '@element-plus/icons-vue'
 
 const store = useAppStore()
 const isExpanded = ref(false)
@@ -127,6 +127,12 @@ const visibleRecords = computed(() => {
 .echoes-label {
   font-size: 14px;
   color: #a89b8c;
+}
+
+.echoes-balance-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .echoes-value {

@@ -3,12 +3,12 @@
     <!-- 顶部信息栏 -->
     <div class="info-bar">
       <div class="info-item">
-        <el-icon size="20"><Coin /></el-icon>
+        <img src="/assets/echoes.png" alt="回声" class="echoes-top-icon" />
         <span class="info-label">回声</span>
         <span class="info-value">{{ store.echoes }}</span>
       </div>
       <div class="info-item">
-        <el-icon size="20" color="#9c27b0"><MagicStick /></el-icon>
+        <img src="/assets/fragment.png" alt="碎片" class="fragment-top-icon" />
         <span class="info-label">碎片</span>
         <span class="info-value" style="color:#9c27b0">{{ store.shards }}</span>
       </div>
@@ -17,6 +17,7 @@
         <span class="info-value">{{ store.totalDraws }}</span>
       </div>
       <div class="info-item">
+        <img src="/assets/echoes.png" alt="回声" class="echoes-top-icon" />
         <span class="info-label">消耗回声</span>
         <span class="info-value">{{ store.totalEchoesSpent }}</span>
       </div>
@@ -32,6 +33,7 @@
         filterable
         placeholder="选择赛季和精华"
         style="width: 260px"
+        popper-class="dark-popper"
         @change="onPoolChange"
       />
     </div>
@@ -125,7 +127,7 @@
           当前回声不足，是否前往充值回声？
         </div>
         <div class="echoes-display">
-          <el-icon size="20"><Coin /></el-icon>
+          <img src="/assets/echoes.png" alt="回声" class="echoes-modal-icon" />
           <span class="echoes-number">{{ store.echoes }}</span>
         </div>
         <div class="modal-actions">
@@ -144,7 +146,7 @@
         </div>
         <div class="recharge-body">
           <div class="echoes-balance-mini">
-            <el-icon size="20"><Coin /></el-icon>
+            <img src="/assets/echoes.png" alt="回声" class="echoes-modal-icon" />
             <span class="echoes-label">当前回声</span>
             <span class="echoes-value">{{ store.echoes }}</span>
           </div>
@@ -326,7 +328,7 @@
 import { ref, computed } from 'vue'
 import { useAppStore, RARITY_CONFIG, POOL_CASCADER_OPTIONS, getEssenceIcon, RECHARGE_TIERS } from '../../stores/app'
 import { buildItemCatalog } from '../../data/essences/index.js'
-import { Coin, Present, ArrowUp, ArrowDown, InfoFilled, MagicStick } from '@element-plus/icons-vue'
+import { Present, ArrowUp, ArrowDown, InfoFilled } from '@element-plus/icons-vue'
 
 const store = useAppStore()
 const isSpinning = ref(false)
@@ -613,6 +615,18 @@ async function handleDraw(type) {
   color: #c9a227;
   font-size: 20px;
   font-weight: bold;
+}
+
+.fragment-top-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.echoes-top-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 /* ===== 精华池选择器 ===== */
@@ -1338,6 +1352,12 @@ async function handleDraw(type) {
   font-weight: bold;
 }
 
+.echoes-modal-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 .modal-actions {
   display: flex;
   gap: 16px;
@@ -1434,6 +1454,12 @@ async function handleDraw(type) {
 .echoes-balance-mini .echoes-label {
   font-size: 13px;
   color: #a89b8c;
+}
+
+.echoes-balance-mini .echoes-modal-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .echoes-balance-mini .echoes-value {

@@ -38,3 +38,68 @@ a:hover {
   margin: 0 auto;
   padding: 0 16px;
 }
+
+/* ===== Element Plus 深色下拉面板 ===== */
+.dark-popper.el-popper,
+.dark-popper .el-popper {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5) !important;
+}
+.dark-popper .el-popper__arrow::before {
+  background: var(--bg-card) !important;
+  border-color: var(--border) !important;
+}
+
+/* cascader panel */
+.dark-popper .el-cascader-panel {
+  background: var(--bg-card);
+}
+.dark-popper .el-cascader-menu {
+  border-right-color: var(--border);
+}
+.dark-popper .el-cascader-node {
+  color: var(--text-main);
+}
+.dark-popper .el-cascader-node:not(.is-disabled):hover,
+.dark-popper .el-cascader-node.in-active-path,
+.dark-popper .el-cascader-node.is-active {
+  background: var(--bg-hover);
+}
+.dark-popper .el-cascader-node__label {
+  color: var(--text-main);
+}
+.dark-popper .el-cascader-menu__empty-text {
+  color: var(--text-muted);
+}
+.dark-popper .el-checkbox__inner {
+  background: transparent;
+  border-color: var(--border);
+}
+.dark-popper .el-checkbox__input.is-checked .el-checkbox__inner {
+  background: var(--accent-gold);
+  border-color: var(--accent-gold);
+}
+.dark-popper .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background: var(--accent-gold);
+  border-color: var(--accent-gold);
+}
+
+/* select dropdown */
+.dark-popper .el-select-dropdown {
+  background: var(--bg-card);
+}
+.dark-popper .el-select-dropdown__item {
+  color: var(--text-main);
+}
+.dark-popper .el-select-dropdown__item.hover,
+.dark-popper .el-select-dropdown__item:hover {
+  background: var(--bg-hover);
+}
+.dark-popper .el-select-dropdown__item.selected {
+  color: var(--accent-gold);
+  font-weight: bold;
+}
+.dark-popper .el-select-dropdown__empty {
+  color: var(--text-muted);
+}

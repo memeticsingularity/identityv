@@ -21,6 +21,7 @@
 | v2.3 | 2026-04-20 | 抽卡结果区域常驻占位；首次获得弹窗延迟到动画结束后；代码注释补全 | Claude |
 | v3.0 | 2026-04-20 | 收藏图鉴筛选大改：角色级联多选、类型筛选、获得顺序仅时装显示、弹窗期间禁用抽取 | Claude |
 | v3.1 | 2026-04-20 | 收藏图鉴分页：默认 15/页，支持 15/30/60/100 切换，筛选重置页码 | Claude |
+| v4.0 | 2026-04-20 | 静态架构重构、暗色下拉框、回声/碎片图标统一、收藏图鉴搜索/跳转、保底进度筛选排序 | Claude |
 
 ---
 
@@ -558,6 +559,136 @@ const pagedItems = computed(() => {
 | 文件 | 改动 |
 |------|------|
 | `src/views/Collection/index.vue` | 新增分页状态、分页计算属性、分页栏；网格改为渲染 `pagedItems` |
+
+---
+
+## v4.0 — 静态架构重构与 UI 统一（2026-04-20）
+
+### 背景
+
+随着物品数量增长到 1000+，单次打包体积膨胀，且所有数据硬编码在 JS 中，未来迁移到后端成本高。用户希望：
+1. 减小包体积，实现按需加载
+2. 数据层与 bundler 解耦，方便后续改为 `fetch('/api/...')`
+3. Element Plus 下拉框等组件风格与暗色主题统一
+4. 回声/碎片等核心货币使用游戏内真实图标
+
+---
+
+### 一、静态数据架构
+
+**目标**：运行时从 `public/data/` 加载 JSON，替代编译期 `import.meta.glob` 和静态 `import`。
+
+**构建脚本**：`scripts/build-data.cjs`
+- 遍历 `src/data/characters/` 与 `src/data/essences/`，合并为 `public/data/characters/index.json`、`public/data/items/index.json`、`public/data/essences/pools.json`
+- `package.json` 中 `dev` / `build` 前置 `npm run build-data`
+
+**数据注入层**：`src/services/data.js`
+- `fetchJSON()` 带内存缓存
+- `loadGameData()` 并行拉取 3 个 JSON，通过 `setCharacters()` / `setItems()` / `setPools()` 注入到数据模块的可变数组/Map 中
+
+**数据模块改造**：
+- `src/data/characters/index.js`：`characters` 从静态数组改为可变数组 + `setCharacters()`
+- `src/data/items/index.js`：`allItems` + `ITEM_INDEX` Map，支持 `setItems()` 批量替换
+- `src/data/essences/index.js`：`POOL_MAP` 从静态 `import.meta.glob` 改为可变 Map + `setPools()`
+
+**应用启动时序**：`src/main.js`
+```js
+const store = useAppStore()
+store.init().then(() => {
+  app.use(MotionPlugin)
+  app.mount('#app')
+}).catch(err => {
+  // 显示"数据加载失败，请刷新页面重试"
+})
+```
+`index.html` 中 `#app` 内保留 `id="loading"` 占位 div，加载期间显示 Loading。
+
+**意义**：后续只需修改 `src/services/data.js` 的 3 行 `fetchJSON` 为后端 API 地址，其余业务代码零改动。
+
+---
+
+### 二、性能优化
+
+**Element Plus 图标全局导入**：`main.js` 中 `import * as ElementPlusIconsVue` 导致 vendor chunk 高达 1133KB。
+- **方案**：移除全局注册，所有图标改为局部导入（`import { Coin, Star } from '@element-plus/icons-vue'`）
+- NavHeader 中的图标改为内联 SVG
+- **结果**：vendor chunk 降至 ~905KB
+
+---
+
+### 三、UI 风格统一
+
+**暗色下拉框**：Element Plus 的 cascader / select 下拉面板默认白色，与整体暗色主题冲突。
+- **方案**：全局 CSS 类 `.dark-popper`，覆盖背景色、边框色、hover 色、箭头色、checkbox 色等
+- 所有 `el-cascader` / `el-select` 增加 `popper-class="dark-popper"`
+- **文件**：`src/assets/style.css`
+
+**货币图标统一**：
+| 货币 | 旧图标 | 新图标 |
+|------|--------|--------|
+| 回声 | `el-icon Coin` (Element Plus) | `<img src="/assets/echoes.png" />` |
+| 碎片 | `el-icon MagicStick` | `<img src="/assets/fragment.png" />` |
+
+**影响页面**：
+- `src/views/Gacha/index.vue`：顶部信息栏、回声不足弹窗、充值弹窗
+- `src/views/Profile/index.vue`：统计卡片
+- `src/views/Recharge/index.vue`：顶部余额
+
+---
+
+### 四、收藏图鉴交互增强
+
+**可点击跳转**：
+- 物品卡片中「角色：xxx」变为链接，点击跳转到 `/characters/{characterId}`
+- 物品卡片中「来源：xxx」变为链接，点击调用 `goToPool()` 切换精华池并跳转 `/gacha`
+- 未获得物品的「前往抽取」按钮保留
+
+**搜索框**（替代原有的赛季筛选）：
+- 输入关键词匹配「时装名」「精华池名」「赛季名」（如"42赛季"）
+- 角色筛选已通过 `el-cascader` 的 `filterable` 实现，搜索框不再重复覆盖角色名
+- `placeholder="搜索时装、赛季..."`
+
+**排序新增上线时间**：
+- `date-desc`：按精华池 `releaseDate` 降序（新→旧）
+- `date-asc`：按精华池 `releaseDate` 升序（旧→新）
+
+**关键文件**：`src/views/Collection/index.vue`
+
+---
+
+### 五、个人中心保底进度增强
+
+**点击跳转**：保底进度卡片点击后调用 `goToGachaPool(pool.id)`，自动切换精华池并跳转到抽卡页面。
+
+**搜索 / 赛季筛选 / 排序**：
+- 在「各精华池保底进度」标题行右侧增加筛选栏
+- `el-input` 搜索精华池名称/赛季
+- `el-select` 赛季筛选（从 `activePools` 动态提取赛季号）
+- `el-select` 排序：默认 / 赛季新旧 / 抽取次数多少 / 上线时间新旧
+- 无结果时显示 `empty-tip`
+
+**关键文件**：`src/views/Profile/index.vue`
+
+---
+
+### 关键文件改动清单（v4.0）
+
+| 文件 | 改动类型 | 说明 |
+|------|----------|------|
+| `scripts/build-data.cjs` | **新增** | 构建脚本：合并 `src/data/` → `public/data/` |
+| `package.json` | 修改 | `build-data` 脚本；`dev`/`build` 前置运行 |
+| `src/services/data.js` | **新增** | `fetchJSON` + `loadGameData` 运行时数据加载 |
+| `src/data/characters/index.js` | 修改 | 静态导入 → 可变数组 + `setCharacters()` |
+| `src/data/items/index.js` | 修改 | 静态导入 → 可变数组/Map + `setItems()` |
+| `src/data/essences/index.js` | 修改 | `import.meta.glob` → 可变 Map + `setPools()` |
+| `src/stores/app.js` | 修改 | 新增 `init()` 异步加载；`isDataLoaded`/`dataLoadError` |
+| `src/main.js` | 修改 | `store.init()` 完成后才 `mount('#app')` |
+| `index.html` | 修改 | `#app` 内新增 `id="loading"` 占位 |
+| `src/assets/style.css` | 修改 | 新增 `.dark-popper` 暗色下拉框主题 |
+| `src/views/Gacha/index.vue` | 修改 | 移除全局图标导入；回声/碎片图标替换；下拉框加 `dark-popper` |
+| `src/views/Profile/index.vue` | 修改 | 回声/碎片图标替换；保底进度支持筛选/排序/搜索/点击跳转 |
+| `src/views/Recharge/index.vue` | 修改 | 回声图标替换；移除 `Coin` 导入 |
+| `src/views/Collection/index.vue` | 修改 | 角色/来源可点击；搜索框；上线时间排序；赛季筛选移除 |
 
 ---
 
