@@ -1,0 +1,28 @@
+[
+  {
+    "id": "emote-tm-prepare",
+    "name": "准备",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "toy_merchant",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  },
+  {
+    "id": "emote-tm-shame",
+    "name": "羞愧",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "toy_merchant",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

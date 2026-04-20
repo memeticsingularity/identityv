@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-hermit-solemn-blue",
+    "name": "庄重蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "hermit",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-hermit-pessimistic-cyan",
+    "name": "悲观青",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "hermit",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  }
+]

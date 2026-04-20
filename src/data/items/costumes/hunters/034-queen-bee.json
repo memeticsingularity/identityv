@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-queen-bee-bee-venom",
+    "name": "蜂毒",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "queen_bee",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  }
+]

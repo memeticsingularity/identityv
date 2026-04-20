@@ -1,0 +1,15 @@
+[
+  {
+    "id": "emote-undead-laugh",
+    "name": "大笑",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "undead",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "emote-nightmare-demonstrate",
+    "name": "示威",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "nightmare",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  },
+  {
+    "id": "emote-nightmare-laugh",
+    "name": "大笑",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "nightmare",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  }
+]

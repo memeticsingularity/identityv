@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-geisha-yellow-sleeve",
+    "name": "黄袖",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "geisha",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  },
+  {
+    "id": "costume-geisha-shattered-porcelain",
+    "name": "碎裂瓷人",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "geisha",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  },
+  {
+    "id": "costume-geisha-eternal-night-aurora",
+    "name": "永夜极光",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "geisha",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  }
+]

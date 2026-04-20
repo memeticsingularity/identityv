@@ -19,6 +19,8 @@
 | v2.1 | 2026-04-20 | 奇珍连续重复规则修正（29-1 起才有限制，与 37-3 保底分界解耦） | Claude |
 | v2.2 | 2026-04-20 | 内容说明弹窗、概率文案注释、Dialog 全局样式方案 | Claude |
 | v2.3 | 2026-04-20 | 抽卡结果区域常驻占位；首次获得弹窗延迟到动画结束后；代码注释补全 | Claude |
+| v3.0 | 2026-04-20 | 收藏图鉴筛选大改：角色级联多选、类型筛选、获得顺序仅时装显示、弹窗期间禁用抽取 | Claude |
+| v3.1 | 2026-04-20 | 收藏图鉴分页：默认 15/页，支持 15/30/60/100 切换，筛选重置页码 | Claude |
 
 ---
 
@@ -232,7 +234,8 @@ characterId: "queen-bee"   id: "queen_bee"
 | `src/data/essences/index.js` | 修改 | 新增 `getItemKey()`、`buildItemCatalog()`、`getItemPool()`；common items 返回 `id` |
 | `src/stores/app.js` | 修改 | 新增 `shards`/`skinCount`/`skinModalQueue`/`ownedItems`/`ownedOrder`；`draw()` 返回碎片/弹窗数据；新增 `resetAccount()` |
 | `src/views/Collection/index.vue` | 新增 | 收藏图鉴页面：统计、筛选、排序、卡片网格 |
-| `src/views/Gacha/index.vue` | 修改 | 新增碎片余额显示、碎片返还提示、首次获得时装弹窗 |
+| `src/views/Collection/index.vue` | 修改 | 角色级联多选、类型筛选、获得顺序仅时装显示 |
+| `src/views/Gacha/index.vue` | 修改 | 新增碎片余额显示、碎片返还提示、首次获得时装弹窗、弹窗期间禁用抽取 |
 | `src/views/Profile/index.vue` | 修改 | 新增碎片统计、收藏图鉴入口、注销账号按钮和弹窗 |
 | `src/router/index.js` | 修改 | 新增 `/collection` 路由 |
 | `src/components/NavHeader.vue` | 修改 | 新增「收藏图鉴」导航链接 |
@@ -421,6 +424,142 @@ if (result.skinModals?.length > 0) {
 ```
 
 **教训**：所有需要 teleport 到 body 的 Element Plus 组件（Dialog、Drawer、Popconfirm、MessageBox 等），其外层容器样式都不能放在 scoped CSS 里，必须走全局样式。
+
+---
+
+## v3.0 — 收藏图鉴筛选大改（2026-04-20）
+
+### 需求
+
+用户提出 5 点改进：
+1. 角色筛选支持两级：先选阵营（求生者/监管者/NPC），再选具体角色
+2. 支持输入角色名快速搜索，并支持同时选中多个角色
+3. 支持物品类型多选筛选（时装/随身物品/个性动作/头像/涂鸦）
+4. 只有时装显示「第 X 个获得」，其他物品不显示
+5. 抽卡动画和弹窗期间，禁用抽取按钮，防止误触
+
+### 角色筛选：级联选择器（el-cascader）
+
+**替换组件**：单选 `el-select` → `el-cascader`（multiple + filterable + collapse-tags）
+
+**数据结构**：
+
+```js
+[
+  { value: 'survivor', label: '求生者', children: [...] },
+  { value: 'hunter',   label: '监管者', children: [...] },
+  { value: 'npc',      label: 'NPC',    children: [...] },
+]
+```
+
+**交互**：
+- 点击复选框 → 选中整个阵营（所有该阵营角色的物品）
+- 展开二级 → 可单独勾选/取消具体角色
+- 输入搜索 → 可跨级搜索角色名
+
+**标签显示优化**：
+- `show-all-levels="false"`：标签只显示角色名，不显示完整路径
+- `collapse-tags` + `:max-collapse-tags="1"`：最多显示 1 个标签，其余折叠为 `+N`
+- CSS 限制标签区域高度，防止溢出
+
+### 物品类型筛选
+
+新增「类型」筛选组：
+
+```vue
+<el-checkbox-group v-model="filterItemTypes" size="small">
+  <el-checkbox label="skin">时装</el-checkbox>
+  <el-checkbox label="accessory">随身物品</el-checkbox>
+  <el-checkbox label="emote">个性动作</el-checkbox>
+  <el-checkbox label="avatar">头像</el-checkbox>
+  <el-checkbox label="graffiti">涂鸦</el-checkbox>
+</el-checkbox-group>
+```
+
+**兼容两种字段**：
+- character items 用 `itemType`（skin/accessory/emote）
+- common items 用 `category`（avatar/graffiti/emote）
+- 统一通过 `getItemCategory(item)` 获取
+
+### 获得顺序仅时装显示
+
+收藏图鉴卡片中的「第 X 个获得」信息，从 `isOwned(item.key)` 改为：
+
+```vue
+<div v-if="isOwned(item.key) && item.itemType === 'skin'" class="item-acquired">
+```
+
+**配套 Store 逻辑**：`draw()` 中只给 `itemType === 'skin'` 的首次获得物品入 `skinModalQueue`，只有时装弹窗。
+
+### 弹窗期间禁用抽取按钮
+
+抽卡按钮的 `:disabled` 条件从 `isSpinning` 扩展为：
+
+```vue
+:disabled="isSpinning || store.skinModalQueue.length > 0"
+```
+
+确保所有动画（光效、卡片弹出、碎片翻转）和弹窗队列全部结束后，才能进行下一次抽取。
+
+### 关键文件改动
+
+| 文件 | 改动 |
+|------|------|
+| `src/views/Collection/index.vue` | 角色筛选改为级联选择器；新增类型筛选；筛选逻辑支持多角色+多类型；获得顺序仅时装显示 |
+| `src/views/Gacha/index.vue` | 抽取按钮禁用条件增加 `skinModalQueue.length > 0` |
+
+---
+
+## v3.1 — 收藏图鉴分页（2026-04-20）
+
+### 背景
+
+收藏图鉴物品总数已增长至 500+，全量渲染导致页面滚动过长、DOM 节点过多。用户反馈需要分页或虚拟滚动提升浏览体验。
+
+### 方案：Element Plus 分页
+
+选用 `el-pagination` 而非虚拟滚动，原因：
+- 图鉴以「浏览+筛选」为主，分页更符合用户心智模型
+- 虚拟滚动对 CSS Grid 布局支持不佳（`vue-virtual-scroller` 主要针对一维列表）
+- 分页实现简单，无额外依赖
+
+**实现**：
+
+```vue
+<!-- 分页栏 -->
+<div class="pagination-bar">
+  <el-pagination
+    v-model:current-page="currentPage"
+    v-model:page-size="pageSize"
+    :total="filteredItems.length"
+    :page-sizes="[15, 30, 60, 100]"
+    layout="total, sizes, prev, pager, next, jumper"
+    background
+    size="small"
+  />
+</div>
+```
+
+**分页数据**：
+
+```js
+const pagedItems = computed(() => {
+  const start = (currentPage.value - 1) * pageSize.value
+  return filteredItems.value.slice(start, start + pageSize.value)
+})
+```
+
+**交互细节**：
+- 默认每页 15 条（约 3 行 × 5 列），兼顾首屏展示密度和加载性能
+- 筛选条件变化时通过 `watch` 自动重置到第 1 页，避免「筛选后当前页超出范围」
+
+### 关键文件改动
+
+| 文件 | 改动 |
+|------|------|
+| `src/views/Collection/index.vue` | 新增分页状态、分页计算属性、分页栏；网格改为渲染 `pagedItems` |
+
+---
 
 ## 后续待办
 

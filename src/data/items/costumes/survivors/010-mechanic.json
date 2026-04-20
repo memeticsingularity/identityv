@@ -1,0 +1,55 @@
+[
+  {
+    "id": "costume-mechanic-ink-black",
+    "name": "墨黑",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-mech-ship-tech",
+    "name": "船舶技师",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "mechanic",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  },
+  {
+    "id": "costume-mech-cute-pink",
+    "name": "可爱粉",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  },
+  {
+    "id": "costume-mech-puppet-master",
+    "name": "人偶师",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  }
+]

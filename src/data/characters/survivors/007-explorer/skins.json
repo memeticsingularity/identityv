@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "name": "科研员",
+    "rarity": "独特",
+    "obtain": "第1赛季·精华1",
+    "description": "冒险家独特时装"
+  },
+  {
+    "name": "青葱绿",
+    "rarity": "罕见",
+    "obtain": "第1赛季·精华1",
+    "description": "冒险家罕见时装"
+  }
+]

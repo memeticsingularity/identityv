@@ -1,0 +1,16 @@
+[
+  {
+    "id": "accessory-law-pirate-compass",
+    "name": "海盗罗盘",
+    "rarity": "epic",
+    "type": "accessory",
+    "characterId": "lawyer",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  }
+]

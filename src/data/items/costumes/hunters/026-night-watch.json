@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-night-watch-sand-brown",
+    "name": "沙土褐",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "night_watch",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-nw-jungle-green",
+    "name": "丛林绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "night_watch",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  },
+  {
+    "id": "costume-nw-tower-top",
+    "name": "塔顶人",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "night_watch",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  }
+]

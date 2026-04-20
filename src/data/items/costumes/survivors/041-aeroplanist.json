@@ -1,0 +1,80 @@
+[
+  {
+    "id": "costume-aeroplanist-spiral-wing",
+    "name": "螺旋翼",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "aeroplanist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-aeroplanist-ideal-red",
+    "name": "理想红",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "aeroplanist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-aero-failed-exploration",
+    "name": "失败的探索",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "aeroplanist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  },
+  {
+    "id": "costume-aero-timid-white",
+    "name": "怯懦白",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "aeroplanist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  },
+  {
+    "id": "costume-aero-watch-tower",
+    "name": "警戒哨台",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "aeroplanist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  },
+  {
+    "id": "costume-aero-silent-brown",
+    "name": "缄默棕",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "aeroplanist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  }
+]

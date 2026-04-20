@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-viol-blue-gold",
+    "name": "蓝金调",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "violinist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  },
+  {
+    "id": "costume-viol-military-band",
+    "name": "军乐队",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "violinist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  }
+]

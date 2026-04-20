@@ -1,0 +1,42 @@
+[
+  {
+    "id": "costume-cowboy-iron-hat-sheriff",
+    "name": "铁帽警长",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "cowboy",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "costume-cowboy-riding-crop",
+    "name": "教鞭",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "cowboy",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  },
+  {
+    "id": "costume-cowboy-withered-yellow",
+    "name": "枯草黄",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "cowboy",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  }
+]

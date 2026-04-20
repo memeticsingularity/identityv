@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-bat-peace-officer",
+    "name": "治安官",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "batter",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  },
+  {
+    "id": "costume-bat-dusty",
+    "name": "蒙尘",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "batter",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

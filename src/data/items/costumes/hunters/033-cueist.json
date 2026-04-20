@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-cueist-dark-night-finale",
+    "name": "幽夜终章",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "cueist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-cueist-withdraw-green",
+    "name": "退杆绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "cueist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  }
+]

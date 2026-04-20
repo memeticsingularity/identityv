@@ -1,0 +1,10 @@
+[
+  {
+    "id": "graffiti-co-silhouette",
+    "name": "剪影",
+    "rarity": "common",
+    "type": "graffiti",
+    "characterId": "coordinator",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  }
+]

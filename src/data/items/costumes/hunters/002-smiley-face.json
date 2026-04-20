@@ -1,0 +1,42 @@
+[
+  {
+    "id": "costume-sf-green-hat",
+    "name": "绿帽",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-sf-iron-hat-captain",
+    "name": "铁帽团长",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "costume-sf-otherworld-walker",
+    "name": "异界行者",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  }
+]

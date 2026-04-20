@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "name": "理发师",
+    "rarity": "独特",
+    "obtain": "第1赛季·精华1",
+    "description": "杰克独特时装"
+  },
+  {
+    "name": "浅叶爵",
+    "rarity": "罕见",
+    "obtain": "第1赛季·精华1",
+    "description": "杰克罕见时装"
+  },
+  {
+    "name": "玫瑰爵",
+    "rarity": "罕见",
+    "obtain": "第1赛季·精华1",
+    "description": "杰克罕见时装"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-female-dancer-witch-cloud",
+    "name": "巫云",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "female_dancer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-fd-jade-dance",
+    "name": "翠舞",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "female_dancer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  }
+]

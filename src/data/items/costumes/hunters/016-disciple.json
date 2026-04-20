@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-disc-apocalypse-faith",
+    "name": "末世信仰",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "disciple",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  }
+]

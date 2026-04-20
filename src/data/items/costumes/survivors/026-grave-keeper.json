@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-gk-red-sand",
+    "name": "红沙土",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "grave_keeper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  },
+  {
+    "id": "costume-gk-alien-mining",
+    "name": "异星开采",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "grave_keeper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-goatman-rust-yellow",
+    "name": "锈色黄",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "goatman",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-goatman-safety-line",
+    "name": "安全线",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "goatman",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-goatman-chain-silver",
+    "name": "锁链银",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "goatman",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

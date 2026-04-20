@@ -1,0 +1,16 @@
+[
+  {
+    "id": "costume-tme-sound-wave",
+    "name": "音波",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "the_minds_eye",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  }
+]

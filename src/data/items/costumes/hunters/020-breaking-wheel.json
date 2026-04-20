@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-bw-traffic-flag",
+    "name": "交通旗",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "breaking_wheel",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  },
+  {
+    "id": "costume-bw-taciturn-brown",
+    "name": "寡言棕",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "breaking_wheel",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

@@ -1286,5 +1286,103 @@
     "rarity": "rare",
     "category": "graffiti",
     "nameEn": "罕见涂鸦-法罗女士-苍白冠冕"
+  },
+  {
+    "id": "avatar-r-cute-smiley_face",
+    "name": "罕见头像-萌版小丑",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-萌版小丑"
+  },
+  {
+    "id": "avatar-r-cute-ripper",
+    "name": "罕见头像-萌版杰克",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-萌版杰克"
+  },
+  {
+    "id": "avatar-r-cute-gamekeeper",
+    "name": "罕见头像-萌版鹿头",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-萌版鹿头"
+  },
+  {
+    "id": "mark-r-calm",
+    "name": "罕见印记-冷静",
+    "rarity": "rare",
+    "category": "mark",
+    "nameEn": "罕见印记-冷静"
+  },
+  {
+    "id": "mark-r-brave",
+    "name": "罕见印记-勇敢",
+    "rarity": "rare",
+    "category": "mark",
+    "nameEn": "罕见印记-勇敢"
+  },
+  {
+    "id": "emote-c-forward",
+    "name": "求生者通用普通个性动作-前进",
+    "rarity": "common",
+    "category": "emote",
+    "nameEn": "求生者通用普通个性动作-前进"
+  },
+  {
+    "id": "avatar-c-hell_ember",
+    "name": "普通头像-地狱感知",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-地狱感知"
+  },
+  {
+    "id": "avatar-c-gamekeeper",
+    "name": "普通头像-鹿头",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-鹿头"
+  },
+  {
+    "id": "avatar-c-coordinator",
+    "name": "普通头像-空军",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-空军"
+  },
+  {
+    "id": "avatar-c-billy",
+    "name": "普通头像-木偶比利",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-木偶比利"
+  },
+  {
+    "id": "avatar-c-ripper",
+    "name": "普通头像-杰克",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-杰克"
+  },
+  {
+    "id": "avatar-c-doctor",
+    "name": "普通头像-医生",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-医生"
+  },
+  {
+    "id": "mark-c-calm",
+    "name": "普通印记-冷静",
+    "rarity": "common",
+    "category": "mark",
+    "nameEn": "普通印记-冷静"
+  },
+  {
+    "id": "mark-c-brave",
+    "name": "普通印记-勇敢",
+    "rarity": "common",
+    "category": "mark",
+    "nameEn": "普通印记-勇敢"
   }
 ]

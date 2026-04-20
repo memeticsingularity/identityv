@@ -1,0 +1,73 @@
+{
+  "id": "s1-e1",
+  "contents": {
+    "legendary": [
+      { "itemId": "costume-gk-goldsmith" }
+    ],
+    "epic": [
+      { "itemId": "costume-gk-steampunk" },
+      { "itemId": "costume-mc-springhand" }
+    ],
+    "unique": [
+      { "itemId": "costume-he-lasso" },
+      { "itemId": "costume-exp-scientist" },
+      { "itemId": "costume-tr-barber" },
+      { "itemId": "costume-he-hell-perception" },
+      { "itemId": "costume-doc-leopard" },
+      { "itemId": "costume-he-welder" },
+      { "itemId": "costume-gk-phantom" },
+      { "itemId": "emote-he-math" },
+      { "itemId": "emote-tr-solo" },
+      { "itemId": "emote-gk-protest" },
+      { "itemId": "emote-sf-mock" }
+    ],
+    "rare": [
+      { "itemId": "avatar-r-cute-smiley_face" },
+      { "itemId": "avatar-r-cute-ripper" },
+      { "itemId": "avatar-r-cute-gamekeeper" },
+      { "itemId": "emote-doc-provoke" },
+      { "itemId": "emote-exp-provoke" },
+      { "itemId": "emote-law-provoke" },
+      { "itemId": "costume-sf-green-hat" },
+      { "itemId": "costume-gk-white-wax" },
+      { "itemId": "costume-exp-green-onion" },
+      { "itemId": "costume-mc-stealth-green" },
+      { "itemId": "costume-he-black-collar" },
+      { "itemId": "costume-thief-jade" },
+      { "itemId": "costume-tr-light-leaf" },
+      { "itemId": "costume-mag-olive" },
+      { "itemId": "costume-law-matcha" },
+      { "itemId": "costume-co-emerald" },
+      { "itemId": "costume-tr-rose-duke" },
+      { "itemId": "emote-mag-rest" },
+      { "itemId": "emote-thief-prepare" },
+      { "itemId": "emote-co-rest" },
+      { "itemId": "emote-law-rest" },
+      { "itemId": "emote-mag-wait" },
+      { "itemId": "graffiti-thief-cartoon" },
+      { "itemId": "graffiti-mc-cartoon" },
+      { "itemId": "graffiti-doc-cartoon" },
+      { "itemId": "graffiti-law-retort" },
+      { "itemId": "mark-r-calm" },
+      { "itemId": "mark-r-brave" }
+    ],
+    "common": [
+      { "itemId": "graffiti-exp-silhouette" },
+      { "itemId": "graffiti-gk-silhouette" },
+      { "itemId": "graffiti-mc-silhouette" },
+      { "itemId": "graffiti-law-silhouette" },
+      { "itemId": "graffiti-doc-silhouette" },
+      { "itemId": "graffiti-co-silhouette" },
+      { "itemId": "graffiti-he-color" },
+      { "itemId": "emote-c-forward" },
+      { "itemId": "avatar-c-hell_ember" },
+      { "itemId": "avatar-c-gamekeeper" },
+      { "itemId": "avatar-c-coordinator" },
+      { "itemId": "avatar-c-billy" },
+      { "itemId": "avatar-c-ripper" },
+      { "itemId": "avatar-c-doctor" },
+      { "itemId": "mark-c-calm" },
+      { "itemId": "mark-c-brave" }
+    ]
+  }
+}

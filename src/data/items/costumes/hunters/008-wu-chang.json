@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-wc-eternal-twin-stars",
+    "name": "亘古双星",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "wu_chang",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

@@ -3,230 +3,133 @@
   "contents": {
     "legendary": [
       {
-        "ref": "character",
-        "characterId": "the_feaster",
-        "itemType": "skin",
-        "name": "灾厄之主"
+        "itemId": "costume-tf-lord-of-calamity"
       }
     ],
     "epic": [
       {
-        "ref": "character",
-        "characterId": "patient",
-        "itemType": "skin",
-        "name": "稀缺病案"
+        "itemId": "costume-patient-rare-case"
       },
       {
-        "ref": "character",
-        "characterId": "psychologist",
-        "itemType": "skin",
-        "name": "末世搜救"
+        "itemId": "costume-psy-apocalypse-rescue"
       },
       {
-        "ref": "character",
-        "characterId": "composer",
-        "itemType": "skin",
-        "name": "先驱探索"
+        "itemId": "costume-comp-pioneer-exploration"
       },
       {
-        "ref": "character",
-        "characterId": "antiquarian",
-        "itemType": "skin",
-        "name": "菌丝研究"
+        "itemId": "costume-anti-mycelium-research"
       }
     ],
     "unique": [
       {
-        "ref": "character",
-        "characterId": "lucky_guy",
-        "itemType": "skin",
-        "name": "机构齿轮"
+        "itemId": "costume-lg-gear-mechanism"
       },
       {
-        "ref": "character",
-        "characterId": "disciple",
-        "itemType": "skin",
-        "name": "末世信仰"
+        "itemId": "costume-disc-apocalypse-faith"
       },
       {
-        "ref": "character",
-        "characterId": "clerk",
-        "itemType": "skin",
-        "name": "菌丝专著"
+        "itemId": "costume-clerk-mycelium-treatise"
       },
       {
-        "ref": "character",
-        "characterId": "aeroplanist",
-        "itemType": "skin",
-        "name": "失败的探索"
+        "itemId": "costume-aero-failed-exploration"
       },
       {
-        "ref": "character",
-        "characterId": "journalist",
-        "itemType": "skin",
-        "name": "官方报道"
+        "itemId": "costume-jour-official-report"
       },
       {
-        "ref": "character",
-        "characterId": "nightmare",
-        "itemType": "emote",
-        "name": "大笑"
+        "itemId": "emote-nightmare-laugh"
       },
       {
-        "ref": "character",
-        "characterId": "clerk",
-        "itemType": "emote",
-        "name": "拜访"
+        "itemId": "emote-clerk-visit"
       },
       {
-        "ref": "character",
-        "characterId": "professor",
-        "itemType": "emote",
-        "name": "小憩"
+        "itemId": "emote-prof-rest"
       },
       {
-        "ref": "character",
-        "characterId": "antiquarian",
-        "itemType": "emote",
-        "name": "起身"
+        "itemId": "emote-anti-stand"
       }
     ],
     "rare": [
       {
-        "ref": "character",
-        "characterId": "composer",
-        "itemType": "skin",
-        "name": "高傲黄"
+        "itemId": "costume-comp-arrogant-yellow"
       },
       {
-        "ref": "character",
-        "characterId": "antiquarian",
-        "itemType": "skin",
-        "name": "风铃蓝"
+        "itemId": "costume-anti-wind-chime-blue"
       },
       {
-        "ref": "character",
-        "characterId": "aeroplanist",
-        "itemType": "skin",
-        "name": "怯懦白"
+        "itemId": "costume-aero-timid-white"
       },
       {
-        "ref": "character",
-        "characterId": "journalist",
-        "itemType": "skin",
-        "name": "自信红"
+        "itemId": "costume-jour-confident-red"
       },
       {
-        "ref": "character",
-        "characterId": "night_watch",
-        "itemType": "skin",
-        "name": "丛林绿"
+        "itemId": "costume-nw-jungle-green"
       },
       {
-        "ref": "character",
-        "characterId": "hermit",
-        "itemType": "skin",
-        "name": "悲观青"
+        "itemId": "costume-hermit-pessimistic-cyan"
       },
       {
-        "ref": "character",
-        "characterId": "opera_singer",
-        "itemType": "skin",
-        "name": "魅惑红"
+        "itemId": "costume-os-charming-red"
       },
       {
-        "ref": "character",
-        "characterId": "cheerleader",
-        "itemType": "skin",
-        "name": "活力黄"
+        "itemId": "costume-cl-vitality-yellow"
       },
       {
-        "ref": "character",
-        "characterId": "patient",
-        "itemType": "emote",
-        "name": "挑衅"
+        "itemId": "emote-patient-provoke"
       },
       {
-        "ref": "character",
-        "characterId": "antiquarian",
-        "itemType": "emote",
-        "name": "呼喊"
+        "itemId": "emote-anti-shout"
       },
       {
-        "ref": "character",
-        "characterId": "weeping_clown",
-        "itemType": "emote",
-        "name": "呼喊"
+        "itemId": "emote-wc-shout"
       },
       {
-        "ref": "character",
-        "characterId": "entomologist",
-        "itemType": "emote",
-        "name": "躺地"
+        "itemId": "emote-ento-lie"
       },
       {
-        "ref": "character",
-        "characterId": "painter",
-        "itemType": "emote",
-        "name": "挑衅"
+        "itemId": "emote-painter-provoke"
       },
       {
-        "ref": "character",
-        "characterId": "novelist",
-        "itemType": "emote",
-        "name": "躺地"
+        "itemId": "emote-nov-lie"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-composer-先驱探索"
+        "itemId": "graffiti-r-composer-先驱探索"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-psychologist-末世搜救"
+        "itemId": "graffiti-r-psychologist-末世搜救"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-patient-稀缺病案"
+        "itemId": "graffiti-r-patient-稀缺病案"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-antiquarian-菌丝研究"
+        "itemId": "graffiti-r-antiquarian-菌丝研究"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-professor-紧急运输"
+        "itemId": "graffiti-r-professor-紧急运输"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-weeping_clown-other"
+        "itemId": "avatar-r-weeping_clown-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-color-journalist"
+        "itemId": "avatar-r-color-journalist"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-hermit-other"
+        "itemId": "avatar-r-hermit-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-clerk-other"
+        "itemId": "avatar-r-clerk-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-journalist-other"
+        "itemId": "avatar-r-journalist-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-antiquarian-other"
+        "itemId": "avatar-r-antiquarian-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-professor-other"
+        "itemId": "avatar-r-professor-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-composer-other"
+        "itemId": "avatar-r-composer-other"
       }
     ],
     "common": []

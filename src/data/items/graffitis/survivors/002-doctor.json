@@ -1,0 +1,18 @@
+[
+  {
+    "id": "graffiti-doc-cartoon",
+    "name": "卡通",
+    "rarity": "rare",
+    "type": "graffiti",
+    "characterId": "doctor",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  },
+  {
+    "id": "graffiti-doc-silhouette",
+    "name": "剪影",
+    "rarity": "common",
+    "type": "graffiti",
+    "characterId": "doctor",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  }
+]

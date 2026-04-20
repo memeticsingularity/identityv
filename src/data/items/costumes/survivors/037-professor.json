@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-professor-exploration-blue",
+    "name": "探索蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "professor",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-escapologist-mist-smoke",
+    "name": "迷烟青",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "escapologist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  }
+]

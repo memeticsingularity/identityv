@@ -3,224 +3,130 @@
   "contents": {
     "legendary": [
       {
-        "ref": "character",
-        "characterId": "gamekeeper",
-        "itemType": "skin",
-        "name": "熔铁猎犬"
+        "itemId": "costume-gk-molten-iron-hound"
       }
     ],
     "epic": [
       {
-        "ref": "character",
-        "characterId": "barmaid",
-        "itemType": "skin",
-        "name": "助燃剂"
+        "itemId": "costume-bar-accelerant"
       },
       {
-        "ref": "character",
-        "characterId": "priestess",
-        "itemType": "skin",
-        "name": "反光镜"
+        "itemId": "costume-priest-reflector"
       },
       {
-        "ref": "character",
-        "characterId": "acrobat",
-        "itemType": "skin",
-        "name": "气胎"
+        "itemId": "costume-acro-air-tire"
       },
       {
-        "ref": "character",
-        "characterId": "prospector",
-        "itemType": "skin",
-        "name": "公路骑士"
+        "itemId": "costume-pros-road-knight"
       }
     ],
     "unique": [
       {
-        "ref": "character",
-        "characterId": "sculptor",
-        "itemType": "skin",
-        "name": "轮椅车手"
+        "itemId": "costume-sculpt-wheelchair-racer"
       },
       {
-        "ref": "character",
-        "characterId": "prisoner",
-        "itemType": "skin",
-        "name": "赛车机师"
+        "itemId": "costume-pris-race-mechanic"
       },
       {
-        "ref": "character",
-        "characterId": "postman",
-        "itemType": "skin",
-        "name": "报童"
+        "itemId": "costume-post-news-boy"
       },
       {
-        "ref": "character",
-        "characterId": "axe_boy",
-        "itemType": "skin",
-        "name": "狂热观众"
+        "itemId": "costume-ab-fanatic-audience"
       },
       {
-        "ref": "character",
-        "characterId": "mad_eyes",
-        "itemType": "skin",
-        "name": "拆卸工"
+        "itemId": "costume-me-dismantler"
       },
       {
-        "ref": "character",
-        "characterId": "violinist",
-        "itemType": "emote",
-        "name": "拜访"
+        "itemId": "emote-viol-visit"
       },
       {
-        "ref": "character",
-        "characterId": "grave_keeper",
-        "itemType": "emote",
-        "name": "准备"
+        "itemId": "emote-gk-prepare"
       },
       {
-        "ref": "character",
-        "characterId": "painter",
-        "itemType": "emote",
-        "name": "起身"
+        "itemId": "emote-painter-stand"
       }
     ],
     "rare": [
       {
-        "ref": "character",
-        "characterId": "grave_keeper",
-        "itemType": "skin",
-        "name": "红沙土"
+        "itemId": "costume-gk-red-sand"
       },
       {
-        "ref": "character",
-        "characterId": "prisoner",
-        "itemType": "skin",
-        "name": "黄土墙"
+        "itemId": "costume-pris-yellow-earth-wall"
       },
       {
-        "ref": "character",
-        "characterId": "violinist",
-        "itemType": "skin",
-        "name": "蓝金调"
+        "itemId": "costume-viol-blue-gold"
       },
       {
-        "ref": "character",
-        "characterId": "entomologist",
-        "itemType": "skin",
-        "name": "灰蝶"
+        "itemId": "costume-ento-gray-butterfly"
       },
       {
-        "ref": "character",
-        "characterId": "entomologist",
-        "itemType": "skin",
-        "name": "枯叶蝶"
+        "itemId": "costume-ento-withered-leaf"
       },
       {
-        "ref": "character",
-        "characterId": "sculptor",
-        "itemType": "skin",
-        "name": "绀"
+        "itemId": "costume-sculpt-navy"
       },
       {
-        "ref": "character",
-        "characterId": "painter",
-        "itemType": "skin",
-        "name": "绘蓝"
+        "itemId": "costume-painter-paint-blue"
       },
       {
-        "ref": "character",
-        "characterId": "painter",
-        "itemType": "skin",
-        "name": "涂绿"
+        "itemId": "costume-painter-paint-green"
       },
       {
-        "ref": "character",
-        "characterId": "magician",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-mag-shame"
       },
       {
-        "ref": "character",
-        "characterId": "explorer",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-exp-shame"
       },
       {
-        "ref": "character",
-        "characterId": "lawyer",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-law-shame"
       },
       {
-        "ref": "character",
-        "characterId": "doctor",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-doc-shame"
       },
       {
-        "ref": "character",
-        "characterId": "cowboy",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-cowboy-shame"
       },
       {
-        "ref": "character",
-        "characterId": "the_minds_eye",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-tme-shame"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-abyss4-熔铁猎犬"
+        "itemId": "graffiti-r-abyss4-熔铁猎犬"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-barmaid-助燃剂"
+        "itemId": "graffiti-r-barmaid-助燃剂"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-priestess-反光镜"
+        "itemId": "graffiti-r-priestess-反光镜"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-acrobat-气胎"
+        "itemId": "graffiti-r-acrobat-气胎"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-prospector-公路骑士"
+        "itemId": "graffiti-r-prospector-公路骑士"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-female_dancer-other"
+        "itemId": "avatar-r-female_dancer-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-seer-other"
+        "itemId": "avatar-r-seer-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-embalmer-other"
+        "itemId": "avatar-r-embalmer-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-prospector-other"
+        "itemId": "avatar-r-prospector-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-photographer-other"
+        "itemId": "avatar-r-photographer-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-mad_eyes-other"
+        "itemId": "avatar-r-mad_eyes-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-dream_witch-other"
+        "itemId": "avatar-r-dream_witch-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-axe_boy-other"
+        "itemId": "avatar-r-axe_boy-other"
       }
     ],
     "common": []

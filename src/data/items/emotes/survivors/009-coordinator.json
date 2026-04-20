@@ -1,0 +1,41 @@
+[
+  {
+    "id": "emote-co-rest",
+    "name": "小憩",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "emote-co-stand",
+    "name": "起身",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  },
+  {
+    "id": "emote-co-shout",
+    "name": "呼喊",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  }
+]

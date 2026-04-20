@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
 import { hasRealPool, drawFromPool, buildItemCatalog, getItemKey, getPoolContents } from '../data/essences/index.js'
+import { getItemById, getAllItems } from '../data/items/index.js'
 
 // ===== 充值档位配置 =====
 export const RECHARGE_TIERS = [
@@ -25,21 +26,22 @@ export const RARITY_CONFIG = {
 
 // ===== 精华池配置 =====
 export const ESSENCE_POOLS = [
-  { id: 's42-e1', name: '第42赛季·精华1', season: 42, type: 'standard', number: 1, legendaryPity: 200 },
-  { id: 's42-e2', name: '第42赛季·精华2', season: 42, type: 'standard', number: 2, legendaryPity: 200 },
-  { id: 's42-e3', name: '第42赛季·精华3', season: 42, type: 'standard', number: 3, legendaryPity: 200 },
+  { id: 's1-e1', name: '第1赛季·精华1', season: 1, type: 'standard', number: 1, legendaryPity: 250, releaseDate: '2018-04-02', endDate: '2018-05-24' },
+  { id: 's42-e1', name: '第42赛季·精华1', season: 42, type: 'standard', number: 1, legendaryPity: 200, releaseDate: '2026-02-05', endDate: '2026-04-23' },
+  { id: 's42-e2', name: '第42赛季·精华2', season: 42, type: 'standard', number: 2, legendaryPity: 200, releaseDate: '2026-02-27', endDate: '2026-04-23' },
+  { id: 's42-e3', name: '第42赛季·精华3', season: 42, type: 'standard', number: 3, legendaryPity: 200, releaseDate: '2026-04-02', endDate: '2026-04-23' },
   { id: 's41-e1', name: '第41赛季·精华1', season: 41, type: 'standard', number: 1, legendaryPity: 200 },
   { id: 's41-e2', name: '第41赛季·精华2', season: 41, type: 'standard', number: 2, legendaryPity: 200 },
   { id: 's41-e3', name: '第41赛季·精华3', season: 41, type: 'standard', number: 3, legendaryPity: 200 },
-  { id: 'abyss-01', name: '深渊珍宝Ⅰ', season: 0, type: 'abyss', number: 1 },
-  { id: 'abyss-02', name: '深渊珍宝Ⅱ', season: 0, type: 'abyss', number: 2 },
-  { id: 'abyss-03', name: '深渊珍宝Ⅲ', season: 0, type: 'abyss', number: 3 },
-  { id: 'abyss-04', name: '深渊珍宝Ⅳ', season: 0, type: 'abyss', number: 4 },
-  { id: 'abyss-05', name: '深渊珍宝Ⅴ', season: 0, type: 'abyss', number: 5 },
-  { id: 'abyss-06', name: '深渊珍宝Ⅵ', season: 0, type: 'abyss', number: 6 },
-  { id: 'abyss-07', name: '深渊珍宝Ⅶ', season: 0, type: 'abyss', number: 7 },
-  { id: 'abyss-08', name: '深渊珍宝Ⅷ', season: 0, type: 'abyss', number: 8 },
-  { id: 'abyss-09', name: '深渊珍宝Ⅸ', season: 0, type: 'abyss', number: 9 },
+  { id: 'abyss-01', name: '深渊珍宝Ⅰ', season: 0, type: 'abyss', number: 1, releaseDate: '2018-07-26', endDate: '2018-08-09' },
+  { id: 'abyss-02', name: '深渊珍宝Ⅱ', season: 0, type: 'abyss', number: 2, releaseDate: '2019-01-03', endDate: '2019-02-28' },
+  { id: 'abyss-03', name: '深渊珍宝Ⅲ', season: 0, type: 'abyss', number: 3, releaseDate: '2019-12-26', endDate: '2020-02-20' },
+  { id: 'abyss-04', name: '深渊珍宝Ⅳ', season: 0, type: 'abyss', number: 4, releaseDate: '2021-01-21', endDate: '2021-02-23' },
+  { id: 'abyss-05', name: '深渊珍宝Ⅴ', season: 0, type: 'abyss', number: 5, releaseDate: '2021-12-30', endDate: '2022-02-17' },
+  { id: 'abyss-06', name: '深渊珍宝Ⅵ', season: 0, type: 'abyss', number: 6, releaseDate: '2022-12-29', endDate: '2023-02-02' },
+  { id: 'abyss-07', name: '深渊珍宝Ⅶ', season: 0, type: 'abyss', number: 7, releaseDate: '2024-01-11', endDate: '2024-03-21' },
+  { id: 'abyss-08', name: '深渊珍宝Ⅷ', season: 0, type: 'abyss', number: 8, releaseDate: '2025-01-02', endDate: '2025-05-04' },
+  { id: 'abyss-09', name: '深渊珍宝Ⅸ', season: 0, type: 'abyss', number: 9, releaseDate: '2026-01-08', endDate: '2026-05-05' },
   { id: 'memory', name: '记忆珍宝', season: 0, type: 'memory' },
   { id: 'rank', name: '排位珍宝', season: 0, type: 'rank' },
   { id: 'crossover', name: '联动精华', season: 0, type: 'special', icon: '/assets/essences/special/crossover.png' },
@@ -134,6 +136,63 @@ function generateItem(rarity) {
   }
 }
 
+// ===== 收藏数据迁移：旧 key 格式 → 新 item:xxx 格式 =====
+function migrateOwnedData(items, order) {
+  const migratedItems = []
+  const migratedOrder = []
+  const seen = new Set()
+
+  for (const key of items) {
+    if (key.startsWith('item:')) {
+      if (!seen.has(key)) {
+        migratedItems.push(key)
+        seen.add(key)
+      }
+      continue
+    }
+
+    let newKey = key
+    const parts = key.split(':')
+    if (parts[0] === 'character' && parts.length === 4) {
+      const [, characterId, itemType, name] = parts
+      const type = itemType === 'skin' ? 'costume' : itemType
+      const found = getAllItems().find(i =>
+        i.characterId === characterId && i.type === type && i.name === name
+      )
+      if (found) newKey = `item:${found.id}`
+    } else if (parts[0] === 'common' && parts.length === 2) {
+      const [, id] = parts
+      const found = getItemById(id)
+      if (found) newKey = `item:${found.id}`
+    }
+
+    if (!seen.has(newKey)) {
+      migratedItems.push(newKey)
+      seen.add(newKey)
+    }
+  }
+
+  for (const o of order) {
+    let newKey = o.key
+    const parts = o.key.split(':')
+    if (parts[0] === 'character' && parts.length === 4) {
+      const [, characterId, itemType, name] = parts
+      const type = itemType === 'skin' ? 'costume' : itemType
+      const found = getAllItems().find(i =>
+        i.characterId === characterId && i.type === type && i.name === name
+      )
+      if (found) newKey = `item:${found.id}`
+    } else if (parts[0] === 'common' && parts.length === 2) {
+      const [, id] = parts
+      const found = getItemById(id)
+      if (found) newKey = `item:${found.id}`
+    }
+    migratedOrder.push({ ...o, key: newKey })
+  }
+
+  return { items: migratedItems, order: migratedOrder }
+}
+
 // ===== Store =====
 export const useAppStore = defineStore('app', () => {
   // --- 充值状态 ---
@@ -150,6 +209,11 @@ export const useAppStore = defineStore('app', () => {
   // --- 收藏册状态（Set 用数组持久化） ---
   const ownedItems = ref([]) // 存储稳定 key 字符串数组
   const ownedOrder = ref([]) // { key, timestamp }[]
+
+  // 数据迁移（旧 key → 新 item:xxx 格式）
+  const migrated = migrateOwnedData(ownedItems.value, ownedOrder.value)
+  ownedItems.value = migrated.items
+  ownedOrder.value = migrated.order
 
   // --- 碎片系统 ---
   const shards = ref(0)
@@ -422,7 +486,9 @@ export const useAppStore = defineStore('app', () => {
 
     for (const item of results) {
       let key = null
-      if (item.characterId && item.itemType && item.name) {
+      if (item.source === 'item' && item.id) {
+        key = `item:${item.id}`
+      } else if (item.characterId && item.itemType && item.name) {
         key = `character:${item.characterId}:${item.itemType}:${item.name}`
       } else if (item.source === 'common' && item.id) {
         key = `common:${item.id}`

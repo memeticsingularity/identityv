@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-psy-costumer",
+    "name": "\"服装师\"",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "psychologist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  },
+  {
+    "id": "costume-psy-memories-gray",
+    "name": "追忆灰",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "psychologist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  },
+  {
+    "id": "costume-psy-apocalypse-rescue",
+    "name": "末世搜救",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "psychologist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  }
+]

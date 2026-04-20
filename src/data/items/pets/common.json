@@ -1,0 +1,16 @@
+[
+  {
+    "id": "pet-u-pointy-nose",
+    "name": "独特随从-尖鼻子",
+    "rarity": "unique",
+    "category": "pet",
+    "nameEn": "独特随从-尖鼻子"
+  },
+  {
+    "id": "pet-u-round-ears",
+    "name": "独特随从-圆耳朵",
+    "rarity": "unique",
+    "category": "pet",
+    "nameEn": "独特随从-圆耳朵"
+  }
+]

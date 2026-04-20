@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-clerk-equality-green",
+    "name": "平等绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "clerk",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-clerk-mycelium-treatise",
+    "name": "菌丝专著",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "clerk",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  }
+]

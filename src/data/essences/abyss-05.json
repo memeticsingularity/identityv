@@ -3,230 +3,133 @@
   "contents": {
     "legendary": [
       {
-        "ref": "character",
-        "characterId": "geisha",
-        "itemType": "skin",
-        "name": "永夜极光"
+        "itemId": "costume-geisha-eternal-night-aurora"
       }
     ],
     "epic": [
       {
-        "ref": "character",
-        "characterId": "forward",
-        "itemType": "skin",
-        "name": "霓虹先锋"
+        "itemId": "costume-fwd-neon-pioneer"
       },
       {
-        "ref": "character",
-        "characterId": "enchantress",
-        "itemType": "skin",
-        "name": "花边新闻"
+        "itemId": "costume-ench-gossip"
       },
       {
-        "ref": "character",
-        "characterId": "first_officer",
-        "itemType": "skin",
-        "name": "海盗电台"
+        "itemId": "costume-fo-pirate-radio"
       },
       {
-        "ref": "character",
-        "characterId": "prisoner",
-        "itemType": "skin",
-        "name": "放映厅"
+        "itemId": "costume-pris-projection-room"
       }
     ],
     "unique": [
       {
-        "ref": "character",
-        "characterId": "violinist",
-        "itemType": "skin",
-        "name": "军乐队"
+        "itemId": "costume-viol-military-band"
       },
       {
-        "ref": "character",
-        "characterId": "entomologist",
-        "itemType": "skin",
-        "name": "化妆师"
+        "itemId": "costume-ento-makeup-artist"
       },
       {
-        "ref": "character",
-        "characterId": "painter",
-        "itemType": "skin",
-        "name": "粉刷匠"
+        "itemId": "costume-painter-painter"
       },
       {
-        "ref": "character",
-        "characterId": "batter",
-        "itemType": "skin",
-        "name": "治安官"
+        "itemId": "costume-bat-peace-officer"
       },
       {
-        "ref": "character",
-        "characterId": "breaking_wheel",
-        "itemType": "skin",
-        "name": "交通旗"
+        "itemId": "costume-bw-traffic-flag"
       },
       {
-        "ref": "character",
-        "characterId": "toy_merchant",
-        "itemType": "emote",
-        "name": "准备"
+        "itemId": "emote-tm-prepare"
       },
       {
-        "ref": "character",
-        "characterId": "patient",
-        "itemType": "emote",
-        "name": "张望"
+        "itemId": "emote-patient-look"
       },
       {
-        "ref": "character",
-        "characterId": "sculptor",
-        "itemType": "emote",
-        "name": "大笑"
+        "itemId": "emote-sculpt-laugh"
       },
       {
-        "ref": "character",
-        "characterId": "nightmare",
-        "itemType": "emote",
-        "name": "示威"
+        "itemId": "emote-nightmare-demonstrate"
       }
     ],
     "rare": [
       {
-        "ref": "character",
-        "characterId": "cowboy",
-        "itemType": "skin",
-        "name": "枯草黄"
+        "itemId": "costume-cowboy-withered-yellow"
       },
       {
-        "ref": "character",
-        "characterId": "prospector",
-        "itemType": "skin",
-        "name": "朱褐石"
+        "itemId": "costume-pros-red-brown-stone"
       },
       {
-        "ref": "character",
-        "characterId": "acrobat",
-        "itemType": "skin",
-        "name": "花紫"
+        "itemId": "costume-acro-flower-purple"
       },
       {
-        "ref": "character",
-        "characterId": "first_officer",
-        "itemType": "skin",
-        "name": "帆布白"
+        "itemId": "costume-fo-canvas-white"
       },
       {
-        "ref": "character",
-        "characterId": "barmaid",
-        "itemType": "skin",
-        "name": "大麦酒"
+        "itemId": "costume-bar-ale"
       },
       {
-        "ref": "character",
-        "characterId": "barmaid",
-        "itemType": "skin",
-        "name": "蓝香橙"
+        "itemId": "costume-bar-blue-orange"
       },
       {
-        "ref": "character",
-        "characterId": "guard_26",
-        "itemType": "skin",
-        "name": "湖蓝漆"
+        "itemId": "costume-g26-lake-blue"
       },
       {
-        "ref": "character",
-        "characterId": "guard_26",
-        "itemType": "skin",
-        "name": "紫钢"
+        "itemId": "costume-g26-purple-steel"
       },
       {
-        "ref": "character",
-        "characterId": "embalmer",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-emb-shame"
       },
       {
-        "ref": "character",
-        "characterId": "prospector",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-pros-shame"
       },
       {
-        "ref": "character",
-        "characterId": "wildling",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-wild-shame"
       },
       {
-        "ref": "character",
-        "characterId": "barmaid",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-bar-shame"
       },
       {
-        "ref": "character",
-        "characterId": "grave_keeper",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-gk-shame"
       },
       {
-        "ref": "character",
-        "characterId": "prisoner",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-pris-shame"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-enchantress-花边新闻"
+        "itemId": "graffiti-r-enchantress-花边新闻"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-postman-报纸怪客"
+        "itemId": "graffiti-r-postman-报纸怪客"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-prisoner-放映厅"
+        "itemId": "graffiti-r-prisoner-放映厅"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-forward-霓虹先锋"
+        "itemId": "graffiti-r-forward-霓虹先锋"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-first_officer-海盗电台"
+        "itemId": "graffiti-r-first_officer-海盗电台"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-wildling-other"
+        "itemId": "avatar-r-wildling-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-hell_ember-other"
+        "itemId": "avatar-r-hell_ember-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-first_officer-other"
+        "itemId": "avatar-r-first_officer-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-ripper-other"
+        "itemId": "avatar-r-ripper-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-gamekeeper-other"
+        "itemId": "avatar-r-gamekeeper-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-smiley_face-other"
+        "itemId": "avatar-r-smiley_face-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-acrobat-other"
+        "itemId": "avatar-r-acrobat-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-enchantress-other"
+        "itemId": "avatar-r-enchantress-other"
       }
     ],
     "common": []

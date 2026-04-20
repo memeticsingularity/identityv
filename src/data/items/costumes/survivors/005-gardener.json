@@ -1,0 +1,16 @@
+[
+  {
+    "id": "costume-gard-pirate-shipwright",
+    "name": "海盗船匠",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "gardener",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-wa-alien-symbiosis",
+    "name": "异体同生",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "wax_artist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  }
+]

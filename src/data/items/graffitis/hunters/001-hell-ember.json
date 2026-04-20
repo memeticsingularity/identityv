@@ -1,0 +1,10 @@
+[
+  {
+    "id": "graffiti-he-color",
+    "name": "彩底",
+    "rarity": "common",
+    "type": "graffiti",
+    "characterId": "hell_ember",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  }
+]

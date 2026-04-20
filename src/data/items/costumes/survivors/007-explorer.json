@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-exp-scientist",
+    "name": "科研员",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "explorer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-exp-green-onion",
+    "name": "青葱绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "explorer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-exp-conspiracy-theorist",
+    "name": "阴谋论者",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "explorer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

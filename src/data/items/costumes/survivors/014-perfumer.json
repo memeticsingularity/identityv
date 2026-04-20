@@ -1,0 +1,29 @@
+[
+  {
+    "id": "costume-perf-sand-of-time",
+    "name": "时之砂",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "perfumer",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "costume-perf-fragrant-pink",
+    "name": "幽香粉",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "perfumer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  }
+]

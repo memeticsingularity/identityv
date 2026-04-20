@@ -1,0 +1,15 @@
+[
+  {
+    "id": "emote-viol-visit",
+    "name": "拜访",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "violinist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  }
+]

@@ -3,230 +3,133 @@
   "contents": {
     "legendary": [
       {
-        "ref": "character",
-        "characterId": "wu_chang",
-        "itemType": "skin",
-        "name": "亘古双星"
+        "itemId": "costume-wc-eternal-twin-stars"
       }
     ],
     "epic": [
       {
-        "ref": "character",
-        "characterId": "entomologist",
-        "itemType": "skin",
-        "name": "生态圈"
+        "itemId": "costume-ento-ecosphere"
       },
       {
-        "ref": "character",
-        "characterId": "weeping_clown",
-        "itemType": "skin",
-        "name": "炮弹飞船"
+        "itemId": "costume-wc-cannon-ship"
       },
       {
-        "ref": "character",
-        "characterId": "toy_merchant",
-        "itemType": "skin",
-        "name": "线控信号"
+        "itemId": "costume-tm-wire-signal"
       },
       {
-        "ref": "character",
-        "characterId": "grave_keeper",
-        "itemType": "skin",
-        "name": "异星开采"
+        "itemId": "costume-gk-alien-mining"
       }
     ],
     "unique": [
       {
-        "ref": "character",
-        "characterId": "novelist",
-        "itemType": "skin",
-        "name": "跟组编剧"
+        "itemId": "costume-nov-scriptwriter"
       },
       {
-        "ref": "character",
-        "characterId": "patient",
-        "itemType": "skin",
-        "name": "安全员"
+        "itemId": "costume-patient-safety-officer"
       },
       {
-        "ref": "character",
-        "characterId": "psychologist",
-        "itemType": "skin",
-        "name": "\"服装师\""
+        "itemId": "costume-psy-costumer"
       },
       {
-        "ref": "character",
-        "characterId": "evil_reptilian",
-        "itemType": "skin",
-        "name": "特效化妆"
+        "itemId": "costume-er-special-fx"
       },
       {
-        "ref": "character",
-        "characterId": "nightmare",
-        "itemType": "skin",
-        "name": "探班粉丝"
+        "itemId": "costume-nightmare-fan-visit"
       },
       {
-        "ref": "character",
-        "characterId": "patient",
-        "itemType": "emote",
-        "name": "等待"
+        "itemId": "emote-patient-wait"
       },
       {
-        "ref": "character",
-        "characterId": "weeping_clown",
-        "itemType": "emote",
-        "name": "张望"
+        "itemId": "emote-wc-look"
       },
       {
-        "ref": "character",
-        "characterId": "weeping_clown",
-        "itemType": "emote",
-        "name": "小憩"
+        "itemId": "emote-wc-rest"
       },
       {
-        "ref": "character",
-        "characterId": "psychologist",
-        "itemType": "emote",
-        "name": "等待"
+        "itemId": "emote-psy-wait"
       }
     ],
     "rare": [
       {
-        "ref": "character",
-        "characterId": "sculptor",
-        "itemType": "skin",
-        "name": "靛"
+        "itemId": "costume-sculpt-indigo"
       },
       {
-        "ref": "character",
-        "characterId": "undead",
-        "itemType": "skin",
-        "name": "焦土"
+        "itemId": "costume-undead-scorched-earth"
       },
       {
-        "ref": "character",
-        "characterId": "batter",
-        "itemType": "skin",
-        "name": "蒙尘"
+        "itemId": "costume-bat-dusty"
       },
       {
-        "ref": "character",
-        "characterId": "breaking_wheel",
-        "itemType": "skin",
-        "name": "寡言棕"
+        "itemId": "costume-bw-taciturn-brown"
       },
       {
-        "ref": "character",
-        "characterId": "toy_merchant",
-        "itemType": "skin",
-        "name": "秸秆绿"
+        "itemId": "costume-tm-straw-green"
       },
       {
-        "ref": "character",
-        "characterId": "patient",
-        "itemType": "skin",
-        "name": "旧墙褐"
+        "itemId": "costume-patient-old-wall-brown"
       },
       {
-        "ref": "character",
-        "characterId": "naiad",
-        "itemType": "skin",
-        "name": "毒环蓝"
+        "itemId": "costume-naiad-poison-ring-blue"
       },
       {
-        "ref": "character",
-        "characterId": "psychologist",
-        "itemType": "skin",
-        "name": "追忆灰"
+        "itemId": "costume-psy-memories-gray"
       },
       {
-        "ref": "character",
-        "characterId": "postman",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-post-shame"
       },
       {
-        "ref": "character",
-        "characterId": "batter",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-bat-shame"
       },
       {
-        "ref": "character",
-        "characterId": "toy_merchant",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-tm-shame"
       },
       {
-        "ref": "character",
-        "characterId": "patient",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-patient-shame"
       },
       {
-        "ref": "character",
-        "characterId": "weeping_clown",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-wc-shame"
       },
       {
-        "ref": "character",
-        "characterId": "psychologist",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-psy-shame"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-toy_merchant-线控信号"
+        "itemId": "graffiti-r-toy_merchant-线控信号"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-entomologist-生态圈"
+        "itemId": "graffiti-r-entomologist-生态圈"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-weeping_clown-炮弹飞船"
+        "itemId": "graffiti-r-weeping_clown-炮弹飞船"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-grave_keeper-异星开采"
+        "itemId": "graffiti-r-grave_keeper-异星开采"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-batter-迫降专家"
+        "itemId": "graffiti-r-batter-迫降专家"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-bloody_queen-other"
+        "itemId": "avatar-r-bloody_queen-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-evil_reptilian-other"
+        "itemId": "avatar-r-evil_reptilian-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-guard_26-other"
+        "itemId": "avatar-r-guard_26-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-disciple-other"
+        "itemId": "avatar-r-disciple-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-barmaid-other"
+        "itemId": "avatar-r-barmaid-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-postman-other"
+        "itemId": "avatar-r-postman-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-grave_keeper-other"
+        "itemId": "avatar-r-grave_keeper-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-prisoner-other"
+        "itemId": "avatar-r-prisoner-other"
       }
     ],
     "common": []

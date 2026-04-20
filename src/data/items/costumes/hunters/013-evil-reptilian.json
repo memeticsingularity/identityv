@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-evil-reptilian-earth-travel",
+    "name": "大地行记",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "evil_reptilian",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-er-special-fx",
+    "name": "特效化妆",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "evil_reptilian",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

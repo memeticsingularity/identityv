@@ -2,63 +2,161 @@
   "id": "s42-e2",
   "contents": {
     "legendary": [
-      { "ref": "character", "characterId": "coordinator", "itemType": "skin", "name": "翡色云雀之歌" }
+      {
+        "itemId": "costume-coordinator-jade-lark-song"
+      }
     ],
     "epic": [
-      { "ref": "character", "characterId": "lanternist", "itemType": "skin", "name": "知更鸟" },
-      { "ref": "character", "characterId": "gamekeeper", "itemType": "skin", "name": "塞努诺斯" }
+      {
+        "itemId": "costume-lanternist-robin"
+      },
+      {
+        "itemId": "costume-gamekeeper-cernunnos"
+      }
     ],
     "unique": [
-      { "ref": "character", "characterId": "thief", "itemType": "skin", "name": "鹈鹕" },
-      { "ref": "character", "characterId": "mercenary", "itemType": "skin", "name": "乌雕" },
-      { "ref": "character", "characterId": "little_girl", "itemType": "skin", "name": "银喉" },
-      { "ref": "character", "characterId": "peddler", "itemType": "skin", "name": "枯巢" },
-      { "ref": "common", "id": "emote-u-professor-prepare" },
-      { "ref": "common", "id": "emote-u-antiquarian-look" },
-      { "ref": "common", "id": "emote-u-wax-artist-bow" },
-      { "ref": "common", "id": "emote-u-clerk-threat" }
+      {
+        "itemId": "costume-thief-pelican"
+      },
+      {
+        "itemId": "costume-mercenary-black-eagle"
+      },
+      {
+        "itemId": "costume-little-girl-silver-throat"
+      },
+      {
+        "itemId": "costume-peddler-dry-nest"
+      },
+      {
+        "itemId": "emote-u-professor-prepare"
+      },
+      {
+        "itemId": "emote-u-antiquarian-look"
+      },
+      {
+        "itemId": "emote-u-wax-artist-bow"
+      },
+      {
+        "itemId": "emote-u-clerk-threat"
+      }
     ],
     "rare": [
-      { "ref": "character", "characterId": "puppeteer", "itemType": "skin", "name": "灰烬红" },
-      { "ref": "character", "characterId": "the_shadow", "itemType": "skin", "name": "幻影紫" },
-      { "ref": "character", "characterId": "fire_investigator", "itemType": "skin", "name": "使命绿" },
-      { "ref": "character", "characterId": "faro_lady", "itemType": "skin", "name": "睿智蓝" },
-      { "ref": "character", "characterId": "goatman", "itemType": "skin", "name": "锈色黄" },
-      { "ref": "character", "characterId": "knight", "itemType": "skin", "name": "骑士蓝" },
-      { "ref": "character", "characterId": "hullabaloo", "itemType": "skin", "name": "美梦紫" },
-      { "ref": "character", "characterId": "cheerleader", "itemType": "skin", "name": "热烈红" },
-      { "ref": "character", "characterId": "fools_gold", "itemType": "skin", "name": "感染绿" },
-      { "ref": "character", "characterId": "novelist", "itemType": "skin", "name": "月影青" },
-      { "ref": "character", "characterId": "little_girl", "itemType": "skin", "name": "初绽杏" },
-      { "ref": "common", "id": "emote-r-forward-rest" },
-      { "ref": "common", "id": "emote-r-explorer-prepare" },
-      { "ref": "common", "id": "emote-r-mercenary-prepare" },
-      { "ref": "common", "id": "emote-r-lawyer-prepare" },
-      { "ref": "common", "id": "emote-r-forward-wait" },
-      { "ref": "common", "id": "emote-r-entomologist-shout" },
-      { "ref": "common", "id": "emote-r-painter-shout" },
-      { "ref": "common", "id": "emote-r-composer-shout" },
-      { "ref": "common", "id": "emote-r-little-girl-shout" },
-      { "ref": "common", "id": "avatar-r-bw-thief" },
-      { "ref": "common", "id": "avatar-r-bw-cowboy" },
-      { "ref": "common", "id": "avatar-r-bw-female-dancer" },
-      { "ref": "common", "id": "graffiti-r-night-watch-cartoon" },
-      { "ref": "common", "id": "graffiti-r-puppeteer-cartoon" },
-      { "ref": "common", "id": "graffiti-r-faro-lady-cartoon" },
-      { "ref": "common", "id": "graffiti-r-fools-gold-cartoon" }
+      {
+        "itemId": "costume-puppeteer-ash-red"
+      },
+      {
+        "itemId": "costume-the-shadow-phantom-purple"
+      },
+      {
+        "itemId": "costume-fire-investigator-mission-green"
+      },
+      {
+        "itemId": "costume-faro-lady-wise-blue"
+      },
+      {
+        "itemId": "costume-goatman-rust-yellow"
+      },
+      {
+        "itemId": "costume-knight-knight-blue"
+      },
+      {
+        "itemId": "costume-hullabaloo-dream-purple"
+      },
+      {
+        "itemId": "costume-cheerleader-passionate-red"
+      },
+      {
+        "itemId": "costume-fools-gold-infection-green"
+      },
+      {
+        "itemId": "costume-novelist-moon-shadow"
+      },
+      {
+        "itemId": "costume-little-girl-first-bloom"
+      },
+      {
+        "itemId": "emote-r-forward-rest"
+      },
+      {
+        "itemId": "emote-r-explorer-prepare"
+      },
+      {
+        "itemId": "emote-r-mercenary-prepare"
+      },
+      {
+        "itemId": "emote-r-lawyer-prepare"
+      },
+      {
+        "itemId": "emote-r-forward-wait"
+      },
+      {
+        "itemId": "emote-r-entomologist-shout"
+      },
+      {
+        "itemId": "emote-r-painter-shout"
+      },
+      {
+        "itemId": "emote-r-composer-shout"
+      },
+      {
+        "itemId": "emote-r-little-girl-shout"
+      },
+      {
+        "itemId": "avatar-r-bw-thief"
+      },
+      {
+        "itemId": "avatar-r-bw-cowboy"
+      },
+      {
+        "itemId": "avatar-r-bw-female-dancer"
+      },
+      {
+        "itemId": "graffiti-r-night-watch-cartoon"
+      },
+      {
+        "itemId": "graffiti-r-puppeteer-cartoon"
+      },
+      {
+        "itemId": "graffiti-r-faro-lady-cartoon"
+      },
+      {
+        "itemId": "graffiti-r-fools-gold-cartoon"
+      }
     ],
     "common": [
-      { "ref": "common", "id": "avatar-c-color-night-watch" },
-      { "ref": "common", "id": "avatar-c-color-opera-singer" },
-      { "ref": "common", "id": "avatar-c-color-shadow" },
-      { "ref": "common", "id": "avatar-c-color-puppeteer" },
-      { "ref": "common", "id": "graffiti-c-barmaid-gray" },
-      { "ref": "common", "id": "graffiti-c-little-girl-gray" },
-      { "ref": "common", "id": "graffiti-c-naiad-gray" },
-      { "ref": "common", "id": "graffiti-c-weeping-clown-gray" },
-      { "ref": "common", "id": "graffiti-c-composer-gray" },
-      { "ref": "common", "id": "graffiti-c-professor-gray" },
-      { "ref": "common", "id": "graffiti-c-novelist-gray" }
+      {
+        "itemId": "avatar-c-color-night-watch"
+      },
+      {
+        "itemId": "avatar-c-color-opera-singer"
+      },
+      {
+        "itemId": "avatar-c-color-shadow"
+      },
+      {
+        "itemId": "avatar-c-color-puppeteer"
+      },
+      {
+        "itemId": "graffiti-c-barmaid-gray"
+      },
+      {
+        "itemId": "graffiti-c-little-girl-gray"
+      },
+      {
+        "itemId": "graffiti-c-naiad-gray"
+      },
+      {
+        "itemId": "graffiti-c-weeping-clown-gray"
+      },
+      {
+        "itemId": "graffiti-c-composer-gray"
+      },
+      {
+        "itemId": "graffiti-c-professor-gray"
+      },
+      {
+        "itemId": "graffiti-c-novelist-gray"
+      }
     ]
   }
 }

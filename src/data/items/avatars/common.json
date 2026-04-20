@@ -1,0 +1,660 @@
+[
+  {
+    "id": "avatar-r-bw-composer",
+    "name": "罕见头像-黑白回忆-作曲家",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-黑白回忆-作曲家"
+  },
+  {
+    "id": "avatar-r-bw-journalist",
+    "name": "罕见头像-黑白回忆-记者",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-黑白回忆-记者"
+  },
+  {
+    "id": "avatar-r-bw-novelist",
+    "name": "罕见头像-黑白回忆-小说家",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-黑白回忆-小说家"
+  },
+  {
+    "id": "avatar-r-bw-thief",
+    "name": "罕见头像-黑白回忆-慈善家",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-黑白回忆-慈善家"
+  },
+  {
+    "id": "avatar-r-bw-cowboy",
+    "name": "罕见头像-黑白回忆-牛仔",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-黑白回忆-牛仔"
+  },
+  {
+    "id": "avatar-r-bw-female-dancer",
+    "name": "罕见头像-黑白回忆-舞女",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-黑白回忆-舞女"
+  },
+  {
+    "id": "avatar-r-bw-painter",
+    "name": "罕见头像-黑白回忆-画家",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-黑白回忆-画家"
+  },
+  {
+    "id": "avatar-r-bw-batter",
+    "name": "罕见头像-黑白回忆-击球手",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-黑白回忆-击球手"
+  },
+  {
+    "id": "avatar-r-bw-toy-merchant",
+    "name": "罕见头像-黑白回忆-玩具商",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-黑白回忆-玩具商"
+  },
+  {
+    "id": "avatar-c-color-fire-investigator",
+    "name": "普通头像-彩色回忆-火灾调查员",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-彩色回忆-火灾调查员"
+  },
+  {
+    "id": "avatar-c-color-faro-lady",
+    "name": "普通头像-彩色回忆-\"法罗女士\"",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-彩色回忆-\"法罗女士\""
+  },
+  {
+    "id": "avatar-c-color-fools-gold",
+    "name": "普通头像-彩色回忆-\"愚人金\"",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-彩色回忆-\"愚人金\""
+  },
+  {
+    "id": "avatar-c-color-goatman",
+    "name": "普通头像-彩色回忆-\"跛脚羊\"",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-彩色回忆-\"跛脚羊\""
+  },
+  {
+    "id": "avatar-c-color-night-watch",
+    "name": "普通头像-彩色回忆-守夜人",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-彩色回忆-守夜人"
+  },
+  {
+    "id": "avatar-c-color-opera-singer",
+    "name": "普通头像-彩色回忆-歌剧演员",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-彩色回忆-歌剧演员"
+  },
+  {
+    "id": "avatar-c-color-shadow",
+    "name": "普通头像-彩色回忆-时空之影",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-彩色回忆-时空之影"
+  },
+  {
+    "id": "avatar-c-color-puppeteer",
+    "name": "普通头像-彩色回忆-木偶师",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-彩色回忆-木偶师"
+  },
+  {
+    "id": "avatar-c-color-hermit",
+    "name": "普通头像-彩色回忆-隐士",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-彩色回忆-隐士"
+  },
+  {
+    "id": "avatar-c-color-composer",
+    "name": "普通头像-彩色回忆-作曲家",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-彩色回忆-作曲家"
+  },
+  {
+    "id": "avatar-c-color-antiquarian",
+    "name": "普通头像-彩色回忆-古董商",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-彩色回忆-古董商"
+  },
+  {
+    "id": "avatar-c-color-professor",
+    "name": "普通头像-彩色回忆-教授",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-彩色回忆-教授"
+  },
+  {
+    "id": "avatar-r-lawyer-other",
+    "name": "罕见头像-律师-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-律师-另一面"
+  },
+  {
+    "id": "avatar-r-thief-other",
+    "name": "罕见头像-慈善家-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-慈善家-另一面"
+  },
+  {
+    "id": "avatar-r-gardener-other",
+    "name": "罕见头像-园丁-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-园丁-另一面"
+  },
+  {
+    "id": "avatar-r-doctor-other",
+    "name": "罕见头像-医生-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-医生-另一面"
+  },
+  {
+    "id": "avatar-r-magician-other",
+    "name": "罕见头像-魔术师-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-魔术师-另一面"
+  },
+  {
+    "id": "avatar-r-explorer-other",
+    "name": "罕见头像-冒险家-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-冒险家-另一面"
+  },
+  {
+    "id": "avatar-r-mercenary-other",
+    "name": "罕见头像-佣兵-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-佣兵-另一面"
+  },
+  {
+    "id": "avatar-r-forward-other",
+    "name": "罕见头像-前锋-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-前锋-另一面"
+  },
+  {
+    "id": "avatar-r-priestess-other",
+    "name": "罕见头像-祭司-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-祭司-另一面"
+  },
+  {
+    "id": "avatar-r-cowboy-other",
+    "name": "罕见头像-牛仔-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-牛仔-另一面"
+  },
+  {
+    "id": "avatar-r-perfumer-other",
+    "name": "罕见头像-调香师-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-调香师-另一面"
+  },
+  {
+    "id": "avatar-r-lucky_guy-other",
+    "name": "罕见头像-幸运儿-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-幸运儿-另一面"
+  },
+  {
+    "id": "avatar-r-geisha-other",
+    "name": "罕见头像-红蝶-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-红蝶-另一面"
+  },
+  {
+    "id": "avatar-r-soul_weaver-other",
+    "name": "罕见头像-蜘蛛-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-蜘蛛-另一面"
+  },
+  {
+    "id": "avatar-r-wu_chang-other",
+    "name": "罕见头像-宿伞之魂-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-宿伞之魂-另一面"
+  },
+  {
+    "id": "avatar-r-the_feaster-other",
+    "name": "罕见头像-黄衣之主-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-黄衣之主-另一面"
+  },
+  {
+    "id": "avatar-r-female_dancer-other",
+    "name": "罕见头像-舞女-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-舞女-另一面"
+  },
+  {
+    "id": "avatar-r-seer-other",
+    "name": "罕见头像-先知-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-先知-另一面"
+  },
+  {
+    "id": "avatar-r-embalmer-other",
+    "name": "罕见头像-入殓师-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-入殓师-另一面"
+  },
+  {
+    "id": "avatar-r-prospector-other",
+    "name": "罕见头像-勘探员-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-勘探员-另一面"
+  },
+  {
+    "id": "avatar-r-photographer-other",
+    "name": "罕见头像-摄影师-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-摄影师-另一面"
+  },
+  {
+    "id": "avatar-r-mad_eyes-other",
+    "name": "罕见头像-疯眼-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-疯眼-另一面"
+  },
+  {
+    "id": "avatar-r-dream_witch-other",
+    "name": "罕见头像-梦之女巫-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-梦之女巫-另一面"
+  },
+  {
+    "id": "avatar-r-axe_boy-other",
+    "name": "罕见头像-爱哭鬼-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-爱哭鬼-另一面"
+  },
+  {
+    "id": "avatar-r-wildling-other",
+    "name": "罕见头像-野人-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-野人-另一面"
+  },
+  {
+    "id": "avatar-r-hell_ember-other",
+    "name": "罕见头像-厂长-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-厂长-另一面"
+  },
+  {
+    "id": "avatar-r-first_officer-other",
+    "name": "罕见头像-大副-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-大副-另一面"
+  },
+  {
+    "id": "avatar-r-ripper-other",
+    "name": "罕见头像-杰克-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-杰克-另一面"
+  },
+  {
+    "id": "avatar-r-gamekeeper-other",
+    "name": "罕见头像-鹿头-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-鹿头-另一面"
+  },
+  {
+    "id": "avatar-r-smiley_face-other",
+    "name": "罕见头像-小丑-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-小丑-另一面"
+  },
+  {
+    "id": "avatar-r-acrobat-other",
+    "name": "罕见头像-杂技演员-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-杂技演员-另一面"
+  },
+  {
+    "id": "avatar-r-enchantress-other",
+    "name": "罕见头像-咒术师-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-咒术师-另一面"
+  },
+  {
+    "id": "avatar-r-bloody_queen-other",
+    "name": "罕见头像-红夫人-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-红夫人-另一面"
+  },
+  {
+    "id": "avatar-r-evil_reptilian-other",
+    "name": "罕见头像-孽蜥-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-孽蜥-另一面"
+  },
+  {
+    "id": "avatar-r-disciple-other",
+    "name": "罕见头像-使徒-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-使徒-另一面"
+  },
+  {
+    "id": "avatar-r-barmaid-other",
+    "name": "罕见头像-调酒师-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-调酒师-另一面"
+  },
+  {
+    "id": "avatar-r-color-journalist",
+    "name": "罕见头像-彩色回忆-记者",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-彩色回忆-记者"
+  },
+  {
+    "id": "avatar-r-wax_artist-other",
+    "name": "罕见头像-蜡像师-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-蜡像师-另一面"
+  },
+  {
+    "id": "avatar-r-cute-smiley_face",
+    "name": "罕见头像-萌版小丑",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-萌版小丑"
+  },
+  {
+    "id": "avatar-r-cute-ripper",
+    "name": "罕见头像-萌版杰克",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-萌版杰克"
+  },
+  {
+    "id": "avatar-r-cute-gamekeeper",
+    "name": "罕见头像-萌版鹿头",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-萌版鹿头"
+  },
+  {
+    "id": "avatar-c-hell_ember",
+    "name": "普通头像-地狱感知",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-地狱感知"
+  },
+  {
+    "id": "avatar-c-gamekeeper",
+    "name": "普通头像-鹿头",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-鹿头"
+  },
+  {
+    "id": "avatar-c-coordinator",
+    "name": "普通头像-空军",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-空军"
+  },
+  {
+    "id": "avatar-c-billy",
+    "name": "普通头像-木偶比利",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-木偶比利"
+  },
+  {
+    "id": "avatar-c-ripper",
+    "name": "普通头像-杰克",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-杰克"
+  },
+  {
+    "id": "avatar-c-doctor",
+    "name": "普通头像-医生",
+    "rarity": "common",
+    "category": "avatar",
+    "nameEn": "普通头像-医生"
+  },
+  {
+    "id": "avatar-r-guard_26-other",
+    "name": "罕见头像-26号守卫-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-26号守卫-另一面"
+  },
+  {
+    "id": "avatar-r-postman-other",
+    "name": "罕见头像-邮差-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-邮差-另一面"
+  },
+  {
+    "id": "avatar-r-grave_keeper-other",
+    "name": "罕见头像-守墓人-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-守墓人-另一面"
+  },
+  {
+    "id": "avatar-r-prisoner-other",
+    "name": "罕见头像-\"囚徒\"-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-\"囚徒\"-另一面"
+  },
+  {
+    "id": "avatar-r-weeping_clown-other",
+    "name": "罕见头像-哭泣小丑-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-哭泣小丑-另一面"
+  },
+  {
+    "id": "avatar-r-hermit-other",
+    "name": "罕见头像-隐士-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-隐士-另一面"
+  },
+  {
+    "id": "avatar-r-clerk-other",
+    "name": "罕见头像-\"记录员\"-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-\"记录员\"-另一面"
+  },
+  {
+    "id": "avatar-r-journalist-other",
+    "name": "罕见头像-记者-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-记者-另一面"
+  },
+  {
+    "id": "avatar-r-antiquarian-other",
+    "name": "罕见头像-古董商-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-古董商-另一面"
+  },
+  {
+    "id": "avatar-r-professor-other",
+    "name": "罕见头像-教授-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-教授-另一面"
+  },
+  {
+    "id": "avatar-r-composer-other",
+    "name": "罕见头像-作曲家-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-作曲家-另一面"
+  },
+  {
+    "id": "avatar-r-patient-other",
+    "name": "罕见头像-病患-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-病患-另一面"
+  },
+  {
+    "id": "avatar-r-psychologist-other",
+    "name": "罕见头像-\"心理学家\"-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-\"心理学家\"-另一面"
+  },
+  {
+    "id": "avatar-r-toy_merchant-other",
+    "name": "罕见头像-玩具商-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-玩具商-另一面"
+  },
+  {
+    "id": "avatar-r-painter-other",
+    "name": "罕见头像-画家-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-画家-另一面"
+  },
+  {
+    "id": "avatar-r-batter-other",
+    "name": "罕见头像-击球手-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-击球手-另一面"
+  },
+  {
+    "id": "avatar-r-sculptor-other",
+    "name": "罕见头像-雕刻家-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-雕刻家-另一面"
+  },
+  {
+    "id": "avatar-r-opera_singer-other",
+    "name": "罕见头像-歌剧演员-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-歌剧演员-另一面"
+  },
+  {
+    "id": "avatar-r-night_watch-other",
+    "name": "罕见头像-守夜人-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-守夜人-另一面"
+  },
+  {
+    "id": "avatar-r-the_shadow-other",
+    "name": "罕见头像-时空之影-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-时空之影-另一面"
+  },
+  {
+    "id": "avatar-r-puppeteer-other",
+    "name": "罕见头像-木偶师-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-木偶师-另一面"
+  },
+  {
+    "id": "avatar-r-fire_investigator-other",
+    "name": "罕见头像-火灾调查员-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-火灾调查员-另一面"
+  },
+  {
+    "id": "avatar-r-faro_lady-other",
+    "name": "罕见头像-\"法罗女士\"-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-\"法罗女士\"-另一面"
+  },
+  {
+    "id": "avatar-r-fools_gold-other",
+    "name": "罕见头像-\"愚人金\"-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-\"愚人金\"-另一面"
+  },
+  {
+    "id": "avatar-r-aeroplanist-other",
+    "name": "罕见头像-飞行家-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-飞行家-另一面"
+  },
+  {
+    "id": "avatar-r-cheerleader-other",
+    "name": "罕见头像-拉拉队员-另一面",
+    "rarity": "rare",
+    "category": "avatar",
+    "nameEn": "罕见头像-拉拉队员-另一面"
+  }
+]

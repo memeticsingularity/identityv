@@ -1,0 +1,10 @@
+[
+  {
+    "id": "emote-he-math",
+    "name": "数学难题",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "hell_ember",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  }
+]

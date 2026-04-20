@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-lanternist-skylight-blue",
+    "name": "天窗蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "lanternist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-lanternist-robin",
+    "name": "知更鸟",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "lanternist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-lantern-paradise-visitor",
+    "name": "乐园游人",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "lanternist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

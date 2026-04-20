@@ -1,0 +1,54 @@
+[
+  {
+    "id": "emote-wc-look",
+    "name": "张望",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "weeping_clown",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  },
+  {
+    "id": "emote-wc-rest",
+    "name": "小憩",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "weeping_clown",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  },
+  {
+    "id": "emote-wc-shame",
+    "name": "羞愧",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "weeping_clown",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  },
+  {
+    "id": "emote-wc-shout",
+    "name": "呼喊",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "weeping_clown",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  }
+]

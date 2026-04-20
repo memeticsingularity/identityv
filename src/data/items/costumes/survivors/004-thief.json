@@ -1,0 +1,56 @@
+[
+  {
+    "id": "costume-thief-jade",
+    "name": "绿翡翠",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "thief",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-thief-pelican",
+    "name": "鹈鹕",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "thief",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-thief-pirate-lookout",
+    "name": "海盗远望者",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "thief",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  },
+  {
+    "id": "costume-thief-iron-hat-gangster",
+    "name": "铁帽黑手",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "thief",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  }
+]

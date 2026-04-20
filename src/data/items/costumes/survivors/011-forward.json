@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-fwd-vitality-green",
+    "name": "生机绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "forward",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  },
+  {
+    "id": "costume-fwd-neon-pioneer",
+    "name": "霓虹先锋",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "forward",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  }
+]

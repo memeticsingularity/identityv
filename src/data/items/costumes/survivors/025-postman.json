@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-post-news-boy",
+    "name": "报童",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "postman",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  }
+]

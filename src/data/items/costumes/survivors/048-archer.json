@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-archer-off-string-scarlet",
+    "name": "离弦绯",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "archer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  }
+]

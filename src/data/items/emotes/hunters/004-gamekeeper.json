@@ -1,0 +1,10 @@
+[
+  {
+    "id": "emote-gk-protest",
+    "name": "示威",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "gamekeeper",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  }
+]

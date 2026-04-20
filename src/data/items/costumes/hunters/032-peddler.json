@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-peddler-laurel-yellow",
+    "name": "月桂黄",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "peddler",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-peddler-dry-nest",
+    "name": "枯巢",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "peddler",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-peddler-profit",
+    "name": "利多多",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "peddler",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  }
+]

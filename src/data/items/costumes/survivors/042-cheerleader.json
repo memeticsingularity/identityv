@@ -1,0 +1,67 @@
+[
+  {
+    "id": "costume-cheerleader-passionate-red",
+    "name": "热烈红",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "cheerleader",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-cheerleader-little-cicada",
+    "name": "小知了",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "cheerleader",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-cl-vitality-yellow",
+    "name": "活力黄",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "cheerleader",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  },
+  {
+    "id": "costume-cl-collection-patrol",
+    "name": "采集速巡",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "cheerleader",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  },
+  {
+    "id": "costume-cl-sports-blue",
+    "name": "运动蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "cheerleader",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  }
+]

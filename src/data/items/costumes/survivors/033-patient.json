@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-patient-safety-officer",
+    "name": "安全员",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "patient",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  },
+  {
+    "id": "costume-patient-old-wall-brown",
+    "name": "旧墙褐",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "patient",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  },
+  {
+    "id": "costume-patient-rare-case",
+    "name": "稀缺病案",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "patient",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  }
+]

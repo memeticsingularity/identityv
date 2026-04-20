@@ -1,0 +1,15 @@
+[
+  {
+    "id": "emote-fo-dance",
+    "name": "起舞",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "first_officer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  }
+]

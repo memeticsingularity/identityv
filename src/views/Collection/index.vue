@@ -45,15 +45,31 @@
 
       <div class="filter-group">
         <span class="filter-label">角色</span>
-        <el-select v-model="filterCharacter" placeholder="全部角色" clearable size="small" style="width: 160px">
-          <el-option label="全部角色" value="" />
-          <el-option
-            v-for="char in catalogCharacters"
-            :key="char.id"
-            :label="char.name"
-            :value="char.id"
-          />
-        </el-select>
+        <el-cascader
+          v-model="filterCharacters"
+          :options="characterCascaderOptions"
+          :props="{ multiple: true, filterable: true, emitPath: false }"
+          show-all-levels="false"
+          collapse-tags
+          collapse-tags-tooltip
+          :max-collapse-tags="1"
+          clearable
+          placeholder="选择角色"
+          size="small"
+          style="width: 220px"
+          popper-class="character-cascader-popper"
+        />
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-label">类型</span>
+        <el-checkbox-group v-model="filterItemTypes" size="small">
+          <el-checkbox label="skin">时装</el-checkbox>
+          <el-checkbox label="accessory">随身物品</el-checkbox>
+          <el-checkbox label="emote">个性动作</el-checkbox>
+          <el-checkbox label="avatar">头像</el-checkbox>
+          <el-checkbox label="graffiti">涂鸦</el-checkbox>
+        </el-checkbox-group>
       </div>
 
       <div class="filter-group">
@@ -97,9 +113,9 @@
     </div>
 
     <!-- 物品网格 -->
-    <div v-if="filteredItems.length > 0" class="item-grid">
+    <div v-if="pagedItems.length > 0" class="item-grid">
       <div
-        v-for="item in filteredItems"
+        v-for="item in pagedItems"
         :key="item.key"
         class="item-card"
         :class="{ owned: isOwned(item.key), unowned: !isOwned(item.key) }"
@@ -132,7 +148,7 @@
           <div class="item-source">
             来源：{{ poolName(item.poolId) }}
           </div>
-          <div v-if="isOwned(item.key)" class="item-acquired">
+          <div v-if="isOwned(item.key) && item.itemType === 'skin'" class="item-acquired">
             <span>第 {{ acquiredIndex(item.key) }} 个获得</span>
             <span class="acquired-time">{{ formatAcquiredTime(item.key) }}</span>
           </div>
@@ -160,6 +176,19 @@
       </div>
     </div>
 
+    <!-- 分页 -->
+    <div v-if="filteredItems.length > 0" class="pagination-bar">
+      <el-pagination
+        v-model:current-page="currentPage"
+        v-model:page-size="pageSize"
+        :total="filteredItems.length"
+        :page-sizes="[15, 30, 60, 100]"
+        layout="total, sizes, prev, pager, next, jumper"
+        background
+        size="small"
+      />
+    </div>
+
     <div v-else class="empty-tip">
       没有找到符合条件的物品
     </div>
@@ -167,7 +196,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAppStore, RARITY_CONFIG, ESSENCE_POOLS } from '../../stores/app'
 import { buildItemCatalog } from '../../data/essences/index.js'
@@ -181,17 +210,35 @@ const rarityOrder = ['legendary', 'epic', 'unique', 'rare', 'common']
 
 // 筛选状态
 const filterRarity = ref([...rarityOrder])
-const filterCharacter = ref('')
+const filterCharacters = ref([])
+const filterItemTypes = ref([])
 const filterOwned = ref('')
 const filterPool = ref('')
 const sortBy = ref('acquired')
+const currentPage = ref(1)
+const pageSize = ref(15)
 
-// 出现在精华池中的角色（去重）
-const catalogCharacters = computed(() => {
-  const charIds = new Set(catalog.filter(i => i.characterId).map(i => i.characterId))
-  return characters
-    .filter(c => charIds.has(c.id))
-    .sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'))
+// 筛选条件变化时重置到第 1 页
+watch([filterRarity, filterCharacters, filterItemTypes, filterOwned, filterPool, sortBy], () => {
+  currentPage.value = 1
+}, { deep: true })
+
+// 所有角色按阵营分组（不限于精华池中出现过的）
+const allCharactersRaw = characters.sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'))
+
+const characterCascaderOptions = computed(() => {
+  const groups = [
+    { key: 'survivor', label: '求生者' },
+    { key: 'hunter', label: '监管者' },
+    { key: 'npc', label: 'NPC' },
+  ]
+  return groups.map(g => ({
+    value: g.key,
+    label: g.label,
+    children: allCharactersRaw
+      .filter(c => c.type === g.key)
+      .map(c => ({ value: c.id, label: c.name })),
+  }))
 })
 
 // 有真实配置的精华池
@@ -216,6 +263,10 @@ function poolName(poolId) {
 function categoryLabel(cat) {
   const map = { emote: '个性动作', avatar: '头像', graffiti: '涂鸦', skin: '时装', accessory: '随身物品' }
   return map[cat] || cat
+}
+
+function getItemCategory(item) {
+  return item.itemType || item.category || ''
 }
 
 function goToPool(poolId) {
@@ -247,10 +298,20 @@ const rarityWeight = { legendary: 5, epic: 4, unique: 3, rare: 2, common: 1 }
 
 /** 筛选 + 排序后的图鉴列表 */
 const filteredItems = computed(() => {
-  // 1. 筛选：稀有度 / 角色 / 精华池 / 拥有状态
+  // 1. 筛选：稀有度 / 角色 / 类型 / 精华池 / 拥有状态
   let list = catalog.filter(item => {
     if (!filterRarity.value.includes(item.rarity)) return false
-    if (filterCharacter.value && item.characterId !== filterCharacter.value) return false
+    if (filterCharacters.value.length > 0) {
+      const selected = new Set(filterCharacters.value)
+      let match = false
+      if (selected.has(item.characterId)) match = true
+      if (!match && item.characterId) {
+        const char = characters.find(c => c.id === item.characterId)
+        if (char && selected.has(char.type)) match = true
+      }
+      if (!match) return false
+    }
+    if (filterItemTypes.value.length > 0 && !filterItemTypes.value.includes(getItemCategory(item))) return false
     if (filterPool.value && item.poolId !== filterPool.value) return false
     if (filterOwned.value === 'owned' && !isOwned(item.key)) return false
     if (filterOwned.value === 'unowned' && isOwned(item.key)) return false
@@ -295,6 +356,12 @@ const filteredItems = computed(() => {
   }
 
   return list
+})
+
+/** 分页后的物品列表 */
+const pagedItems = computed(() => {
+  const start = (currentPage.value - 1) * pageSize.value
+  return filteredItems.value.slice(start, start + pageSize.value)
 })
 </script>
 
@@ -539,5 +606,32 @@ const filteredItems = computed(() => {
 .acquired-time {
   color: #a89b8c;
   font-size: 11px;
+}
+
+/* ===== 角色级联选择器标签限制 ===== */
+.filter-group :deep(.el-cascader__tags) {
+  max-height: 28px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+.filter-group :deep(.el-cascader__tags .el-tag) {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.character-cascader-popper .el-cascader-node {
+  padding: 0 16px 0 12px;
+}
+
+/* ===== 分页栏 ===== */
+.pagination-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
 }
 </style>

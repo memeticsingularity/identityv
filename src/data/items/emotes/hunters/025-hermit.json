@@ -1,0 +1,15 @@
+[
+  {
+    "id": "emote-hermit-visit",
+    "name": "拜访",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "hermit",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  }
+]

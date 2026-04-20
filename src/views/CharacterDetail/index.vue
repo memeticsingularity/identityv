@@ -314,9 +314,13 @@ function rarityClass(rarity) {
   const map = {
     '虚妄杰作': 'rarity-splus',
     '稀世': 'rarity-s',
+    'legendary': 'rarity-s',
     '奇珍': 'rarity-a',
+    'epic': 'rarity-a',
     '独特': 'rarity-b',
+    'unique': 'rarity-b',
     '罕见': 'rarity-c',
+    'rare': 'rarity-c',
   }
   return map[rarity] || 'rarity-default'
 }

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-ab-fanatic-audience",
+    "name": "狂热观众",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "axe_boy",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  }
+]

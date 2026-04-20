@@ -1,0 +1,15 @@
+[
+  {
+    "id": "emote-archer-cheer",
+    "name": "欢呼",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "archer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

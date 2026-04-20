@@ -1,5 +1,7 @@
 import { characters } from '../characters/index.js'
+import { getItemById } from '../items/index.js'
 import commonItems from './common-items.json'
+import s1e1 from './s1-e1.json'
 import s42e1 from './s42-e1.json'
 import s42e2 from './s42-e2.json'
 import s42e3 from './s42-e3.json'
@@ -15,6 +17,7 @@ import abyss9 from './abyss-09.json'
 
 // ===== 精华池注册 =====
 const POOL_MAP = new Map([
+  ['s1-e1', s1e1],
   ['s42-e1', s42e1],
   ['s42-e2', s42e2],
   ['s42-e3', s42e3],
@@ -56,6 +59,37 @@ function findCharacterItem(characterId, itemType, name) {
 
 // ===== 解析单个引用 =====
 export function resolveItem(ref, defaultRarity = 'common') {
+  // 新格式：直接引用 itemId
+  if (ref.itemId) {
+    const item = getItemById(ref.itemId)
+    if (item) {
+      const char = item.characterId ? characters.find(c => c.id === item.characterId) : null
+      return {
+        id: item.id,
+        name: item.name,
+        nameEn: item.name,
+        displayName: char ? `${char.name} - ${item.name}` : item.name,
+        rarity: item.rarity,
+        description: item.description || '',
+        characterId: item.characterId,
+        characterName: char?.name || '',
+        characterNameEn: char?.englishName || char?.name || '',
+        itemType: item.type === 'costume' ? 'skin' : item.type,
+        source: 'item',
+      }
+    }
+    return {
+      id: ref.itemId,
+      name: ref.itemId,
+      nameEn: ref.itemId,
+      displayName: ref.itemId,
+      rarity: defaultRarity,
+      description: '',
+      source: 'item',
+    }
+  }
+
+  // 旧格式：character 引用（兼容）
   if (ref.ref === 'character') {
     const found = findCharacterItem(ref.characterId, ref.itemType + 's', ref.name)
     if (found) {
@@ -92,6 +126,7 @@ export function resolveItem(ref, defaultRarity = 'common') {
     }
   }
 
+  // 旧格式：common 引用（兼容）
   if (ref.ref === 'common') {
     const item = COMMON_INDEX.get(ref.id)
     if (item) {
@@ -155,6 +190,9 @@ export function hasRealPool(poolId) {
 
 // ===== 为引用生成稳定 key（用于收藏册去重） =====
 export function getItemKey(ref) {
+  if (ref.itemId) {
+    return `item:${ref.itemId}`
+  }
   if (ref.ref === 'character') {
     return `character:${ref.characterId}:${ref.itemType}:${ref.name}`
   }

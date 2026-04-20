@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-little-girl-silver-throat",
+    "name": "银喉",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "little_girl",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-little-girl-first-bloom",
+    "name": "初绽杏",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "little_girl",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-lg-abnormal-pointer",
+    "name": "异动指针",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "little_girl",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  }
+]

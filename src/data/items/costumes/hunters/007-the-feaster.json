@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-the-feaster-eternal-night",
+    "name": "永夜之劫",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "the_feaster",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-tf-night-purple",
+    "name": "夜紫",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "the_feaster",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "costume-tf-lord-of-calamity",
+    "name": "灾厄之主",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "the_feaster",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  }
+]

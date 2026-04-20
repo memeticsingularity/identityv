@@ -3,224 +3,130 @@
   "contents": {
     "legendary": [
       {
-        "ref": "character",
-        "characterId": "photographer",
-        "itemType": "skin",
-        "name": "\"恒光\""
+        "itemId": "costume-photo-eternal-light"
       }
     ],
     "epic": [
       {
-        "ref": "character",
-        "characterId": "painter",
-        "itemType": "skin",
-        "name": "深蓝暗面"
+        "itemId": "costume-painter-deep-blue-dark"
       },
       {
-        "ref": "character",
-        "characterId": "fire_investigator",
-        "itemType": "skin",
-        "name": "匣中焰星"
+        "itemId": "costume-fi-flame-star-in-box"
       },
       {
-        "ref": "character",
-        "characterId": "faro_lady",
-        "itemType": "skin",
-        "name": "苍白冠冕"
+        "itemId": "costume-fl-pale-crown"
       },
       {
-        "ref": "character",
-        "characterId": "knight",
-        "itemType": "skin",
-        "name": "不羁欢歌"
+        "itemId": "costume-knight-unrestrained-song"
       }
     ],
     "unique": [
       {
-        "ref": "character",
-        "characterId": "explorer",
-        "itemType": "skin",
-        "name": "阴谋论者"
+        "itemId": "costume-exp-conspiracy-theorist"
       },
       {
-        "ref": "character",
-        "characterId": "coordinator",
-        "itemType": "skin",
-        "name": "漆黑神官"
+        "itemId": "costume-co-dark-priest"
       },
       {
-        "ref": "character",
-        "characterId": "the_shadow",
-        "itemType": "skin",
-        "name": "惊惧故事集"
+        "itemId": "costume-ts-horror-stories"
       },
       {
-        "ref": "character",
-        "characterId": "lanternist",
-        "itemType": "skin",
-        "name": "乐园游人"
+        "itemId": "costume-lantern-paradise-visitor"
       },
       {
-        "ref": "character",
-        "characterId": "puppeteer",
-        "itemType": "emote",
-        "name": "起身"
+        "itemId": "emote-puppet-stand"
       },
       {
-        "ref": "character",
-        "characterId": "aeroplanist",
-        "itemType": "emote",
-        "name": "起身"
+        "itemId": "emote-aero-stand"
       },
       {
-        "ref": "character",
-        "characterId": "escapologist",
-        "itemType": "emote",
-        "name": "准备"
+        "itemId": "emote-esc-prepare"
       },
       {
-        "ref": "character",
-        "characterId": "the_shadow",
-        "itemType": "emote",
-        "name": "拜访"
+        "itemId": "emote-ts-visit"
       }
     ],
     "rare": [
       {
-        "ref": "character",
-        "characterId": "priestess",
-        "itemType": "skin",
-        "name": "深幽灰"
+        "itemId": "costume-priest-deep-gray"
       },
       {
-        "ref": "character",
-        "characterId": "puppeteer",
-        "itemType": "skin",
-        "name": "阴沉蓝"
+        "itemId": "costume-puppet-gloomy-blue"
       },
       {
-        "ref": "character",
-        "characterId": "the_shadow",
-        "itemType": "skin",
-        "name": "虚空黑"
+        "itemId": "costume-ts-void-black"
       },
       {
-        "ref": "character",
-        "characterId": "fire_investigator",
-        "itemType": "skin",
-        "name": "黯影紫"
+        "itemId": "costume-fi-shadow-purple"
       },
       {
-        "ref": "character",
-        "characterId": "faro_lady",
-        "itemType": "skin",
-        "name": "迷影棕"
+        "itemId": "costume-fl-misty-brown"
       },
       {
-        "ref": "character",
-        "characterId": "goatman",
-        "itemType": "skin",
-        "name": "锁链银"
+        "itemId": "costume-goatman-chain-silver"
       },
       {
-        "ref": "character",
-        "characterId": "knight",
-        "itemType": "skin",
-        "name": "秋叶棕"
+        "itemId": "costume-knight-autumn-leaf-brown"
       },
       {
-        "ref": "character",
-        "characterId": "hullabaloo",
-        "itemType": "skin",
-        "name": "记忆黄"
+        "itemId": "costume-hull-memory-yellow"
       },
       {
-        "ref": "character",
-        "characterId": "fire_investigator",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-fi-shame"
       },
       {
-        "ref": "character",
-        "characterId": "journalist",
-        "itemType": "emote",
-        "name": "挑衅"
+        "itemId": "emote-jour-provoke"
       },
       {
-        "ref": "character",
-        "characterId": "knight",
-        "itemType": "emote",
-        "name": "躺地"
+        "itemId": "emote-knight-lie"
       },
       {
-        "ref": "character",
-        "characterId": "meteorologist",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-meteo-shame"
       },
       {
-        "ref": "character",
-        "characterId": "archer",
-        "itemType": "emote",
-        "name": "欢呼"
+        "itemId": "emote-archer-cheer"
       },
       {
-        "ref": "character",
-        "characterId": "escapologist",
-        "itemType": "emote",
-        "name": "呼喊"
+        "itemId": "emote-esc-shout"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-night_watch-other"
+        "itemId": "avatar-r-night_watch-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-the_shadow-other"
+        "itemId": "avatar-r-the_shadow-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-puppeteer-other"
+        "itemId": "avatar-r-puppeteer-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-fire_investigator-other"
+        "itemId": "avatar-r-fire_investigator-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-faro_lady-other"
+        "itemId": "avatar-r-faro_lady-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-fools_gold-other"
+        "itemId": "avatar-r-fools_gold-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-aeroplanist-other"
+        "itemId": "avatar-r-aeroplanist-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-cheerleader-other"
+        "itemId": "avatar-r-cheerleader-other"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-journalist-巡于归途"
+        "itemId": "graffiti-r-journalist-巡于归途"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-fire_investigator-匣中焰星"
+        "itemId": "graffiti-r-fire_investigator-匣中焰星"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-painter-深蓝暗面"
+        "itemId": "graffiti-r-painter-深蓝暗面"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-knight-不羁欢歌"
+        "itemId": "graffiti-r-knight-不羁欢歌"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-faro_lady-苍白冠冕"
+        "itemId": "graffiti-r-faro_lady-苍白冠冕"
       }
     ],
     "common": []

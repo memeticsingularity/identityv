@@ -10,18 +10,24 @@ import survivors_002_doctor_abilities from './survivors/002-doctor/abilities.jso
 import survivors_002_doctor_stories from './survivors/002-doctor/stories.json'
 import survivors_002_doctor_skins from './survivors/002-doctor/skins.json'
 import survivors_002_doctor_accessories from './survivors/002-doctor/accessories.json'
+import survivors_002_doctor_emotes from './survivors/002-doctor/emotes.json'
+import survivors_002_doctor_graffitis from './survivors/002-doctor/graffitis.json'
 import survivors_003_lawyer_profile from './survivors/003-lawyer/profile.json'
 import survivors_003_lawyer_gameplay from './survivors/003-lawyer/gameplay.json'
 import survivors_003_lawyer_abilities from './survivors/003-lawyer/abilities.json'
 import survivors_003_lawyer_stories from './survivors/003-lawyer/stories.json'
 import survivors_003_lawyer_skins from './survivors/003-lawyer/skins.json'
 import survivors_003_lawyer_accessories from './survivors/003-lawyer/accessories.json'
+import survivors_003_lawyer_emotes from './survivors/003-lawyer/emotes.json'
+import survivors_003_lawyer_graffitis from './survivors/003-lawyer/graffitis.json'
 import survivors_004_thief_profile from './survivors/004-thief/profile.json'
 import survivors_004_thief_gameplay from './survivors/004-thief/gameplay.json'
 import survivors_004_thief_abilities from './survivors/004-thief/abilities.json'
 import survivors_004_thief_stories from './survivors/004-thief/stories.json'
 import survivors_004_thief_skins from './survivors/004-thief/skins.json'
 import survivors_004_thief_accessories from './survivors/004-thief/accessories.json'
+import survivors_004_thief_emotes from './survivors/004-thief/emotes.json'
+import survivors_004_thief_graffitis from './survivors/004-thief/graffitis.json'
 import survivors_005_gardener_profile from './survivors/005-gardener/profile.json'
 import survivors_005_gardener_gameplay from './survivors/005-gardener/gameplay.json'
 import survivors_005_gardener_abilities from './survivors/005-gardener/abilities.json'
@@ -34,24 +40,30 @@ import survivors_006_magician_abilities from './survivors/006-magician/abilities
 import survivors_006_magician_stories from './survivors/006-magician/stories.json'
 import survivors_006_magician_skins from './survivors/006-magician/skins.json'
 import survivors_006_magician_accessories from './survivors/006-magician/accessories.json'
+import survivors_006_magician_emotes from './survivors/006-magician/emotes.json'
 import survivors_007_explorer_profile from './survivors/007-explorer/profile.json'
 import survivors_007_explorer_gameplay from './survivors/007-explorer/gameplay.json'
 import survivors_007_explorer_abilities from './survivors/007-explorer/abilities.json'
 import survivors_007_explorer_stories from './survivors/007-explorer/stories.json'
 import survivors_007_explorer_skins from './survivors/007-explorer/skins.json'
 import survivors_007_explorer_accessories from './survivors/007-explorer/accessories.json'
+import survivors_007_explorer_emotes from './survivors/007-explorer/emotes.json'
+import survivors_007_explorer_graffitis from './survivors/007-explorer/graffitis.json'
 import survivors_008_mercenary_profile from './survivors/008-mercenary/profile.json'
 import survivors_008_mercenary_gameplay from './survivors/008-mercenary/gameplay.json'
 import survivors_008_mercenary_abilities from './survivors/008-mercenary/abilities.json'
 import survivors_008_mercenary_stories from './survivors/008-mercenary/stories.json'
 import survivors_008_mercenary_skins from './survivors/008-mercenary/skins.json'
 import survivors_008_mercenary_accessories from './survivors/008-mercenary/accessories.json'
+import survivors_008_mercenary_graffitis from './survivors/008-mercenary/graffitis.json'
 import survivors_009_coordinator_profile from './survivors/009-coordinator/profile.json'
 import survivors_009_coordinator_gameplay from './survivors/009-coordinator/gameplay.json'
 import survivors_009_coordinator_abilities from './survivors/009-coordinator/abilities.json'
 import survivors_009_coordinator_stories from './survivors/009-coordinator/stories.json'
 import survivors_009_coordinator_skins from './survivors/009-coordinator/skins.json'
 import survivors_009_coordinator_accessories from './survivors/009-coordinator/accessories.json'
+import survivors_009_coordinator_emotes from './survivors/009-coordinator/emotes.json'
+import survivors_009_coordinator_graffitis from './survivors/009-coordinator/graffitis.json'
 import survivors_010_mechanic_profile from './survivors/010-mechanic/profile.json'
 import survivors_010_mechanic_gameplay from './survivors/010-mechanic/gameplay.json'
 import survivors_010_mechanic_abilities from './survivors/010-mechanic/abilities.json'
@@ -310,24 +322,30 @@ import hunters_001_hell_ember_abilities from './hunters/001-hell-ember/abilities
 import hunters_001_hell_ember_stories from './hunters/001-hell-ember/stories.json'
 import hunters_001_hell_ember_skins from './hunters/001-hell-ember/skins.json'
 import hunters_001_hell_ember_accessories from './hunters/001-hell-ember/accessories.json'
+import hunters_001_hell_ember_emotes from './hunters/001-hell-ember/emotes.json'
+import hunters_001_hell_ember_graffitis from './hunters/001-hell-ember/graffitis.json'
 import hunters_002_smiley_face_profile from './hunters/002-smiley-face/profile.json'
 import hunters_002_smiley_face_gameplay from './hunters/002-smiley-face/gameplay.json'
 import hunters_002_smiley_face_abilities from './hunters/002-smiley-face/abilities.json'
 import hunters_002_smiley_face_stories from './hunters/002-smiley-face/stories.json'
 import hunters_002_smiley_face_skins from './hunters/002-smiley-face/skins.json'
 import hunters_002_smiley_face_accessories from './hunters/002-smiley-face/accessories.json'
+import hunters_002_smiley_face_emotes from './hunters/002-smiley-face/emotes.json'
 import hunters_003_the_ripper_profile from './hunters/003-the-ripper/profile.json'
 import hunters_003_the_ripper_gameplay from './hunters/003-the-ripper/gameplay.json'
 import hunters_003_the_ripper_abilities from './hunters/003-the-ripper/abilities.json'
 import hunters_003_the_ripper_stories from './hunters/003-the-ripper/stories.json'
 import hunters_003_the_ripper_skins from './hunters/003-the-ripper/skins.json'
 import hunters_003_the_ripper_accessories from './hunters/003-the-ripper/accessories.json'
+import hunters_003_the_ripper_emotes from './hunters/003-the-ripper/emotes.json'
 import hunters_004_gamekeeper_profile from './hunters/004-gamekeeper/profile.json'
 import hunters_004_gamekeeper_gameplay from './hunters/004-gamekeeper/gameplay.json'
 import hunters_004_gamekeeper_abilities from './hunters/004-gamekeeper/abilities.json'
 import hunters_004_gamekeeper_stories from './hunters/004-gamekeeper/stories.json'
 import hunters_004_gamekeeper_skins from './hunters/004-gamekeeper/skins.json'
 import hunters_004_gamekeeper_accessories from './hunters/004-gamekeeper/accessories.json'
+import hunters_004_gamekeeper_emotes from './hunters/004-gamekeeper/emotes.json'
+import hunters_004_gamekeeper_graffitis from './hunters/004-gamekeeper/graffitis.json'
 import hunters_005_soul_weaver_profile from './hunters/005-soul-weaver/profile.json'
 import hunters_005_soul_weaver_gameplay from './hunters/005-soul-weaver/gameplay.json'
 import hunters_005_soul_weaver_abilities from './hunters/005-soul-weaver/abilities.json'
@@ -549,6 +567,8 @@ export const characters = [
     stories: survivors_002_doctor_stories,
     skins: survivors_002_doctor_skins,
     accessories: survivors_002_doctor_accessories,
+    emotes: survivors_002_doctor_emotes,
+    graffitis: survivors_002_doctor_graffitis,
   },
   {
     ...survivors_003_lawyer_profile,
@@ -557,6 +577,8 @@ export const characters = [
     stories: survivors_003_lawyer_stories,
     skins: survivors_003_lawyer_skins,
     accessories: survivors_003_lawyer_accessories,
+    emotes: survivors_003_lawyer_emotes,
+    graffitis: survivors_003_lawyer_graffitis,
   },
   {
     ...survivors_004_thief_profile,
@@ -565,6 +587,8 @@ export const characters = [
     stories: survivors_004_thief_stories,
     skins: survivors_004_thief_skins,
     accessories: survivors_004_thief_accessories,
+    emotes: survivors_004_thief_emotes,
+    graffitis: survivors_004_thief_graffitis,
   },
   {
     ...survivors_005_gardener_profile,
@@ -581,6 +605,7 @@ export const characters = [
     stories: survivors_006_magician_stories,
     skins: survivors_006_magician_skins,
     accessories: survivors_006_magician_accessories,
+    emotes: survivors_006_magician_emotes,
   },
   {
     ...survivors_007_explorer_profile,
@@ -589,6 +614,8 @@ export const characters = [
     stories: survivors_007_explorer_stories,
     skins: survivors_007_explorer_skins,
     accessories: survivors_007_explorer_accessories,
+    emotes: survivors_007_explorer_emotes,
+    graffitis: survivors_007_explorer_graffitis,
   },
   {
     ...survivors_008_mercenary_profile,
@@ -597,6 +624,7 @@ export const characters = [
     stories: survivors_008_mercenary_stories,
     skins: survivors_008_mercenary_skins,
     accessories: survivors_008_mercenary_accessories,
+    graffitis: survivors_008_mercenary_graffitis,
   },
   {
     ...survivors_009_coordinator_profile,
@@ -605,6 +633,8 @@ export const characters = [
     stories: survivors_009_coordinator_stories,
     skins: survivors_009_coordinator_skins,
     accessories: survivors_009_coordinator_accessories,
+    emotes: survivors_009_coordinator_emotes,
+    graffitis: survivors_009_coordinator_graffitis,
   },
   {
     ...survivors_010_mechanic_profile,
@@ -949,6 +979,8 @@ export const characters = [
     stories: hunters_001_hell_ember_stories,
     skins: hunters_001_hell_ember_skins,
     accessories: hunters_001_hell_ember_accessories,
+    emotes: hunters_001_hell_ember_emotes,
+    graffitis: hunters_001_hell_ember_graffitis,
   },
   {
     ...hunters_002_smiley_face_profile,
@@ -957,6 +989,7 @@ export const characters = [
     stories: hunters_002_smiley_face_stories,
     skins: hunters_002_smiley_face_skins,
     accessories: hunters_002_smiley_face_accessories,
+    emotes: hunters_002_smiley_face_emotes,
   },
   {
     ...hunters_003_the_ripper_profile,
@@ -965,6 +998,7 @@ export const characters = [
     stories: hunters_003_the_ripper_stories,
     skins: hunters_003_the_ripper_skins,
     accessories: hunters_003_the_ripper_accessories,
+    emotes: hunters_003_the_ripper_emotes,
   },
   {
     ...hunters_004_gamekeeper_profile,
@@ -973,6 +1007,8 @@ export const characters = [
     stories: hunters_004_gamekeeper_stories,
     skins: hunters_004_gamekeeper_skins,
     accessories: hunters_004_gamekeeper_accessories,
+    emotes: hunters_004_gamekeeper_emotes,
+    graffitis: hunters_004_gamekeeper_graffitis,
   },
   {
     ...hunters_005_soul_weaver_profile,
@@ -1247,5 +1283,15 @@ export const characters = [
     accessories: npcs_003_martha_accessories,
   }
 ]
+
+import { getItemsByCharacter } from '../items/index.js'
+
+// 用新的 items/ 目录数据覆盖角色上的物品挂载
+for (const char of characters) {
+  char.skins = getItemsByCharacter(char.id, 'costume')
+  char.accessories = getItemsByCharacter(char.id, 'accessory')
+  char.emotes = getItemsByCharacter(char.id, 'emote')
+  char.graffitis = getItemsByCharacter(char.id, 'graffiti')
+}
 
 export default characters

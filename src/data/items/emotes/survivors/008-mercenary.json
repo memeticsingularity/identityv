@@ -1,0 +1,15 @@
+[
+  {
+    "id": "emote-merc-snowball",
+    "name": "抛雪球",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "mercenary",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  }
+]

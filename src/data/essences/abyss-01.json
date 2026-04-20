@@ -3,218 +3,127 @@
   "contents": {
     "legendary": [
       {
-        "ref": "character",
-        "characterId": "hell_ember",
-        "itemType": "skin",
-        "name": "嗜金海怪[限定]"
+        "itemId": "costume-he-gold-sea-monster"
       }
     ],
     "epic": [
       {
-        "ref": "character",
-        "characterId": "hell_ember",
-        "itemType": "skin",
-        "name": "海怪船长[限定]"
+        "itemId": "costume-he-sea-monster-captain"
       },
       {
-        "ref": "character",
-        "characterId": "doctor",
-        "itemType": "skin",
-        "name": "海盗巫医[限定]"
+        "itemId": "costume-doc-pirate-witch-doctor"
       },
       {
-        "ref": "character",
-        "characterId": "lawyer",
-        "itemType": "skin",
-        "name": "海盗领航员[限定]"
+        "itemId": "costume-law-pirate-navigator"
       },
       {
-        "ref": "character",
-        "characterId": "gardener",
-        "itemType": "skin",
-        "name": "海盗船匠[限定]"
+        "itemId": "costume-gard-pirate-shipwright"
       },
       {
-        "ref": "character",
-        "characterId": "thief",
-        "itemType": "skin",
-        "name": "海盗远望者[限定]"
+        "itemId": "costume-thief-pirate-lookout"
       },
       {
-        "ref": "character",
-        "characterId": "coordinator",
-        "itemType": "skin",
-        "name": "海盗枪手[限定]"
+        "itemId": "costume-co-pirate-gunner"
       },
       {
-        "ref": "character",
-        "characterId": "doctor",
-        "itemType": "accessory",
-        "name": "海盗酒壶[限定]"
+        "itemId": "accessory-doc-pirate-flask"
       },
       {
-        "ref": "character",
-        "characterId": "lawyer",
-        "itemType": "accessory",
-        "name": "海盗罗盘[限定]"
+        "itemId": "accessory-law-pirate-compass"
       },
       {
-        "ref": "character",
-        "characterId": "gardener",
-        "itemType": "accessory",
-        "name": "海盗旗[限定]"
+        "itemId": "accessory-gard-pirate-flag"
       }
     ],
     "unique": [
       {
-        "ref": "character",
-        "characterId": "soul_weaver",
-        "itemType": "skin",
-        "name": "刺痛[限定]"
+        "itemId": "costume-sw-sting"
       },
       {
-        "ref": "character",
-        "characterId": "mechanic",
-        "itemType": "skin",
-        "name": "船舶技师[限定]"
+        "itemId": "costume-mech-ship-tech"
       },
       {
-        "ref": "common",
-        "id": "pet-u-pointy-nose"
+        "itemId": "pet-u-pointy-nose"
       },
       {
-        "ref": "common",
-        "id": "pet-u-round-ears"
+        "itemId": "pet-u-round-ears"
       },
       {
-        "ref": "character",
-        "characterId": "mechanic",
-        "itemType": "emote",
-        "name": "起身"
+        "itemId": "emote-mech-stand"
       },
       {
-        "ref": "character",
-        "characterId": "explorer",
-        "itemType": "emote",
-        "name": "起身"
+        "itemId": "emote-exp-stand"
       },
       {
-        "ref": "character",
-        "characterId": "coordinator",
-        "itemType": "emote",
-        "name": "起身"
+        "itemId": "emote-co-stand"
       },
       {
-        "ref": "character",
-        "characterId": "forward",
-        "itemType": "emote",
-        "name": "起身"
+        "itemId": "emote-fwd-stand"
       }
     ],
     "rare": [
       {
-        "ref": "character",
-        "characterId": "mechanic",
-        "itemType": "emote",
-        "name": "挑衅"
+        "itemId": "emote-mech-provoke"
       },
       {
-        "ref": "character",
-        "characterId": "coordinator",
-        "itemType": "emote",
-        "name": "呼喊"
+        "itemId": "emote-co-shout"
       },
       {
-        "ref": "character",
-        "characterId": "forward",
-        "itemType": "emote",
-        "name": "躺地"
+        "itemId": "emote-fwd-lie"
       },
       {
-        "ref": "character",
-        "characterId": "forward",
-        "itemType": "emote",
-        "name": "呼喊"
+        "itemId": "emote-fwd-shout"
       },
       {
-        "ref": "character",
-        "characterId": "the_minds_eye",
-        "itemType": "emote",
-        "name": "呼喊"
+        "itemId": "emote-tme-shout"
       },
       {
-        "ref": "character",
-        "characterId": "the_minds_eye",
-        "itemType": "emote",
-        "name": "躺地"
+        "itemId": "emote-tme-lie"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-lawyer-other"
+        "itemId": "avatar-r-lawyer-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-thief-other"
+        "itemId": "avatar-r-thief-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-gardener-other"
+        "itemId": "avatar-r-gardener-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-doctor-other"
+        "itemId": "avatar-r-doctor-other"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-pirate-flag"
+        "itemId": "graffiti-r-pirate-flag"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-pirate-flask"
+        "itemId": "graffiti-r-pirate-flask"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-pirate-coordinator"
+        "itemId": "graffiti-r-pirate-coordinator"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-pirate-lawyer"
+        "itemId": "graffiti-r-pirate-lawyer"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-pirate-thief"
+        "itemId": "graffiti-r-pirate-thief"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-pirate-doctor"
+        "itemId": "graffiti-r-pirate-doctor"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-pirate-gardener"
+        "itemId": "graffiti-r-pirate-gardener"
       },
       {
-        "ref": "character",
-        "characterId": "forward",
-        "itemType": "skin",
-        "name": "生机绿"
+        "itemId": "costume-fwd-vitality-green"
       },
       {
-        "ref": "character",
-        "characterId": "mechanic",
-        "itemType": "skin",
-        "name": "可爱粉"
+        "itemId": "costume-mech-cute-pink"
       },
       {
-        "ref": "character",
-        "characterId": "priestess",
-        "itemType": "skin",
-        "name": "淡粉桃"
+        "itemId": "costume-priest-pale-pink"
       },
       {
-        "ref": "character",
-        "characterId": "geisha",
-        "itemType": "skin",
-        "name": "黄袖"
+        "itemId": "costume-geisha-yellow-sleeve"
       }
     ],
     "common": []

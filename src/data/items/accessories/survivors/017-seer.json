@@ -1,0 +1,165 @@
+[
+  {
+    "id": "accessory-seer-rebirth",
+    "name": "重生",
+    "rarity": "legendary",
+    "type": "accessory",
+    "characterId": "seer",
+    "note": "四周年限定礼盒典藏版/精装版独占",
+    "obtainSources": [{ "source": "merchandise", "note": "购买四周年庆实体周边获得" }],
+    "price": "实体周边附赠",
+    "description": "如果一切都已注定，你又会怎么做？（先知专属[限定]随身物品，周边礼包获得）"
+  },
+  {
+    "id": "accessory-seer-empathy",
+    "name": "共感",
+    "rarity": "legendary",
+    "type": "accessory",
+    "characterId": "seer",
+    "note": "特殊效果：替换技能效果 增加脚印特效 电竞系列BLK随身物品",
+    "obtainSources": [{ "source": "shop", "note": "商城限时购买" }],
+    "price": "1888回声",
+    "description": "是否只有触碰到胜利的边际，才能感知到梦想的重量？"
+  },
+  {
+    "id": "accessory-seer-phone-l",
+    "name": "手机",
+    "rarity": "legendary",
+    "type": "accessory",
+    "characterId": "seer",
+    "note": "文豪野犬联动限定稀世随身物品",
+    "obtainSources": [{ "source": "upgrade", "note": "由奇珍品质-手机升级获得" }],
+    "price": "728罗生门的振动升级硬币+奇珍品质-手机",
+    "description": "芥川龙之介的手机。特殊效果：替换技能特效"
+  },
+  {
+    "id": "accessory-seer-nirvana",
+    "name": "涅槃",
+    "rarity": "legendary",
+    "type": "accessory",
+    "characterId": "seer",
+    "note": "特殊效果：增加役鸟火焰效果",
+    "obtainSources": [{ "source": "shop" }],
+    "price": "1888回声/8388碎片",
+    "description": "涅槃之火，驱尽灾厄。"
+  },
+  {
+    "id": "accessory-seer-forbidden",
+    "name": "禁忌的预言",
+    "rarity": "legendary",
+    "type": "accessory",
+    "characterId": "seer",
+    "obtainSources": [{ "source": "shop", "note": "幻象迷途玩法-第四期抽取 第五期起：幻象迷途商店兑换获得" }],
+    "price": "特殊玩法抽取",
+    "description": "双手触碰禁忌的瞬间，神明将预言之力悉数收回，只剩下凝滞的空气和无法逆转的时间。"
+  },
+  {
+    "id": "accessory-seer-unburned-feather",
+    "name": "不焚之羽",
+    "rarity": "epic",
+    "type": "accessory",
+    "characterId": "seer",
+    "note": "增加役鸟守护特效",
+    "obtainSources": [{ "source": "shop" }],
+    "price": "3888碎片/1068回声",
+    "description": "寒冷的火焰中蕴含着奇妙的力量。"
+  },
+  {
+    "id": "accessory-seer-phone-e",
+    "name": "手机",
+    "rarity": "epic",
+    "type": "accessory",
+    "characterId": "seer",
+    "note": "文豪野犬联动限定奇珍随身物品 活动期间可升级为更高品质的手机",
+    "obtainSources": [{ "source": "upgrade", "note": "由独特品质-手机升级获得" }],
+    "price": "480罗生门的振动升级硬币+独特品质-手机",
+    "description": "芥川龙之介的手机。特殊效果：替换技能特效"
+  },
+  {
+    "id": "accessory-seer-white-feather",
+    "name": "白羽",
+    "rarity": "epic",
+    "type": "accessory",
+    "characterId": "seer",
+    "note": "增加役鸟守护特效",
+    "obtainSources": [{ "source": "shop" }],
+    "price": "2988碎片/788回声",
+    "description": "用神奇的白色羽毛制成。"
+  },
+  {
+    "id": "accessory-seer-card-gun",
+    "name": "卡片枪",
+    "rarity": "unique",
+    "type": "accessory",
+    "characterId": "seer",
+    "note": "柯南联动限定独特品质随身物品",
+    "obtainSources": [{ "source": "essence", "poolId": "conan-e2" }],
+    "price": "珍宝抽取",
+    "description": "怪盗基德的卡片枪。"
+  },
+  {
+    "id": "accessory-seer-holy-body",
+    "name": "圣躯",
+    "rarity": "unique",
+    "type": "accessory",
+    "characterId": "seer",
+    "note": "第四赛季·精华3",
+    "obtainSources": [{ "source": "essence", "poolId": "s4-e3" }],
+    "price": "精华抽取/258回声/968碎片",
+    "description": "这是受难者们最后的归宿，痛苦将磨砺他们的心智。"
+  },
+  {
+    "id": "accessory-seer-phone-u",
+    "name": "手机",
+    "rarity": "unique",
+    "type": "accessory",
+    "characterId": "seer",
+    "note": "文豪野犬联动限定独特随身物品 活动期间可升级为更高品质的手机",
+    "obtainSources": [{ "source": "event", "note": "参与文豪野犬联动活动获得" }],
+    "price": "活动获取",
+    "description": "芥川龙之介的手机。"
+  },
+  {
+    "id": "accessory-seer-domination",
+    "name": "支配",
+    "rarity": "unique",
+    "type": "accessory",
+    "characterId": "seer",
+    "note": "即兴推演系列手办——【先知-黯】初回限定版独占",
+    "obtainSources": [{ "source": "merchandise", "note": "购买黯手办礼盒初回限定版获得" }],
+    "price": "实体周边附赠",
+    "description": "迎接你的新身份吧（先知专属[限定]随身物品，周边礼包获得）"
+  },
+  {
+    "id": "accessory-seer-telescope",
+    "name": "望远镜",
+    "rarity": "unique",
+    "type": "accessory",
+    "characterId": "seer",
+    "obtainSources": [{ "source": "shop" }],
+    "price": "258回声/968碎片",
+    "description": "预言命运也可以借助科学之手。"
+  },
+  {
+    "id": "accessory-seer-oak-branch",
+    "name": "橡树枝",
+    "rarity": "unique",
+    "type": "accessory",
+    "characterId": "seer",
+    "note": "第40赛季排位珍宝",
+    "obtainSources": [{ "source": "rank", "note": "第40赛季排位珍宝 第41赛季起商城购买" }],
+    "price": "珍宝抽取 第41赛季起商城258回声/968碎片购买",
+    "description": "自然脱落的树枝，它往往被视为一种自然的馈赠。"
+  },
+  {
+    "id": "accessory-seer-earphone",
+    "name": "电子耳",
+    "rarity": "unique",
+    "type": "accessory",
+    "characterId": "seer",
+    "note": "xxxHOLiC联动限定独特随身物品",
+    "obtainSources": [{ "source": "essence", "poolId": "xxxholic-e1" }],
+    "price": "精华抽取",
+    "description": "虽然造型有点特殊，但仍然是一副耳机。"
+  }
+]

@@ -3,230 +3,133 @@
   "contents": {
     "legendary": [
       {
-        "ref": "character",
-        "characterId": "soul_weaver",
-        "itemType": "skin",
-        "name": "不息载械"
+        "itemId": "costume-sw-endless-mech"
       }
     ],
     "epic": [
       {
-        "ref": "character",
-        "characterId": "little_girl",
-        "itemType": "skin",
-        "name": "异动指针"
+        "itemId": "costume-lg-abnormal-pointer"
       },
       {
-        "ref": "character",
-        "characterId": "aeroplanist",
-        "itemType": "skin",
-        "name": "警戒哨台"
+        "itemId": "costume-aero-watch-tower"
       },
       {
-        "ref": "character",
-        "characterId": "cheerleader",
-        "itemType": "skin",
-        "name": "采集速巡"
+        "itemId": "costume-cl-collection-patrol"
       },
       {
-        "ref": "character",
-        "characterId": "puppeteer",
-        "itemType": "skin",
-        "name": "义体再构"
+        "itemId": "costume-puppet-cyber-reconstruct"
       }
     ],
     "unique": [
       {
-        "ref": "character",
-        "characterId": "guard_26",
-        "itemType": "skin",
-        "name": "木卫兵领队"
+        "itemId": "costume-g26-wood-guard-leader"
       },
       {
-        "ref": "character",
-        "characterId": "wax_artist",
-        "itemType": "skin",
-        "name": "异体同生"
+        "itemId": "costume-wa-alien-symbiosis"
       },
       {
-        "ref": "character",
-        "characterId": "night_watch",
-        "itemType": "skin",
-        "name": "塔顶人"
+        "itemId": "costume-nw-tower-top"
       },
       {
-        "ref": "character",
-        "characterId": "fire_investigator",
-        "itemType": "skin",
-        "name": "未燃书页"
+        "itemId": "costume-fi-unburned-page"
       },
       {
-        "ref": "character",
-        "characterId": "fools_gold",
-        "itemType": "skin",
-        "name": "被抹除者"
+        "itemId": "costume-fg-erased-one"
       },
       {
-        "ref": "character",
-        "characterId": "undead",
-        "itemType": "emote",
-        "name": "大笑"
+        "itemId": "emote-undead-laugh"
       },
       {
-        "ref": "character",
-        "characterId": "hermit",
-        "itemType": "emote",
-        "name": "拜访"
+        "itemId": "emote-hermit-visit"
       },
       {
-        "ref": "character",
-        "characterId": "professor",
-        "itemType": "emote",
-        "name": "张望"
+        "itemId": "emote-prof-look"
       },
       {
-        "ref": "character",
-        "characterId": "antiquarian",
-        "itemType": "emote",
-        "name": "小憩"
+        "itemId": "emote-anti-rest"
       }
     ],
     "rare": [
       {
-        "ref": "character",
-        "characterId": "cheerleader",
-        "itemType": "skin",
-        "name": "运动蓝"
+        "itemId": "costume-cl-sports-blue"
       },
       {
-        "ref": "character",
-        "characterId": "aeroplanist",
-        "itemType": "skin",
-        "name": "缄默棕"
+        "itemId": "costume-aero-silent-brown"
       },
       {
-        "ref": "character",
-        "characterId": "opera_singer",
-        "itemType": "skin",
-        "name": "优雅蓝"
+        "itemId": "costume-os-elegant-blue"
       },
       {
-        "ref": "character",
-        "characterId": "fools_gold",
-        "itemType": "skin",
-        "name": "石化白"
+        "itemId": "costume-fg-petrified-white"
       },
       {
-        "ref": "character",
-        "characterId": "puppeteer",
-        "itemType": "skin",
-        "name": "枯木黄"
+        "itemId": "costume-puppet-withered-wood-yellow"
       },
       {
-        "ref": "character",
-        "characterId": "the_shadow",
-        "itemType": "skin",
-        "name": "远古绿"
+        "itemId": "costume-ts-ancient-green"
       },
       {
-        "ref": "character",
-        "characterId": "fire_investigator",
-        "itemType": "skin",
-        "name": "火焰橙"
+        "itemId": "costume-fi-flame-orange"
       },
       {
-        "ref": "character",
-        "characterId": "faro_lady",
-        "itemType": "skin",
-        "name": "优雅灰"
+        "itemId": "costume-fl-elegant-gray"
       },
       {
-        "ref": "character",
-        "characterId": "novelist",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-nov-shame"
       },
       {
-        "ref": "character",
-        "characterId": "little_girl",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-lg-shame"
       },
       {
-        "ref": "character",
-        "characterId": "aeroplanist",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-aero-shame"
       },
       {
-        "ref": "character",
-        "characterId": "puppeteer",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-puppet-shame"
       },
       {
-        "ref": "character",
-        "characterId": "cheerleader",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-cl-shame"
       },
       {
-        "ref": "character",
-        "characterId": "journalist",
-        "itemType": "emote",
-        "name": "羞愧"
+        "itemId": "emote-jour-shame"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-aeroplanist-警戒哨台"
+        "itemId": "graffiti-r-aeroplanist-警戒哨台"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-cheerleader-采集速巡"
+        "itemId": "graffiti-r-cheerleader-采集速巡"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-puppeteer-义体再构"
+        "itemId": "graffiti-r-puppeteer-义体再构"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-little_girl-异动指针"
+        "itemId": "graffiti-r-little_girl-异动指针"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-novelist-伊始新篇"
+        "itemId": "graffiti-r-novelist-伊始新篇"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-patient-other"
+        "itemId": "avatar-r-patient-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-psychologist-other"
+        "itemId": "avatar-r-psychologist-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-wax_artist-other"
+        "itemId": "avatar-r-wax_artist-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-toy_merchant-other"
+        "itemId": "avatar-r-toy_merchant-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-painter-other"
+        "itemId": "avatar-r-painter-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-batter-other"
+        "itemId": "avatar-r-batter-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-sculptor-other"
+        "itemId": "avatar-r-sculptor-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-opera_singer-other"
+        "itemId": "avatar-r-opera_singer-other"
       }
     ],
     "common": []

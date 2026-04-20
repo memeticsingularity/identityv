@@ -1,0 +1,28 @@
+[
+  {
+    "id": "emote-esc-prepare",
+    "name": "准备",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "escapologist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  },
+  {
+    "id": "emote-esc-shout",
+    "name": "呼喊",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "escapologist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

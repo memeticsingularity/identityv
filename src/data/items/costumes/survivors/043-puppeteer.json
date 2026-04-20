@@ -1,0 +1,54 @@
+[
+  {
+    "id": "costume-puppeteer-ash-red",
+    "name": "灰烬红",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "puppeteer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-puppet-cyber-reconstruct",
+    "name": "义体再构",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "puppeteer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  },
+  {
+    "id": "costume-puppet-withered-wood-yellow",
+    "name": "枯木黄",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "puppeteer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  },
+  {
+    "id": "costume-puppet-gloomy-blue",
+    "name": "阴沉蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "puppeteer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

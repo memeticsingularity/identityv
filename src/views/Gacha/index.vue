@@ -97,7 +97,7 @@
         <el-button
           type="primary"
           size="large"
-          :disabled="isSpinning"
+          :disabled="isSpinning || store.skinModalQueue.length > 0"
           :class="{ 'insufficient': store.echoes < 96 }"
           @click="handleDraw('single')"
         >
@@ -107,7 +107,7 @@
         <el-button
           type="danger"
           size="large"
-          :disabled="isSpinning"
+          :disabled="isSpinning || store.skinModalQueue.length > 0"
           :class="{ 'insufficient': store.echoes < 960 }"
           @click="handleDraw('ten')"
         >

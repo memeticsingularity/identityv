@@ -1,0 +1,10 @@
+[
+  {
+    "id": "emote-tr-solo",
+    "name": "独舞",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "ripper",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  }
+]

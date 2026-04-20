@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-pros-patch",
+    "name": "补丁",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "prospector",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  },
+  {
+    "id": "costume-pros-red-brown-stone",
+    "name": "朱褐石",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "prospector",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  },
+  {
+    "id": "costume-pros-road-knight",
+    "name": "公路骑士",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "prospector",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  }
+]

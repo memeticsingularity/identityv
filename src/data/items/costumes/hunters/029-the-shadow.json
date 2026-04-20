@@ -1,0 +1,67 @@
+[
+  {
+    "id": "costume-the-shadow-eternal-day-fall",
+    "name": "永昼之陨",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "the_shadow",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-the-shadow-phantom-purple",
+    "name": "幻影紫",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "the_shadow",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-ts-ancient-green",
+    "name": "远古绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "the_shadow",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  },
+  {
+    "id": "costume-ts-horror-stories",
+    "name": "惊惧故事集",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "the_shadow",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  },
+  {
+    "id": "costume-ts-void-black",
+    "name": "虚空黑",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "the_shadow",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

@@ -3,210 +3,121 @@
   "contents": {
     "legendary": [
       {
-        "ref": "character",
-        "characterId": "ripper",
-        "itemType": "skin",
-        "name": "邪眼寄主[限定]"
+        "itemId": "costume-ripper-evil-eye-host"
       }
     ],
     "epic": [
       {
-        "ref": "character",
-        "characterId": "mercenary",
-        "itemType": "skin",
-        "name": "蒸汽少年[限定]"
+        "itemId": "costume-merc-steam-boy"
       },
       {
-        "ref": "character",
-        "characterId": "perfumer",
-        "itemType": "skin",
-        "name": "时之砂[限定]"
+        "itemId": "costume-perf-sand-of-time"
       },
       {
-        "ref": "character",
-        "characterId": "magician",
-        "itemType": "skin",
-        "name": "光学镜面[限定]"
+        "itemId": "costume-mag-optic-mirror"
       },
       {
-        "ref": "character",
-        "characterId": "the_minds_eye",
-        "itemType": "skin",
-        "name": "音波[限定]"
+        "itemId": "costume-tme-sound-wave"
       }
     ],
     "unique": [
       {
-        "ref": "character",
-        "characterId": "smiley_face",
-        "itemType": "skin",
-        "name": "铁帽团长[限定]"
+        "itemId": "costume-sf-iron-hat-captain"
       },
       {
-        "ref": "character",
-        "characterId": "cowboy",
-        "itemType": "skin",
-        "name": "铁帽警长[限定]"
+        "itemId": "costume-cowboy-iron-hat-sheriff"
       },
       {
-        "ref": "character",
-        "characterId": "thief",
-        "itemType": "skin",
-        "name": "铁帽黑手[限定]"
+        "itemId": "costume-thief-iron-hat-gangster"
       },
       {
-        "ref": "character",
-        "characterId": "doctor",
-        "itemType": "skin",
-        "name": "化学剂师[限定]"
+        "itemId": "costume-doc-chemist"
       },
       {
-        "ref": "character",
-        "characterId": "embalmer",
-        "itemType": "skin",
-        "name": "银行家[限定]"
+        "itemId": "costume-emb-banker"
       },
       {
-        "ref": "character",
-        "characterId": "magician",
-        "itemType": "emote",
-        "name": "抛雪球"
+        "itemId": "emote-mag-snowball"
       },
       {
-        "ref": "character",
-        "characterId": "perfumer",
-        "itemType": "emote",
-        "name": "抛雪球"
+        "itemId": "emote-perf-snowball"
       },
       {
-        "ref": "character",
-        "characterId": "mercenary",
-        "itemType": "emote",
-        "name": "抛雪球"
+        "itemId": "emote-merc-snowball"
       },
       {
-        "ref": "character",
-        "characterId": "the_minds_eye",
-        "itemType": "emote",
-        "name": "抛雪球"
+        "itemId": "emote-tme-snowball"
       }
     ],
     "rare": [
       {
-        "ref": "character",
-        "characterId": "perfumer",
-        "itemType": "emote",
-        "name": "挑衅"
+        "itemId": "emote-perf-provoke"
       },
       {
-        "ref": "character",
-        "characterId": "perfumer",
-        "itemType": "emote",
-        "name": "呼喊"
+        "itemId": "emote-perf-shout"
       },
       {
-        "ref": "character",
-        "characterId": "perfumer",
-        "itemType": "emote",
-        "name": "躺地"
+        "itemId": "emote-perf-lie"
       },
       {
-        "ref": "character",
-        "characterId": "cowboy",
-        "itemType": "emote",
-        "name": "挑衅"
+        "itemId": "emote-cowboy-provoke"
       },
       {
-        "ref": "character",
-        "characterId": "cowboy",
-        "itemType": "emote",
-        "name": "呼喊"
+        "itemId": "emote-cowboy-shout"
       },
       {
-        "ref": "character",
-        "characterId": "cowboy",
-        "itemType": "emote",
-        "name": "躺地"
+        "itemId": "emote-cowboy-lie"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-magician-other"
+        "itemId": "avatar-r-magician-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-explorer-other"
+        "itemId": "avatar-r-explorer-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-mercenary-other"
+        "itemId": "avatar-r-mercenary-other"
       },
       {
-        "ref": "common",
-        "id": "avatar-r-forward-other"
+        "itemId": "avatar-r-forward-other"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-animal-forward"
+        "itemId": "graffiti-r-animal-forward"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-animal-cowboy"
+        "itemId": "graffiti-r-animal-cowboy"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-animal-perfumer"
+        "itemId": "graffiti-r-animal-perfumer"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-animal-coordinator"
+        "itemId": "graffiti-r-animal-coordinator"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-animal-lawyer"
+        "itemId": "graffiti-r-animal-lawyer"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-animal-magician"
+        "itemId": "graffiti-r-animal-magician"
       },
       {
-        "ref": "common",
-        "id": "graffiti-r-animal-explorer"
+        "itemId": "graffiti-r-animal-explorer"
       },
       {
-        "ref": "character",
-        "characterId": "lucky_guy",
-        "itemType": "skin",
-        "name": "棕"
+        "itemId": "costume-lg-brown"
       },
       {
-        "ref": "character",
-        "characterId": "female_dancer",
-        "itemType": "skin",
-        "name": "翠舞"
+        "itemId": "costume-fd-jade-dance"
       },
       {
-        "ref": "character",
-        "characterId": "the_feaster",
-        "itemType": "skin",
-        "name": "夜紫"
+        "itemId": "costume-tf-night-purple"
       },
       {
-        "ref": "character",
-        "characterId": "perfumer",
-        "itemType": "skin",
-        "name": "幽香粉"
+        "itemId": "costume-perf-fragrant-pink"
       },
       {
-        "ref": "character",
-        "characterId": "embalmer",
-        "itemType": "skin",
-        "name": "赤服"
+        "itemId": "costume-emb-red-robes"
       },
       {
-        "ref": "character",
-        "characterId": "mad_eyes",
-        "itemType": "skin",
-        "name": "黄铜"
+        "itemId": "costume-me-brass"
       }
     ],
     "common": []
