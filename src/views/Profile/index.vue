@@ -261,16 +261,12 @@
         <!-- 图表区域 -->
         <div class="charts-grid">
           <div class="chart-card">
-            <div class="chart-title">出率对比</div>
+            <div class="chart-title">出率雷达（实际/理论）</div>
             <v-chart class="chart" :option="rateChartOption" autoresize />
           </div>
           <div class="chart-card">
             <div class="chart-title">出货占比</div>
             <v-chart class="chart" :option="pieChartOption" autoresize />
-          </div>
-          <div class="chart-card wide">
-            <div class="chart-title">出货间隔趋势</div>
-            <v-chart class="chart" :option="intervalChartOption" autoresize />
           </div>
         </div>
       </div>
@@ -491,11 +487,11 @@ import { useAppStore, RARITY_CONFIG, ESSENCE_POOLS } from '../../stores/app'
 import { Star, ArrowDown, ArrowUp, ArrowRight } from '@element-plus/icons-vue'
 import { use } from 'echarts/core'
 import { CanvasRenderer } from 'echarts/renderers'
-import { BarChart, PieChart, LineChart } from 'echarts/charts'
-import { GridComponent, TooltipComponent, LegendComponent, TitleComponent } from 'echarts/components'
+import { BarChart, PieChart, LineChart, RadarChart } from 'echarts/charts'
+import { GridComponent, TooltipComponent, LegendComponent, TitleComponent, RadarComponent } from 'echarts/components'
 import VChart from 'vue-echarts'
 
-use([CanvasRenderer, BarChart, PieChart, LineChart, GridComponent, TooltipComponent, LegendComponent, TitleComponent])
+use([CanvasRenderer, BarChart, PieChart, LineChart, RadarChart, GridComponent, TooltipComponent, LegendComponent, TitleComponent, RadarComponent])
 
 const store = useAppStore()
 const router = useRouter()
@@ -648,37 +644,57 @@ const activePityList = computed(() => {
 const rateChartOption = computed(() => {
   const data = analysisData.value
   if (!data) return {}
-  const order = ['legendary', 'epic']
+  const order = ['legendary', 'epic', 'unique', 'rare', 'common']
+  const indicator = order
+    .filter(k => data.theoreticalRates?.[k] > 0)
+    .map(k => ({ name: RARITY_CONFIG[k].label, max: 2.5 }))
+
+  const ratioValues = order
+    .filter(k => data.theoreticalRates?.[k] > 0)
+    .map(k => {
+      const actual = data.actualRates[k] || 0
+      const theory = data.theoreticalRates[k]
+      return theory > 0 ? +(actual / theory).toFixed(3) : 0
+    })
+
   return {
-    tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
-    legend: { data: ['实际出率', '理论出率'], textStyle: { color: '#a89b8c' } },
-    grid: { left: '3%', right: '4%', bottom: '3%', top: '12%' },
-    xAxis: {
-      type: 'category',
-      data: order.map(k => RARITY_CONFIG[k].label),
-      axisLabel: { color: '#a89b8c' },
-      axisLine: { lineStyle: { color: '#3a3028' } },
+    tooltip: {
+      formatter: (params) => {
+        const p = params[0]
+        let s = p.name + '<br/>'
+        p.value.forEach((v, i) => {
+          s += `${indicator[i].name}: ${v.toFixed(2)}x<br/>`
+        })
+        return s
+      },
     },
-    yAxis: {
-      type: 'value',
-      axisLabel: { color: '#a89b8c', formatter: (v) => (v * 100).toFixed(1) + '%' },
+    legend: { data: ['实际/理论', '基准'], textStyle: { color: '#a89b8c' }, bottom: 0 },
+    radar: {
+      indicator,
+      axisName: { color: '#a89b8c' },
+      splitArea: { areaStyle: { color: ['#1a1512', '#1e1916'] } },
+      splitLine: { lineStyle: { color: '#3a3028' } },
       axisLine: { lineStyle: { color: '#3a3028' } },
-      splitLine: { lineStyle: { color: '#2a2018' } },
     },
     series: [
       {
-        name: '实际出率',
-        type: 'bar',
-        data: order.map(k => data.actualRates[k] || 0),
-        itemStyle: { borderRadius: [4, 4, 0, 0] },
-      },
-      {
-        name: '理论出率',
-        type: 'line',
-        data: order.map(k => data.theoreticalRates?.[k] || 0),
-        symbol: 'circle',
-        symbolSize: 8,
-        lineStyle: { type: 'dashed', width: 2 },
+        type: 'radar',
+        data: [
+          {
+            value: ratioValues,
+            name: '实际/理论',
+            areaStyle: { color: 'rgba(255, 152, 0, 0.2)' },
+            itemStyle: { color: '#ff9800' },
+            lineStyle: { color: '#ff9800', width: 2 },
+          },
+          {
+            value: indicator.map(() => 1),
+            name: '基准',
+            lineStyle: { type: 'dashed', color: '#666', width: 1 },
+            itemStyle: { opacity: 0 },
+            symbol: 'none',
+          },
+        ],
       },
     ],
   }
@@ -704,103 +720,6 @@ const pieChartOption = computed(() => {
           value: data.rarityCounts[k] || 0,
           itemStyle: { color: RARITY_CONFIG[k].color },
         })),
-      },
-    ],
-  }
-})
-
-const intervalChartOption = computed(() => {
-  const data = analysisData.value
-  if (!data) return {}
-  const records = analysisFilter.value
-    ? store.pools[analysisFilter.value]?.drawRecords || []
-    : Object.values(store.pools).flatMap(p => p.drawRecords)
-  if (records.length === 0) return {}
-
-  // 按池子分组计算间隔，避免跨池
-  const poolGroups = {}
-  records.forEach(r => {
-    if (!poolGroups[r.poolId]) poolGroups[r.poolId] = []
-    poolGroups[r.poolId].push(r)
-  })
-
-  const legendaryIntervals = []
-  const epicIntervals = []
-
-  Object.values(poolGroups).forEach(poolRecords => {
-    const chronological = poolRecords.slice().reverse()
-    let lAccum = 0
-    let eAccum = 0
-    chronological.forEach(r => {
-      const lCount = r.results.filter(i => i.rarity === 'legendary').length
-      const eCount = r.results.filter(i => i.rarity === 'epic').length
-      const pullCount = r.results.length
-
-      for (let i = 0; i < lCount; i++) {
-        legendaryIntervals.push(lAccum + pullCount)
-        lAccum = 0
-      }
-      lAccum += pullCount
-
-      for (let i = 0; i < eCount; i++) {
-        epicIntervals.push(eAccum + pullCount)
-        eAccum = 0
-      }
-      eAccum += pullCount
-    })
-  })
-
-  // 按时间排序（用 record 的时间，这里简化为按收集顺序）
-  legendaryIntervals.sort((a, b) => a - b)
-  epicIntervals.sort((a, b) => a - b)
-
-  // 保底参考线
-  const poolInfo = analysisFilter.value ? ESSENCE_POOLS.find(p => p.id === analysisFilter.value) : null
-  const legendaryPity = poolInfo ? (poolInfo.type === 'abyss' ? 250 : (poolInfo.legendaryPity || 200)) : 200
-
-  return {
-    tooltip: { trigger: 'axis', formatter: (params) => {
-      const p = params[0]
-      return `第 ${p.dataIndex + 1} 次出货<br/>间隔 ${p.value} 抽`
-    }},
-    legend: { data: ['稀世间隔', '奇珍间隔'], textStyle: { color: '#a89b8c' } },
-    grid: { left: '3%', right: '4%', bottom: '3%', top: '12%' },
-    xAxis: {
-      type: 'category',
-      data: legendaryIntervals.map((_, i) => `第${i + 1}个`),
-      axisLabel: { color: '#a89b8c' },
-      axisLine: { lineStyle: { color: '#3a3028' } },
-    },
-    yAxis: {
-      type: 'value',
-      axisLabel: { color: '#a89b8c', formatter: v => v + '抽' },
-      axisLine: { lineStyle: { color: '#3a3028' } },
-      splitLine: { lineStyle: { color: '#2a2018' } },
-    },
-    series: [
-      {
-        name: '稀世间隔',
-        type: 'line',
-        smooth: true,
-        data: legendaryIntervals,
-        itemStyle: { color: '#ff9800' },
-        markLine: {
-          silent: true,
-          data: [{ yAxis: legendaryPity, label: { formatter: `保底 ${legendaryPity}` } }],
-          lineStyle: { color: '#ff9800', type: 'dashed' },
-        },
-      },
-      {
-        name: '奇珍间隔',
-        type: 'line',
-        smooth: true,
-        data: epicIntervals,
-        itemStyle: { color: '#9c27b0' },
-        markLine: {
-          silent: true,
-          data: [{ yAxis: 60, label: { formatter: '保底 60' } }],
-          lineStyle: { color: '#9c27b0', type: 'dashed' },
-        },
       },
     ],
   }
