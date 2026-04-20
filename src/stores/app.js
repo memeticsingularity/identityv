@@ -461,27 +461,71 @@ export const useAppStore = defineStore('app', () => {
     }
   }
 
+  function mergeStreaksAcrossPools(poolsMap) {
+    const result = {
+      legendaryStreaks: { firstAppearPulls: null, firstAppearCost: null, firstAppearRecord: null, firstAppearItem: null, maxStreak: 0, maxStreakEndRecord: null, maxStreakItem: null, pityHistory: [] },
+      epicStreaks: { firstAppearPulls: null, firstAppearCost: null, firstAppearRecord: null, firstAppearItem: null, maxStreak: 0, maxStreakEndRecord: null, maxStreakItem: null, pityHistory: [] },
+    }
+
+    Object.entries(poolsMap).forEach(([pid, pool]) => {
+      const pInfo = ESSENCE_POOLS.find(p => p.id === pid)
+      const lPity = pInfo ? (pInfo.type === 'abyss' ? 250 : (pInfo.legendaryPity || 200)) : null
+      const lStreaks = computeStreaks(pool.drawRecords, 'legendary', lPity)
+      const eStreaks = computeStreaks(pool.drawRecords, 'epic', 60)
+
+      // 最快出金：所有池中首次出金的最小值
+      if (lStreaks.firstAppearPulls !== null) {
+        if (result.legendaryStreaks.firstAppearPulls === null || lStreaks.firstAppearPulls < result.legendaryStreaks.firstAppearPulls) {
+          result.legendaryStreaks.firstAppearPulls = lStreaks.firstAppearPulls
+          result.legendaryStreaks.firstAppearCost = lStreaks.firstAppearCost
+          result.legendaryStreaks.firstAppearRecord = lStreaks.firstAppearRecord
+          result.legendaryStreaks.firstAppearItem = lStreaks.firstAppearItem
+        }
+      }
+      // 最慢出金：所有池中最大无金 streak
+      if (lStreaks.maxStreak > result.legendaryStreaks.maxStreak) {
+        result.legendaryStreaks.maxStreak = lStreaks.maxStreak
+        result.legendaryStreaks.maxStreakEndRecord = lStreaks.maxStreakEndRecord
+        result.legendaryStreaks.maxStreakItem = lStreaks.maxStreakItem
+      }
+      result.legendaryStreaks.pityHistory.push(...lStreaks.pityHistory)
+
+      // 最快出紫
+      if (eStreaks.firstAppearPulls !== null) {
+        if (result.epicStreaks.firstAppearPulls === null || eStreaks.firstAppearPulls < result.epicStreaks.firstAppearPulls) {
+          result.epicStreaks.firstAppearPulls = eStreaks.firstAppearPulls
+          result.epicStreaks.firstAppearCost = eStreaks.firstAppearCost
+          result.epicStreaks.firstAppearRecord = eStreaks.firstAppearRecord
+          result.epicStreaks.firstAppearItem = eStreaks.firstAppearItem
+        }
+      }
+      // 最慢出紫
+      if (eStreaks.maxStreak > result.epicStreaks.maxStreak) {
+        result.epicStreaks.maxStreak = eStreaks.maxStreak
+        result.epicStreaks.maxStreakEndRecord = eStreaks.maxStreakEndRecord
+        result.epicStreaks.maxStreakItem = eStreaks.maxStreakItem
+      }
+      result.epicStreaks.pityHistory.push(...eStreaks.pityHistory)
+    })
+
+    result.legendaryStreaks.pityHistory.sort((a, b) => b.record.timestamp - a.record.timestamp)
+    result.epicStreaks.pityHistory.sort((a, b) => b.record.timestamp - a.record.timestamp)
+
+    return result
+  }
+
   const gachaAnalysis = computed(() => {
     const allRecords = Object.values(pools.value).flatMap(p => p.drawRecords)
     const analysis = computeAnalysis(allRecords)
     if (!analysis) return null
     analysis.theoreticalRates = getGlobalTheoreticalRates()
 
-    // 全局保底记录：逐池计算后合并
-    const legendaryPityHistory = []
-    const epicPityHistory = []
-    Object.entries(pools.value).forEach(([pid, pool]) => {
-      const pInfo = ESSENCE_POOLS.find(p => p.id === pid)
-      const lPity = pInfo ? (pInfo.type === 'abyss' ? 250 : (pInfo.legendaryPity || 200)) : null
-      const lStreaks = computeStreaks(pool.drawRecords, 'legendary', lPity)
-      const eStreaks = computeStreaks(pool.drawRecords, 'epic', 60)
-      legendaryPityHistory.push(...lStreaks.pityHistory)
-      epicPityHistory.push(...eStreaks.pityHistory)
-    })
-    legendaryPityHistory.sort((a, b) => b.record.timestamp - a.record.timestamp)
-    epicPityHistory.sort((a, b) => b.record.timestamp - a.record.timestamp)
-    analysis.legendaryPityHistory = legendaryPityHistory
-    analysis.epicPityHistory = epicPityHistory
+    // 全局 streak 必须按池子独立计算后再取最值，不能跨池混算
+    const merged = mergeStreaksAcrossPools(pools.value)
+    analysis.legendaryStreaks = merged.legendaryStreaks
+    analysis.epicStreaks = merged.epicStreaks
+    analysis.legendaryPityHistory = merged.legendaryStreaks.pityHistory
+    analysis.epicPityHistory = merged.epicStreaks.pityHistory
 
     return analysis
   })

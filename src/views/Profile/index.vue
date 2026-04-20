@@ -96,9 +96,9 @@
             <div class="mini-bar">
               <span class="mini-label">金</span>
               <div class="mini-track">
-                <div class="mini-fill gold" :style="{ width: (pool.pity.legendary / 200 * 100) + '%' }"></div>
+                <div class="mini-fill gold" :style="{ width: (pool.pity.legendary / (pool.legendaryPity || 200) * 100) + '%' }"></div>
               </div>
-              <span class="mini-num">{{ pool.pity.legendary }}/200</span>
+              <span class="mini-num">{{ pool.pity.legendary }}/{{ pool.legendaryPity || 200 }}</span>
             </div>
             <div class="mini-bar">
               <span class="mini-label">紫</span>
@@ -271,8 +271,8 @@
             <v-chart class="chart" :option="pieChartOption" autoresize />
           </div>
           <div class="chart-card wide">
-            <div class="chart-title">抽卡趋势</div>
-            <v-chart class="chart" :option="trendChartOption" autoresize />
+            <div class="chart-title">出货间隔趋势</div>
+            <v-chart class="chart" :option="intervalChartOption" autoresize />
           </div>
         </div>
       </div>
@@ -711,7 +711,7 @@ const pieChartOption = computed(() => {
   }
 })
 
-const trendChartOption = computed(() => {
+const intervalChartOption = computed(() => {
   const data = analysisData.value
   if (!data) return {}
   const records = analysisFilter.value
@@ -719,45 +719,91 @@ const trendChartOption = computed(() => {
     : Object.values(store.pools).flatMap(p => p.drawRecords)
   if (records.length === 0) return {}
 
-  // 按天聚合
-  const daily = {}
+  // 按池子分组计算间隔，避免跨池
+  const poolGroups = {}
   records.forEach(r => {
-    const d = new Date(r.timestamp)
-    const key = `${d.getMonth() + 1}/${d.getDate()}`
-    if (!daily[key]) daily[key] = { pulls: 0, legendary: 0, epic: 0 }
-    daily[key].pulls += r.results.length
-    r.results.forEach(item => {
-      if (item.rarity === 'legendary') daily[key].legendary++
-      if (item.rarity === 'epic') daily[key].epic++
-    })
-  })
-  const days = Object.keys(daily).sort((a, b) => {
-    const [ma, da] = a.split('/').map(Number)
-    const [mb, db] = b.split('/').map(Number)
-    return ma === mb ? da - db : ma - mb
+    if (!poolGroups[r.poolId]) poolGroups[r.poolId] = []
+    poolGroups[r.poolId].push(r)
   })
 
+  const legendaryIntervals = []
+  const epicIntervals = []
+
+  Object.values(poolGroups).forEach(poolRecords => {
+    const chronological = poolRecords.slice().reverse()
+    let lAccum = 0
+    let eAccum = 0
+    chronological.forEach(r => {
+      const lCount = r.results.filter(i => i.rarity === 'legendary').length
+      const eCount = r.results.filter(i => i.rarity === 'epic').length
+      const pullCount = r.results.length
+
+      for (let i = 0; i < lCount; i++) {
+        legendaryIntervals.push(lAccum + pullCount)
+        lAccum = 0
+      }
+      lAccum += pullCount
+
+      for (let i = 0; i < eCount; i++) {
+        epicIntervals.push(eAccum + pullCount)
+        eAccum = 0
+      }
+      eAccum += pullCount
+    })
+  })
+
+  // 按时间排序（用 record 的时间，这里简化为按收集顺序）
+  legendaryIntervals.sort((a, b) => a - b)
+  epicIntervals.sort((a, b) => a - b)
+
+  // 保底参考线
+  const poolInfo = analysisFilter.value ? ESSENCE_POOLS.find(p => p.id === analysisFilter.value) : null
+  const legendaryPity = poolInfo ? (poolInfo.type === 'abyss' ? 250 : (poolInfo.legendaryPity || 200)) : 200
+
   return {
-    tooltip: { trigger: 'axis' },
-    legend: { data: ['抽卡次数', '稀世', '奇珍'], textStyle: { color: '#a89b8c' } },
+    tooltip: { trigger: 'axis', formatter: (params) => {
+      const p = params[0]
+      return `第 ${p.dataIndex + 1} 次出货<br/>间隔 ${p.value} 抽`
+    }},
+    legend: { data: ['稀世间隔', '奇珍间隔'], textStyle: { color: '#a89b8c' } },
     grid: { left: '3%', right: '4%', bottom: '3%', containLabel: true },
     xAxis: {
       type: 'category',
-      boundaryGap: false,
-      data: days,
+      data: legendaryIntervals.map((_, i) => `第${i + 1}个`),
       axisLabel: { color: '#a89b8c' },
       axisLine: { lineStyle: { color: '#3a3028' } },
     },
     yAxis: {
       type: 'value',
-      axisLabel: { color: '#a89b8c' },
+      axisLabel: { color: '#a89b8c', formatter: v => v + '抽' },
       axisLine: { lineStyle: { color: '#3a3028' } },
       splitLine: { lineStyle: { color: '#2a2018' } },
     },
     series: [
-      { name: '抽卡次数', type: 'line', smooth: true, data: days.map(d => daily[d].pulls), areaStyle: { opacity: 0.1 } },
-      { name: '稀世', type: 'line', smooth: true, data: days.map(d => daily[d].legendary), itemStyle: { color: '#ff9800' } },
-      { name: '奇珍', type: 'line', smooth: true, data: days.map(d => daily[d].epic), itemStyle: { color: '#9c27b0' } },
+      {
+        name: '稀世间隔',
+        type: 'line',
+        smooth: true,
+        data: legendaryIntervals,
+        itemStyle: { color: '#ff9800' },
+        markLine: {
+          silent: true,
+          data: [{ yAxis: legendaryPity, label: { formatter: `保底 ${legendaryPity}` } }],
+          lineStyle: { color: '#ff9800', type: 'dashed' },
+        },
+      },
+      {
+        name: '奇珍间隔',
+        type: 'line',
+        smooth: true,
+        data: epicIntervals,
+        itemStyle: { color: '#9c27b0' },
+        markLine: {
+          silent: true,
+          data: [{ yAxis: 60, label: { formatter: '保底 60' } }],
+          lineStyle: { color: '#9c27b0', type: 'dashed' },
+        },
+      },
     ],
   }
 })
