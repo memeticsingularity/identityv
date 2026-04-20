@@ -125,6 +125,116 @@
       </div>
     </div>
 
+    <!-- 抽卡分析 -->
+    <div class="analysis-panel">
+      <div class="analysis-header">
+        <h3>抽卡分析</h3>
+        <el-select v-model="analysisFilter" placeholder="全局统计" clearable size="small" style="width: 180px">
+          <el-option label="全局统计" value="" />
+          <el-option
+            v-for="pool in ESSENCE_POOLS"
+            :key="pool.id"
+            :label="pool.name"
+            :value="pool.id"
+          />
+        </el-select>
+      </div>
+
+      <div v-if="!analysisData" class="empty-tip">
+        {{ analysisFilter ? '该精华池暂无抽卡数据' : '暂无抽卡数据，快去抽取吧～' }}
+      </div>
+
+      <div v-else>
+        <!-- 核心指标卡片 -->
+        <div class="analysis-grid">
+          <div class="analysis-card">
+            <div class="analysis-label">总抽取次数</div>
+            <div class="analysis-value">{{ analysisData.totalDraws }} 次</div>
+            <div class="analysis-sub">{{ analysisData.totalPulls }} 抽 / {{ analysisData.totalCost }} 回声</div>
+          </div>
+
+          <div class="analysis-card highlight-gold">
+            <div class="analysis-label">最欧十连</div>
+            <div v-if="analysisData.luckiestTen" class="analysis-value">+{{ analysisData.maxLuckValue }}</div>
+            <div v-else class="analysis-value">—</div>
+            <div v-if="analysisData.luckiestTen" class="analysis-tags">
+              <span
+                v-for="item in analysisData.luckiestTen.results"
+                :key="item.id"
+                class="mini-tag"
+                :style="{ backgroundColor: RARITY_CONFIG[item.rarity]?.bg, color: RARITY_CONFIG[item.rarity]?.color }"
+              >{{ item.displayName || item.name }}</span>
+            </div>
+          </div>
+
+          <div class="analysis-card">
+            <div class="analysis-label">最非十连</div>
+            <div v-if="analysisData.unluckiestTen" class="analysis-value" style="color:#9e9e9e">全低稀有度</div>
+            <div v-else class="analysis-value">—</div>
+            <div v-if="analysisData.unluckiestTen" class="analysis-sub">{{ store.formatDate(analysisData.unluckiestTen.timestamp) }}</div>
+          </div>
+
+          <div class="analysis-card">
+            <div class="analysis-label">最快出稀世</div>
+            <div v-if="analysisData.legendaryStreaks.firstAppearPulls" class="analysis-value" style="color:#ff9800">{{ analysisData.legendaryStreaks.firstAppearPulls }} 抽</div>
+            <div v-else class="analysis-value">—</div>
+            <div v-if="analysisData.legendaryStreaks.firstAppearCost" class="analysis-sub">{{ analysisData.legendaryStreaks.firstAppearCost }} 回声</div>
+          </div>
+
+          <div class="analysis-card">
+            <div class="analysis-label">最慢出稀世</div>
+            <div v-if="analysisData.legendaryStreaks.maxStreak" class="analysis-value" style="color:#ff9800">{{ analysisData.legendaryStreaks.maxStreak }} 抽</div>
+            <div v-else class="analysis-value">—</div>
+            <div v-if="analysisData.legendaryStreaks.maxStreakEndRecord" class="analysis-sub">{{ store.formatDate(analysisData.legendaryStreaks.maxStreakEndRecord.timestamp) }}</div>
+          </div>
+
+          <div class="analysis-card">
+            <div class="analysis-label">最快出奇珍</div>
+            <div v-if="analysisData.epicStreaks.firstAppearPulls" class="analysis-value" style="color:#9c27b0">{{ analysisData.epicStreaks.firstAppearPulls }} 抽</div>
+            <div v-else class="analysis-value">—</div>
+            <div v-if="analysisData.epicStreaks.firstAppearCost" class="analysis-sub">{{ analysisData.epicStreaks.firstAppearCost }} 回声</div>
+          </div>
+
+          <div class="analysis-card">
+            <div class="analysis-label">最慢出奇珍</div>
+            <div v-if="analysisData.epicStreaks.maxStreak" class="analysis-value" style="color:#9c27b0">{{ analysisData.epicStreaks.maxStreak }} 抽</div>
+            <div v-else class="analysis-value">—</div>
+            <div v-if="analysisData.epicStreaks.maxStreakEndRecord" class="analysis-sub">{{ store.formatDate(analysisData.epicStreaks.maxStreakEndRecord.timestamp) }}</div>
+          </div>
+
+          <div class="analysis-card">
+            <div class="analysis-label">稀世平均间隔</div>
+            <div v-if="analysisData.avgLegendaryInterval" class="analysis-value" style="color:#ff9800">{{ analysisData.avgLegendaryInterval }} 抽</div>
+            <div v-else class="analysis-value">—</div>
+            <div v-if="analysisData.avgLegendaryCost" class="analysis-sub">{{ analysisData.avgLegendaryCost }} 回声 / 个</div>
+          </div>
+
+          <div class="analysis-card">
+            <div class="analysis-label">奇珍平均间隔</div>
+            <div v-if="analysisData.avgEpicInterval" class="analysis-value" style="color:#9c27b0">{{ analysisData.avgEpicInterval }} 抽</div>
+            <div v-else class="analysis-value">—</div>
+            <div v-if="analysisData.avgEpicCost" class="analysis-sub">{{ analysisData.avgEpicCost }} 回声 / 个</div>
+          </div>
+        </div>
+
+        <!-- 图表区域 -->
+        <div class="charts-grid">
+          <div class="chart-card">
+            <div class="chart-title">出率对比</div>
+            <v-chart class="chart" :option="rateChartOption" autoresize />
+          </div>
+          <div class="chart-card">
+            <div class="chart-title">出货占比</div>
+            <v-chart class="chart" :option="pieChartOption" autoresize />
+          </div>
+          <div class="chart-card wide">
+            <div class="chart-title">抽卡趋势</div>
+            <v-chart class="chart" :option="trendChartOption" autoresize />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- 充值记录 -->
     <div class="records-section">
       <div class="records-header">
@@ -336,6 +446,13 @@ import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAppStore, RARITY_CONFIG, ESSENCE_POOLS } from '../../stores/app'
 import { Star, ArrowDown, ArrowUp, ArrowRight } from '@element-plus/icons-vue'
+import { use } from 'echarts/core'
+import { CanvasRenderer } from 'echarts/renderers'
+import { BarChart, PieChart, LineChart } from 'echarts/charts'
+import { GridComponent, TooltipComponent, LegendComponent, TitleComponent } from 'echarts/components'
+import VChart from 'vue-echarts'
+
+use([CanvasRenderer, BarChart, PieChart, LineChart, GridComponent, TooltipComponent, LegendComponent, TitleComponent])
 
 const store = useAppStore()
 const router = useRouter()
@@ -466,6 +583,134 @@ const visibleShardRecords = computed(() => {
   if (shardExpanded.value) return shardRecords.value
   return shardRecords.value.slice(0, COLLAPSE_LIMIT)
 })
+
+// ===== 抽卡分析 =====
+const analysisFilter = ref('')
+
+const analysisData = computed(() => {
+  if (analysisFilter.value) {
+    return store.getPoolAnalysis(analysisFilter.value)
+  }
+  return store.gachaAnalysis
+})
+
+const rateChartOption = computed(() => {
+  const data = analysisData.value
+  if (!data) return {}
+  const order = ['legendary', 'epic', 'unique', 'rare', 'common']
+  return {
+    tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+    legend: { data: ['实际出率', '理论出率'], textStyle: { color: '#a89b8c' } },
+    grid: { left: '3%', right: '4%', bottom: '3%', containLabel: true },
+    xAxis: {
+      type: 'category',
+      data: order.map(k => RARITY_CONFIG[k].label),
+      axisLabel: { color: '#a89b8c' },
+      axisLine: { lineStyle: { color: '#3a3028' } },
+    },
+    yAxis: {
+      type: 'value',
+      axisLabel: { color: '#a89b8c', formatter: (v) => (v * 100).toFixed(1) + '%' },
+      axisLine: { lineStyle: { color: '#3a3028' } },
+      splitLine: { lineStyle: { color: '#2a2018' } },
+    },
+    series: [
+      {
+        name: '实际出率',
+        type: 'bar',
+        data: order.map(k => data.actualRates[k] || 0),
+        itemStyle: { borderRadius: [4, 4, 0, 0] },
+      },
+      {
+        name: '理论出率',
+        type: 'bar',
+        data: order.map(k => data.theoreticalRates?.[k] || 0),
+        itemStyle: { borderRadius: [4, 4, 0, 0] },
+      },
+    ],
+  }
+})
+
+const pieChartOption = computed(() => {
+  const data = analysisData.value
+  if (!data) return {}
+  const order = ['legendary', 'epic', 'unique', 'rare', 'common']
+  return {
+    tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
+    legend: { orient: 'vertical', left: 'left', textStyle: { color: '#a89b8c' } },
+    series: [
+      {
+        type: 'pie',
+        radius: ['40%', '70%'],
+        avoidLabelOverlap: false,
+        itemStyle: { borderRadius: 6, borderColor: '#1a1512', borderWidth: 2 },
+        label: { show: false },
+        emphasis: { label: { show: true, fontSize: 14, fontWeight: 'bold', color: '#e8dcc8' } },
+        data: order.map(k => ({
+          name: RARITY_CONFIG[k].label,
+          value: data.rarityCounts[k] || 0,
+          itemStyle: { color: RARITY_CONFIG[k].color },
+        })),
+      },
+    ],
+  }
+})
+
+const trendChartOption = computed(() => {
+  const data = analysisData.value
+  if (!data) return {}
+  const records = analysisFilter.value
+    ? store.pools[analysisFilter.value]?.drawRecords || []
+    : Object.values(store.pools).flatMap(p => p.drawRecords)
+  if (records.length === 0) return {}
+
+  // 按天聚合
+  const daily = {}
+  records.forEach(r => {
+    const d = new Date(r.timestamp)
+    const key = `${d.getMonth() + 1}/${d.getDate()}`
+    if (!daily[key]) daily[key] = { pulls: 0, legendary: 0, epic: 0 }
+    daily[key].pulls += r.results.length
+    r.results.forEach(item => {
+      if (item.rarity === 'legendary') daily[key].legendary++
+      if (item.rarity === 'epic') daily[key].epic++
+    })
+  })
+  const days = Object.keys(daily).sort((a, b) => {
+    const [ma, da] = a.split('/').map(Number)
+    const [mb, db] = b.split('/').map(Number)
+    return ma === mb ? da - db : ma - mb
+  })
+
+  return {
+    tooltip: { trigger: 'axis' },
+    legend: { data: ['抽卡次数', '稀世', '奇珍'], textStyle: { color: '#a89b8c' } },
+    grid: { left: '3%', right: '4%', bottom: '3%', containLabel: true },
+    xAxis: {
+      type: 'category',
+      boundaryGap: false,
+      data: days,
+      axisLabel: { color: '#a89b8c' },
+      axisLine: { lineStyle: { color: '#3a3028' } },
+    },
+    yAxis: {
+      type: 'value',
+      axisLabel: { color: '#a89b8c' },
+      axisLine: { lineStyle: { color: '#3a3028' } },
+      splitLine: { lineStyle: { color: '#2a2018' } },
+    },
+    series: [
+      { name: '抽卡次数', type: 'line', smooth: true, data: days.map(d => daily[d].pulls), areaStyle: { opacity: 0.1 } },
+      { name: '稀世', type: 'line', smooth: true, data: days.map(d => daily[d].legendary), itemStyle: { color: '#ff9800' } },
+      { name: '奇珍', type: 'line', smooth: true, data: days.map(d => daily[d].epic), itemStyle: { color: '#9c27b0' } },
+    ],
+  }
+})
+
+function formatRate(v) {
+  if (v === undefined || v === null) return '0%'
+  return (v * 100).toFixed(2) + '%'
+}
 </script>
 
 <style scoped>
@@ -1044,5 +1289,112 @@ const visibleShardRecords = computed(() => {
 .modal-btn.danger:hover {
   background: linear-gradient(135deg, #ff7875, #d32f2f);
   transform: translateY(-1px);
+}
+
+/* ===== 抽卡分析 ===== */
+.analysis-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.analysis-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.analysis-card {
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  transition: all 0.2s;
+}
+
+.analysis-card:hover {
+  border-color: #c9a227;
+  transform: translateY(-2px);
+}
+
+.analysis-label {
+  font-size: 13px;
+  color: #a89b8c;
+  margin-bottom: 6px;
+}
+
+.analysis-value {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e8dcc8;
+  margin-bottom: 4px;
+}
+
+.analysis-sub {
+  font-size: 12px;
+  color: #a89b8c;
+}
+
+.analysis-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.mini-tag {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  border: 1px solid;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.chart-card {
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.chart-card.wide {
+  grid-column: span 2;
+}
+
+.chart-title {
+  font-size: 14px;
+  color: #a89b8c;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.chart {
+  width: 100%;
+  height: 240px;
+}
+
+@media (max-width: 768px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+  .chart-card.wide {
+    grid-column: span 1;
+  }
 }
 </style>

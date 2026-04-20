@@ -291,6 +291,173 @@ export const useAppStore = defineStore('app', () => {
     return { byRarity: stats, total: totalAll, obtained: obtainedAll }
   })
 
+  // ===== 抽卡分析工具函数 =====
+
+  function getTheoreticalRates(poolId) {
+    const poolInfo = ESSENCE_POOLS.find(p => p.id === poolId)
+    if (!poolInfo) return null
+    const isAbyss = poolInfo.type === 'abyss'
+    const isOldStandard = poolInfo.type === 'standard' && poolInfo.legendaryPity === 250
+    if (isAbyss) {
+      return { legendary: 0.005, epic: 0.025, unique: 0.15, rare: 0.82, common: 0 }
+    } else if (isOldStandard) {
+      return { legendary: 0.005, epic: 0.025, unique: 0.15, rare: 0.50, common: 0.32 }
+    } else {
+      return { legendary: 0.007, epic: 0.025, unique: 0.153, rare: 0.498, common: 0.317 }
+    }
+  }
+
+  function getGlobalTheoreticalRates() {
+    const totalByPool = {}
+    let totalPulls = 0
+    Object.entries(pools.value).forEach(([poolId, pool]) => {
+      const pulls = pool.drawCount
+      totalByPool[poolId] = pulls
+      totalPulls += pulls
+    })
+    if (totalPulls === 0) return { legendary: 0.007, epic: 0.025, unique: 0.153, rare: 0.498, common: 0.317 }
+
+    const weighted = { common: 0, rare: 0, unique: 0, epic: 0, legendary: 0 }
+    Object.entries(totalByPool).forEach(([poolId, pulls]) => {
+      const rates = getTheoreticalRates(poolId)
+      if (rates) {
+        const weight = pulls / totalPulls
+        for (const k of Object.keys(weighted)) {
+          weighted[k] += (rates[k] || 0) * weight
+        }
+      }
+    })
+    for (const k of Object.keys(weighted)) {
+      weighted[k] = +weighted[k].toFixed(4)
+    }
+    return weighted
+  }
+
+  function computeStreaks(records, targetRarity) {
+    if (!records || records.length === 0) {
+      return { firstAppearPulls: null, firstAppearCost: null, firstAppearRecord: null, maxStreak: 0, maxStreakEndRecord: null }
+    }
+    const chronological = records.slice().reverse()
+
+    let accumulatedPulls = 0
+    let accumulatedCost = 0
+    let maxStreak = 0
+    let maxStreakEndRecord = null
+    let firstAppearPulls = null
+    let firstAppearCost = null
+    let firstAppearRecord = null
+
+    for (const record of chronological) {
+      const hasTarget = record.results.some(item => item.rarity === targetRarity)
+      const pullCount = record.results.length
+
+      if (hasTarget) {
+        if (firstAppearPulls === null) {
+          firstAppearPulls = accumulatedPulls + pullCount
+          firstAppearCost = accumulatedCost + record.cost
+          firstAppearRecord = record
+        }
+        accumulatedPulls = 0
+        accumulatedCost = 0
+      } else {
+        accumulatedPulls += pullCount
+        accumulatedCost += record.cost
+        if (accumulatedPulls > maxStreak) {
+          maxStreak = accumulatedPulls
+          maxStreakEndRecord = record
+        }
+      }
+    }
+
+    return { firstAppearPulls, firstAppearCost, firstAppearRecord, maxStreak, maxStreakEndRecord }
+  }
+
+  function computeAnalysis(records) {
+    if (!records || records.length === 0) return null
+
+    const totalDraws = records.length
+    const totalCost = records.reduce((s, r) => s + r.cost, 0)
+    const totalPulls = records.reduce((s, r) => s + r.results.length, 0)
+
+    const rarityCounts = { common: 0, rare: 0, unique: 0, epic: 0, legendary: 0 }
+    records.forEach(r => {
+      r.results.forEach(item => {
+        if (rarityCounts[item.rarity] !== undefined) {
+          rarityCounts[item.rarity]++
+        }
+      })
+    })
+
+    const actualRates = {}
+    for (const r of Object.keys(rarityCounts)) {
+      actualRates[r] = totalPulls > 0 ? +(rarityCounts[r] / totalPulls).toFixed(4) : 0
+    }
+
+    // 最欧十连
+    const tenRecords = records.filter(r => r.type === 'ten')
+    let luckiestTen = null
+    let maxLuckValue = 0
+    tenRecords.forEach(r => {
+      const value = r.results.reduce((s, item) => s + (SHARD_RETURN[item.rarity] || 0), 0)
+      if (value > maxLuckValue) {
+        maxLuckValue = value
+        luckiestTen = r
+      }
+    })
+
+    // 最非十连
+    let unluckiestTen = null
+    tenRecords.forEach(r => {
+      const hasHighRarity = r.results.some(item => ['unique', 'epic', 'legendary'].includes(item.rarity))
+      if (!hasHighRarity) {
+        if (!unluckiestTen || r.timestamp < unluckiestTen.timestamp) {
+          unluckiestTen = r
+        }
+      }
+    })
+
+    const legendaryStreaks = computeStreaks(records, 'legendary')
+    const epicStreaks = computeStreaks(records, 'epic')
+
+    const avgLegendaryInterval = rarityCounts.legendary > 0 ? Math.round(totalPulls / rarityCounts.legendary) : null
+    const avgLegendaryCost = rarityCounts.legendary > 0 ? Math.round(totalCost / rarityCounts.legendary) : null
+    const avgEpicInterval = rarityCounts.epic > 0 ? Math.round(totalPulls / rarityCounts.epic) : null
+    const avgEpicCost = rarityCounts.epic > 0 ? Math.round(totalCost / rarityCounts.epic) : null
+
+    return {
+      totalDraws,
+      totalCost,
+      totalPulls,
+      rarityCounts,
+      actualRates,
+      luckiestTen,
+      maxLuckValue,
+      unluckiestTen,
+      legendaryStreaks,
+      epicStreaks,
+      avgLegendaryInterval,
+      avgLegendaryCost,
+      avgEpicInterval,
+      avgEpicCost,
+    }
+  }
+
+  const gachaAnalysis = computed(() => {
+    const allRecords = Object.values(pools.value).flatMap(p => p.drawRecords)
+    const analysis = computeAnalysis(allRecords)
+    if (!analysis) return null
+    analysis.theoreticalRates = getGlobalTheoreticalRates()
+    return analysis
+  })
+
+  function getPoolAnalysis(poolId) {
+    const pool = pools.value[poolId]
+    if (!pool || pool.drawRecords.length === 0) return null
+    const analysis = computeAnalysis(pool.drawRecords)
+    analysis.theoreticalRates = getTheoreticalRates(poolId)
+    return analysis
+  }
+
   // --- Actions ---
   function recharge(tierAmount) {
     const tier = RECHARGE_TIERS.find(t => t.amount === tierAmount)
@@ -590,6 +757,8 @@ export const useAppStore = defineStore('app', () => {
     ownedItems,
     ownedOrder,
     collectionStats,
+    gachaAnalysis,
+    getPoolAnalysis,
     shards,
     totalShardsEarned,
     skinCount,
