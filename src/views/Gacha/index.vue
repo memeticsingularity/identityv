@@ -543,7 +543,6 @@ async function handleDraw(type) {
   }
 
   lastResult.value = result.record
-  isSpinning.value = false
 
   // 碎片返还提示
   if (result.shardsReturned > 0) {
@@ -585,6 +584,8 @@ async function handleDraw(type) {
   if (result.skinModals?.length > 0) {
     store.skinModalQueue.push(...result.skinModals)
   }
+
+  isSpinning.value = false
 }
 </script>
 
