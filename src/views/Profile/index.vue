@@ -653,9 +653,9 @@ const rateChartOption = computed(() => {
     return theory > 0 ? +(actual / theory).toFixed(3) : 0
   })
 
-  // 动态 max：至少 2.5，覆盖最大比值；若一发入魂比值极大也撑得下
+  // 动态 max：整数，最小 2；比值接近 1 时缩小 max 以放大视觉差异
   const maxRatio = ratioValues.length > 0 ? Math.max(...ratioValues) : 1
-  const indicatorMax = Math.max(2.5, Math.ceil(maxRatio * 1.2))
+  const indicatorMax = Math.max(2, Math.ceil(maxRatio * 1.1))
 
   const indicator = activeKeys.map(k => ({ name: RARITY_CONFIG[k].label, max: indicatorMax }))
 
@@ -677,8 +677,7 @@ const rateChartOption = computed(() => {
     radar: {
       indicator,
       axisName: { color: '#a89b8c' },
-      splitNumber: 4,
-      axisTick: { show: false },
+      splitNumber: indicatorMax,
       splitArea: { areaStyle: { color: ['#1a1512', '#1e1916'] } },
       splitLine: { lineStyle: { color: '#3a3028' } },
       axisLine: { lineStyle: { color: '#3a3028' } },
@@ -690,9 +689,10 @@ const rateChartOption = computed(() => {
           {
             value: ratioValues,
             name: '实际/理论',
-            areaStyle: { color: 'rgba(255, 152, 0, 0.2)' },
-            itemStyle: { color: '#ff9800' },
-            lineStyle: { color: '#ff9800', width: 2 },
+            areaStyle: { color: 'rgba(255, 152, 0, 0.25)' },
+            itemStyle: { color: '#ff9800', borderWidth: 2, borderColor: '#fff' },
+            lineStyle: { color: '#ff9800', width: 3 },
+            symbolSize: 8,
           },
           {
             value: indicator.map(() => 1),
@@ -700,6 +700,7 @@ const rateChartOption = computed(() => {
             lineStyle: { type: 'dashed', color: '#666', width: 1 },
             itemStyle: { opacity: 0 },
             symbol: 'none',
+            tooltip: { show: false },
           },
         ],
       },
