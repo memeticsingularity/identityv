@@ -235,53 +235,116 @@
       </div>
     </div>
 
-    <!-- 充值记录 -->
-    <div class="records-section">
-      <div class="records-header">
-        <h3>
-          充值记录
-          <span class="record-count">（{{ store.rechargeRecords.length }} 条）</span>
-        </h3>
-        <el-button
-          v-if="store.rechargeRecords.length > COLLAPSE_LIMIT"
-          text
-          size="small"
-          @click="rechargeExpanded = !rechargeExpanded"
-        >
-          {{ rechargeExpanded ? '收起' : '展开' }}
-          <el-icon><ArrowUp v-if="rechargeExpanded" /><ArrowDown v-else /></el-icon>
-        </el-button>
-      </div>
+    <div class="records-row">
+      <!-- 充值记录 -->
+      <div class="records-section">
+        <div class="records-header">
+          <h3>
+            充值记录
+            <span class="record-count">（{{ store.rechargeRecords.length }} 条）</span>
+          </h3>
+          <el-button
+            v-if="store.rechargeRecords.length > COLLAPSE_LIMIT"
+            text
+            size="small"
+            @click="rechargeExpanded = !rechargeExpanded"
+          >
+            {{ rechargeExpanded ? '收起' : '展开' }}
+            <el-icon><ArrowUp v-if="rechargeExpanded" /><ArrowDown v-else /></el-icon>
+          </el-button>
+        </div>
 
-      <div v-if="store.rechargeRecords.length === 0" class="empty-tip">暂无充值记录</div>
+        <div v-if="store.rechargeRecords.length === 0" class="empty-tip">暂无充值记录</div>
 
-      <div v-else class="record-list">
-        <div
-          v-for="record in visibleRechargeRecords"
-          :key="record.id"
-          class="record-card"
-          :class="{ first: record.isFirst }"
-        >
-          <div class="record-main">
-            <div class="record-left">
-              <span class="record-amount">¥{{ record.amount }}</span>
-              <el-tag :type="record.isFirst ? 'danger' : 'info'" size="small" effect="dark">
-                {{ record.isFirst ? '首充双倍' : '常规充值' }}
-              </el-tag>
+        <div v-else class="record-list">
+          <div
+            v-for="record in visibleRechargeRecords"
+            :key="record.id"
+            class="record-card"
+            :class="{ first: record.isFirst }"
+          >
+            <div class="record-main">
+              <div class="record-left">
+                <span class="record-amount">¥{{ record.amount }}</span>
+                <el-tag :type="record.isFirst ? 'danger' : 'info'" size="small" effect="dark">
+                  {{ record.isFirst ? '首充双倍' : '常规充值' }}
+                </el-tag>
+              </div>
+              <div class="record-right">
+                <span class="record-echoes">+{{ record.echoesReceived }}</span>
+                <span class="record-time">{{ store.formatDate(record.timestamp) }}</span>
+              </div>
             </div>
-            <div class="record-right">
-              <span class="record-echoes">+{{ record.echoesReceived }}</span>
-              <span class="record-time">{{ store.formatDate(record.timestamp) }}</span>
+            <div v-if="record.isFirst" class="record-bar">
+              <div class="record-bar-fill" style="width: 100%"></div>
             </div>
           </div>
-          <div v-if="record.isFirst" class="record-bar">
-            <div class="record-bar-fill" style="width: 100%"></div>
-          </div>
+        </div>
+
+        <div v-if="store.rechargeRecords.length > COLLAPSE_LIMIT && !rechargeExpanded" class="expand-hint">
+          还有 {{ store.rechargeRecords.length - COLLAPSE_LIMIT }} 条记录被收起
         </div>
       </div>
 
-      <div v-if="store.rechargeRecords.length > COLLAPSE_LIMIT && !rechargeExpanded" class="expand-hint">
-        还有 {{ store.rechargeRecords.length - COLLAPSE_LIMIT }} 条记录被收起
+      <!-- 碎片获取记录 -->
+      <div class="records-section">
+        <div class="records-header">
+          <h3>
+            碎片获取记录
+            <span class="record-count">（{{ shardRecords.length }} 条）</span>
+          </h3>
+          <div class="header-actions">
+            <el-select v-model="shardFilter" placeholder="全部精华池" style="width: 140px" size="small">
+              <el-option label="全部精华池" value="" />
+              <el-option
+                v-for="pool in ESSENCE_POOLS"
+                :key="pool.id"
+                :label="pool.name"
+                :value="pool.id"
+              />
+            </el-select>
+            <el-button
+              v-if="shardRecords.length > COLLAPSE_LIMIT"
+              text
+              size="small"
+              @click="shardExpanded = !shardExpanded"
+            >
+              {{ shardExpanded ? '收起' : '展开' }}
+              <el-icon><ArrowUp v-if="shardExpanded" /><ArrowDown v-else /></el-icon>
+            </el-button>
+          </div>
+        </div>
+
+        <div v-if="shardRecords.length === 0" class="empty-tip">
+          {{ shardFilter ? '该精华池暂无碎片获取记录' : '暂无碎片获取记录' }}
+        </div>
+
+        <div v-else class="record-list">
+          <div
+            v-for="record in visibleShardRecords"
+            :key="record.id"
+            class="shard-record-card"
+          >
+            <div class="shard-record-header">
+              <div class="shard-record-meta">
+                <el-tag size="small" type="info" effect="dark">{{ record.poolName }}</el-tag>
+                <el-tag :type="record.type === 'ten' ? 'danger' : 'primary'" size="small" effect="dark">
+                  {{ record.type === 'ten' ? '十连' : '单抽' }}
+                </el-tag>
+                <span class="shard-record-shards">
+                  <img src="/assets/fragment.png" class="shard-icon-mini" alt="碎片" />
+                  <span class="shard-count">+{{ record.shardsReturned }}</span>
+                  <span class="shard-duplicate">（{{ record.duplicateCount }} 个重复）</span>
+                </span>
+              </div>
+              <span class="draw-time">{{ store.formatDate(record.timestamp) }}</span>
+            </div>
+          </div>
+        </div>
+
+        <div v-if="shardRecords.length > COLLAPSE_LIMIT && !shardExpanded" class="expand-hint">
+          还有 {{ shardRecords.length - COLLAPSE_LIMIT }} 条记录被收起
+        </div>
       </div>
     </div>
 
@@ -354,67 +417,6 @@
 
       <div v-if="filteredDrawRecords.length > COLLAPSE_LIMIT && !drawExpanded" class="expand-hint">
         还有 {{ filteredDrawRecords.length - COLLAPSE_LIMIT }} 条记录被收起
-      </div>
-    </div>
-
-    <!-- 碎片获取记录 -->
-    <div class="records-section">
-      <div class="records-header">
-        <h3>
-          碎片获取记录
-          <span class="record-count">（{{ shardRecords.length }} 条）</span>
-        </h3>
-        <div class="header-actions">
-          <el-select v-model="shardFilter" placeholder="全部精华池" style="width: 160px" size="small">
-            <el-option label="全部精华池" value="" />
-            <el-option
-              v-for="pool in ESSENCE_POOLS"
-              :key="pool.id"
-              :label="pool.name"
-              :value="pool.id"
-            />
-          </el-select>
-          <el-button
-            v-if="shardRecords.length > COLLAPSE_LIMIT"
-            text
-            size="small"
-            @click="shardExpanded = !shardExpanded"
-          >
-            {{ shardExpanded ? '收起' : '展开' }}
-            <el-icon><ArrowUp v-if="shardExpanded" /><ArrowDown v-else /></el-icon>
-          </el-button>
-        </div>
-      </div>
-
-      <div v-if="shardRecords.length === 0" class="empty-tip">
-        {{ shardFilter ? '该精华池暂无碎片获取记录' : '暂无碎片获取记录' }}
-      </div>
-
-      <div v-else class="record-list">
-        <div
-          v-for="record in visibleShardRecords"
-          :key="record.id"
-          class="shard-record-card"
-        >
-          <div class="shard-record-header">
-            <div class="shard-record-meta">
-              <el-tag size="small" type="info" effect="dark">{{ record.poolName }}</el-tag>
-              <el-tag :type="record.type === 'ten' ? 'danger' : 'primary'" size="small" effect="dark">
-                {{ record.type === 'ten' ? '十连' : '单抽' }}
-              </el-tag>
-              <span class="shard-record-shards">
-                <img src="/assets/fragment.png" class="shard-icon-mini" alt="碎片" />
-                <span class="shard-count">+{{ record.shardsReturned }}</span>
-                <span class="shard-duplicate">（{{ record.duplicateCount }} 个重复）</span>
-              </span>
-            </div>
-            <span class="draw-time">{{ store.formatDate(record.timestamp) }}</span>
-          </div>
-        </div>
-      </div>
-
-      <div v-if="shardRecords.length > COLLAPSE_LIMIT && !shardExpanded" class="expand-hint">
-        还有 {{ shardRecords.length - COLLAPSE_LIMIT }} 条记录被收起
       </div>
     </div>
 
@@ -922,6 +924,23 @@ function formatRate(v) {
 
 .records-section {
   margin-bottom: 32px;
+}
+
+.records-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.records-row .records-section {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .records-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 .records-header {
