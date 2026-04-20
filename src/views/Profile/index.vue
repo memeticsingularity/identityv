@@ -645,25 +645,30 @@ const rateChartOption = computed(() => {
   const data = analysisData.value
   if (!data) return {}
   const order = ['legendary', 'epic', 'unique', 'rare', 'common']
-  const indicator = order
-    .filter(k => data.theoreticalRates?.[k] > 0)
-    .map(k => ({ name: RARITY_CONFIG[k].label, max: 2.5 }))
+  const activeKeys = order.filter(k => data.theoreticalRates?.[k] > 0)
 
-  const ratioValues = order
-    .filter(k => data.theoreticalRates?.[k] > 0)
-    .map(k => {
-      const actual = data.actualRates[k] || 0
-      const theory = data.theoreticalRates[k]
-      return theory > 0 ? +(actual / theory).toFixed(3) : 0
-    })
+  const ratioValues = activeKeys.map(k => {
+    const actual = data.actualRates[k] || 0
+    const theory = data.theoreticalRates[k]
+    return theory > 0 ? +(actual / theory).toFixed(3) : 0
+  })
+
+  // 动态 max：至少 2.5，覆盖最大比值；若一发入魂比值极大也撑得下
+  const maxRatio = ratioValues.length > 0 ? Math.max(...ratioValues) : 1
+  const indicatorMax = Math.max(2.5, Math.ceil(maxRatio * 1.2))
+
+  const indicator = activeKeys.map(k => ({ name: RARITY_CONFIG[k].label, max: indicatorMax }))
 
   return {
     tooltip: {
+      trigger: 'item',
       formatter: (params) => {
-        const p = params[0]
-        let s = p.name + '<br/>'
-        p.value.forEach((v, i) => {
-          s += `${indicator[i].name}: ${v.toFixed(2)}x<br/>`
+        if (!params || !Array.isArray(params.value)) return ''
+        let s = params.name + '<br/>'
+        params.value.forEach((v, i) => {
+          if (indicator[i]) {
+            s += `${indicator[i].name}: ${v.toFixed(2)}x<br/>`
+          }
         })
         return s
       },
@@ -672,6 +677,7 @@ const rateChartOption = computed(() => {
     radar: {
       indicator,
       axisName: { color: '#a89b8c' },
+      splitNumber: 4,
       splitArea: { areaStyle: { color: ['#1a1512', '#1e1916'] } },
       splitLine: { lineStyle: { color: '#3a3028' } },
       axisLine: { lineStyle: { color: '#3a3028' } },
