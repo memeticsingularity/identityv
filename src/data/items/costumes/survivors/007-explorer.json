@@ -37,5 +37,18 @@
         "poolId": "abyss-09"
       }
     ]
+  },
+  {
+    "id": "costume-explorer-turquoise",
+    "name": "松石青",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "explorer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
   }
 ]

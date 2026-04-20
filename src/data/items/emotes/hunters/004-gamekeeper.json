@@ -6,5 +6,13 @@
     "type": "emote",
     "characterId": "gamekeeper",
     "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  },
+  {
+    "id": "emote-gk-visit",
+    "name": "拜访",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "gamekeeper",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e3" }]
   }
 ]

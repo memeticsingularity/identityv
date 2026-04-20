@@ -172,6 +172,45 @@
     ]
   },
   {
+    "id": "costume-sf-scarecrow",
+    "name": "稻草人",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-sf-blue-monster",
+    "name": "蓝怪",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-sf-purple-eggplant",
+    "name": "紫茄",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
     "id": "costume-ripper-coffee-duke",
     "name": "咖啡爵",
     "rarity": "rare",
@@ -1255,6 +1294,19 @@
     ]
   },
   {
+    "id": "costume-lg-moon-face",
+    "name": "月亮脸",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "lucky_guy",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
     "id": "costume-doctor-wine-red-deep",
     "name": "酒红深",
     "rarity": "rare",
@@ -1442,6 +1494,19 @@
     ]
   },
   {
+    "id": "costume-thief-painter",
+    "name": "漆匠",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "thief",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
     "id": "costume-gard-pirate-shipwright",
     "name": "海盗船匠",
     "rarity": "epic",
@@ -1561,6 +1626,19 @@
     ]
   },
   {
+    "id": "costume-explorer-turquoise",
+    "name": "松石青",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "explorer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
     "id": "costume-mc-springhand",
     "name": "弹簧手",
     "rarity": "epic",
@@ -1610,6 +1688,19 @@
       {
         "source": "essence",
         "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "costume-mercenary-melancholy-blue",
+    "name": "忧郁蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "mercenary",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
       }
     ]
   },
@@ -1680,6 +1771,45 @@
     ]
   },
   {
+    "id": "costume-coordinator-navy-ceremony",
+    "name": "海军仪仗",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-coordinator-deep-sea-blue",
+    "name": "深海蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-coordinator-elegant-gray",
+    "name": "高雅灰",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
     "id": "costume-mechanic-ink-black",
     "name": "墨黑",
     "rarity": "rare",
@@ -1733,6 +1863,58 @@
     ]
   },
   {
+    "id": "costume-mech-harley-rider",
+    "name": "哈雷车手",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-mech-gothic",
+    "name": "哥特",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-mech-creative-purple",
+    "name": "创意紫",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-mech-lively-yellow",
+    "name": "灵动黄",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
     "id": "costume-forward-firefighter",
     "name": "消防员",
     "rarity": "unique",
@@ -1782,6 +1964,85 @@
       {
         "source": "essence",
         "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "costume-tme-golden-cake",
+    "name": "黄金蛋糕",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "the_minds_eye",
+    "note": "限定，附赠角色",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-tme-sweet-cake",
+    "name": "甜心蛋糕",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-tme-patient-gown",
+    "name": "病服",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-tme-autumn-green",
+    "name": "秋意绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-tme-pink-white",
+    "name": "粉意白",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-tme-warm-winter-blue",
+    "name": "暖冬蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
       }
     ]
   },
@@ -4404,6 +4665,19 @@
     ]
   },
   {
+    "id": "emote-gk-visit",
+    "name": "拜访",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "gamekeeper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
     "id": "emote-soul-weaver-visit",
     "name": "拜访",
     "rarity": "unique",
@@ -4413,6 +4687,19 @@
       {
         "source": "essence",
         "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "emote-sw-sneer",
+    "name": "嗤笑",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "soul_weaver",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
       }
     ]
   },
@@ -4586,6 +4873,19 @@
     ]
   },
   {
+    "id": "emote-lawyer-lie",
+    "name": "躺地",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "lawyer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
     "id": "emote-law-provoke",
     "name": "挑衅",
     "rarity": "rare",
@@ -4647,6 +4947,19 @@
       {
         "source": "essence",
         "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "emote-gardener-shout",
+    "name": "呼喊",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "gardener",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
       }
     ]
   },
@@ -4725,6 +5038,32 @@
       {
         "source": "essence",
         "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "emote-explorer-shout",
+    "name": "呼喊",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "explorer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "emote-explorer-rest",
+    "name": "小憩",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "explorer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
       }
     ]
   },
@@ -4872,6 +5211,71 @@
     ]
   },
   {
+    "id": "emote-mech-prepare",
+    "name": "准备",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "emote-mech-shout",
+    "name": "呼喊",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "emote-mech-lie",
+    "name": "躺地",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "emote-mech-wait",
+    "name": "等待",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "emote-mech-rest",
+    "name": "小憩",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
     "id": "emote-forward-rest",
     "name": "小憩",
     "rarity": "rare",
@@ -4985,6 +5389,45 @@
       {
         "source": "essence",
         "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "emote-tme-prepare",
+    "name": "准备",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "emote-tme-wait",
+    "name": "等待",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "emote-tme-rest",
+    "name": "小憩",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
       }
     ]
   },
@@ -6662,6 +7105,45 @@
     ]
   },
   {
+    "id": "graffiti-coordinator-cartoon",
+    "name": "卡通",
+    "rarity": "rare",
+    "type": "graffiti",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "graffiti-mech-cartoon",
+    "name": "卡通",
+    "rarity": "rare",
+    "type": "graffiti",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "graffiti-mech-silhouette",
+    "name": "剪影",
+    "rarity": "common",
+    "type": "graffiti",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
     "id": "graffiti-forward-cartoon",
     "name": "卡通",
     "rarity": "rare",
@@ -6671,6 +7153,32 @@
       {
         "source": "essence",
         "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "graffiti-tme-cartoon",
+    "name": "卡通",
+    "rarity": "rare",
+    "type": "graffiti",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "graffiti-tme-silhouette",
+    "name": "剪影",
+    "rarity": "common",
+    "type": "graffiti",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
       }
     ]
   },
@@ -9192,6 +9700,134 @@
     "rarity": "common",
     "category": "mark",
     "nameEn": "普通印记-友善",
+    "type": "mark"
+  },
+  {
+    "id": "mark-r-toughness",
+    "name": "罕见印记-强悍",
+    "rarity": "rare",
+    "category": "mark",
+    "nameEn": "罕见印记-强悍",
+    "type": "mark"
+  },
+  {
+    "id": "mark-r-cunning",
+    "name": "罕见印记-狡诈",
+    "rarity": "rare",
+    "category": "mark",
+    "nameEn": "罕见印记-狡诈",
+    "type": "mark"
+  },
+  {
+    "id": "graffiti-c-magic-wand-color",
+    "name": "普通涂鸦-魔棒-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-魔棒-彩底",
+    "type": "graffiti"
+  },
+  {
+    "id": "graffiti-c-golden-horn-color",
+    "name": "普通涂鸦-黄金号角-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-黄金号角-彩底",
+    "type": "graffiti"
+  },
+  {
+    "id": "graffiti-c-claw-color",
+    "name": "普通涂鸦-手爪-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-手爪-彩底",
+    "type": "graffiti"
+  },
+  {
+    "id": "graffiti-c-cane-color",
+    "name": "普通涂鸦-盲杖-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-盲杖-彩底",
+    "type": "graffiti"
+  },
+  {
+    "id": "graffiti-c-cane-gray",
+    "name": "普通涂鸦-盲杖-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-盲杖-灰化",
+    "type": "graffiti"
+  },
+  {
+    "id": "graffiti-c-football-gray",
+    "name": "普通涂鸦-橄榄球-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-橄榄球-灰化",
+    "type": "graffiti"
+  },
+  {
+    "id": "graffiti-c-ghost-shawl-gray",
+    "name": "普通涂鸦-鬼脸披肩-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-鬼脸披肩-灰化",
+    "type": "graffiti"
+  },
+  {
+    "id": "graffiti-c-hook-chain-gray",
+    "name": "普通涂鸦-钩链-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-钩链-灰化",
+    "type": "graffiti"
+  },
+  {
+    "id": "graffiti-c-spider-leg-gray",
+    "name": "普通涂鸦-蛛腿-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-蛛腿-灰化",
+    "type": "graffiti"
+  },
+  {
+    "id": "graffiti-c-remote-control-gray",
+    "name": "普通涂鸦-遥控器-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-遥控器-灰化",
+    "type": "graffiti"
+  },
+  {
+    "id": "graffiti-c-nightingale-gray",
+    "name": "普通涂鸦-夜莺-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-夜莺-灰化",
+    "type": "graffiti"
+  },
+  {
+    "id": "graffiti-c-sedative-gray",
+    "name": "普通涂鸦-镇静剂-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-镇静剂-灰化",
+    "type": "graffiti"
+  },
+  {
+    "id": "mark-c-toughness",
+    "name": "普通印记-强悍",
+    "rarity": "common",
+    "category": "mark",
+    "nameEn": "普通印记-强悍",
+    "type": "mark"
+  },
+  {
+    "id": "mark-c-cunning",
+    "name": "普通印记-狡诈",
+    "rarity": "common",
+    "category": "mark",
+    "nameEn": "普通印记-狡诈",
     "type": "mark"
   }
 ]

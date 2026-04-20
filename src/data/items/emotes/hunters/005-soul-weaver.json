@@ -11,5 +11,18 @@
         "poolId": "s1-e2"
       }
     ]
+  },
+  {
+    "id": "emote-sw-sneer",
+    "name": "嗤笑",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "soul_weaver",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
   }
 ]

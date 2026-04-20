@@ -51,5 +51,44 @@
         "poolId": "abyss-03"
       }
     ]
+  },
+  {
+    "id": "costume-sf-scarecrow",
+    "name": "稻草人",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-sf-blue-monster",
+    "name": "蓝怪",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-sf-purple-eggplant",
+    "name": "紫茄",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
   }
 ]

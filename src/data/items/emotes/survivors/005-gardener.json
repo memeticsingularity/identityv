@@ -11,5 +11,18 @@
         "poolId": "s1-e2"
       }
     ]
+  },
+  {
+    "id": "emote-gardener-shout",
+    "name": "呼喊",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "gardener",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
   }
 ]

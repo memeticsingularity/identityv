@@ -64,5 +64,44 @@
         "poolId": "abyss-09"
       }
     ]
+  },
+  {
+    "id": "costume-coordinator-navy-ceremony",
+    "name": "海军仪仗",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-coordinator-deep-sea-blue",
+    "name": "深海蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-coordinator-elegant-gray",
+    "name": "高雅灰",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
   }
 ]

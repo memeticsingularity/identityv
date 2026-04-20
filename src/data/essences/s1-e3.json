@@ -1,0 +1,70 @@
+{
+  "id": "s1-e3",
+  "contents": {
+    "legendary": [
+      { "itemId": "costume-tme-golden-cake" }
+    ],
+    "epic": [
+      { "itemId": "costume-sf-scarecrow" },
+      { "itemId": "costume-tme-sweet-cake" }
+    ],
+    "unique": [
+      { "itemId": "costume-tme-patient-gown" },
+      { "itemId": "costume-coordinator-navy-ceremony" },
+      { "itemId": "costume-mech-harley-rider" },
+      { "itemId": "costume-mech-gothic" },
+      { "itemId": "costume-thief-painter" },
+      { "itemId": "costume-lg-moon-face" },
+      { "itemId": "emote-gk-visit" },
+      { "itemId": "emote-sw-sneer" },
+      { "itemId": "emote-tme-prepare" },
+      { "itemId": "emote-mech-prepare" }
+    ],
+    "rare": [
+      { "itemId": "costume-sf-blue-monster" },
+      { "itemId": "costume-coordinator-deep-sea-blue" },
+      { "itemId": "costume-tme-autumn-green" },
+      { "itemId": "costume-tme-pink-white" },
+      { "itemId": "costume-tme-warm-winter-blue" },
+      { "itemId": "costume-mech-creative-purple" },
+      { "itemId": "costume-mech-lively-yellow" },
+      { "itemId": "costume-coordinator-elegant-gray" },
+      { "itemId": "costume-mercenary-melancholy-blue" },
+      { "itemId": "costume-explorer-turquoise" },
+      { "itemId": "costume-sf-purple-eggplant" },
+      { "itemId": "emote-lawyer-lie" },
+      { "itemId": "emote-mech-shout" },
+      { "itemId": "emote-explorer-shout" },
+      { "itemId": "emote-gardener-shout" },
+      { "itemId": "emote-mech-lie" },
+      { "itemId": "emote-tme-wait" },
+      { "itemId": "emote-mech-wait" },
+      { "itemId": "emote-tme-rest" },
+      { "itemId": "emote-mech-rest" },
+      { "itemId": "emote-explorer-rest" },
+      { "itemId": "graffiti-tme-cartoon" },
+      { "itemId": "graffiti-coordinator-cartoon" },
+      { "itemId": "graffiti-mech-cartoon" },
+      { "itemId": "mark-r-toughness" },
+      { "itemId": "mark-r-cunning" }
+    ],
+    "common": [
+      { "itemId": "graffiti-tme-silhouette" },
+      { "itemId": "graffiti-mech-silhouette" },
+      { "itemId": "graffiti-c-magic-wand-color" },
+      { "itemId": "graffiti-c-golden-horn-color" },
+      { "itemId": "graffiti-c-claw-color" },
+      { "itemId": "graffiti-c-cane-color" },
+      { "itemId": "graffiti-c-cane-gray" },
+      { "itemId": "graffiti-c-football-gray" },
+      { "itemId": "graffiti-c-ghost-shawl-gray" },
+      { "itemId": "graffiti-c-hook-chain-gray" },
+      { "itemId": "graffiti-c-spider-leg-gray" },
+      { "itemId": "graffiti-c-remote-control-gray" },
+      { "itemId": "graffiti-c-nightingale-gray" },
+      { "itemId": "graffiti-c-sedative-gray" },
+      { "itemId": "mark-c-toughness" },
+      { "itemId": "mark-c-cunning" }
+    ]
+  }
+}

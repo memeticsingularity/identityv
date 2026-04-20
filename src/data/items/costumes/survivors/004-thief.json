@@ -65,5 +65,18 @@
         "poolId": "abyss-02"
       }
     ]
+  },
+  {
+    "id": "costume-thief-painter",
+    "name": "漆匠",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "thief",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
   }
 ]

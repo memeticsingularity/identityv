@@ -26,6 +26,19 @@
     ]
   },
   {
+    "id": "emote-lawyer-lie",
+    "name": "躺地",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "lawyer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
     "id": "emote-law-provoke",
     "name": "挑衅",
     "rarity": "rare",

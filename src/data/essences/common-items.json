@@ -1503,5 +1503,117 @@
     "rarity": "common",
     "category": "mark",
     "nameEn": "普通印记-友善"
+  },
+  {
+    "id": "mark-r-toughness",
+    "name": "罕见印记-强悍",
+    "rarity": "rare",
+    "category": "mark",
+    "nameEn": "罕见印记-强悍"
+  },
+  {
+    "id": "mark-r-cunning",
+    "name": "罕见印记-狡诈",
+    "rarity": "rare",
+    "category": "mark",
+    "nameEn": "罕见印记-狡诈"
+  },
+  {
+    "id": "graffiti-c-magic-wand-color",
+    "name": "普通涂鸦-魔棒-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-魔棒-彩底"
+  },
+  {
+    "id": "graffiti-c-golden-horn-color",
+    "name": "普通涂鸦-黄金号角-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-黄金号角-彩底"
+  },
+  {
+    "id": "graffiti-c-claw-color",
+    "name": "普通涂鸦-手爪-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-手爪-彩底"
+  },
+  {
+    "id": "graffiti-c-cane-color",
+    "name": "普通涂鸦-盲杖-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-盲杖-彩底"
+  },
+  {
+    "id": "graffiti-c-cane-gray",
+    "name": "普通涂鸦-盲杖-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-盲杖-灰化"
+  },
+  {
+    "id": "graffiti-c-football-gray",
+    "name": "普通涂鸦-橄榄球-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-橄榄球-灰化"
+  },
+  {
+    "id": "graffiti-c-ghost-shawl-gray",
+    "name": "普通涂鸦-鬼脸披肩-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-鬼脸披肩-灰化"
+  },
+  {
+    "id": "graffiti-c-hook-chain-gray",
+    "name": "普通涂鸦-钩链-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-钩链-灰化"
+  },
+  {
+    "id": "graffiti-c-spider-leg-gray",
+    "name": "普通涂鸦-蛛腿-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-蛛腿-灰化"
+  },
+  {
+    "id": "graffiti-c-remote-control-gray",
+    "name": "普通涂鸦-遥控器-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-遥控器-灰化"
+  },
+  {
+    "id": "graffiti-c-nightingale-gray",
+    "name": "普通涂鸦-夜莺-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-夜莺-灰化"
+  },
+  {
+    "id": "graffiti-c-sedative-gray",
+    "name": "普通涂鸦-镇静剂-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-镇静剂-灰化"
+  },
+  {
+    "id": "mark-c-toughness",
+    "name": "普通印记-强悍",
+    "rarity": "common",
+    "category": "mark",
+    "nameEn": "普通印记-强悍"
+  },
+  {
+    "id": "mark-c-cunning",
+    "name": "普通印记-狡诈",
+    "rarity": "common",
+    "category": "mark",
+    "nameEn": "普通印记-狡诈"
   }
 ]

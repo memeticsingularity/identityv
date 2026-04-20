@@ -51,5 +51,18 @@
         "poolId": "abyss-02"
       }
     ]
+  },
+  {
+    "id": "costume-mercenary-melancholy-blue",
+    "name": "忧郁蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "mercenary",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
   }
 ]

@@ -51,5 +51,57 @@
         "poolId": "abyss-03"
       }
     ]
+  },
+  {
+    "id": "costume-mech-harley-rider",
+    "name": "哈雷车手",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-mech-gothic",
+    "name": "哥特",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-mech-creative-purple",
+    "name": "创意紫",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-mech-lively-yellow",
+    "name": "灵动黄",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "mechanic",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
   }
 ]
