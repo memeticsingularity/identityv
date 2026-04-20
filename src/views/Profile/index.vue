@@ -185,8 +185,7 @@
 
           <div class="analysis-card">
             <div class="analysis-label">最慢出稀世</div>
-            <div v-if="analysisData.legendaryStreaks.pityHistory.length" class="analysis-value" style="color:#ff9800">保底 {{ analysisData.legendaryStreaks.pityHistory.length }} 次</div>
-            <div v-else-if="analysisData.legendaryStreaks.maxStreak" class="analysis-value" style="color:#ff9800">{{ analysisData.legendaryStreaks.maxStreak }} 抽</div>
+            <div v-if="analysisData.legendaryStreaks.maxStreak" class="analysis-value" style="color:#ff9800">{{ analysisData.legendaryStreaks.maxStreak }} 抽</div>
             <div v-else class="analysis-value">—</div>
             <div v-if="analysisData.legendaryStreaks.maxStreakItem" class="analysis-sub">
               {{ analysisData.legendaryStreaks.maxStreakItem.displayName || analysisData.legendaryStreaks.maxStreakItem.name }}
@@ -204,8 +203,7 @@
 
           <div class="analysis-card">
             <div class="analysis-label">最慢出奇珍</div>
-            <div v-if="analysisData.epicStreaks.pityHistory.length" class="analysis-value" style="color:#9c27b0">保底 {{ analysisData.epicStreaks.pityHistory.length }} 次</div>
-            <div v-else-if="analysisData.epicStreaks.maxStreak" class="analysis-value" style="color:#9c27b0">{{ analysisData.epicStreaks.maxStreak }} 抽</div>
+            <div v-if="analysisData.epicStreaks.maxStreak" class="analysis-value" style="color:#9c27b0">{{ analysisData.epicStreaks.maxStreak }} 抽</div>
             <div v-else class="analysis-value">—</div>
             <div v-if="analysisData.epicStreaks.maxStreakItem" class="analysis-sub">
               {{ analysisData.epicStreaks.maxStreakItem.displayName || analysisData.epicStreaks.maxStreakItem.name }}

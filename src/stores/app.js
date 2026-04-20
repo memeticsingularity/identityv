@@ -339,8 +339,8 @@ export const useAppStore = defineStore('app', () => {
     }
     const chronological = records.slice().reverse()
 
-    let accumulatedPulls = 0
-    let accumulatedCost = 0
+    let currentStreak = 0
+    let currentCostAccum = 0
     let maxStreak = 0
     let maxStreakEndRecord = null
     let maxStreakItem = null
@@ -351,37 +351,60 @@ export const useAppStore = defineStore('app', () => {
     const pityHistory = []
 
     for (const record of chronological) {
-      const targetItems = record.results.filter(item => item.rarity === targetRarity)
-      const hasTarget = targetItems.length > 0
       const pullCount = record.results.length
+      const costPerPull = record.cost / pullCount
 
-      if (hasTarget) {
-        const targetItem = targetItems[0]
-        if (firstAppearPulls === null) {
-          firstAppearPulls = accumulatedPulls + pullCount
-          firstAppearCost = accumulatedCost + record.cost
-          firstAppearRecord = record
-          firstAppearItem = targetItem
-        }
-        if (pityThreshold && accumulatedPulls >= pityThreshold - pullCount) {
+      for (let i = 0; i < pullCount; i++) {
+        const item = record.results[i]
+        currentStreak += 1
+        currentCostAccum += costPerPull
+
+        if (item.rarity === targetRarity) {
+          const isPity = pityThreshold !== null && currentStreak === pityThreshold
+
+          // 首次出现（剔除保底）
+          if (firstAppearPulls === null && !isPity) {
+            firstAppearPulls = currentStreak
+            firstAppearCost = Math.round(currentCostAccum)
+            firstAppearRecord = record
+            firstAppearItem = item
+          }
+
+          // 保底历史记录所有出货（含保底）
           pityHistory.push({
             record,
-            item: targetItem,
-            streakBefore: accumulatedPulls,
+            item,
+            streakBefore: currentStreak,
             poolName: record.poolName,
+            isPity,
           })
+
+          // 最慢 streak（剔除保底）
+          if (!isPity && currentStreak > maxStreak) {
+            maxStreak = currentStreak
+            maxStreakEndRecord = record
+            maxStreakItem = item
+          }
+
+          // 重置
+          currentStreak = 0
+          currentCostAccum = 0
         }
-        if (accumulatedPulls >= maxStreak) {
-          maxStreak = accumulatedPulls
-          maxStreakEndRecord = record
-          maxStreakItem = targetItem
-        }
-        accumulatedPulls = 0
-        accumulatedCost = 0
-      } else {
-        accumulatedPulls += pullCount
-        accumulatedCost += record.cost
       }
+    }
+
+    // 若无非保底出货，回退到保底记录
+    if (maxStreak === 0 && pityHistory.length > 0) {
+      const pityMax = pityHistory.reduce((max, h) => h.streakBefore > max.streakBefore ? h : max, pityHistory[0])
+      maxStreak = pityMax.streakBefore
+      maxStreakEndRecord = pityMax.record
+      maxStreakItem = pityMax.item
+    }
+    if (firstAppearPulls === null && pityHistory.length > 0) {
+      const pityFirst = pityHistory.reduce((min, h) => h.streakBefore < min.streakBefore ? h : min, pityHistory[0])
+      firstAppearPulls = pityFirst.streakBefore
+      firstAppearRecord = pityFirst.record
+      firstAppearItem = pityFirst.item
     }
 
     return { firstAppearPulls, firstAppearCost, firstAppearRecord, firstAppearItem, maxStreak, maxStreakEndRecord, maxStreakItem, pityHistory }
