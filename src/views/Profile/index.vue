@@ -652,7 +652,7 @@ const rateChartOption = computed(() => {
   return {
     tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
     legend: { data: ['实际出率', '理论出率'], textStyle: { color: '#a89b8c' } },
-    grid: { left: '3%', right: '4%', bottom: '3%', containLabel: true },
+    grid: { left: '3%', right: '4%', bottom: '3%', top: '12%' },
     xAxis: {
       type: 'category',
       data: order.map(k => RARITY_CONFIG[k].label),
@@ -764,7 +764,7 @@ const intervalChartOption = computed(() => {
       return `第 ${p.dataIndex + 1} 次出货<br/>间隔 ${p.value} 抽`
     }},
     legend: { data: ['稀世间隔', '奇珍间隔'], textStyle: { color: '#a89b8c' } },
-    grid: { left: '3%', right: '4%', bottom: '3%', containLabel: true },
+    grid: { left: '3%', right: '4%', bottom: '3%', top: '12%' },
     xAxis: {
       type: 'category',
       data: legendaryIntervals.map((_, i) => `第${i + 1}个`),
