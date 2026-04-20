@@ -1,5 +1,18 @@
 [
   {
+    "id": "costume-forward-firefighter",
+    "name": "消防员",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "forward",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
     "id": "costume-fwd-vitality-green",
     "name": "生机绿",
     "rarity": "rare",

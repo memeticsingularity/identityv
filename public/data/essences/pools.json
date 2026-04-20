@@ -1400,6 +1400,186 @@
       ]
     }
   },
+  "s1-e2": {
+    "id": "s1-e2",
+    "contents": {
+      "legendary": [
+        {
+          "itemId": "costume-sw-golden-candelabra"
+        }
+      ],
+      "epic": [
+        {
+          "itemId": "costume-sw-crystal-candelabra"
+        },
+        {
+          "itemId": "costume-magician-blue-aladdin"
+        }
+      ],
+      "unique": [
+        {
+          "itemId": "costume-magician-silver-tech"
+        },
+        {
+          "itemId": "costume-he-master-chef"
+        },
+        {
+          "itemId": "costume-sw-starry-prophet"
+        },
+        {
+          "itemId": "costume-coordinator-royal-cavalry"
+        },
+        {
+          "itemId": "costume-forward-firefighter"
+        },
+        {
+          "itemId": "costume-smiley-face-prisoner"
+        },
+        {
+          "itemId": "emote-he-visit"
+        },
+        {
+          "itemId": "emote-ripper-visit"
+        },
+        {
+          "itemId": "emote-soul-weaver-visit"
+        },
+        {
+          "itemId": "emote-smiley-face-visit"
+        }
+      ],
+      "rare": [
+        {
+          "itemId": "emote-doctor-lie"
+        },
+        {
+          "itemId": "emote-gardener-lie"
+        },
+        {
+          "itemId": "emote-mercenary-lie"
+        },
+        {
+          "itemId": "emote-explorer-lie"
+        },
+        {
+          "itemId": "emote-thief-lie"
+        },
+        {
+          "itemId": "costume-ripper-coffee-duke"
+        },
+        {
+          "itemId": "costume-sw-camouflage"
+        },
+        {
+          "itemId": "costume-lawyer-coral-red"
+        },
+        {
+          "itemId": "costume-thief-lapis"
+        },
+        {
+          "itemId": "costume-sw-red-silk"
+        },
+        {
+          "itemId": "costume-he-blue-collar"
+        },
+        {
+          "itemId": "costume-sw-green-cloth"
+        },
+        {
+          "itemId": "costume-sw-gold-red-silk"
+        },
+        {
+          "itemId": "costume-doctor-wine-red-deep"
+        },
+        {
+          "itemId": "costume-he-purple-collar"
+        },
+        {
+          "itemId": "costume-lawyer-deep-space-black"
+        },
+        {
+          "itemId": "emote-forward-rest"
+        },
+        {
+          "itemId": "emote-explorer-prepare"
+        },
+        {
+          "itemId": "emote-mercenary-prepare"
+        },
+        {
+          "itemId": "emote-lawyer-prepare"
+        },
+        {
+          "itemId": "emote-forward-wait"
+        },
+        {
+          "itemId": "graffiti-soul-weaver-cartoon"
+        },
+        {
+          "itemId": "graffiti-lawyer-cartoon"
+        },
+        {
+          "itemId": "graffiti-forward-cartoon"
+        },
+        {
+          "itemId": "mark-r-obsessive"
+        },
+        {
+          "itemId": "mark-r-friendly"
+        }
+      ],
+      "common": [
+        {
+          "itemId": "graffiti-soul-weaver-silhouette"
+        },
+        {
+          "itemId": "graffiti-c-flashlight-color"
+        },
+        {
+          "itemId": "graffiti-c-signal-gun-color"
+        },
+        {
+          "itemId": "graffiti-c-spider-leg-color"
+        },
+        {
+          "itemId": "graffiti-c-chainsaw-color"
+        },
+        {
+          "itemId": "graffiti-c-sedative-color"
+        },
+        {
+          "itemId": "graffiti-c-hook-chain-color"
+        },
+        {
+          "itemId": "graffiti-c-peeper-gray"
+        },
+        {
+          "itemId": "graffiti-c-football-color"
+        },
+        {
+          "itemId": "graffiti-c-magic-wand-gray"
+        },
+        {
+          "itemId": "graffiti-c-observer-gray"
+        },
+        {
+          "itemId": "graffiti-c-unicycle-gray"
+        },
+        {
+          "itemId": "graffiti-c-golden-horn-gray"
+        },
+        {
+          "itemId": "graffiti-c-bat-gray"
+        },
+        {
+          "itemId": "mark-c-obsessive"
+        },
+        {
+          "itemId": "mark-c-friendly"
+        }
+      ]
+    }
+  },
   "s42-e1": {
     "id": "s42-e1",
     "contents": {

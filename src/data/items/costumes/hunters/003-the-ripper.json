@@ -1,5 +1,18 @@
 [
   {
+    "id": "costume-ripper-coffee-duke",
+    "name": "咖啡爵",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "ripper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
     "id": "costume-tr-barber",
     "name": "理发师",
     "rarity": "unique",

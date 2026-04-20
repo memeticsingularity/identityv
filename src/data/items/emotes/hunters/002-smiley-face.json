@@ -1,5 +1,13 @@
 [
   {
+    "id": "emote-smiley-face-visit",
+    "name": "拜访",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "smiley_face",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e2" }]
+  },
+  {
     "id": "emote-sf-mock",
     "name": "嘲笑",
     "rarity": "unique",

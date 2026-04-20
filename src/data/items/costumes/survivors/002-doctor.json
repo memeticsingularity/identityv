@@ -1,5 +1,18 @@
 [
   {
+    "id": "costume-doctor-wine-red-deep",
+    "name": "酒红深",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "doctor",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
     "id": "costume-doc-leopard",
     "name": "豹斑",
     "rarity": "unique",

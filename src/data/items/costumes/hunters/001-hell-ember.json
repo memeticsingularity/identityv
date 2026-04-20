@@ -1,5 +1,44 @@
 [
   {
+    "id": "costume-he-master-chef",
+    "name": "庖厨大师",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "hell_ember",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-he-blue-collar",
+    "name": "蓝领",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "hell_ember",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-he-purple-collar",
+    "name": "紫领",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "hell_ember",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
     "id": "costume-he-lasso",
     "name": "套索",
     "rarity": "unique",

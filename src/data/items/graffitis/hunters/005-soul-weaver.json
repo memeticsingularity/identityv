@@ -1,0 +1,28 @@
+[
+  {
+    "id": "graffiti-soul-weaver-cartoon",
+    "name": "卡通",
+    "rarity": "rare",
+    "type": "graffiti",
+    "characterId": "soul_weaver",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "graffiti-soul-weaver-silhouette",
+    "name": "剪影",
+    "rarity": "common",
+    "type": "graffiti",
+    "characterId": "soul_weaver",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "graffiti-forward-cartoon",
+    "name": "卡通",
+    "rarity": "rare",
+    "type": "graffiti",
+    "characterId": "forward",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  }
+]

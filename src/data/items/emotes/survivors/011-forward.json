@@ -1,5 +1,44 @@
 [
   {
+    "id": "emote-forward-rest",
+    "name": "小憩",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "forward",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "emote-forward-prepare",
+    "name": "准备",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "forward",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "emote-forward-wait",
+    "name": "等待",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "forward",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
     "id": "emote-fwd-stand",
     "name": "起身",
     "rarity": "unique",

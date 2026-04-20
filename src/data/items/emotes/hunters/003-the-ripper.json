@@ -1,5 +1,13 @@
 [
   {
+    "id": "emote-ripper-visit",
+    "name": "拜访",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "ripper",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e2" }]
+  },
+  {
     "id": "emote-tr-solo",
     "name": "独舞",
     "rarity": "unique",

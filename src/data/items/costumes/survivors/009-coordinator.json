@@ -1,5 +1,18 @@
 [
   {
+    "id": "costume-coordinator-royal-cavalry",
+    "name": "皇家骑兵",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
     "id": "costume-co-emerald",
     "name": "祖母绿",
     "rarity": "rare",

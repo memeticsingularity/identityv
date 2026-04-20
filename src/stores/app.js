@@ -27,7 +27,8 @@ export const RARITY_CONFIG = {
 
 // ===== 精华池配置 =====
 export const ESSENCE_POOLS = [
-  { id: 's1-e1', name: '第1赛季·精华1', season: 1, type: 'standard', number: 1, legendaryPity: 250, releaseDate: '2018-04-02', endDate: '2018-05-24' },
+  { id: 's1-e1', name: '第1赛季·精华1', season: 1, type: 'standard', number: 1, legendaryPity: 250, releaseDate: '2018-04-02', endDate: '2018-04-12' },
+  { id: 's1-e2', name: '第1赛季·精华2', season: 1, type: 'standard', number: 2, legendaryPity: 250, releaseDate: '2018-04-12', endDate: '2018-05-24' },
   { id: 's42-e1', name: '第42赛季·精华1', season: 42, type: 'standard', number: 1, legendaryPity: 200, releaseDate: '2026-02-05', endDate: '2026-04-23' },
   { id: 's42-e2', name: '第42赛季·精华2', season: 42, type: 'standard', number: 2, legendaryPity: 200, releaseDate: '2026-02-27', endDate: '2026-04-23' },
   { id: 's42-e3', name: '第42赛季·精华3', season: 42, type: 'standard', number: 3, legendaryPity: 200, releaseDate: '2026-04-02', endDate: '2026-04-23' },

@@ -83,6 +83,18 @@ function buildItems() {
     collect(dir)
   }
 
+  // 合并 common-items（精华池通用物品）
+  const commonSrc = path.join(SRC_DATA, 'essences', 'common-items.json')
+  if (fs.existsSync(commonSrc)) {
+    const commonItems = readJSON(commonSrc)
+    if (Array.isArray(commonItems)) {
+      for (const item of commonItems) {
+        if (!item.type && item.category) item.type = item.category
+        allItems.push(item)
+      }
+    }
+  }
+
   const outFile = path.join(OUT_DIR, 'items', 'index.json')
   ensureDir(path.dirname(outFile))
   fs.writeFileSync(outFile, JSON.stringify(allItems, null, 2))

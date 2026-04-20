@@ -1384,5 +1384,124 @@
     "rarity": "common",
     "category": "mark",
     "nameEn": "普通印记-勇敢"
+  },
+  {
+    "id": "mark-r-obsessive",
+    "name": "罕见印记-执着",
+    "rarity": "rare",
+    "category": "mark",
+    "nameEn": "罕见印记-执着"
+  },
+  {
+    "id": "mark-r-friendly",
+    "name": "罕见印记-友善",
+    "rarity": "rare",
+    "category": "mark",
+    "nameEn": "罕见印记-友善"
+  },
+  {
+    "id": "graffiti-c-flashlight-color",
+    "name": "普通涂鸦-手电筒-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-手电筒-彩底"
+  },
+  {
+    "id": "graffiti-c-signal-gun-color",
+    "name": "普通涂鸦-信号枪-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-信号枪-彩底"
+  },
+  {
+    "id": "graffiti-c-spider-leg-color",
+    "name": "普通涂鸦-蛛腿-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-蛛腿-彩底"
+  },
+  {
+    "id": "graffiti-c-chainsaw-color",
+    "name": "普通涂鸦-电锯-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-电锯-彩底"
+  },
+  {
+    "id": "graffiti-c-sedative-color",
+    "name": "普通涂鸦-镇静剂-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-镇静剂-彩底"
+  },
+  {
+    "id": "graffiti-c-hook-chain-color",
+    "name": "普通涂鸦-钩链-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-钩链-彩底"
+  },
+  {
+    "id": "graffiti-c-peeper-gray",
+    "name": "普通涂鸦-窥视者-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-窥视者-灰化"
+  },
+  {
+    "id": "graffiti-c-football-color",
+    "name": "普通涂鸦-橄榄球-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-橄榄球-彩底"
+  },
+  {
+    "id": "graffiti-c-magic-wand-gray",
+    "name": "普通涂鸦-魔棒-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-魔棒-灰化"
+  },
+  {
+    "id": "graffiti-c-observer-gray",
+    "name": "普通涂鸦-观察者-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-观察者-灰化"
+  },
+  {
+    "id": "graffiti-c-unicycle-gray",
+    "name": "普通涂鸦-独轮车-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-独轮车-灰化"
+  },
+  {
+    "id": "graffiti-c-golden-horn-gray",
+    "name": "普通涂鸦-黄金号角-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-黄金号角-灰化"
+  },
+  {
+    "id": "graffiti-c-bat-gray",
+    "name": "普通涂鸦-蝙蝠-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-蝙蝠-灰化"
+  },
+  {
+    "id": "mark-c-obsessive",
+    "name": "普通印记-执着",
+    "rarity": "common",
+    "category": "mark",
+    "nameEn": "普通印记-执着"
+  },
+  {
+    "id": "mark-c-friendly",
+    "name": "普通印记-友善",
+    "rarity": "common",
+    "category": "mark",
+    "nameEn": "普通印记-友善"
   }
 ]

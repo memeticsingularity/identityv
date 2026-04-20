@@ -1,5 +1,18 @@
 [
   {
+    "id": "costume-thief-lapis",
+    "name": "天青石",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "thief",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
     "id": "costume-thief-jade",
     "name": "绿翡翠",
     "rarity": "rare",

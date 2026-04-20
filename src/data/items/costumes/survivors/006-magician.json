@@ -1,5 +1,31 @@
 [
   {
+    "id": "costume-magician-blue-aladdin",
+    "name": "蓝调阿拉丁",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "magician",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-magician-silver-tech",
+    "name": "银白科技",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "magician",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
     "id": "costume-mag-olive",
     "name": "橄榄枝",
     "rarity": "rare",

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "emote-gardener-lie",
+    "name": "躺地",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "gardener",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  }
+]

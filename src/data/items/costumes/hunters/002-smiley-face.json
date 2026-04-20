@@ -1,5 +1,18 @@
 [
   {
+    "id": "costume-smiley-face-prisoner",
+    "name": "囚徒",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
     "id": "costume-sf-green-hat",
     "name": "绿帽",
     "rarity": "rare",

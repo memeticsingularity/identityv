@@ -1,5 +1,18 @@
 [
   {
+    "id": "emote-doctor-lie",
+    "name": "躺地",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "doctor",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
     "id": "emote-doc-provoke",
     "name": "挑衅",
     "rarity": "rare",

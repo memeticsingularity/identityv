@@ -1,5 +1,13 @@
 [
   {
+    "id": "emote-thief-lie",
+    "name": "躺地",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "thief",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e2" }]
+  },
+  {
     "id": "emote-thief-prepare",
     "name": "准备",
     "rarity": "rare",
