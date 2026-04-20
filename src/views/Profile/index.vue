@@ -178,28 +178,38 @@
             <div class="analysis-label">最快出稀世</div>
             <div v-if="analysisData.legendaryStreaks.firstAppearPulls" class="analysis-value" style="color:#ff9800">{{ analysisData.legendaryStreaks.firstAppearPulls }} 抽</div>
             <div v-else class="analysis-value">—</div>
-            <div v-if="analysisData.legendaryStreaks.firstAppearCost" class="analysis-sub">{{ analysisData.legendaryStreaks.firstAppearCost }} 回声</div>
+            <div v-if="analysisData.legendaryStreaks.firstAppearItem" class="analysis-sub">
+              {{ analysisData.legendaryStreaks.firstAppearItem.displayName || analysisData.legendaryStreaks.firstAppearItem.name }}
+            </div>
           </div>
 
           <div class="analysis-card">
             <div class="analysis-label">最慢出稀世</div>
-            <div v-if="analysisData.legendaryStreaks.maxStreak" class="analysis-value" style="color:#ff9800">{{ analysisData.legendaryStreaks.maxStreak }} 抽</div>
+            <div v-if="analysisData.legendaryStreaks.pityHistory.length" class="analysis-value" style="color:#ff9800">保底 {{ analysisData.legendaryStreaks.pityHistory.length }} 次</div>
+            <div v-else-if="analysisData.legendaryStreaks.maxStreak" class="analysis-value" style="color:#ff9800">{{ analysisData.legendaryStreaks.maxStreak }} 抽</div>
             <div v-else class="analysis-value">—</div>
-            <div v-if="analysisData.legendaryStreaks.maxStreakEndRecord" class="analysis-sub">{{ store.formatDate(analysisData.legendaryStreaks.maxStreakEndRecord.timestamp) }}</div>
+            <div v-if="analysisData.legendaryStreaks.maxStreakItem" class="analysis-sub">
+              {{ analysisData.legendaryStreaks.maxStreakItem.displayName || analysisData.legendaryStreaks.maxStreakItem.name }}
+            </div>
           </div>
 
           <div class="analysis-card">
             <div class="analysis-label">最快出奇珍</div>
             <div v-if="analysisData.epicStreaks.firstAppearPulls" class="analysis-value" style="color:#9c27b0">{{ analysisData.epicStreaks.firstAppearPulls }} 抽</div>
             <div v-else class="analysis-value">—</div>
-            <div v-if="analysisData.epicStreaks.firstAppearCost" class="analysis-sub">{{ analysisData.epicStreaks.firstAppearCost }} 回声</div>
+            <div v-if="analysisData.epicStreaks.firstAppearItem" class="analysis-sub">
+              {{ analysisData.epicStreaks.firstAppearItem.displayName || analysisData.epicStreaks.firstAppearItem.name }}
+            </div>
           </div>
 
           <div class="analysis-card">
             <div class="analysis-label">最慢出奇珍</div>
-            <div v-if="analysisData.epicStreaks.maxStreak" class="analysis-value" style="color:#9c27b0">{{ analysisData.epicStreaks.maxStreak }} 抽</div>
+            <div v-if="analysisData.epicStreaks.pityHistory.length" class="analysis-value" style="color:#9c27b0">保底 {{ analysisData.epicStreaks.pityHistory.length }} 次</div>
+            <div v-else-if="analysisData.epicStreaks.maxStreak" class="analysis-value" style="color:#9c27b0">{{ analysisData.epicStreaks.maxStreak }} 抽</div>
             <div v-else class="analysis-value">—</div>
-            <div v-if="analysisData.epicStreaks.maxStreakEndRecord" class="analysis-sub">{{ store.formatDate(analysisData.epicStreaks.maxStreakEndRecord.timestamp) }}</div>
+            <div v-if="analysisData.epicStreaks.maxStreakItem" class="analysis-sub">
+              {{ analysisData.epicStreaks.maxStreakItem.displayName || analysisData.epicStreaks.maxStreakItem.name }}
+            </div>
           </div>
 
           <div class="analysis-card">
@@ -214,6 +224,39 @@
             <div v-if="analysisData.avgEpicInterval" class="analysis-value" style="color:#9c27b0">{{ analysisData.avgEpicInterval }} 抽</div>
             <div v-else class="analysis-value">—</div>
             <div v-if="analysisData.avgEpicCost" class="analysis-sub">{{ analysisData.avgEpicCost }} 回声 / 个</div>
+          </div>
+        </div>
+
+        <!-- 保底记录 -->
+        <div v-if="analysisData.legendaryPityHistory.length || analysisData.epicPityHistory.length" class="pity-section">
+          <div class="pity-tabs">
+            <div
+              class="pity-tab"
+              :class="{ active: pityTab === 'legendary' }"
+              @click="pityTab = 'legendary'"
+            >
+              稀世保底 ({{ analysisData.legendaryPityHistory.length }})
+            </div>
+            <div
+              class="pity-tab"
+              :class="{ active: pityTab === 'epic' }"
+              @click="pityTab = 'epic'"
+            >
+              奇珍保底 ({{ analysisData.epicPityHistory.length }})
+            </div>
+          </div>
+          <div class="pity-list">
+            <div
+              v-for="(entry, idx) in activePityList"
+              :key="idx"
+              class="pity-item"
+            >
+              <span class="pity-tag" :style="{ color: pityTab === 'legendary' ? '#ff9800' : '#9c27b0' }"">
+                {{ entry.item.displayName || entry.item.name }}
+              </span>
+              <el-tag size="small" type="info" effect="dark">{{ entry.poolName }}</el-tag>
+              <span class="pity-time">{{ store.formatDate(entry.record.timestamp) }}</span>
+            </div>
           </div>
         </div>
 
@@ -596,10 +639,18 @@ const analysisData = computed(() => {
   return store.gachaAnalysis
 })
 
+const pityTab = ref('legendary')
+
+const activePityList = computed(() => {
+  const data = analysisData.value
+  if (!data) return []
+  return pityTab.value === 'legendary' ? data.legendaryPityHistory : data.epicPityHistory
+})
+
 const rateChartOption = computed(() => {
   const data = analysisData.value
   if (!data) return {}
-  const order = ['legendary', 'epic', 'unique', 'rare', 'common']
+  const order = ['legendary', 'epic']
   return {
     tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
     legend: { data: ['实际出率', '理论出率'], textStyle: { color: '#a89b8c' } },
@@ -625,9 +676,11 @@ const rateChartOption = computed(() => {
       },
       {
         name: '理论出率',
-        type: 'bar',
+        type: 'line',
         data: order.map(k => data.theoreticalRates?.[k] || 0),
-        itemStyle: { borderRadius: [4, 4, 0, 0] },
+        symbol: 'circle',
+        symbolSize: 8,
+        lineStyle: { type: 'dashed', width: 2 },
       },
     ],
   }
@@ -636,7 +689,7 @@ const rateChartOption = computed(() => {
 const pieChartOption = computed(() => {
   const data = analysisData.value
   if (!data) return {}
-  const order = ['legendary', 'epic', 'unique', 'rare', 'common']
+  const order = ['legendary', 'epic']
   return {
     tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
     legend: { orient: 'vertical', left: 'left', textStyle: { color: '#a89b8c' } },
@@ -1406,6 +1459,70 @@ function formatRate(v) {
 .chart {
   width: 100%;
   height: 240px;
+}
+
+.pity-section {
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.pity-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.pity-tab {
+  cursor: pointer;
+  font-size: 14px;
+  color: #a89b8c;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.pity-tab:hover {
+  color: #e8dcc8;
+}
+
+.pity-tab.active {
+  color: #c9a227;
+  background: rgba(201, 162, 39, 0.1);
+  font-weight: 600;
+}
+
+.pity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.pity-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: var(--bg-card);
+}
+
+.pity-tag {
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.pity-time {
+  color: #a89b8c;
+  font-size: 12px;
+  margin-left: auto;
 }
 
 @media (max-width: 768px) {

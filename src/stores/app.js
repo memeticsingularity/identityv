@@ -333,9 +333,9 @@ export const useAppStore = defineStore('app', () => {
     return weighted
   }
 
-  function computeStreaks(records, targetRarity) {
+  function computeStreaks(records, targetRarity, pityThreshold = null) {
     if (!records || records.length === 0) {
-      return { firstAppearPulls: null, firstAppearCost: null, firstAppearRecord: null, maxStreak: 0, maxStreakEndRecord: null }
+      return { firstAppearPulls: null, firstAppearCost: null, firstAppearRecord: null, firstAppearItem: null, maxStreak: 0, maxStreakEndRecord: null, maxStreakItem: null, pityHistory: [] }
     }
     const chronological = records.slice().reverse()
 
@@ -343,36 +343,51 @@ export const useAppStore = defineStore('app', () => {
     let accumulatedCost = 0
     let maxStreak = 0
     let maxStreakEndRecord = null
+    let maxStreakItem = null
     let firstAppearPulls = null
     let firstAppearCost = null
     let firstAppearRecord = null
+    let firstAppearItem = null
+    const pityHistory = []
 
     for (const record of chronological) {
-      const hasTarget = record.results.some(item => item.rarity === targetRarity)
+      const targetItems = record.results.filter(item => item.rarity === targetRarity)
+      const hasTarget = targetItems.length > 0
       const pullCount = record.results.length
 
       if (hasTarget) {
+        const targetItem = targetItems[0]
         if (firstAppearPulls === null) {
           firstAppearPulls = accumulatedPulls + pullCount
           firstAppearCost = accumulatedCost + record.cost
           firstAppearRecord = record
+          firstAppearItem = targetItem
+        }
+        if (pityThreshold && accumulatedPulls >= pityThreshold - pullCount) {
+          pityHistory.push({
+            record,
+            item: targetItem,
+            streakBefore: accumulatedPulls,
+            poolName: record.poolName,
+          })
+        }
+        if (accumulatedPulls >= maxStreak) {
+          maxStreak = accumulatedPulls
+          maxStreakEndRecord = record
+          maxStreakItem = targetItem
         }
         accumulatedPulls = 0
         accumulatedCost = 0
       } else {
         accumulatedPulls += pullCount
         accumulatedCost += record.cost
-        if (accumulatedPulls > maxStreak) {
-          maxStreak = accumulatedPulls
-          maxStreakEndRecord = record
-        }
       }
     }
 
-    return { firstAppearPulls, firstAppearCost, firstAppearRecord, maxStreak, maxStreakEndRecord }
+    return { firstAppearPulls, firstAppearCost, firstAppearRecord, firstAppearItem, maxStreak, maxStreakEndRecord, maxStreakItem, pityHistory }
   }
 
-  function computeAnalysis(records) {
+  function computeAnalysis(records, poolId = null) {
     if (!records || records.length === 0) return null
 
     const totalDraws = records.length
@@ -416,8 +431,12 @@ export const useAppStore = defineStore('app', () => {
       }
     })
 
-    const legendaryStreaks = computeStreaks(records, 'legendary')
-    const epicStreaks = computeStreaks(records, 'epic')
+    const poolInfo = poolId ? ESSENCE_POOLS.find(p => p.id === poolId) : null
+    const legendaryPity = poolInfo ? (poolInfo.type === 'abyss' ? 250 : (poolInfo.legendaryPity || 200)) : null
+    const epicPity = 60
+
+    const legendaryStreaks = computeStreaks(records, 'legendary', legendaryPity)
+    const epicStreaks = computeStreaks(records, 'epic', epicPity)
 
     const avgLegendaryInterval = rarityCounts.legendary > 0 ? Math.round(totalPulls / rarityCounts.legendary) : null
     const avgLegendaryCost = rarityCounts.legendary > 0 ? Math.round(totalCost / rarityCounts.legendary) : null
@@ -447,13 +466,30 @@ export const useAppStore = defineStore('app', () => {
     const analysis = computeAnalysis(allRecords)
     if (!analysis) return null
     analysis.theoreticalRates = getGlobalTheoreticalRates()
+
+    // 全局保底记录：逐池计算后合并
+    const legendaryPityHistory = []
+    const epicPityHistory = []
+    Object.entries(pools.value).forEach(([pid, pool]) => {
+      const pInfo = ESSENCE_POOLS.find(p => p.id === pid)
+      const lPity = pInfo ? (pInfo.type === 'abyss' ? 250 : (pInfo.legendaryPity || 200)) : null
+      const lStreaks = computeStreaks(pool.drawRecords, 'legendary', lPity)
+      const eStreaks = computeStreaks(pool.drawRecords, 'epic', 60)
+      legendaryPityHistory.push(...lStreaks.pityHistory)
+      epicPityHistory.push(...eStreaks.pityHistory)
+    })
+    legendaryPityHistory.sort((a, b) => b.record.timestamp - a.record.timestamp)
+    epicPityHistory.sort((a, b) => b.record.timestamp - a.record.timestamp)
+    analysis.legendaryPityHistory = legendaryPityHistory
+    analysis.epicPityHistory = epicPityHistory
+
     return analysis
   })
 
   function getPoolAnalysis(poolId) {
     const pool = pools.value[poolId]
     if (!pool || pool.drawRecords.length === 0) return null
-    const analysis = computeAnalysis(pool.drawRecords)
+    const analysis = computeAnalysis(pool.drawRecords, poolId)
     analysis.theoreticalRates = getTheoreticalRates(poolId)
     return analysis
   }
