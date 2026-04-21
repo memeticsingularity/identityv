@@ -5,3 +5,5 @@ dist
 dist-ssr
 *.local
 package-lock.json
+stats.html
+stats.json

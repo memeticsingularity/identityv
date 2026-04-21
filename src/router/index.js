@@ -52,4 +52,15 @@ const router = createRouter({
   routes,
 })
 
+// 兜底：当懒加载 chunk 因部署更新而 404 时，自动刷新页面重新加载最新版本
+router.onError((error, to) => {
+  if (
+    error.message?.includes('Failed to fetch dynamically imported module') ||
+    error.message?.includes('Loading chunk') ||
+    error.message?.includes('Loading CSS chunk')
+  ) {
+    window.location.href = to.fullPath
+  }
+})
+
 export default router

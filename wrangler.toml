@@ -4,3 +4,9 @@ compatibility_date = "2026-04-21"
 [assets]
 directory = "./dist"
 not_found_handling = "single-page-application"
+
+# 禁止缓存 HTML 入口，防止旧版本引用已失效的 JS/CSS chunk
+[[headers]]
+for = "/*.html"
+[headers.values]
+Cache-Control = "no-cache, no-store, must-revalidate"
