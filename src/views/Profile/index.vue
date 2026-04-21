@@ -34,7 +34,7 @@
     <!-- 收藏图鉴快捷入口 -->
     <div class="collection-entry" @click="$router.push('/collection')">
       <div class="collection-entry-left">
-        <el-icon size="24" color="#c9a227"><Star /></el-icon>
+        <Icon icon="ep:star-filled" width="24" height="24" color="#c9a227" />
         <div class="collection-entry-text">
           <div class="collection-entry-title">收藏图鉴</div>
           <div class="collection-entry-sub">
@@ -42,7 +42,7 @@
           </div>
         </div>
       </div>
-      <el-icon size="18" color="#a89b8c"><ArrowRight /></el-icon>
+      <Icon icon="ep:arrow-right" width="18" height="18" color="#a89b8c" />
     </div>
 
     <!-- 各精华池保底进度 -->
@@ -287,7 +287,7 @@
             @click="rechargeExpanded = !rechargeExpanded"
           >
             {{ rechargeExpanded ? '收起' : '展开' }}
-            <el-icon><ArrowUp v-if="rechargeExpanded" /><ArrowDown v-else /></el-icon>
+            <Icon v-if="rechargeExpanded" icon="ep:arrow-up" width="16" height="16" /><Icon v-else icon="ep:arrow-down" width="16" height="16" />
           </el-button>
         </div>
 
@@ -347,7 +347,7 @@
               @click="shardExpanded = !shardExpanded"
             >
               {{ shardExpanded ? '收起' : '展开' }}
-              <el-icon><ArrowUp v-if="shardExpanded" /><ArrowDown v-else /></el-icon>
+              <Icon v-if="shardExpanded" icon="ep:arrow-up" width="16" height="16" /><Icon v-else icon="ep:arrow-down" width="16" height="16" />
             </el-button>
           </div>
         </div>
@@ -409,7 +409,7 @@
             @click="drawExpanded = !drawExpanded"
           >
             {{ drawExpanded ? '收起' : '展开' }}
-            <el-icon><ArrowUp v-if="drawExpanded" /><ArrowDown v-else /></el-icon>
+            <Icon v-if="drawExpanded" icon="ep:arrow-up" width="16" height="16" /><Icon v-else icon="ep:arrow-down" width="16" height="16" />
           </el-button>
         </div>
       </div>
@@ -484,7 +484,7 @@
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAppStore, RARITY_CONFIG, ESSENCE_POOLS } from '../../stores/app'
-import { Star, ArrowDown, ArrowUp, ArrowRight } from '@element-plus/icons-vue'
+import { Icon } from '@iconify/vue'
 import { use } from 'echarts/core'
 import { CanvasRenderer } from 'echarts/renderers'
 import { BarChart, PieChart, LineChart, RadarChart } from 'echarts/charts'

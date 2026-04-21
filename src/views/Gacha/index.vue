@@ -66,7 +66,7 @@
           {{ store.currentPoolInfo.name }}
           <el-popover placement="bottom" :width="420" trigger="hover" popper-class="prob-popover">
             <template #reference>
-              <el-icon class="prob-icon" size="18"><InfoFilled /></el-icon>
+              <Icon icon="ep:info-filled" class="prob-icon" width="18" height="18" />
             </template>
             <div class="prob-popover-inner">
               <h4 class="prob-popover-title">珍宝概率公示</h4>
@@ -81,7 +81,7 @@
         </p>
         <p class="gacha-sub">开启珍宝，获取稀世时装</p>
         <el-button text class="content-btn" @click="showContentModal = true">
-          <el-icon><InfoFilled /></el-icon>
+          <Icon icon="ep:info-filled" width="16" height="16" />
           内容说明
         </el-button>
       </div>
@@ -108,7 +108,7 @@
           :class="{ 'insufficient': store.echoes < 96 }"
           @click="handleDraw('single')"
         >
-          <el-icon><Present /></el-icon>
+          <Icon icon="ep:gift" width="16" height="16" />
           开启1个 (96回声)
         </el-button>
         <el-button
@@ -118,7 +118,7 @@
           :class="{ 'insufficient': store.echoes < 960 }"
           @click="handleDraw('ten')"
         >
-          <el-icon><Present /></el-icon>
+          <Icon icon="ep:gift" width="16" height="16" />
           开启10个 (960回声)
         </el-button>
       </div>
@@ -294,10 +294,8 @@
         <div v-if="currentPoolRecords.length > COLLAPSE_LIMIT" class="expand-bar">
           <el-button text @click="isExpanded = !isExpanded">
             {{ isExpanded ? '收起记录' : `展开全部 (${currentPoolRecords.length} 条)` }}
-            <el-icon>
-              <ArrowUp v-if="isExpanded" />
-              <ArrowDown v-else />
-            </el-icon>
+            <Icon v-if="isExpanded" icon="ep:arrow-up" width="16" height="16" />
+            <Icon v-else icon="ep:arrow-down" width="16" height="16" />
           </el-button>
         </div>
       </el-collapse-item>
@@ -337,7 +335,7 @@
 import { ref, computed } from 'vue'
 import { useAppStore, RARITY_CONFIG, POOL_CASCADER_OPTIONS, getEssenceIcon, RECHARGE_TIERS } from '../../stores/app'
 import { buildItemCatalog } from '../../data/essences/index.js'
-import { Present, ArrowUp, ArrowDown, InfoFilled } from '@element-plus/icons-vue'
+import { Icon } from '@iconify/vue'
 
 const store = useAppStore()
 const isSpinning = ref(false)

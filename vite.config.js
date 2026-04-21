@@ -4,7 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-import { visualizer } from 'rollup-plugin-visualizer'
 
 export default defineConfig({
   plugins: [
@@ -19,12 +18,6 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
       dts: true,
     }),
-    visualizer({
-      open: false,
-      gzipSize: true,
-      filename: './stats.json',
-      template: 'raw-data',
-    }),
   ],
   build: {
     chunkSizeWarningLimit: 1000,
@@ -34,6 +27,10 @@ export default defineConfig({
           // echarts + zrender
           if (id.includes('node_modules/echarts') || id.includes('node_modules/zrender') || id.includes('node_modules/vue-echarts')) {
             return 'vendor-echarts'
+          }
+          // element-plus icons (tree-shaking doesn't work well for this package)
+          if (id.includes('node_modules/@element-plus/icons-vue')) {
+            return 'vendor-ep-icons'
           }
           // element-plus
           if (id.includes('node_modules/element-plus')) {

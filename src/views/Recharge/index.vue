@@ -87,10 +87,8 @@
       <div v-if="store.rechargeRecords.length > COLLAPSE_LIMIT" class="expand-bar">
         <el-button text @click="isExpanded = !isExpanded">
           {{ isExpanded ? '收起记录' : `展开全部 (${store.rechargeRecords.length} 条)` }}
-          <el-icon>
-            <ArrowUp v-if="isExpanded" />
-            <ArrowDown v-else />
-          </el-icon>
+          <Icon v-if="isExpanded" icon="ep:arrow-up" width="16" height="16" />
+          <Icon v-else icon="ep:arrow-down" width="16" height="16" />
         </el-button>
       </div>
     </div>
@@ -100,7 +98,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useAppStore, RECHARGE_TIERS } from '../../stores/app'
-import { ArrowDown, ArrowUp } from '@element-plus/icons-vue'
+import { Icon } from '@iconify/vue'
 
 const store = useAppStore()
 const isExpanded = ref(false)

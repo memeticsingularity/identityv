@@ -105,7 +105,7 @@
           style="width: 100%; max-width: 280px"
         >
           <template #prefix>
-            <el-icon><Search /></el-icon>
+            <Icon icon="ep:search" width="16" height="16" />
           </template>
         </el-input>
       </div>
@@ -216,7 +216,7 @@
 <script setup>
 import { ref, computed, watch } from 'vue'
 import { useRouter } from 'vue-router'
-import { Search } from '@element-plus/icons-vue'
+import { Icon } from '@iconify/vue'
 import { useAppStore, RARITY_CONFIG, ESSENCE_POOLS } from '../../stores/app'
 import { buildItemCatalog } from '../../data/essences/index.js'
 import characters from '../../data/characters/index.js'
