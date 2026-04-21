@@ -1,0 +1,12 @@
+{
+  "id": "guard_26",
+  "name": "26号守卫",
+  "englishName": "Guard 26",
+  "type": "hunter",
+  "camp": "hunter",
+  "role": "守椅型",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_hunter.png/120px-placeholder_hunter.png",
+  "background": "邦邦是一台被安装了炸弹程序的机器人，它的爆炸范围让求生者无处可逃。"
+}

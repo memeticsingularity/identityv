@@ -1,0 +1,28 @@
+[
+  {
+    "id": "emote-ench-lie",
+    "name": "躺地",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "enchantress",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  },
+  {
+    "id": "emote-ench-provoke",
+    "name": "挑衅",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "enchantress",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  }
+]

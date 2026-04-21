@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-sculpt-wheelchair-racer",
+    "name": "轮椅车手",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "sculptor",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  },
+  {
+    "id": "costume-sculpt-navy",
+    "name": "绀",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "sculptor",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  },
+  {
+    "id": "costume-sculpt-indigo",
+    "name": "靛",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "sculptor",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

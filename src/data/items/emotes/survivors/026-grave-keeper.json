@@ -1,0 +1,28 @@
+[
+  {
+    "id": "emote-gk-prepare",
+    "name": "准备",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "grave_keeper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  },
+  {
+    "id": "emote-gk-shame",
+    "name": "羞愧",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "grave_keeper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  }
+]

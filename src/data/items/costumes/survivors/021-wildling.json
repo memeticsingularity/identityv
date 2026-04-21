@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-wild-bodyguard",
+    "name": "保镖",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "wildling",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  }
+]

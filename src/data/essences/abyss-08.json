@@ -1,0 +1,137 @@
+{
+  "id": "abyss-08",
+  "contents": {
+    "legendary": [
+      {
+        "itemId": "costume-sw-endless-mech"
+      }
+    ],
+    "epic": [
+      {
+        "itemId": "costume-lg-abnormal-pointer"
+      },
+      {
+        "itemId": "costume-aero-watch-tower"
+      },
+      {
+        "itemId": "costume-cl-collection-patrol"
+      },
+      {
+        "itemId": "costume-puppet-cyber-reconstruct"
+      }
+    ],
+    "unique": [
+      {
+        "itemId": "costume-g26-wood-guard-leader"
+      },
+      {
+        "itemId": "costume-wa-alien-symbiosis"
+      },
+      {
+        "itemId": "costume-nw-tower-top"
+      },
+      {
+        "itemId": "costume-fi-unburned-page"
+      },
+      {
+        "itemId": "costume-fg-erased-one"
+      },
+      {
+        "itemId": "emote-undead-laugh"
+      },
+      {
+        "itemId": "emote-hermit-visit"
+      },
+      {
+        "itemId": "emote-prof-look"
+      },
+      {
+        "itemId": "emote-anti-rest"
+      }
+    ],
+    "rare": [
+      {
+        "itemId": "costume-cl-sports-blue"
+      },
+      {
+        "itemId": "costume-aero-silent-brown"
+      },
+      {
+        "itemId": "costume-os-elegant-blue"
+      },
+      {
+        "itemId": "costume-fg-petrified-white"
+      },
+      {
+        "itemId": "costume-puppet-withered-wood-yellow"
+      },
+      {
+        "itemId": "costume-ts-ancient-green"
+      },
+      {
+        "itemId": "costume-fi-flame-orange"
+      },
+      {
+        "itemId": "costume-fl-elegant-gray"
+      },
+      {
+        "itemId": "emote-nov-shame"
+      },
+      {
+        "itemId": "emote-lg-shame"
+      },
+      {
+        "itemId": "emote-aero-shame"
+      },
+      {
+        "itemId": "emote-puppet-shame"
+      },
+      {
+        "itemId": "emote-cl-shame"
+      },
+      {
+        "itemId": "emote-jour-shame"
+      },
+      {
+        "itemId": "graffiti-r-aeroplanist-警戒哨台"
+      },
+      {
+        "itemId": "graffiti-r-cheerleader-采集速巡"
+      },
+      {
+        "itemId": "graffiti-r-puppeteer-义体再构"
+      },
+      {
+        "itemId": "graffiti-r-little_girl-异动指针"
+      },
+      {
+        "itemId": "graffiti-r-novelist-伊始新篇"
+      },
+      {
+        "itemId": "avatar-r-patient-other"
+      },
+      {
+        "itemId": "avatar-r-psychologist-other"
+      },
+      {
+        "itemId": "avatar-r-wax_artist-other"
+      },
+      {
+        "itemId": "avatar-r-toy_merchant-other"
+      },
+      {
+        "itemId": "avatar-r-painter-other"
+      },
+      {
+        "itemId": "avatar-r-batter-other"
+      },
+      {
+        "itemId": "avatar-r-sculptor-other"
+      },
+      {
+        "itemId": "avatar-r-opera_singer-other"
+      }
+    ],
+    "common": []
+  }
+}

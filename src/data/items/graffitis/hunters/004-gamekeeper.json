@@ -1,0 +1,10 @@
+[
+  {
+    "id": "graffiti-gk-silhouette",
+    "name": "剪影",
+    "rarity": "common",
+    "type": "graffiti",
+    "characterId": "gamekeeper",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  }
+]

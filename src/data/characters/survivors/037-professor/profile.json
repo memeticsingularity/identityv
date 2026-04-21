@@ -1,0 +1,12 @@
+{
+  "id": "professor",
+  "name": "教授",
+  "englishName": "Professor",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "牵制位",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "卢基诺·迪鲁西是一位生物学家，他能蜕皮并释放鳞粉保护自己。"
+}

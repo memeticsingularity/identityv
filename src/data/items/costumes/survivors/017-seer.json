@@ -1,0 +1,578 @@
+[
+  {
+    "id": "costume-seer-illusion",
+    "name": "昔日的预言者",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "seer",
+    "obtainSources": [
+      {
+        "source": "shop",
+        "note": "幻象迷途兑换"
+      }
+    ],
+    "price": "7000夜莺祝福",
+    "description": "在信仰者的呼唤声中，预言者迷失了方向，忘记了誓约。直至役鸟的鲜血浸润双眼，终于再次看到了'未来'。"
+  },
+  {
+    "id": "costume-seer-unyielding",
+    "name": "不屈的信仰",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "累计充值限定稀世时装",
+    "obtainSources": [
+      {
+        "source": "recharge",
+        "note": "累计充值回声获取"
+      }
+    ],
+    "price": "累计充值75000/100000回声与精致的笑容二选一获得",
+    "description": "他曾飞向天空寻求神的赏赐。但神不满他与自己平齐翱翔，用金子浇筑了他的双目，用荆棘束缚了他的羽翼。但他没有自此堕落，对自由的不屈信仰将不会磨灭。"
+  },
+  {
+    "id": "costume-seer-night-owl",
+    "name": "夜行枭",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "不归林主题时装 第四赛季·精华1限定稀世时装",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s4-e1"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "向这位夜间的行路者寻求帮助吧，也许他能带你走出不归林（【限定】时装，仅能在第四赛季·精华1中获得）"
+  },
+  {
+    "id": "costume-seer-kid",
+    "name": "怪盗基德",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "名侦探柯南联动精华2限定稀世时装",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "conan-e2"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "怪盗基德的服装。"
+  },
+  {
+    "id": "costume-seer-akutagawa",
+    "name": "芥川龙之介",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "文豪野犬联动精华2限定稀世时装",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "bungou-e2"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "港口黑手党成员-芥川龙之介的服装。"
+  },
+  {
+    "id": "costume-seer-blk",
+    "name": "BLK.ELI",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "电竞系列BLK现代时装",
+    "obtainSources": [
+      {
+        "source": "shop",
+        "note": "商城限时购买"
+      }
+    ],
+    "price": "1388回声",
+    "description": "Game on! We are Team BLK!"
+  },
+  {
+    "id": "costume-seer-white",
+    "name": "白",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "四周年限定礼盒典藏版/精装版独占",
+    "obtainSources": [
+      {
+        "source": "merchandise",
+        "note": "购买四周年庆实体周边获得"
+      }
+    ],
+    "price": "实体周边附赠",
+    "description": "黑夜已过，我们将从这里开始。（【限定】时装，4周年庆获得）"
+  },
+  {
+    "id": "costume-seer-dark",
+    "name": "黯",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "即兴推演系列手办——【先知-黯】独占",
+    "obtainSources": [
+      {
+        "source": "merchandise",
+        "note": "购买即兴推演系列手办——【先知-黯】获得"
+      }
+    ],
+    "price": "实体周边附赠",
+    "description": "黑夜中彷徨的身影（限定时装，周边礼包获得）"
+  },
+  {
+    "id": "costume-seer-hunter",
+    "name": "历战猎人",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "seer",
+    "obtainSources": [
+      {
+        "source": "event",
+        "note": "参与2019年万圣节活动获得/活动商城限时购买"
+      }
+    ],
+    "price": "参与活动获取/500窥镜",
+    "description": "历经冒险的猎人在回到出生的故乡归隐后，始终找不到内心的宁静。他与伙伴战枭一起，守望着这个熟悉又陌生的村落。"
+  },
+  {
+    "id": "costume-seer-watanuki",
+    "name": "四月一日君寻",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "xxxHOLiC联动精华限定奇珍时装",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "xxxholic-e1"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "四月一日君寻的时装。"
+  },
+  {
+    "id": "costume-seer-final-glory",
+    "name": "最后的荣光",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "seer",
+    "obtainSources": [
+      {
+        "source": "logic-path",
+        "note": "第十四赛季推理之径达到1528步获得"
+      }
+    ],
+    "price": "推理之径获取",
+    "description": "在一场可怕的暴乱后，他所驻守的地区已经沦陷，但即使背负骂名，他也要送出这封密信。"
+  },
+  {
+    "id": "costume-seer-moon-phase",
+    "name": "月相",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "第八赛季·精华2",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s8-e2"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "'晦月带来毁灭'，这是他在晦月之夜得到的启示"
+  },
+  {
+    "id": "costume-seer-loner",
+    "name": "独行者",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "2019演绎之星活动",
+    "obtainSources": [
+      {
+        "source": "shop"
+      }
+    ],
+    "price": "1388回声/4888碎片",
+    "description": "黑暗中的生存法则——忍受这世间最不堪忍受的寂寞。"
+  },
+  {
+    "id": "costume-seer-pure-salt",
+    "name": "纯白之盐",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "第三十三赛季·精华1",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s33-e1"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "一位盲目者，一种在谎言中被精心培育的'善'的载体……他是如此平静、温和——被欺瞒、被折损，却情愿施与他人。"
+  },
+  {
+    "id": "costume-seer-observer",
+    "name": "观测者",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "深渊珍宝Ⅲ限定奇珍时装",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ],
+    "price": "珍宝抽取",
+    "description": "崇拜者称之为异界，反抗者称之为深渊。在观测者眼里，这就是不可名状者对人心的影响。让崇拜者得势，让反抗者畏惧。而通过艺术侵蚀思维，镌刻肉体，只是它们另一种余兴的儿戏。"
+  },
+  {
+    "id": "costume-seer-poison",
+    "name": "鸩",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "第二十赛季·精华1",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s20-e1"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "没有谁的动机经得起彻底解剖。看似无害的绒羽，也可能携带着致命的鸩毒。"
+  },
+  {
+    "id": "costume-seer-phantom-thief",
+    "name": "怪盗",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "原名：'血雀'，第六赛季·精华2",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s6-e2"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "我看穿黑暗中的一切，却躲不开死亡的罗网。"
+  },
+  {
+    "id": "costume-seer-maxim",
+    "name": "箴言",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "象牙塔系列第二十九款6元时装",
+    "obtainSources": [
+      {
+        "source": "shop",
+        "note": "商城限时购买"
+      }
+    ],
+    "price": "60回声",
+    "description": "他从不给予虚假的希望。面对真相，沉默或许是最安全的答案。"
+  },
+  {
+    "id": "costume-seer-love-letter",
+    "name": "情书",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "第二十九赛季·精华2",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s29-e2"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "传书的鸟类记录了胡杨树下的誓言：如遇危险，困穷匕见。"
+  },
+  {
+    "id": "costume-seer-moon-teller",
+    "name": "叙月人",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "2024年中秋节活动时装",
+    "obtainSources": [
+      {
+        "source": "event",
+        "note": "2024年银月下的传说夜活动完成全部任务获得/活动商城限时购买"
+      }
+    ],
+    "price": "活动获取/100窥镜",
+    "description": "他喜爱林鸟的絮语，还有那些古老的，关于月夜的故事。"
+  },
+  {
+    "id": "costume-seer-night-fire",
+    "name": "夜火",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "第十七赛季·精华1",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s17-e1"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "规则之外的人也需要信仰，比起做众人的火炬，他选择成为少数人的明灯。"
+  },
+  {
+    "id": "costume-seer-judge",
+    "name": "审判者",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "第四赛季·精华3",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s4-e3"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "毛虫眼中的世界末日，我们称之为化蝶。"
+  },
+  {
+    "id": "costume-seer-enforcer",
+    "name": "庭外执行者",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "第十四赛季·精华2",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s14-e2"
+      }
+    ],
+    "price": "精华抽取/318装扮残影",
+    "description": "邪念若不曾昭显，是否就可以假装善意永存世间。"
+  },
+  {
+    "id": "costume-seer-tiger",
+    "name": "想成为人的老虎",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "obtainSources": [
+      {
+        "source": "shop"
+      }
+    ],
+    "price": "1188碎片/318回声",
+    "description": "传说是因无法忍受文盲和太胖没能完全成为人类。"
+  },
+  {
+    "id": "costume-seer-rain-prayer",
+    "name": "祈雨预言",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "obtainSources": [
+      {
+        "source": "event",
+        "note": "2020春节活动获得/活动商城限时购买"
+      }
+    ],
+    "price": "活动获取/100窥镜",
+    "description": "我带来了春节的预言，异兽苏醒，危机将至，做好准备吧，做好准备吧。"
+  },
+  {
+    "id": "costume-seer-tomorrow",
+    "name": "明日先知",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "obtainSources": [
+      {
+        "source": "event",
+        "note": "参与2019年元旦节活动获得"
+      }
+    ],
+    "price": "参与活动获取",
+    "description": "先生，我看到了我们两个的命运，我们自此分开后，就再不可能遇见彼此……"
+  },
+  {
+    "id": "costume-seer-bound",
+    "name": "束缚者",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "第七赛季·精华2",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s7-e2"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "症状：躁动症。记录：与动物接触就会躁动不安，即便将其置于束缚衣中，也要提防其时刻出逃。转到病院深处后，其不安感变得愈发强烈。"
+  },
+  {
+    "id": "costume-seer-shepherd",
+    "name": "牧羊人",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "obtainSources": [
+      {
+        "source": "shop"
+      }
+    ],
+    "price": "1188碎片/318回声",
+    "description": "众人都像迷路的羊，偏行己路。"
+  },
+  {
+    "id": "costume-seer-oasis",
+    "name": "绿洲诗人",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "2022年植树节活动时装",
+    "obtainSources": [
+      {
+        "source": "event",
+        "note": "2022植树节活动兑换获得/活动商店限时购买"
+      }
+    ],
+    "price": "150森林回响/100窥镜",
+    "description": "音符跳跃在枝梢上，他的竖琴声里有唱不完的故事。"
+  },
+  {
+    "id": "costume-seer-exorcism",
+    "name": "解厄",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "第六赛季·精华3",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s6-e3"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "透过面具，他看到了虚无和黑暗。"
+  },
+  {
+    "id": "costume-seer-awal",
+    "name": "阿瓦尔的信徒",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "第二十八赛季·精华1",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s28-e1"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "当代最酷刑的马路下嘶鸣，他才知自己选择了错误的领袖。"
+  },
+  {
+    "id": "costume-seer-athenian",
+    "name": "雅典自由民",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "seer",
+    "note": "第七赛季·精华1",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s7-e1"
+      }
+    ],
+    "price": "精华抽取",
+    "description": "这座城市就像众神的玩具盒，精美绝伦，却只为了困住身为傀儡的我们。"
+  },
+  {
+    "id": "costume-seer-default",
+    "name": "初始时装",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "seer",
+    "obtainSources": [
+      {
+        "source": "default"
+      }
+    ],
+    "price": "-",
+    "description": "初始的时装，一切都显得那么地自然。"
+  },
+  {
+    "id": "costume-seer-matte-yellow",
+    "name": "哑光黄",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "seer",
+    "obtainSources": [
+      {
+        "source": "logic-path",
+        "note": "第十二赛季推理之径达到250步获得"
+      }
+    ],
+    "price": "推理之径获取",
+    "description": "收起刺眼的反光，悄无声息地出现在目标的背后。"
+  },
+  {
+    "id": "costume-seer-holy-white",
+    "name": "圣光白",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "seer",
+    "obtainSources": [
+      {
+        "source": "logic-path",
+        "note": "第九赛季推理之径达到1258步获得"
+      }
+    ],
+    "price": "推理之径获取",
+    "description": "没人见过圣光，可是所有人都认为圣光是白色的。"
+  },
+  {
+    "id": "costume-seer-old",
+    "name": "旧装",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "seer",
+    "obtainSources": [
+      {
+        "source": "deduction",
+        "note": "完成先知推演节点11·复响后可获得"
+      }
+    ],
+    "price": "推演完成获取",
+    "description": "身上衣服都已破损严重，真的只是经历了一场游戏？"
+  },
+  {
+    "id": "costume-seer-twilight-red",
+    "name": "暮光红",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "seer",
+    "obtainSources": [
+      {
+        "source": "logic-path",
+        "note": "第五赛季推理之径达到250步获得"
+      }
+    ],
+    "price": "推理之径获取",
+    "description": "当暮光降临的时候，与其继续逃跑，不如好好坐下来欣赏这最后的美丽。"
+  }
+]

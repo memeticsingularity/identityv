@@ -1,0 +1,121 @@
+[
+  {
+    "id": "costume-sw-golden-candelabra",
+    "name": "黄金烛台",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "soul_weaver",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-sw-crystal-candelabra",
+    "name": "水晶烛台",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "soul_weaver",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-sw-starry-prophet",
+    "name": "星空预言者",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "soul_weaver",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-sw-camouflage",
+    "name": "迷彩衣",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "soul_weaver",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-sw-red-silk",
+    "name": "红妆绸",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "soul_weaver",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-sw-green-cloth",
+    "name": "青缝布",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "soul_weaver",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-sw-gold-red-silk",
+    "name": "金红帛",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "soul_weaver",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-sw-sting",
+    "name": "刺痛",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "soul_weaver",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  },
+  {
+    "id": "costume-sw-endless-mech",
+    "name": "不息载械",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "soul_weaver",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  }
+]

@@ -1,0 +1,125 @@
+{
+  "id": "abyss-02",
+  "contents": {
+    "legendary": [
+      {
+        "itemId": "costume-ripper-evil-eye-host"
+      }
+    ],
+    "epic": [
+      {
+        "itemId": "costume-merc-steam-boy"
+      },
+      {
+        "itemId": "costume-perf-sand-of-time"
+      },
+      {
+        "itemId": "costume-mag-optic-mirror"
+      },
+      {
+        "itemId": "costume-tme-sound-wave"
+      }
+    ],
+    "unique": [
+      {
+        "itemId": "costume-sf-iron-hat-captain"
+      },
+      {
+        "itemId": "costume-cowboy-iron-hat-sheriff"
+      },
+      {
+        "itemId": "costume-thief-iron-hat-gangster"
+      },
+      {
+        "itemId": "costume-doc-chemist"
+      },
+      {
+        "itemId": "costume-emb-banker"
+      },
+      {
+        "itemId": "emote-mag-snowball"
+      },
+      {
+        "itemId": "emote-perf-snowball"
+      },
+      {
+        "itemId": "emote-merc-snowball"
+      },
+      {
+        "itemId": "emote-tme-snowball"
+      }
+    ],
+    "rare": [
+      {
+        "itemId": "emote-perf-provoke"
+      },
+      {
+        "itemId": "emote-perf-shout"
+      },
+      {
+        "itemId": "emote-perf-lie"
+      },
+      {
+        "itemId": "emote-cowboy-provoke"
+      },
+      {
+        "itemId": "emote-cowboy-shout"
+      },
+      {
+        "itemId": "emote-cowboy-lie"
+      },
+      {
+        "itemId": "avatar-r-magician-other"
+      },
+      {
+        "itemId": "avatar-r-explorer-other"
+      },
+      {
+        "itemId": "avatar-r-mercenary-other"
+      },
+      {
+        "itemId": "avatar-r-forward-other"
+      },
+      {
+        "itemId": "graffiti-r-animal-forward"
+      },
+      {
+        "itemId": "graffiti-r-animal-cowboy"
+      },
+      {
+        "itemId": "graffiti-r-animal-perfumer"
+      },
+      {
+        "itemId": "graffiti-r-animal-coordinator"
+      },
+      {
+        "itemId": "graffiti-r-animal-lawyer"
+      },
+      {
+        "itemId": "graffiti-r-animal-magician"
+      },
+      {
+        "itemId": "graffiti-r-animal-explorer"
+      },
+      {
+        "itemId": "costume-lg-brown"
+      },
+      {
+        "itemId": "costume-fd-jade-dance"
+      },
+      {
+        "itemId": "costume-tf-night-purple"
+      },
+      {
+        "itemId": "costume-perf-fragrant-pink"
+      },
+      {
+        "itemId": "costume-emb-red-robes"
+      },
+      {
+        "itemId": "costume-me-brass"
+      }
+    ],
+    "common": []
+  }
+}

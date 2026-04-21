@@ -1,0 +1,15 @@
+[
+  {
+    "id": "emote-fi-shame",
+    "name": "羞愧",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "fire_investigator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

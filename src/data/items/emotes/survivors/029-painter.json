@@ -1,0 +1,28 @@
+[
+  {
+    "id": "emote-painter-stand",
+    "name": "起身",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "painter",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  },
+  {
+    "id": "emote-painter-provoke",
+    "name": "挑衅",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "painter",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  }
+]

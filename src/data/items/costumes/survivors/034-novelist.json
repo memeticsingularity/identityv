@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-novelist-moon-shadow",
+    "name": "月影青",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "novelist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-nov-scriptwriter",
+    "name": "跟组编剧",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "novelist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

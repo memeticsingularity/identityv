@@ -1,0 +1,28 @@
+[
+  {
+    "id": "emote-prof-rest",
+    "name": "小憩",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "professor",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  },
+  {
+    "id": "emote-prof-look",
+    "name": "张望",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "professor",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  }
+]

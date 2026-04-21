@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-ench-gossip",
+    "name": "花边新闻",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "enchantress",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  }
+]

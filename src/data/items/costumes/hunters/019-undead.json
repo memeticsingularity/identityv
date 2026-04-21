@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-undead-scorched-earth",
+    "name": "焦土",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "undead",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

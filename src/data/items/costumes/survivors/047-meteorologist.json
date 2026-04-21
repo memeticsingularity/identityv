@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-meteorologist-sunny-green",
+    "name": "晴日绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "meteorologist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  }
+]

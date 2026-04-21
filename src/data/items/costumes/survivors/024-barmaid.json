@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-bar-ale",
+    "name": "大麦酒",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "barmaid",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  },
+  {
+    "id": "costume-bar-blue-orange",
+    "name": "蓝香橙",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "barmaid",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  },
+  {
+    "id": "costume-bar-accelerant",
+    "name": "助燃剂",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "barmaid",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "graffiti-mc-cartoon",
+    "name": "卡通",
+    "rarity": "rare",
+    "type": "graffiti",
+    "characterId": "mercenary",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  },
+  {
+    "id": "graffiti-mc-silhouette",
+    "name": "剪影",
+    "rarity": "common",
+    "type": "graffiti",
+    "characterId": "mercenary",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  }
+]

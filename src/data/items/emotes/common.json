@@ -1,0 +1,282 @@
+[
+  {
+    "id": "emote-u-lucky-guy-prepare",
+    "name": "幸运儿独特等待动作-准备",
+    "rarity": "unique",
+    "category": "emote",
+    "nameEn": "幸运儿独特等待动作-准备"
+  },
+  {
+    "id": "emote-u-cheerleader-rest",
+    "name": "拉拉队员独特等待动作-小憩",
+    "rarity": "unique",
+    "category": "emote",
+    "nameEn": "拉拉队员独特等待动作-小憩"
+  },
+  {
+    "id": "emote-u-opera-singer-bow",
+    "name": "歌剧演员独特个性动作-行礼",
+    "rarity": "unique",
+    "category": "emote",
+    "nameEn": "歌剧演员独特个性动作-行礼"
+  },
+  {
+    "id": "emote-u-fools-gold-threat",
+    "name": "\"愚人金\"独特个性动作-威胁",
+    "rarity": "unique",
+    "category": "emote",
+    "nameEn": "\"愚人金\"独特个性动作-威胁"
+  },
+  {
+    "id": "emote-u-professor-prepare",
+    "name": "教授独特等待动作-准备",
+    "rarity": "unique",
+    "category": "emote",
+    "nameEn": "教授独特等待动作-准备"
+  },
+  {
+    "id": "emote-u-antiquarian-look",
+    "name": "古董商独特等待动作-张望",
+    "rarity": "unique",
+    "category": "emote",
+    "nameEn": "古董商独特等待动作-张望"
+  },
+  {
+    "id": "emote-u-wax-artist-bow",
+    "name": "蜡像师独特个性动作-行礼",
+    "rarity": "unique",
+    "category": "emote",
+    "nameEn": "蜡像师独特个性动作-行礼"
+  },
+  {
+    "id": "emote-u-clerk-threat",
+    "name": "\"记录员\"独特个性动作-威胁",
+    "rarity": "unique",
+    "category": "emote",
+    "nameEn": "\"记录员\"独特个性动作-威胁"
+  },
+  {
+    "id": "emote-u-breaking-wheel-visit",
+    "name": "破轮独特等待动作-拜访",
+    "rarity": "unique",
+    "category": "emote",
+    "nameEn": "破轮独特等待动作-拜访"
+  },
+  {
+    "id": "emote-u-novelist-rest",
+    "name": "小说家独特等待动作-小憩",
+    "rarity": "unique",
+    "category": "emote",
+    "nameEn": "小说家独特等待动作-小憩"
+  },
+  {
+    "id": "emote-u-professor-dance",
+    "name": "教授独特个性动作-起舞",
+    "rarity": "unique",
+    "category": "emote",
+    "nameEn": "教授独特个性动作-起舞"
+  },
+  {
+    "id": "emote-u-nightmare-threat",
+    "name": "\"噩梦\"独特个性动作-威胁",
+    "rarity": "unique",
+    "category": "emote",
+    "nameEn": "\"噩梦\"独特个性动作-威胁"
+  },
+  {
+    "id": "emote-r-magician-rest",
+    "name": "魔术师罕见等待动作-小憩",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "魔术师罕见等待动作-小憩"
+  },
+  {
+    "id": "emote-r-thief-prepare",
+    "name": "\"慈善家\"罕见等待动作-准备",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "\"慈善家\"罕见等待动作-准备"
+  },
+  {
+    "id": "emote-r-coordinator-rest",
+    "name": "空军罕见等待动作-小憩",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "空军罕见等待动作-小憩"
+  },
+  {
+    "id": "emote-r-lawyer-rest",
+    "name": "律师罕见等待动作-小憩",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "律师罕见等待动作-小憩"
+  },
+  {
+    "id": "emote-r-magician-wait",
+    "name": "魔术师罕见等待动作-等待",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "魔术师罕见等待动作-等待"
+  },
+  {
+    "id": "emote-r-journalist-cheer",
+    "name": "记者罕见个性动作-欢呼",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "记者罕见个性动作-欢呼"
+  },
+  {
+    "id": "emote-r-knight-shame",
+    "name": "\"骑士\"罕见个性动作-羞愧",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "\"骑士\"罕见个性动作-羞愧"
+  },
+  {
+    "id": "emote-r-meteorologist-provoke",
+    "name": "气象学家罕见个性动作-挑衅",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "气象学家罕见个性动作-挑衅"
+  },
+  {
+    "id": "emote-r-escapologist-lie",
+    "name": "\"逃脱大师\"罕见个性动作-躺地",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "\"逃脱大师\"罕见个性动作-躺地"
+  },
+  {
+    "id": "emote-r-forward-rest",
+    "name": "前锋罕见等待动作-小憩",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "前锋罕见等待动作-小憩"
+  },
+  {
+    "id": "emote-r-explorer-prepare",
+    "name": "冒险家罕见等待动作-准备",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "冒险家罕见等待动作-准备"
+  },
+  {
+    "id": "emote-r-mercenary-prepare",
+    "name": "佣兵罕见等待动作-准备",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "佣兵罕见等待动作-准备"
+  },
+  {
+    "id": "emote-r-lawyer-prepare",
+    "name": "律师罕见等待动作-准备",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "律师罕见等待动作-准备"
+  },
+  {
+    "id": "emote-r-forward-wait",
+    "name": "前锋罕见等待动作-等待",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "前锋罕见等待动作-等待"
+  },
+  {
+    "id": "emote-r-entomologist-shout",
+    "name": "昆虫学者罕见个性动作-呼喊",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "昆虫学者罕见个性动作-呼喊"
+  },
+  {
+    "id": "emote-r-painter-shout",
+    "name": "画家罕见个性动作-呼喊",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "画家罕见个性动作-呼喊"
+  },
+  {
+    "id": "emote-r-composer-shout",
+    "name": "作曲家罕见个性动作-呼喊",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "作曲家罕见个性动作-呼喊"
+  },
+  {
+    "id": "emote-r-little-girl-shout",
+    "name": "\"小女孩\"罕见个性动作-呼喊",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "\"小女孩\"罕见个性动作-呼喊"
+  },
+  {
+    "id": "emote-r-minds-eye-wait",
+    "name": "盲女罕见等待动作-等待",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "盲女罕见等待动作-等待"
+  },
+  {
+    "id": "emote-r-mechanic-wait",
+    "name": "机械师罕见等待动作-等待",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "机械师罕见等待动作-等待"
+  },
+  {
+    "id": "emote-r-minds-eye-rest",
+    "name": "盲女罕见等待动作-小憩",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "盲女罕见等待动作-小憩"
+  },
+  {
+    "id": "emote-r-mechanic-rest",
+    "name": "机械师罕见等待动作-小憩",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "机械师罕见等待动作-小憩"
+  },
+  {
+    "id": "emote-r-explorer-rest",
+    "name": "冒险家罕见等待动作-小憩",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "冒险家罕见等待动作-小憩"
+  },
+  {
+    "id": "emote-r-weeping-clown-lie",
+    "name": "哭泣小丑罕见个性动作-躺地",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "哭泣小丑罕见个性动作-躺地"
+  },
+  {
+    "id": "emote-r-entomologist-provoke",
+    "name": "昆虫学者罕见个性动作-挑衅",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "昆虫学者罕见个性动作-挑衅"
+  },
+  {
+    "id": "emote-r-novelist-shout",
+    "name": "小说家罕见个性动作-呼喊",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "小说家罕见个性动作-呼喊"
+  },
+  {
+    "id": "emote-r-professor-shame",
+    "name": "教授罕见个性动作-羞愧",
+    "rarity": "rare",
+    "category": "emote",
+    "nameEn": "教授罕见个性动作-羞愧"
+  },
+  {
+    "id": "emote-c-forward",
+    "name": "求生者通用普通个性动作-前进",
+    "rarity": "common",
+    "category": "emote",
+    "nameEn": "求生者通用普通个性动作-前进"
+  }
+]

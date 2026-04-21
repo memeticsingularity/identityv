@@ -1,0 +1,121 @@
+[
+  {
+    "id": "costume-he-master-chef",
+    "name": "庖厨大师",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "hell_ember",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-he-blue-collar",
+    "name": "蓝领",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "hell_ember",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-he-purple-collar",
+    "name": "紫领",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "hell_ember",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-he-lasso",
+    "name": "套索",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "hell_ember",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-he-hell-perception",
+    "name": "地狱感知",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "hell_ember",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-he-welder",
+    "name": "焊接者",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "hell_ember",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-he-black-collar",
+    "name": "黑领",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "hell_ember",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-he-gold-sea-monster",
+    "name": "嗜金海怪",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "hell_ember",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  },
+  {
+    "id": "costume-he-sea-monster-captain",
+    "name": "海怪船长",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "hell_ember",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  }
+]

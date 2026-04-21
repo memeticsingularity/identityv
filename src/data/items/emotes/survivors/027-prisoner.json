@@ -1,0 +1,15 @@
+[
+  {
+    "id": "emote-pris-shame",
+    "name": "羞愧",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "prisoner",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  }
+]

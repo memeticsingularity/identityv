@@ -1,0 +1,15 @@
+[
+  {
+    "id": "emote-lg-shame",
+    "name": "羞愧",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "little_girl",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  }
+]

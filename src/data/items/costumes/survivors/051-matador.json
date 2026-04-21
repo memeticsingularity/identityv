@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-matador-no-abode",
+    "name": "此在无栖",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "matador",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  }
+]

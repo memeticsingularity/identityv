@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-photo-auctioneer",
+    "name": "拍卖师",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "photographer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  },
+  {
+    "id": "costume-photo-eternal-light",
+    "name": "\"恒光\"",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "photographer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

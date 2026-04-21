@@ -1,0 +1,55 @@
+[
+  {
+    "id": "costume-lawyer-coral-red",
+    "name": "珊瑚红",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "lawyer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-lawyer-deep-space-black",
+    "name": "深空黑",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "lawyer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-law-matcha",
+    "name": "抹茶绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "lawyer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-law-pirate-navigator",
+    "name": "海盗领航员",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "lawyer",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  }
+]

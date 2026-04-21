@@ -1,0 +1,30 @@
+[
+  {
+    "id": "mark-r-calm",
+    "name": "罕见印记-冷静",
+    "rarity": "rare",
+    "category": "mark",
+    "nameEn": "罕见印记-冷静"
+  },
+  {
+    "id": "mark-r-brave",
+    "name": "罕见印记-勇敢",
+    "rarity": "rare",
+    "category": "mark",
+    "nameEn": "罕见印记-勇敢"
+  },
+  {
+    "id": "mark-c-calm",
+    "name": "普通印记-冷静",
+    "rarity": "common",
+    "category": "mark",
+    "nameEn": "普通印记-冷静"
+  },
+  {
+    "id": "mark-c-brave",
+    "name": "普通印记-勇敢",
+    "rarity": "common",
+    "category": "mark",
+    "nameEn": "普通印记-勇敢"
+  }
+]

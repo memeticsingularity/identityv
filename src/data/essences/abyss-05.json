@@ -1,0 +1,137 @@
+{
+  "id": "abyss-05",
+  "contents": {
+    "legendary": [
+      {
+        "itemId": "costume-geisha-eternal-night-aurora"
+      }
+    ],
+    "epic": [
+      {
+        "itemId": "costume-fwd-neon-pioneer"
+      },
+      {
+        "itemId": "costume-ench-gossip"
+      },
+      {
+        "itemId": "costume-fo-pirate-radio"
+      },
+      {
+        "itemId": "costume-pris-projection-room"
+      }
+    ],
+    "unique": [
+      {
+        "itemId": "costume-viol-military-band"
+      },
+      {
+        "itemId": "costume-ento-makeup-artist"
+      },
+      {
+        "itemId": "costume-painter-painter"
+      },
+      {
+        "itemId": "costume-bat-peace-officer"
+      },
+      {
+        "itemId": "costume-bw-traffic-flag"
+      },
+      {
+        "itemId": "emote-tm-prepare"
+      },
+      {
+        "itemId": "emote-patient-look"
+      },
+      {
+        "itemId": "emote-sculpt-laugh"
+      },
+      {
+        "itemId": "emote-nightmare-demonstrate"
+      }
+    ],
+    "rare": [
+      {
+        "itemId": "costume-cowboy-withered-yellow"
+      },
+      {
+        "itemId": "costume-pros-red-brown-stone"
+      },
+      {
+        "itemId": "costume-acro-flower-purple"
+      },
+      {
+        "itemId": "costume-fo-canvas-white"
+      },
+      {
+        "itemId": "costume-bar-ale"
+      },
+      {
+        "itemId": "costume-bar-blue-orange"
+      },
+      {
+        "itemId": "costume-g26-lake-blue"
+      },
+      {
+        "itemId": "costume-g26-purple-steel"
+      },
+      {
+        "itemId": "emote-emb-shame"
+      },
+      {
+        "itemId": "emote-pros-shame"
+      },
+      {
+        "itemId": "emote-wild-shame"
+      },
+      {
+        "itemId": "emote-bar-shame"
+      },
+      {
+        "itemId": "emote-gk-shame"
+      },
+      {
+        "itemId": "emote-pris-shame"
+      },
+      {
+        "itemId": "graffiti-r-enchantress-花边新闻"
+      },
+      {
+        "itemId": "graffiti-r-postman-报纸怪客"
+      },
+      {
+        "itemId": "graffiti-r-prisoner-放映厅"
+      },
+      {
+        "itemId": "graffiti-r-forward-霓虹先锋"
+      },
+      {
+        "itemId": "graffiti-r-first_officer-海盗电台"
+      },
+      {
+        "itemId": "avatar-r-wildling-other"
+      },
+      {
+        "itemId": "avatar-r-hell_ember-other"
+      },
+      {
+        "itemId": "avatar-r-first_officer-other"
+      },
+      {
+        "itemId": "avatar-r-ripper-other"
+      },
+      {
+        "itemId": "avatar-r-gamekeeper-other"
+      },
+      {
+        "itemId": "avatar-r-smiley_face-other"
+      },
+      {
+        "itemId": "avatar-r-acrobat-other"
+      },
+      {
+        "itemId": "avatar-r-enchantress-other"
+      }
+    ],
+    "common": []
+  }
+}

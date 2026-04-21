@@ -1,0 +1,26 @@
+[
+  {
+    "id": "graffiti-lawyer-cartoon",
+    "name": "卡通",
+    "rarity": "rare",
+    "type": "graffiti",
+    "characterId": "lawyer",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e2" }]
+  },
+  {
+    "id": "graffiti-law-retort",
+    "name": "抢白",
+    "rarity": "rare",
+    "type": "graffiti",
+    "characterId": "lawyer",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  },
+  {
+    "id": "graffiti-law-silhouette",
+    "name": "剪影",
+    "rarity": "common",
+    "type": "graffiti",
+    "characterId": "lawyer",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  }
+]

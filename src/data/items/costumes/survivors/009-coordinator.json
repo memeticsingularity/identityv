@@ -1,0 +1,107 @@
+[
+  {
+    "id": "costume-coordinator-royal-cavalry",
+    "name": "皇家骑兵",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-co-emerald",
+    "name": "祖母绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-coordinator-jade-lark-song",
+    "name": "翡色云雀之歌",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-co-pirate-gunner",
+    "name": "海盗枪手",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "coordinator",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  },
+  {
+    "id": "costume-co-dark-priest",
+    "name": "漆黑神官",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  },
+  {
+    "id": "costume-coordinator-navy-ceremony",
+    "name": "海军仪仗",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-coordinator-deep-sea-blue",
+    "name": "深海蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-coordinator-elegant-gray",
+    "name": "高雅灰",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "coordinator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  }
+]

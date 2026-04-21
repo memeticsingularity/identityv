@@ -1,0 +1,15 @@
+[
+  {
+    "id": "emote-acro-dance",
+    "name": "起舞",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "acrobat",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  }
+]

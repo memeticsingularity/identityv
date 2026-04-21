@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-hullabaloo-dream-purple",
+    "name": "美梦紫",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "hullabaloo",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-hullabaloo-black-vulture",
+    "name": "黑鹫",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "hullabaloo",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-hull-memory-yellow",
+    "name": "记忆黄",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "hullabaloo",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

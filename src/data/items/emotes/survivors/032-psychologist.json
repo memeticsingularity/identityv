@@ -1,0 +1,28 @@
+[
+  {
+    "id": "emote-psy-wait",
+    "name": "等待",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "psychologist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  },
+  {
+    "id": "emote-psy-shame",
+    "name": "羞愧",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "psychologist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

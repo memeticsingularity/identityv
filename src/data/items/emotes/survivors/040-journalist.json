@@ -1,0 +1,28 @@
+[
+  {
+    "id": "emote-jour-shame",
+    "name": "羞愧",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "journalist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  },
+  {
+    "id": "emote-jour-provoke",
+    "name": "挑衅",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "journalist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

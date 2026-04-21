@@ -1,0 +1,137 @@
+{
+  "id": "abyss-07",
+  "contents": {
+    "legendary": [
+      {
+        "itemId": "costume-tf-lord-of-calamity"
+      }
+    ],
+    "epic": [
+      {
+        "itemId": "costume-patient-rare-case"
+      },
+      {
+        "itemId": "costume-psy-apocalypse-rescue"
+      },
+      {
+        "itemId": "costume-comp-pioneer-exploration"
+      },
+      {
+        "itemId": "costume-anti-mycelium-research"
+      }
+    ],
+    "unique": [
+      {
+        "itemId": "costume-lg-gear-mechanism"
+      },
+      {
+        "itemId": "costume-disc-apocalypse-faith"
+      },
+      {
+        "itemId": "costume-clerk-mycelium-treatise"
+      },
+      {
+        "itemId": "costume-aero-failed-exploration"
+      },
+      {
+        "itemId": "costume-jour-official-report"
+      },
+      {
+        "itemId": "emote-nightmare-laugh"
+      },
+      {
+        "itemId": "emote-clerk-visit"
+      },
+      {
+        "itemId": "emote-prof-rest"
+      },
+      {
+        "itemId": "emote-anti-stand"
+      }
+    ],
+    "rare": [
+      {
+        "itemId": "costume-comp-arrogant-yellow"
+      },
+      {
+        "itemId": "costume-anti-wind-chime-blue"
+      },
+      {
+        "itemId": "costume-aero-timid-white"
+      },
+      {
+        "itemId": "costume-jour-confident-red"
+      },
+      {
+        "itemId": "costume-nw-jungle-green"
+      },
+      {
+        "itemId": "costume-hermit-pessimistic-cyan"
+      },
+      {
+        "itemId": "costume-os-charming-red"
+      },
+      {
+        "itemId": "costume-cl-vitality-yellow"
+      },
+      {
+        "itemId": "emote-patient-provoke"
+      },
+      {
+        "itemId": "emote-anti-shout"
+      },
+      {
+        "itemId": "emote-wc-shout"
+      },
+      {
+        "itemId": "emote-ento-lie"
+      },
+      {
+        "itemId": "emote-painter-provoke"
+      },
+      {
+        "itemId": "emote-nov-lie"
+      },
+      {
+        "itemId": "graffiti-r-composer-先驱探索"
+      },
+      {
+        "itemId": "graffiti-r-psychologist-末世搜救"
+      },
+      {
+        "itemId": "graffiti-r-patient-稀缺病案"
+      },
+      {
+        "itemId": "graffiti-r-antiquarian-菌丝研究"
+      },
+      {
+        "itemId": "graffiti-r-professor-紧急运输"
+      },
+      {
+        "itemId": "avatar-r-weeping_clown-other"
+      },
+      {
+        "itemId": "avatar-r-color-journalist"
+      },
+      {
+        "itemId": "avatar-r-hermit-other"
+      },
+      {
+        "itemId": "avatar-r-clerk-other"
+      },
+      {
+        "itemId": "avatar-r-journalist-other"
+      },
+      {
+        "itemId": "avatar-r-antiquarian-other"
+      },
+      {
+        "itemId": "avatar-r-professor-other"
+      },
+      {
+        "itemId": "avatar-r-composer-other"
+      }
+    ],
+    "common": []
+  }
+}

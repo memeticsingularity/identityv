@@ -1,0 +1,12 @@
+{
+  "id": "game_master",
+  "name": "庄园主",
+  "englishName": "Game Master",
+  "type": "npc",
+  "camp": "npc",
+  "role": "幕后操控者",
+  "difficulty": 0,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_npc.png/120px-placeholder_npc.png",
+  "background": "欧利蒂丝庄园的主人，从未以真实面貌示人。他（或她、或他们）通过邀请函召集各路有着悲惨过去的人来到庄园，组织一场场残酷的‘游戏’。庄园主的真正目的似乎与某种关于人类心理的极端实验有关。"
+}

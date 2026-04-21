@@ -1,0 +1,27 @@
+[
+  {
+    "name": "金匠",
+    "rarity": "稀世",
+    "obtain": "第1赛季·精华1",
+    "description": "鹿头稀世时装",
+    "note": "限定"
+  },
+  {
+    "name": "蒸汽朋克",
+    "rarity": "奇珍",
+    "obtain": "第1赛季·精华1",
+    "description": "鹿头奇珍时装"
+  },
+  {
+    "name": "魅影",
+    "rarity": "独特",
+    "obtain": "第1赛季·精华1",
+    "description": "鹿头独特时装"
+  },
+  {
+    "name": "白蜡",
+    "rarity": "罕见",
+    "obtain": "第1赛季·精华1",
+    "description": "鹿头罕见时装"
+  }
+]

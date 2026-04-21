@@ -1,0 +1,54 @@
+[
+  {
+    "id": "emote-perf-snowball",
+    "name": "抛雪球",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "perfumer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "emote-perf-provoke",
+    "name": "挑衅",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "perfumer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "emote-perf-shout",
+    "name": "呼喊",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "perfumer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "emote-perf-lie",
+    "name": "躺地",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "perfumer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  }
+]

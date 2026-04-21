@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-knight-knight-blue",
+    "name": "骑士蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "knight",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-knight-unrestrained-song",
+    "name": "不羁欢歌",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "knight",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  },
+  {
+    "id": "costume-knight-autumn-leaf-brown",
+    "name": "秋叶棕",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "knight",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

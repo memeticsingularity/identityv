@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-opera-singer-paranoid-green",
+    "name": "偏执绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "opera_singer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-os-charming-red",
+    "name": "魅惑红",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "opera_singer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  },
+  {
+    "id": "costume-os-elegant-blue",
+    "name": "优雅蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "opera_singer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  }
+]

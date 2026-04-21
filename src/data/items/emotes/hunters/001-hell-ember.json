@@ -1,0 +1,18 @@
+[
+  {
+    "id": "emote-he-visit",
+    "name": "拜访",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "hell_ember",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e2" }]
+  },
+  {
+    "id": "emote-he-math",
+    "name": "数学难题",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "hell_ember",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  }
+]

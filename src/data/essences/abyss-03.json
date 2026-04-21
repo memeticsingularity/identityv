@@ -1,0 +1,140 @@
+{
+  "id": "abyss-03",
+  "contents": {
+    "legendary": [
+      {
+        "itemId": "costume-sf-otherworld-walker"
+      }
+    ],
+    "epic": [
+      {
+        "itemId": "costume-mech-puppet-master"
+      },
+      {
+        "itemId": "costume-cowboy-riding-crop"
+      },
+      {
+        "itemId": "costume-emb-jester-of-fate"
+      },
+      {
+        "itemId": "costume-seer-observer"
+      }
+    ],
+    "unique": [
+      {
+        "itemId": "costume-wild-bodyguard"
+      },
+      {
+        "itemId": "costume-geisha-shattered-porcelain"
+      },
+      {
+        "itemId": "costume-priest-operator"
+      },
+      {
+        "itemId": "costume-photo-auctioneer"
+      },
+      {
+        "itemId": "costume-pros-patch"
+      },
+      {
+        "itemId": "emote-fo-dance"
+      },
+      {
+        "itemId": "emote-wild-dance"
+      },
+      {
+        "itemId": "emote-acro-dance"
+      }
+    ],
+    "rare": [
+      {
+        "itemId": "costume-cowboy-withered-yellow"
+      },
+      {
+        "itemId": "costume-pros-red-brown-stone"
+      },
+      {
+        "itemId": "costume-acro-flower-purple"
+      },
+      {
+        "itemId": "costume-fo-canvas-white"
+      },
+      {
+        "itemId": "costume-bar-ale"
+      },
+      {
+        "itemId": "costume-bar-blue-orange"
+      },
+      {
+        "itemId": "costume-g26-lake-blue"
+      },
+      {
+        "itemId": "costume-g26-purple-steel"
+      },
+      {
+        "itemId": "emote-ench-lie"
+      },
+      {
+        "itemId": "emote-ench-provoke"
+      },
+      {
+        "itemId": "emote-pros-lie"
+      },
+      {
+        "itemId": "emote-pros-provoke"
+      },
+      {
+        "itemId": "emote-emb-lie"
+      },
+      {
+        "itemId": "emote-seer-lie"
+      },
+      {
+        "itemId": "graffiti-r-smiley_face-异界行者"
+      },
+      {
+        "itemId": "graffiti-r-mechanic-人偶师"
+      },
+      {
+        "itemId": "graffiti-r-cowboy-教鞭"
+      },
+      {
+        "itemId": "graffiti-r-embalmer-嬉命人"
+      },
+      {
+        "itemId": "graffiti-r-female_dancer-恶之花"
+      },
+      {
+        "itemId": "graffiti-r-photographer-拍卖师"
+      },
+      {
+        "itemId": "graffiti-r-seer-观测者"
+      },
+      {
+        "itemId": "avatar-r-priestess-other"
+      },
+      {
+        "itemId": "avatar-r-cowboy-other"
+      },
+      {
+        "itemId": "avatar-r-perfumer-other"
+      },
+      {
+        "itemId": "avatar-r-lucky_guy-other"
+      },
+      {
+        "itemId": "avatar-r-geisha-other"
+      },
+      {
+        "itemId": "avatar-r-soul_weaver-other"
+      },
+      {
+        "itemId": "avatar-r-wu_chang-other"
+      },
+      {
+        "itemId": "avatar-r-the_feaster-other"
+      }
+    ],
+    "common": []
+  }
+}

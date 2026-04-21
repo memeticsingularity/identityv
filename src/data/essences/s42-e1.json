@@ -1,0 +1,162 @@
+{
+  "id": "s42-e1",
+  "contents": {
+    "legendary": [
+      {
+        "itemId": "costume-matador-no-abode"
+      }
+    ],
+    "epic": [
+      {
+        "itemId": "costume-priestess-white-flame"
+      },
+      {
+        "itemId": "costume-cueist-dark-night-finale"
+      }
+    ],
+    "unique": [
+      {
+        "itemId": "costume-the-feaster-eternal-night"
+      },
+      {
+        "itemId": "costume-evil-reptilian-earth-travel"
+      },
+      {
+        "itemId": "costume-composer-white-cloud-ballad"
+      },
+      {
+        "itemId": "costume-the-shadow-eternal-day-fall"
+      },
+      {
+        "itemId": "emote-u-lucky-guy-prepare"
+      },
+      {
+        "itemId": "emote-u-cheerleader-rest"
+      },
+      {
+        "itemId": "emote-u-opera-singer-bow"
+      },
+      {
+        "itemId": "emote-u-fools-gold-threat"
+      }
+    ],
+    "rare": [
+      {
+        "itemId": "costume-ripper-black-baron"
+      },
+      {
+        "itemId": "costume-doctor-quiet-blue"
+      },
+      {
+        "itemId": "costume-magician-wine"
+      },
+      {
+        "itemId": "costume-mechanic-ink-black"
+      },
+      {
+        "itemId": "costume-meteorologist-sunny-green"
+      },
+      {
+        "itemId": "costume-archer-off-string-scarlet"
+      },
+      {
+        "itemId": "costume-peddler-laurel-yellow"
+      },
+      {
+        "itemId": "costume-escapologist-mist-smoke"
+      },
+      {
+        "itemId": "costume-cueist-withdraw-green"
+      },
+      {
+        "itemId": "costume-lanternist-skylight-blue"
+      },
+      {
+        "itemId": "costume-queen-bee-bee-venom"
+      },
+      {
+        "itemId": "emote-r-magician-rest"
+      },
+      {
+        "itemId": "emote-r-thief-prepare"
+      },
+      {
+        "itemId": "emote-r-coordinator-rest"
+      },
+      {
+        "itemId": "emote-r-lawyer-rest"
+      },
+      {
+        "itemId": "emote-r-magician-wait"
+      },
+      {
+        "itemId": "emote-r-journalist-cheer"
+      },
+      {
+        "itemId": "emote-r-knight-shame"
+      },
+      {
+        "itemId": "emote-r-meteorologist-provoke"
+      },
+      {
+        "itemId": "emote-r-escapologist-lie"
+      },
+      {
+        "itemId": "avatar-r-bw-composer"
+      },
+      {
+        "itemId": "avatar-r-bw-journalist"
+      },
+      {
+        "itemId": "avatar-r-bw-novelist"
+      },
+      {
+        "itemId": "graffiti-r-wax-personality"
+      },
+      {
+        "itemId": "graffiti-r-composer-personality"
+      },
+      {
+        "itemId": "graffiti-r-antiquarian-personality"
+      },
+      {
+        "itemId": "graffiti-r-opera-singer-personality"
+      }
+    ],
+    "common": [
+      {
+        "itemId": "avatar-c-color-fire-investigator"
+      },
+      {
+        "itemId": "avatar-c-color-faro-lady"
+      },
+      {
+        "itemId": "avatar-c-color-fools-gold"
+      },
+      {
+        "itemId": "avatar-c-color-goatman"
+      },
+      {
+        "itemId": "graffiti-c-composer-color"
+      },
+      {
+        "itemId": "graffiti-c-professor-color"
+      },
+      {
+        "itemId": "graffiti-c-clerk-color"
+      },
+      {
+        "itemId": "graffiti-c-antiquarian-color"
+      },
+      {
+        "itemId": "graffiti-c-hermit-color"
+      },
+      {
+        "itemId": "graffiti-c-journalist-color"
+      },
+      {
+        "itemId": "graffiti-c-lucky-guy-color"
+      }
+    ]
+  }
+}

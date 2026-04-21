@@ -1,0 +1,68 @@
+[
+  {
+    "id": "costume-mc-springhand",
+    "name": "弹簧手",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "mercenary",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-mc-stealth-green",
+    "name": "匿踪绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "mercenary",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-mercenary-black-eagle",
+    "name": "乌雕",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "mercenary",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-merc-steam-boy",
+    "name": "蒸汽少年",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "mercenary",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "costume-mercenary-melancholy-blue",
+    "name": "忧郁蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "mercenary",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  }
+]

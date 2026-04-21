@@ -1,0 +1,16 @@
+[
+  {
+    "id": "accessory-gard-pirate-flag",
+    "name": "海盗旗",
+    "rarity": "epic",
+    "type": "accessory",
+    "characterId": "gardener",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  }
+]

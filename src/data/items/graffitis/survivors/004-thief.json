@@ -1,0 +1,10 @@
+[
+  {
+    "id": "graffiti-thief-cartoon",
+    "name": "卡通",
+    "rarity": "rare",
+    "type": "graffiti",
+    "characterId": "thief",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  }
+]

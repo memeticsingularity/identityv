@@ -1,0 +1,81 @@
+[
+  {
+    "id": "costume-ripper-coffee-duke",
+    "name": "咖啡爵",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "ripper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-tr-barber",
+    "name": "理发师",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "ripper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-tr-light-leaf",
+    "name": "浅叶爵",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "ripper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-tr-rose-duke",
+    "name": "玫瑰爵",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "ripper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-ripper-black-baron",
+    "name": "黑男爵",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "ripper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-ripper-evil-eye-host",
+    "name": "邪眼寄主",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "ripper",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  }
+]

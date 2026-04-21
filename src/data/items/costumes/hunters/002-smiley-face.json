@@ -1,0 +1,94 @@
+[
+  {
+    "id": "costume-smiley-face-prisoner",
+    "name": "囚徒",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-sf-green-hat",
+    "name": "绿帽",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-sf-iron-hat-captain",
+    "name": "铁帽团长",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "costume-sf-otherworld-walker",
+    "name": "异界行者",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  },
+  {
+    "id": "costume-sf-scarecrow",
+    "name": "稻草人",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-sf-blue-monster",
+    "name": "蓝怪",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-sf-purple-eggplant",
+    "name": "紫茄",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "smiley_face",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "emote-sculpt-laugh",
+    "name": "大笑",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "sculptor",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  }
+]

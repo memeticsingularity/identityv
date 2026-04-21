@@ -1,0 +1,93 @@
+[
+  {
+    "id": "emote-tme-shout",
+    "name": "呼喊",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  },
+  {
+    "id": "emote-tme-lie",
+    "name": "躺地",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  },
+  {
+    "id": "emote-tme-snowball",
+    "name": "抛雪球",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "emote-tme-prepare",
+    "name": "准备",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "emote-tme-wait",
+    "name": "等待",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "emote-tme-rest",
+    "name": "小憩",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "emote-tme-shame",
+    "name": "羞愧",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  }
+]

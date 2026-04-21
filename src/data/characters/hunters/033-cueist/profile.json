@@ -1,0 +1,12 @@
+{
+  "id": "cueist",
+  "name": "\"台球手\"",
+  "englishName": "Cueist",
+  "type": "hunter",
+  "camp": "hunter",
+  "role": "追击型",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_hunter.png/120px-placeholder_hunter.png",
+  "background": "一位技艺高超的台球手，他的球杆与球体能精准地击中远处的目标。"
+}

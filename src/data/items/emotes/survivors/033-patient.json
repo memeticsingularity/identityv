@@ -1,0 +1,54 @@
+[
+  {
+    "id": "emote-patient-look",
+    "name": "张望",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "patient",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  },
+  {
+    "id": "emote-patient-wait",
+    "name": "等待",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "patient",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  },
+  {
+    "id": "emote-patient-shame",
+    "name": "羞愧",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "patient",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  },
+  {
+    "id": "emote-patient-provoke",
+    "name": "挑衅",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "patient",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  }
+]

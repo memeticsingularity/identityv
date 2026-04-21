@@ -1,0 +1,12 @@
+{
+  "id": "novelist",
+  "name": "小说家",
+  "englishName": "Novelist",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "辅助位",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "“奥尔菲斯”以小说家的身份出现，他的隐喻能短暂操控监管者的行动。"
+}

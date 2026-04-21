@@ -1,0 +1,16 @@
+[
+  {
+    "id": "accessory-doc-pirate-flask",
+    "name": "海盗酒壶",
+    "rarity": "epic",
+    "type": "accessory",
+    "characterId": "doctor",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-nightmare-abyss-blue",
+    "name": "深渊蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "nightmare",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-nightmare-fan-visit",
+    "name": "探班粉丝",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "nightmare",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

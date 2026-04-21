@@ -1,0 +1,12 @@
+{
+  "id": "patient",
+  "name": "病患",
+  "englishName": "Patient",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "牵制位",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "埃米尔是一位失去记忆的病患，他的钩爪能帮助他快速翻越地形。"
+}

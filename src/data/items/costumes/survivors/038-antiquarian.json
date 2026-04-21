@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-antiquarian-lilac-purple",
+    "name": "丁香紫",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "antiquarian",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-anti-mycelium-research",
+    "name": "菌丝研究",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "antiquarian",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  },
+  {
+    "id": "costume-anti-wind-chime-blue",
+    "name": "风铃蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "antiquarian",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-fo-canvas-white",
+    "name": "帆布白",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "first_officer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  },
+  {
+    "id": "costume-fo-pirate-radio",
+    "name": "海盗电台",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "first_officer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  }
+]

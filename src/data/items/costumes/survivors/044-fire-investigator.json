@@ -1,0 +1,67 @@
+[
+  {
+    "id": "costume-fire-investigator-mission-green",
+    "name": "使命绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "fire_investigator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-fi-unburned-page",
+    "name": "未燃书页",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "fire_investigator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  },
+  {
+    "id": "costume-fi-flame-orange",
+    "name": "火焰橙",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "fire_investigator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  },
+  {
+    "id": "costume-fi-flame-star-in-box",
+    "name": "匣中焰星",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "fire_investigator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  },
+  {
+    "id": "costume-fi-shadow-purple",
+    "name": "黯影紫",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "fire_investigator",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

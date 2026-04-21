@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-pris-race-mechanic",
+    "name": "赛车机师",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "prisoner",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  },
+  {
+    "id": "costume-pris-yellow-earth-wall",
+    "name": "黄土墙",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "prisoner",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  },
+  {
+    "id": "costume-pris-projection-room",
+    "name": "放映厅",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "prisoner",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  }
+]

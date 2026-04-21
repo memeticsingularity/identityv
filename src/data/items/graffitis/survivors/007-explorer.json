@@ -1,0 +1,10 @@
+[
+  {
+    "id": "graffiti-exp-silhouette",
+    "name": "剪影",
+    "rarity": "common",
+    "type": "graffiti",
+    "characterId": "explorer",
+    "obtainSources": [{ "source": "essence", "poolId": "s1-e1" }]
+  }
+]

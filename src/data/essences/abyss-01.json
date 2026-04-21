@@ -1,0 +1,131 @@
+{
+  "id": "abyss-01",
+  "contents": {
+    "legendary": [
+      {
+        "itemId": "costume-he-gold-sea-monster"
+      }
+    ],
+    "epic": [
+      {
+        "itemId": "costume-he-sea-monster-captain"
+      },
+      {
+        "itemId": "costume-doc-pirate-witch-doctor"
+      },
+      {
+        "itemId": "costume-law-pirate-navigator"
+      },
+      {
+        "itemId": "costume-gard-pirate-shipwright"
+      },
+      {
+        "itemId": "costume-thief-pirate-lookout"
+      },
+      {
+        "itemId": "costume-co-pirate-gunner"
+      },
+      {
+        "itemId": "accessory-doc-pirate-flask"
+      },
+      {
+        "itemId": "accessory-law-pirate-compass"
+      },
+      {
+        "itemId": "accessory-gard-pirate-flag"
+      }
+    ],
+    "unique": [
+      {
+        "itemId": "costume-sw-sting"
+      },
+      {
+        "itemId": "costume-mech-ship-tech"
+      },
+      {
+        "itemId": "pet-u-pointy-nose"
+      },
+      {
+        "itemId": "pet-u-round-ears"
+      },
+      {
+        "itemId": "emote-mech-stand"
+      },
+      {
+        "itemId": "emote-exp-stand"
+      },
+      {
+        "itemId": "emote-co-stand"
+      },
+      {
+        "itemId": "emote-fwd-stand"
+      }
+    ],
+    "rare": [
+      {
+        "itemId": "emote-mech-provoke"
+      },
+      {
+        "itemId": "emote-co-shout"
+      },
+      {
+        "itemId": "emote-fwd-lie"
+      },
+      {
+        "itemId": "emote-fwd-shout"
+      },
+      {
+        "itemId": "emote-tme-shout"
+      },
+      {
+        "itemId": "emote-tme-lie"
+      },
+      {
+        "itemId": "avatar-r-lawyer-other"
+      },
+      {
+        "itemId": "avatar-r-thief-other"
+      },
+      {
+        "itemId": "avatar-r-gardener-other"
+      },
+      {
+        "itemId": "avatar-r-doctor-other"
+      },
+      {
+        "itemId": "graffiti-r-pirate-flag"
+      },
+      {
+        "itemId": "graffiti-r-pirate-flask"
+      },
+      {
+        "itemId": "graffiti-r-pirate-coordinator"
+      },
+      {
+        "itemId": "graffiti-r-pirate-lawyer"
+      },
+      {
+        "itemId": "graffiti-r-pirate-thief"
+      },
+      {
+        "itemId": "graffiti-r-pirate-doctor"
+      },
+      {
+        "itemId": "graffiti-r-pirate-gardener"
+      },
+      {
+        "itemId": "costume-fwd-vitality-green"
+      },
+      {
+        "itemId": "costume-mech-cute-pink"
+      },
+      {
+        "itemId": "costume-priest-pale-pink"
+      },
+      {
+        "itemId": "costume-geisha-yellow-sleeve"
+      }
+    ],
+    "common": []
+  }
+}

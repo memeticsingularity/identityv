@@ -1,0 +1,95 @@
+[
+  {
+    "id": "costume-tme-sound-wave",
+    "name": "音波",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "the_minds_eye",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "costume-tme-golden-cake",
+    "name": "黄金蛋糕",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "the_minds_eye",
+    "note": "限定，附赠角色",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-tme-sweet-cake",
+    "name": "甜心蛋糕",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-tme-patient-gown",
+    "name": "病服",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-tme-autumn-green",
+    "name": "秋意绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-tme-pink-white",
+    "name": "粉意白",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-tme-warm-winter-blue",
+    "name": "暖冬蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "the_minds_eye",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  }
+]

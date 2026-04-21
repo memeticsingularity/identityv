@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-lg-brown",
+    "name": "棕",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "lucky_guy",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "costume-lg-gear-mechanism",
+    "name": "机构齿轮",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "lucky_guy",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  },
+  {
+    "id": "costume-lg-moon-face",
+    "name": "月亮脸",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "lucky_guy",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "costume-entomologist-dandelion",
+    "name": "蒲公英",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "entomologist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-ento-gray-butterfly",
+    "name": "灰蝶",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "entomologist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  },
+  {
+    "id": "costume-ento-withered-leaf",
+    "name": "枯叶蝶",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "entomologist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  },
+  {
+    "id": "costume-ento-makeup-artist",
+    "name": "化妆师",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "entomologist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  },
+  {
+    "id": "costume-ento-ecosphere",
+    "name": "生态圈",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "entomologist",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

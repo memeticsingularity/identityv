@@ -1,0 +1,54 @@
+[
+  {
+    "id": "emote-mag-rest",
+    "name": "小憩",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "magician",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "emote-mag-wait",
+    "name": "等待",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "magician",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "emote-mag-snowball",
+    "name": "抛雪球",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "magician",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "emote-mag-shame",
+    "name": "羞愧",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "magician",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  }
+]

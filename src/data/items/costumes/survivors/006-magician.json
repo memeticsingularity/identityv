@@ -1,0 +1,68 @@
+[
+  {
+    "id": "costume-magician-blue-aladdin",
+    "name": "蓝调阿拉丁",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "magician",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-magician-silver-tech",
+    "name": "银白科技",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "magician",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-mag-olive",
+    "name": "橄榄枝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "magician",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-magician-wine",
+    "name": "葡萄酒",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "magician",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-mag-optic-mirror",
+    "name": "光学镜面",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "magician",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  }
+]

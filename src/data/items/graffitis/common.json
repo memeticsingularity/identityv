@@ -1,0 +1,590 @@
+[
+  {
+    "id": "graffiti-r-wax-personality",
+    "name": "罕见涂鸦-蜡像师-个性",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-蜡像师-个性"
+  },
+  {
+    "id": "graffiti-r-composer-personality",
+    "name": "罕见涂鸦-作曲家-个性",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-作曲家-个性"
+  },
+  {
+    "id": "graffiti-r-antiquarian-personality",
+    "name": "罕见涂鸦-古董商-个性",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-古董商-个性"
+  },
+  {
+    "id": "graffiti-r-opera-singer-personality",
+    "name": "罕见涂鸦-歌剧演员-个性",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-歌剧演员-个性"
+  },
+  {
+    "id": "graffiti-r-night-watch-cartoon",
+    "name": "罕见涂鸦-守夜人-卡通",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-守夜人-卡通"
+  },
+  {
+    "id": "graffiti-r-puppeteer-cartoon",
+    "name": "罕见涂鸦-木偶师-卡通",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-木偶师-卡通"
+  },
+  {
+    "id": "graffiti-r-faro-lady-cartoon",
+    "name": "罕见涂鸦-\"法罗女士\"-卡通",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-\"法罗女士\"-卡通"
+  },
+  {
+    "id": "graffiti-r-fools-gold-cartoon",
+    "name": "罕见涂鸦-\"愚人金\"-卡通",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-\"愚人金\"-卡通"
+  },
+  {
+    "id": "graffiti-r-naiad-personality",
+    "name": "罕见涂鸦-渔女-个性",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-渔女-个性"
+  },
+  {
+    "id": "graffiti-r-patient-personality",
+    "name": "罕见涂鸦-病患-个性",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-病患-个性"
+  },
+  {
+    "id": "graffiti-r-batter-personality",
+    "name": "罕见涂鸦-击球手-个性",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-击球手-个性"
+  },
+  {
+    "id": "graffiti-r-psychologist-personality",
+    "name": "罕见涂鸦-\"心理学家\"-个性",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-\"心理学家\"-个性"
+  },
+  {
+    "id": "graffiti-c-composer-color",
+    "name": "普通涂鸦-作曲家-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-作曲家-彩底"
+  },
+  {
+    "id": "graffiti-c-professor-color",
+    "name": "普通涂鸦-教授-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-教授-彩底"
+  },
+  {
+    "id": "graffiti-c-clerk-color",
+    "name": "普通涂鸦-\"记录员\"-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-\"记录员\"-彩底"
+  },
+  {
+    "id": "graffiti-c-antiquarian-color",
+    "name": "普通涂鸦-古董商-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-古董商-彩底"
+  },
+  {
+    "id": "graffiti-c-hermit-color",
+    "name": "普通涂鸦-隐士-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-隐士-彩底"
+  },
+  {
+    "id": "graffiti-c-journalist-color",
+    "name": "普通涂鸦-记者-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-记者-彩底"
+  },
+  {
+    "id": "graffiti-c-lucky-guy-color",
+    "name": "普通涂鸦-幸运儿-彩底",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-幸运儿-彩底"
+  },
+  {
+    "id": "graffiti-c-barmaid-gray",
+    "name": "普通涂鸦-调酒师-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-调酒师-灰化"
+  },
+  {
+    "id": "graffiti-c-little-girl-gray",
+    "name": "普通涂鸦-\"小女孩\"-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-\"小女孩\"-灰化"
+  },
+  {
+    "id": "graffiti-c-naiad-gray",
+    "name": "普通涂鸦-渔女-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-渔女-灰化"
+  },
+  {
+    "id": "graffiti-c-weeping-clown-gray",
+    "name": "普通涂鸦-哭泣小丑-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-哭泣小丑-灰化"
+  },
+  {
+    "id": "graffiti-c-composer-gray",
+    "name": "普通涂鸦-作曲家-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-作曲家-灰化"
+  },
+  {
+    "id": "graffiti-c-professor-gray",
+    "name": "普通涂鸦-教授-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-教授-灰化"
+  },
+  {
+    "id": "graffiti-c-novelist-gray",
+    "name": "普通涂鸦-小说家-灰化",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-小说家-灰化"
+  },
+  {
+    "id": "graffiti-c-painter-cute",
+    "name": "普通涂鸦-画家-萌版",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-画家-萌版"
+  },
+  {
+    "id": "graffiti-c-first-officer-cute",
+    "name": "普通涂鸦-大副-萌版",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-大副-萌版"
+  },
+  {
+    "id": "graffiti-c-priestess-cute",
+    "name": "普通涂鸦-祭司-萌版",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-祭司-萌版"
+  },
+  {
+    "id": "graffiti-c-explorer-cute",
+    "name": "普通涂鸦-冒险家-萌版",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-冒险家-萌版"
+  },
+  {
+    "id": "graffiti-c-cowboy-cute",
+    "name": "普通涂鸦-牛仔-萌版",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-牛仔-萌版"
+  },
+  {
+    "id": "graffiti-c-thief-cute",
+    "name": "普通涂鸦-\"慈善家\"-萌版",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-\"慈善家\"-萌版"
+  },
+  {
+    "id": "graffiti-c-prisoner-cute",
+    "name": "普通涂鸦-\"囚徒\"-萌版",
+    "rarity": "common",
+    "category": "graffiti",
+    "nameEn": "普通涂鸦-\"囚徒\"-萌版"
+  },
+  {
+    "id": "graffiti-r-pirate-flag",
+    "name": "罕见涂鸦-海盗旗",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-海盗旗"
+  },
+  {
+    "id": "graffiti-r-pirate-flask",
+    "name": "罕见涂鸦-海盗酒壶",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-海盗酒壶"
+  },
+  {
+    "id": "graffiti-r-pirate-coordinator",
+    "name": "罕见涂鸦-空军-海盗",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-空军-海盗"
+  },
+  {
+    "id": "graffiti-r-pirate-lawyer",
+    "name": "罕见涂鸦-律师-海盗",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-律师-海盗"
+  },
+  {
+    "id": "graffiti-r-pirate-thief",
+    "name": "罕见涂鸦-慈善家-海盗",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-慈善家-海盗"
+  },
+  {
+    "id": "graffiti-r-pirate-doctor",
+    "name": "罕见涂鸦-医生-海盗",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-医生-海盗"
+  },
+  {
+    "id": "graffiti-r-pirate-gardener",
+    "name": "罕见涂鸦-园丁-海盗",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-园丁-海盗"
+  },
+  {
+    "id": "graffiti-r-animal-forward",
+    "name": "罕见涂鸦-前锋-动物",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-前锋-动物"
+  },
+  {
+    "id": "graffiti-r-animal-cowboy",
+    "name": "罕见涂鸦-牛仔-动物",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-牛仔-动物"
+  },
+  {
+    "id": "graffiti-r-animal-perfumer",
+    "name": "罕见涂鸦-调香师-动物",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-调香师-动物"
+  },
+  {
+    "id": "graffiti-r-animal-coordinator",
+    "name": "罕见涂鸦-空军-动物",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-空军-动物"
+  },
+  {
+    "id": "graffiti-r-animal-lawyer",
+    "name": "罕见涂鸦-律师-动物",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-律师-动物"
+  },
+  {
+    "id": "graffiti-r-animal-magician",
+    "name": "罕见涂鸦-魔术师-动物",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-魔术师-动物"
+  },
+  {
+    "id": "graffiti-r-animal-explorer",
+    "name": "罕见涂鸦-冒险家-动物",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-冒险家-动物"
+  },
+  {
+    "id": "graffiti-r-smiley_face-异界行者",
+    "name": "罕见涂鸦-小丑-异界行者",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-小丑-异界行者"
+  },
+  {
+    "id": "graffiti-r-mechanic-人偶师",
+    "name": "罕见涂鸦-机械师-人偶师",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-机械师-人偶师"
+  },
+  {
+    "id": "graffiti-r-cowboy-教鞭",
+    "name": "罕见涂鸦-牛仔-教鞭",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-牛仔-教鞭"
+  },
+  {
+    "id": "graffiti-r-embalmer-嬉命人",
+    "name": "罕见涂鸦-入殓师-嬉命人",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-入殓师-嬉命人"
+  },
+  {
+    "id": "graffiti-r-female_dancer-恶之花",
+    "name": "罕见涂鸦-舞女-恶之花",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-舞女-恶之花"
+  },
+  {
+    "id": "graffiti-r-photographer-拍卖师",
+    "name": "罕见涂鸦-摄影师-拍卖师",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-摄影师-拍卖师"
+  },
+  {
+    "id": "graffiti-r-seer-观测者",
+    "name": "罕见涂鸦-先知-观测者",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-先知-观测者"
+  },
+  {
+    "id": "graffiti-r-abyss4-熔铁猎犬",
+    "name": "罕见涂鸦-熔铁猎犬",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-熔铁猎犬"
+  },
+  {
+    "id": "graffiti-r-barmaid-助燃剂",
+    "name": "罕见涂鸦-调酒师-助燃剂",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-调酒师-助燃剂"
+  },
+  {
+    "id": "graffiti-r-priestess-反光镜",
+    "name": "罕见涂鸦-祭司-反光镜",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-祭司-反光镜"
+  },
+  {
+    "id": "graffiti-r-acrobat-气胎",
+    "name": "罕见涂鸦-杂技演员-气胎",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-杂技演员-气胎"
+  },
+  {
+    "id": "graffiti-r-prospector-公路骑士",
+    "name": "罕见涂鸦-勘探员-公路骑士",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-勘探员-公路骑士"
+  },
+  {
+    "id": "graffiti-r-enchantress-花边新闻",
+    "name": "罕见涂鸦-咒术师-花边新闻",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-咒术师-花边新闻"
+  },
+  {
+    "id": "graffiti-r-postman-报纸怪客",
+    "name": "罕见涂鸦-邮差-报纸怪客",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-邮差-报纸怪客"
+  },
+  {
+    "id": "graffiti-r-prisoner-放映厅",
+    "name": "罕见涂鸦-囚徒-放映厅",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-囚徒-放映厅"
+  },
+  {
+    "id": "graffiti-r-forward-霓虹先锋",
+    "name": "罕见涂鸦-前锋-霓虹先锋",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-前锋-霓虹先锋"
+  },
+  {
+    "id": "graffiti-r-first_officer-海盗电台",
+    "name": "罕见涂鸦-大副-海盗电台",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-大副-海盗电台"
+  },
+  {
+    "id": "graffiti-r-toy_merchant-线控信号",
+    "name": "罕见涂鸦-玩具商-线控信号",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-玩具商-线控信号"
+  },
+  {
+    "id": "graffiti-r-entomologist-生态圈",
+    "name": "罕见涂鸦-昆虫学者-生态圈",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-昆虫学者-生态圈"
+  },
+  {
+    "id": "graffiti-r-weeping_clown-炮弹飞船",
+    "name": "罕见涂鸦-哭泣小丑-炮弹飞船",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-哭泣小丑-炮弹飞船"
+  },
+  {
+    "id": "graffiti-r-grave_keeper-异星开采",
+    "name": "罕见涂鸦-守墓人-异星开采",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-守墓人-异星开采"
+  },
+  {
+    "id": "graffiti-r-batter-迫降专家",
+    "name": "罕见涂鸦-击球手-迫降专家",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-击球手-迫降专家"
+  },
+  {
+    "id": "graffiti-r-composer-先驱探索",
+    "name": "罕见涂鸦-作曲家-先驱探索",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-作曲家-先驱探索"
+  },
+  {
+    "id": "graffiti-r-psychologist-末世搜救",
+    "name": "罕见涂鸦-心理学家-末世搜救",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-心理学家-末世搜救"
+  },
+  {
+    "id": "graffiti-r-patient-稀缺病案",
+    "name": "罕见涂鸦-病患-稀缺病案",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-病患-稀缺病案"
+  },
+  {
+    "id": "graffiti-r-antiquarian-菌丝研究",
+    "name": "罕见涂鸦-古董商-菌丝研究",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-古董商-菌丝研究"
+  },
+  {
+    "id": "graffiti-r-professor-紧急运输",
+    "name": "罕见涂鸦-教授-紧急运输",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-教授-紧急运输"
+  },
+  {
+    "id": "graffiti-r-aeroplanist-警戒哨台",
+    "name": "罕见涂鸦-飞行家-警戒哨台",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-飞行家-警戒哨台"
+  },
+  {
+    "id": "graffiti-r-cheerleader-采集速巡",
+    "name": "罕见涂鸦-拉拉队员-采集速巡",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-拉拉队员-采集速巡"
+  },
+  {
+    "id": "graffiti-r-puppeteer-义体再构",
+    "name": "罕见涂鸦-木偶师-义体再构",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-木偶师-义体再构"
+  },
+  {
+    "id": "graffiti-r-little_girl-异动指针",
+    "name": "罕见涂鸦-小女孩-异动指针",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-小女孩-异动指针"
+  },
+  {
+    "id": "graffiti-r-novelist-伊始新篇",
+    "name": "罕见涂鸦-小说家-伊始新篇",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-小说家-伊始新篇"
+  },
+  {
+    "id": "graffiti-r-journalist-巡于归途",
+    "name": "罕见涂鸦-记者-巡于归途",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-记者-巡于归途"
+  },
+  {
+    "id": "graffiti-r-fire_investigator-匣中焰星",
+    "name": "罕见涂鸦-火灾调查员-匣中焰星",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-火灾调查员-匣中焰星"
+  },
+  {
+    "id": "graffiti-r-painter-深蓝暗面",
+    "name": "罕见涂鸦-画家-深蓝暗面",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-画家-深蓝暗面"
+  },
+  {
+    "id": "graffiti-r-knight-不羁欢歌",
+    "name": "罕见涂鸦-骑士-不羁欢歌",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-骑士-不羁欢歌"
+  },
+  {
+    "id": "graffiti-r-faro_lady-苍白冠冕",
+    "name": "罕见涂鸦-法罗女士-苍白冠冕",
+    "rarity": "rare",
+    "category": "graffiti",
+    "nameEn": "罕见涂鸦-法罗女士-苍白冠冕"
+  }
+]

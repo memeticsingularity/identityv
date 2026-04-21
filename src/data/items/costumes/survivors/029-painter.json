@@ -1,0 +1,54 @@
+[
+  {
+    "id": "costume-painter-paint-blue",
+    "name": "绘蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "painter",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  },
+  {
+    "id": "costume-painter-paint-green",
+    "name": "涂绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "painter",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  },
+  {
+    "id": "costume-painter-painter",
+    "name": "粉刷匠",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "painter",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-05"
+      }
+    ]
+  },
+  {
+    "id": "costume-painter-deep-blue-dark",
+    "name": "深蓝暗面",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "painter",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

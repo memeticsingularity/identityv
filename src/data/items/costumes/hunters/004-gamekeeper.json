@@ -1,0 +1,81 @@
+[
+  {
+    "id": "costume-gk-goldsmith",
+    "name": "金匠",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "gamekeeper",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-gk-steampunk",
+    "name": "蒸汽朋克",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "gamekeeper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-gk-phantom",
+    "name": "魅影",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "gamekeeper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-gk-white-wax",
+    "name": "白蜡",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "gamekeeper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-gamekeeper-cernunnos",
+    "name": "塞努诺斯",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "gamekeeper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-gk-molten-iron-hound",
+    "name": "熔铁猎犬",
+    "rarity": "legendary",
+    "type": "costume",
+    "characterId": "gamekeeper",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  }
+]

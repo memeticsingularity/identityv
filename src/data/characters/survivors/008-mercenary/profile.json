@@ -1,0 +1,12 @@
+{
+  "id": "mercenary",
+  "name": "佣兵",
+  "englishName": "Mercenary",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "救援位",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "奈布曾经是一名效力于东印度公司的廓尔喀雇佣兵，在战场上历经生死考验。他擅长利用地形和装备进行快速移动，并以极强的生存能力闻名。退役后，他收到了来自欧利蒂丝庄园的邀请函。"
+}

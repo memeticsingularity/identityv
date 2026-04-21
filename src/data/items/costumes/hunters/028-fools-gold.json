@@ -1,0 +1,41 @@
+[
+  {
+    "id": "costume-fools-gold-infection-green",
+    "name": "感染绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "fools_gold",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e2"
+      }
+    ]
+  },
+  {
+    "id": "costume-fg-erased-one",
+    "name": "被抹除者",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "fools_gold",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  },
+  {
+    "id": "costume-fg-petrified-white",
+    "name": "石化白",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "fools_gold",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-08"
+      }
+    ]
+  }
+]

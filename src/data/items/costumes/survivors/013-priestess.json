@@ -1,0 +1,67 @@
+[
+  {
+    "id": "costume-priestess-white-flame",
+    "name": "白焰初照",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "priestess",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-priest-pale-pink",
+    "name": "淡粉桃",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "priestess",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  },
+  {
+    "id": "costume-priest-operator",
+    "name": "接线员",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "priestess",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  },
+  {
+    "id": "costume-priest-reflector",
+    "name": "反光镜",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "priestess",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  },
+  {
+    "id": "costume-priest-deep-gray",
+    "name": "深幽灰",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "priestess",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-09"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-weeping-clown-bright-green",
+    "name": "鲜明绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "weeping_clown",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-wc-cannon-ship",
+    "name": "炮弹飞船",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "weeping_clown",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

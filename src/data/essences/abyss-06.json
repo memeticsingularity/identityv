@@ -1,0 +1,137 @@
+{
+  "id": "abyss-06",
+  "contents": {
+    "legendary": [
+      {
+        "itemId": "costume-wc-eternal-twin-stars"
+      }
+    ],
+    "epic": [
+      {
+        "itemId": "costume-ento-ecosphere"
+      },
+      {
+        "itemId": "costume-wc-cannon-ship"
+      },
+      {
+        "itemId": "costume-tm-wire-signal"
+      },
+      {
+        "itemId": "costume-gk-alien-mining"
+      }
+    ],
+    "unique": [
+      {
+        "itemId": "costume-nov-scriptwriter"
+      },
+      {
+        "itemId": "costume-patient-safety-officer"
+      },
+      {
+        "itemId": "costume-psy-costumer"
+      },
+      {
+        "itemId": "costume-er-special-fx"
+      },
+      {
+        "itemId": "costume-nightmare-fan-visit"
+      },
+      {
+        "itemId": "emote-patient-wait"
+      },
+      {
+        "itemId": "emote-wc-look"
+      },
+      {
+        "itemId": "emote-wc-rest"
+      },
+      {
+        "itemId": "emote-psy-wait"
+      }
+    ],
+    "rare": [
+      {
+        "itemId": "costume-sculpt-indigo"
+      },
+      {
+        "itemId": "costume-undead-scorched-earth"
+      },
+      {
+        "itemId": "costume-bat-dusty"
+      },
+      {
+        "itemId": "costume-bw-taciturn-brown"
+      },
+      {
+        "itemId": "costume-tm-straw-green"
+      },
+      {
+        "itemId": "costume-patient-old-wall-brown"
+      },
+      {
+        "itemId": "costume-naiad-poison-ring-blue"
+      },
+      {
+        "itemId": "costume-psy-memories-gray"
+      },
+      {
+        "itemId": "emote-post-shame"
+      },
+      {
+        "itemId": "emote-bat-shame"
+      },
+      {
+        "itemId": "emote-tm-shame"
+      },
+      {
+        "itemId": "emote-patient-shame"
+      },
+      {
+        "itemId": "emote-wc-shame"
+      },
+      {
+        "itemId": "emote-psy-shame"
+      },
+      {
+        "itemId": "graffiti-r-toy_merchant-线控信号"
+      },
+      {
+        "itemId": "graffiti-r-entomologist-生态圈"
+      },
+      {
+        "itemId": "graffiti-r-weeping_clown-炮弹飞船"
+      },
+      {
+        "itemId": "graffiti-r-grave_keeper-异星开采"
+      },
+      {
+        "itemId": "graffiti-r-batter-迫降专家"
+      },
+      {
+        "itemId": "avatar-r-bloody_queen-other"
+      },
+      {
+        "itemId": "avatar-r-evil_reptilian-other"
+      },
+      {
+        "itemId": "avatar-r-guard_26-other"
+      },
+      {
+        "itemId": "avatar-r-disciple-other"
+      },
+      {
+        "itemId": "avatar-r-barmaid-other"
+      },
+      {
+        "itemId": "avatar-r-postman-other"
+      },
+      {
+        "itemId": "avatar-r-grave_keeper-other"
+      },
+      {
+        "itemId": "avatar-r-prisoner-other"
+      }
+    ],
+    "common": []
+  }
+}

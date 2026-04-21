@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-acro-flower-purple",
+    "name": "花紫",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "acrobat",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  },
+  {
+    "id": "costume-acro-air-tire",
+    "name": "气胎",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "acrobat",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  }
+]

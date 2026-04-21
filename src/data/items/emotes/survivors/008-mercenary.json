@@ -1,0 +1,41 @@
+[
+  {
+    "id": "emote-mercenary-lie",
+    "name": "躺地",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "mercenary",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "emote-mercenary-prepare",
+    "name": "准备",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "mercenary",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "emote-merc-snowball",
+    "name": "抛雪球",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "mercenary",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  }
+]

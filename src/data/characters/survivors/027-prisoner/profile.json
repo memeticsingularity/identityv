@@ -1,0 +1,12 @@
+{
+  "id": "prisoner",
+  "name": "\"囚徒\"",
+  "englishName": "Prisoner",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "解码位",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "卢卡·巴尔萨是一位天才发明家，他的线路连接能远程传输破译进度。"
+}

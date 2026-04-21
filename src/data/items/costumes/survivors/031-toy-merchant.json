@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-tm-wire-signal",
+    "name": "线控信号",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "toy_merchant",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  },
+  {
+    "id": "costume-tm-straw-green",
+    "name": "秸秆绿",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "toy_merchant",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "explorer",
+  "name": "冒险家",
+  "englishName": "Explorer",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "辅助位",
+  "difficulty": 1,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "库特·弗兰克热爱阅读探险小说，他相信自己能缩小身形，在书本与现实中穿梭。"
+}

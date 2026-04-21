@@ -1,0 +1,93 @@
+[
+  {
+    "id": "emote-explorer-lie",
+    "name": "躺地",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "explorer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "emote-explorer-prepare",
+    "name": "准备",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "explorer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e2"
+      }
+    ]
+  },
+  {
+    "id": "emote-explorer-shout",
+    "name": "呼喊",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "explorer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "emote-explorer-rest",
+    "name": "小憩",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "explorer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e3"
+      }
+    ]
+  },
+  {
+    "id": "emote-exp-provoke",
+    "name": "挑衅",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "explorer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s1-e1"
+      }
+    ]
+  },
+  {
+    "id": "emote-exp-stand",
+    "name": "起身",
+    "rarity": "unique",
+    "type": "emote",
+    "characterId": "explorer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-01"
+      }
+    ]
+  },
+  {
+    "id": "emote-exp-shame",
+    "name": "羞愧",
+    "rarity": "rare",
+    "type": "emote",
+    "characterId": "explorer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  }
+]

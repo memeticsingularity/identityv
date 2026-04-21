@@ -1,0 +1,15 @@
+[
+  {
+    "id": "costume-naiad-poison-ring-blue",
+    "name": "毒环蓝",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "naiad",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-06"
+      }
+    ]
+  }
+]

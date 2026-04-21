@@ -1,0 +1,12 @@
+{
+  "id": "mechanic",
+  "name": "机械师",
+  "englishName": "Mechanic",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "修机位",
+  "difficulty": 3,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "特蕾西·列兹尼克自幼展现出非凡的机械天赋，在父亲去世后，她继承了父亲的钟表店，并沉迷于发明各种机械装置。为了追寻某个秘密，她带着自己心爱的机械玩偶来到了庄园。"
+}

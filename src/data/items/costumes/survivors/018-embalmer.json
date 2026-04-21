@@ -1,0 +1,42 @@
+[
+  {
+    "id": "costume-emb-banker",
+    "name": "银行家",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "embalmer",
+    "note": "限定",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "costume-emb-red-robes",
+    "name": "赤服",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "embalmer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "costume-emb-jester-of-fate",
+    "name": "嬉命人",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "embalmer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-03"
+      }
+    ]
+  }
+]

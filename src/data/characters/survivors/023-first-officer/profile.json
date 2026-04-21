@@ -1,0 +1,12 @@
+{
+  "id": "first_officer",
+  "name": "大副",
+  "englishName": "First Officer",
+  "type": "survivor",
+  "camp": "survivor",
+  "role": "救援位",
+  "difficulty": 2,
+  "releaseDate": "2018-04-02",
+  "avatar": "https://patchwiki.biligame.com/images/dwrg/thumb/2/26/placeholder_survivor.png/120px-placeholder_survivor.png",
+  "background": "何塞·巴登是一位落魄的海上大副，他的怀表能制造幻影，迷惑敌人的视线。"
+}

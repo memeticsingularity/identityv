@@ -1,0 +1,134 @@
+{
+  "id": "abyss-09",
+  "contents": {
+    "legendary": [
+      {
+        "itemId": "costume-photo-eternal-light"
+      }
+    ],
+    "epic": [
+      {
+        "itemId": "costume-painter-deep-blue-dark"
+      },
+      {
+        "itemId": "costume-fi-flame-star-in-box"
+      },
+      {
+        "itemId": "costume-fl-pale-crown"
+      },
+      {
+        "itemId": "costume-knight-unrestrained-song"
+      }
+    ],
+    "unique": [
+      {
+        "itemId": "costume-exp-conspiracy-theorist"
+      },
+      {
+        "itemId": "costume-co-dark-priest"
+      },
+      {
+        "itemId": "costume-ts-horror-stories"
+      },
+      {
+        "itemId": "costume-lantern-paradise-visitor"
+      },
+      {
+        "itemId": "emote-puppet-stand"
+      },
+      {
+        "itemId": "emote-aero-stand"
+      },
+      {
+        "itemId": "emote-esc-prepare"
+      },
+      {
+        "itemId": "emote-ts-visit"
+      }
+    ],
+    "rare": [
+      {
+        "itemId": "costume-priest-deep-gray"
+      },
+      {
+        "itemId": "costume-puppet-gloomy-blue"
+      },
+      {
+        "itemId": "costume-ts-void-black"
+      },
+      {
+        "itemId": "costume-fi-shadow-purple"
+      },
+      {
+        "itemId": "costume-fl-misty-brown"
+      },
+      {
+        "itemId": "costume-goatman-chain-silver"
+      },
+      {
+        "itemId": "costume-knight-autumn-leaf-brown"
+      },
+      {
+        "itemId": "costume-hull-memory-yellow"
+      },
+      {
+        "itemId": "emote-fi-shame"
+      },
+      {
+        "itemId": "emote-jour-provoke"
+      },
+      {
+        "itemId": "emote-knight-lie"
+      },
+      {
+        "itemId": "emote-meteo-shame"
+      },
+      {
+        "itemId": "emote-archer-cheer"
+      },
+      {
+        "itemId": "emote-esc-shout"
+      },
+      {
+        "itemId": "avatar-r-night_watch-other"
+      },
+      {
+        "itemId": "avatar-r-the_shadow-other"
+      },
+      {
+        "itemId": "avatar-r-puppeteer-other"
+      },
+      {
+        "itemId": "avatar-r-fire_investigator-other"
+      },
+      {
+        "itemId": "avatar-r-faro_lady-other"
+      },
+      {
+        "itemId": "avatar-r-fools_gold-other"
+      },
+      {
+        "itemId": "avatar-r-aeroplanist-other"
+      },
+      {
+        "itemId": "avatar-r-cheerleader-other"
+      },
+      {
+        "itemId": "graffiti-r-journalist-巡于归途"
+      },
+      {
+        "itemId": "graffiti-r-fire_investigator-匣中焰星"
+      },
+      {
+        "itemId": "graffiti-r-painter-深蓝暗面"
+      },
+      {
+        "itemId": "graffiti-r-knight-不羁欢歌"
+      },
+      {
+        "itemId": "graffiti-r-faro_lady-苍白冠冕"
+      }
+    ],
+    "common": []
+  }
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "costume-composer-white-cloud-ballad",
+    "name": "白云歌谣",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "composer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e1"
+      }
+    ]
+  },
+  {
+    "id": "costume-composer-fragile-cyan",
+    "name": "纤弱青",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "composer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "s42-e3"
+      }
+    ]
+  },
+  {
+    "id": "costume-comp-pioneer-exploration",
+    "name": "先驱探索",
+    "rarity": "epic",
+    "type": "costume",
+    "characterId": "composer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  },
+  {
+    "id": "costume-comp-arrogant-yellow",
+    "name": "高傲黄",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "composer",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-07"
+      }
+    ]
+  }
+]

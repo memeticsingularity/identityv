@@ -1,0 +1,162 @@
+{
+  "id": "s42-e3",
+  "contents": {
+    "legendary": [
+      {
+        "itemId": "costume-hullabaloo-black-vulture"
+      }
+    ],
+    "epic": [
+      {
+        "itemId": "costume-female-dancer-witch-cloud"
+      },
+      {
+        "itemId": "costume-aeroplanist-spiral-wing"
+      }
+    ],
+    "unique": [
+      {
+        "itemId": "costume-entomologist-dandelion"
+      },
+      {
+        "itemId": "costume-goatman-safety-line"
+      },
+      {
+        "itemId": "costume-cheerleader-little-cicada"
+      },
+      {
+        "itemId": "costume-peddler-profit"
+      },
+      {
+        "itemId": "emote-u-breaking-wheel-visit"
+      },
+      {
+        "itemId": "emote-u-novelist-rest"
+      },
+      {
+        "itemId": "emote-u-professor-dance"
+      },
+      {
+        "itemId": "emote-u-nightmare-threat"
+      }
+    ],
+    "rare": [
+      {
+        "itemId": "costume-weeping-clown-bright-green"
+      },
+      {
+        "itemId": "costume-clerk-equality-green"
+      },
+      {
+        "itemId": "costume-nightmare-abyss-blue"
+      },
+      {
+        "itemId": "costume-professor-exploration-blue"
+      },
+      {
+        "itemId": "costume-composer-fragile-cyan"
+      },
+      {
+        "itemId": "costume-antiquarian-lilac-purple"
+      },
+      {
+        "itemId": "costume-aeroplanist-ideal-red"
+      },
+      {
+        "itemId": "costume-journalist-tenacious-brown"
+      },
+      {
+        "itemId": "costume-night-watch-sand-brown"
+      },
+      {
+        "itemId": "costume-hermit-solemn-blue"
+      },
+      {
+        "itemId": "costume-opera-singer-paranoid-green"
+      },
+      {
+        "itemId": "emote-r-minds-eye-wait"
+      },
+      {
+        "itemId": "emote-r-mechanic-wait"
+      },
+      {
+        "itemId": "emote-r-minds-eye-rest"
+      },
+      {
+        "itemId": "emote-r-mechanic-rest"
+      },
+      {
+        "itemId": "emote-r-explorer-rest"
+      },
+      {
+        "itemId": "emote-r-weeping-clown-lie"
+      },
+      {
+        "itemId": "emote-r-entomologist-provoke"
+      },
+      {
+        "itemId": "emote-r-novelist-shout"
+      },
+      {
+        "itemId": "emote-r-professor-shame"
+      },
+      {
+        "itemId": "avatar-r-bw-painter"
+      },
+      {
+        "itemId": "avatar-r-bw-batter"
+      },
+      {
+        "itemId": "avatar-r-bw-toy-merchant"
+      },
+      {
+        "itemId": "graffiti-r-naiad-personality"
+      },
+      {
+        "itemId": "graffiti-r-patient-personality"
+      },
+      {
+        "itemId": "graffiti-r-batter-personality"
+      },
+      {
+        "itemId": "graffiti-r-psychologist-personality"
+      }
+    ],
+    "common": [
+      {
+        "itemId": "avatar-c-color-hermit"
+      },
+      {
+        "itemId": "avatar-c-color-composer"
+      },
+      {
+        "itemId": "avatar-c-color-antiquarian"
+      },
+      {
+        "itemId": "avatar-c-color-professor"
+      },
+      {
+        "itemId": "graffiti-c-painter-cute"
+      },
+      {
+        "itemId": "graffiti-c-first-officer-cute"
+      },
+      {
+        "itemId": "graffiti-c-priestess-cute"
+      },
+      {
+        "itemId": "graffiti-c-explorer-cute"
+      },
+      {
+        "itemId": "graffiti-c-cowboy-cute"
+      },
+      {
+        "itemId": "graffiti-c-thief-cute"
+      },
+      {
+        "itemId": "graffiti-c-prisoner-cute"
+      }
+    ]
+  }
+}

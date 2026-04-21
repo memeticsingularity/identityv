@@ -1,0 +1,28 @@
+[
+  {
+    "id": "costume-me-brass",
+    "name": "黄铜",
+    "rarity": "rare",
+    "type": "costume",
+    "characterId": "mad_eyes",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-02"
+      }
+    ]
+  },
+  {
+    "id": "costume-me-dismantler",
+    "name": "拆卸工",
+    "rarity": "unique",
+    "type": "costume",
+    "characterId": "mad_eyes",
+    "obtainSources": [
+      {
+        "source": "essence",
+        "poolId": "abyss-04"
+      }
+    ]
+  }
+]
