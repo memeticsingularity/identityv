@@ -1,0 +1,142 @@
+[
+  {
+    "id": "map-01",
+    "number": 1,
+    "name": "左上右下门",
+    "direction": "right",
+    "directionLabel": "右",
+    "thumbnail": "/assets/jiaye-notes/thumbs/01-thumb.png",
+    "image": "/assets/jiaye-notes/maps/01.png",
+    "description": "侧门朝右，门口呈左上右下布局"
+  },
+  {
+    "id": "map-02",
+    "number": 2,
+    "name": "双L门",
+    "direction": "right",
+    "directionLabel": "右",
+    "thumbnail": "/assets/jiaye-notes/thumbs/02-thumb.png",
+    "image": "/assets/jiaye-notes/maps/02.png",
+    "description": "侧门朝右，门口呈双L形"
+  },
+  {
+    "id": "map-03",
+    "number": 3,
+    "name": "Y门",
+    "direction": "left",
+    "directionLabel": "左",
+    "thumbnail": "/assets/jiaye-notes/thumbs/03-thumb.png",
+    "image": "/assets/jiaye-notes/maps/03.png",
+    "description": "侧门朝左，门口呈Y字形"
+  },
+  {
+    "id": "map-04",
+    "number": 4,
+    "name": "锤子门",
+    "direction": "left",
+    "directionLabel": "左",
+    "thumbnail": "/assets/jiaye-notes/thumbs/04-thumb.png",
+    "image": "/assets/jiaye-notes/maps/04.png",
+    "description": "侧门朝左，门口形似锤子"
+  },
+  {
+    "id": "map-05",
+    "number": 5,
+    "name": "倒T门",
+    "direction": "left",
+    "directionLabel": "左",
+    "thumbnail": "/assets/jiaye-notes/thumbs/05-thumb.png",
+    "image": "/assets/jiaye-notes/maps/05.png",
+    "description": "侧门朝左，门口呈倒T形"
+  },
+  {
+    "id": "map-06",
+    "number": 6,
+    "name": "对角门",
+    "direction": "left",
+    "directionLabel": "左",
+    "thumbnail": "/assets/jiaye-notes/thumbs/06-thumb.png",
+    "image": "/assets/jiaye-notes/maps/06.png",
+    "description": "侧门朝左，门口呈对角布局"
+  },
+  {
+    "id": "map-07",
+    "number": 7,
+    "name": "三缺一门",
+    "direction": "south",
+    "directionLabel": "南",
+    "thumbnail": "/assets/jiaye-notes/thumbs/07-thumb.png",
+    "image": "/assets/jiaye-notes/maps/07.png",
+    "description": "侧门朝南，门口三缺一"
+  },
+  {
+    "id": "map-08",
+    "number": 8,
+    "name": "十字门",
+    "direction": "south",
+    "directionLabel": "南",
+    "thumbnail": "/assets/jiaye-notes/thumbs/08-thumb.png",
+    "image": "/assets/jiaye-notes/maps/08.png",
+    "description": "侧门朝南，门口呈十字形"
+  },
+  {
+    "id": "map-09",
+    "number": 9,
+    "name": "L门",
+    "direction": "south",
+    "directionLabel": "南",
+    "thumbnail": "/assets/jiaye-notes/thumbs/09-thumb.png",
+    "image": "/assets/jiaye-notes/maps/09.png",
+    "description": "侧门朝南，门口呈L形"
+  },
+  {
+    "id": "map-10",
+    "number": 10,
+    "name": "1门",
+    "direction": "north",
+    "directionLabel": "北",
+    "thumbnail": "/assets/jiaye-notes/thumbs/10-thumb.png",
+    "image": "/assets/jiaye-notes/maps/10.png",
+    "description": "侧门朝北，门口形似数字1"
+  },
+  {
+    "id": "map-11",
+    "number": 11,
+    "name": "4门",
+    "direction": "north",
+    "directionLabel": "北",
+    "thumbnail": "/assets/jiaye-notes/thumbs/11-thumb.png",
+    "image": "/assets/jiaye-notes/maps/11.png",
+    "description": "侧门朝北，门口形似数字4"
+  },
+  {
+    "id": "map-12",
+    "number": 12,
+    "name": "红门",
+    "direction": "north",
+    "directionLabel": "北",
+    "thumbnail": "/assets/jiaye-notes/thumbs/12-thumb.png",
+    "image": "/assets/jiaye-notes/maps/12.png",
+    "description": "侧门朝北，红色门口特征"
+  },
+  {
+    "id": "map-13",
+    "number": 13,
+    "name": "凹门",
+    "direction": "north",
+    "directionLabel": "北",
+    "thumbnail": "/assets/jiaye-notes/thumbs/13-thumb.png",
+    "image": "/assets/jiaye-notes/maps/13.png",
+    "description": "侧门朝北，门口呈凹字形"
+  },
+  {
+    "id": "map-14",
+    "number": 14,
+    "name": "T门",
+    "direction": "north",
+    "directionLabel": "北",
+    "thumbnail": "/assets/jiaye-notes/thumbs/14-thumb.png",
+    "image": "/assets/jiaye-notes/maps/14.png",
+    "description": "侧门朝北，门口呈T字形"
+  }
+]

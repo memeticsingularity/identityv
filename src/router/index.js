@@ -12,6 +12,8 @@ const RechargeView = () => import('../views/Recharge/index.vue')
 const GachaView = () => import('../views/Gacha/index.vue')
 const ProfileView = () => import('../views/Profile/index.vue')
 const CollectionView = () => import('../views/Collection/index.vue')
+const JiayeNotesView = () => import('../views/JiayeNotes/index.vue')
+const JiayeNotesDetailView = () => import('../views/JiayeNotesDetail/index.vue')
 
 /**
  * 路由配置表
@@ -42,6 +44,10 @@ const routes = [
 
   // ===== 收藏图鉴 =====
   { path: '/collection', name: 'Collection', component: CollectionView },
+
+  // ===== 加页手记 Cryptic Notes =====
+  { path: '/cryptic-notes', name: 'CrypticNotes', component: JiayeNotesView },
+  { path: '/cryptic-notes/:id', name: 'CrypticNotesDetail', component: JiayeNotesDetailView, props: true },
 
   // ===== 个人中心 =====
   { path: '/profile', name: 'Profile', component: ProfileView },

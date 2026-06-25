@@ -21,6 +21,15 @@ const modules = [
     glow: 'rgba(90, 158, 143, 0.15)',
   },
   {
+    to: '/cryptic-notes',
+    title: '加页手记 Cryptic Notes',
+    desc: '地图侧门识别与楼层平面图速查 / Map side-door recognition',
+    icon: 'ep:notebook',
+    color: '#7a9eb8',
+    bg: 'rgba(122, 158, 184, 0.08)',
+    glow: 'rgba(122, 158, 184, 0.15)',
+  },
+  {
     to: '/stories',
     title: '剧情收录',
     desc: '角色推演、活动剧情、生日信与主线时间线',
