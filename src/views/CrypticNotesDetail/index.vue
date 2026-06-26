@@ -15,16 +15,10 @@
       <div class="map-meta">{{ metaText }}</div>
     </div>
 
-    <div class="map-image-wrapper" @click="openLightbox">
+    <div class="map-image-wrapper" @click="openImage">
       <img :src="map.image" :alt="map.name" class="map-image" />
       <div class="zoom-hint">{{ t('zoomHint') }}</div>
     </div>
-
-    <JiayeLightbox
-      :visible="lightboxVisible"
-      :image="map.image"
-      @close="lightboxVisible = false"
-    />
   </div>
 
   <div class="container" v-else>
@@ -38,7 +32,6 @@
 <script setup>
 import { ref, computed } from 'vue'
 import maps from '../../data/jiaye-maps.json'
-import JiayeLightbox from '../../components/JiayeLightbox.vue'
 import { useI18n, locale, setLocale } from '../../composables/useI18n.js'
 import { jiayeNotesMessages, directionLabels } from '../../locales/jiayeNotes.js'
 
@@ -48,7 +41,6 @@ const props = defineProps({
 
 const { t } = useI18n(jiayeNotesMessages)
 const map = computed(() => maps.find((m) => m.id === props.id))
-const lightboxVisible = ref(false)
 
 const metaText = computed(() => {
   if (!map.value) return ''
@@ -61,8 +53,10 @@ function directionLabel(direction) {
   return directionLabels[locale.value]?.[direction] || directionLabels.zh[direction]
 }
 
-function openLightbox() {
-  lightboxVisible.value = true
+function openImage() {
+  if (map.value?.image) {
+    window.open(map.value.image, '_blank')
+  }
 }
 
 function toggleLocale() {
@@ -161,34 +155,36 @@ function padNumber(n) {
 
 .map-image-wrapper {
   position: relative;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 12px;
-  cursor: zoom-in;
-  transition: border-color 0.2s;
+  background: #2f2820;
+  border: 1px solid #4a3f34;
+  border-radius: 12px;
+  padding: 14px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 
 .map-image-wrapper:hover {
+  background: #3a3228;
   border-color: var(--accent-gold);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
 }
 
 .map-image {
   width: 100%;
   height: auto;
-  border-radius: 6px;
+  border-radius: 8px;
   display: block;
 }
 
 .zoom-hint {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background: rgba(26, 21, 16, 0.8);
-  color: var(--text-muted);
-  font-size: 12px;
-  padding: 6px 10px;
-  border-radius: 4px;
+  bottom: 24px;
+  right: 24px;
+  background: rgba(26, 21, 16, 0.85);
+  color: var(--text-main);
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 6px;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.2s;

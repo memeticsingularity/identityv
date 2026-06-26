@@ -199,33 +199,34 @@ function padNumber(n) {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .map-card {
   display: block;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 12px;
-  transition: background 0.2s, transform 0.2s, border-color 0.2s;
+  background: #2f2820;
+  border: 1px solid #4a3f34;
+  border-radius: 12px;
+  padding: 14px;
+  transition: background 0.2s, transform 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 
 .map-card:hover {
-  background: var(--bg-hover);
+  background: #3a3228;
   transform: translateY(-3px);
   border-color: var(--accent-gold);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
   text-decoration: none;
 }
 
 .thumb-wrapper {
   position: relative;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   aspect-ratio: 4 / 3;
-  background: #1a1510;
+  background: #3a3228;
 }
 
 .thumb-wrapper img {
@@ -237,59 +238,59 @@ function padNumber(n) {
 
 .number-badge {
   position: absolute;
-  top: 8px;
-  left: 8px;
-  min-width: 28px;
+  top: 10px;
+  left: 10px;
+  min-width: 32px;
   text-align: center;
   background: var(--accent-gold);
   color: #1a1510;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
-  padding: 4px 6px;
-  border-radius: 4px;
+  padding: 5px 7px;
+  border-radius: 5px;
 }
 
 .card-info {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .direction-tag {
   flex-shrink: 0;
-  font-size: 12px;
-  padding: 2px 8px;
-  border-radius: 4px;
+  font-size: 13px;
+  padding: 3px 9px;
+  border-radius: 5px;
   border: 1px solid;
   font-weight: bold;
 }
 
 .direction-tag.right {
-  color: #c46b5a;
-  border-color: rgba(196, 107, 90, 0.5);
-  background: rgba(196, 107, 90, 0.1);
+  color: #e07a6a;
+  border-color: rgba(224, 122, 106, 0.6);
+  background: rgba(224, 122, 106, 0.12);
 }
 
 .direction-tag.left {
-  color: #5a9ec4;
-  border-color: rgba(90, 158, 196, 0.5);
-  background: rgba(90, 158, 196, 0.1);
+  color: #6ab4e0;
+  border-color: rgba(106, 180, 224, 0.6);
+  background: rgba(106, 180, 224, 0.12);
 }
 
 .direction-tag.south {
-  color: #7ab88a;
-  border-color: rgba(122, 184, 138, 0.5);
-  background: rgba(122, 184, 138, 0.1);
+  color: #8fd69e;
+  border-color: rgba(143, 214, 158, 0.6);
+  background: rgba(143, 214, 158, 0.12);
 }
 
 .direction-tag.north {
-  color: #9e7ab8;
-  border-color: rgba(158, 122, 184, 0.5);
-  background: rgba(158, 122, 184, 0.1);
+  color: #b996d4;
+  border-color: rgba(185, 150, 212, 0.6);
+  background: rgba(185, 150, 212, 0.12);
 }
 
 .map-name {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   color: var(--text-main);
   white-space: nowrap;
