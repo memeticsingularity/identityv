@@ -138,5 +138,35 @@
     "thumbnail": "/assets/jiaye-notes/thumbs/14-thumb.png",
     "image": "/assets/jiaye-notes/maps/14.png",
     "description": "侧门朝北，门口呈T字形"
+  },
+  {
+    "id": "map-15",
+    "number": 15,
+    "name": "音叉门",
+    "direction": "left",
+    "directionLabel": "左",
+    "thumbnail": "/assets/jiaye-notes/thumbs/15-thumb.png",
+    "image": "/assets/jiaye-notes/maps/15.png",
+    "description": "侧门朝左，门口呈音叉形"
+  },
+  {
+    "id": "map-16",
+    "number": 16,
+    "name": "红对角门",
+    "direction": "north",
+    "directionLabel": "北",
+    "thumbnail": "/assets/jiaye-notes/thumbs/16-thumb.png",
+    "image": "/assets/jiaye-notes/maps/16.png",
+    "description": "侧门朝北，红色对角门口"
+  },
+  {
+    "id": "map-17",
+    "number": 17,
+    "name": "锤子门",
+    "direction": "right",
+    "directionLabel": "右",
+    "thumbnail": "/assets/jiaye-notes/thumbs/17-thumb.png",
+    "image": "/assets/jiaye-notes/maps/17.png",
+    "description": "侧门朝右，门口形似锤子"
   }
 ]

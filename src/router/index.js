@@ -12,8 +12,8 @@ const RechargeView = () => import('../views/Recharge/index.vue')
 const GachaView = () => import('../views/Gacha/index.vue')
 const ProfileView = () => import('../views/Profile/index.vue')
 const CollectionView = () => import('../views/Collection/index.vue')
-const JiayeNotesView = () => import('../views/JiayeNotes/index.vue')
-const JiayeNotesDetailView = () => import('../views/JiayeNotesDetail/index.vue')
+const JiayeNotesView = () => import('../views/CrypticNotes/index.vue')
+const JiayeNotesDetailView = () => import('../views/CrypticNotesDetail/index.vue')
 
 /**
  * 路由配置表
