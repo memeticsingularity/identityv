@@ -36,7 +36,7 @@
         class="map-card"
       >
         <div class="thumb-wrapper" @click="openImage(m.image)">
-          <img :src="m.image" :alt="m.name" loading="lazy" />
+          <img :src="m.thumbnail" :alt="m.name" loading="lazy" />
           <span class="number-badge">{{ padNumber(m.number) }}</span>
         </div>
         <router-link :to="`/cryptic-notes/${m.id}`" class="card-info">
@@ -115,10 +115,22 @@ function padNumber(n) {
 
 <style scoped>
 .page-container {
-  width: 95%;
-  max-width: 1800px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 24px;
+}
+
+@media (min-width: 1920px) {
+  .page-container {
+    padding: 0 48px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .page-container {
+    padding: 0 64px;
+  }
 }
 
 .page-header {
@@ -219,8 +231,34 @@ function padNumber(n) {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  }
+}
+
+@media (min-width: 2560px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 28px;
+  }
 }
 
 .map-card {
