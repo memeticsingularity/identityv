@@ -44,44 +44,46 @@ onUnmounted(() => {
 .lightbox-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.92);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 200;
-  padding: 20px;
+  padding: 12px;
 }
 
 .lightbox-content {
   position: relative;
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 98vw;
+  max-height: 96vh;
 }
 
 .lightbox-image {
-  max-width: 90vw;
-  max-height: 85vh;
+  max-width: 96vw;
+  max-height: 92vh;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 4px;
   display: block;
 }
 
 .lightbox-close {
-  position: absolute;
-  top: -44px;
-  right: 0;
-  background: transparent;
+  position: fixed;
+  top: 12px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
   border: none;
   color: var(--text-main);
-  font-size: 36px;
+  font-size: 40px;
   line-height: 1;
   cursor: pointer;
-  padding: 4px;
-  transition: color 0.2s;
+  padding: 4px 12px;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
 }
 
 .lightbox-close:hover {
   color: var(--accent-gold);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .fade-enter-active,

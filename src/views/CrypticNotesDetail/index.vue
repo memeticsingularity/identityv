@@ -15,10 +15,16 @@
       <div class="map-meta">{{ metaText }}</div>
     </div>
 
-    <div class="map-image-wrapper" @click="openImage">
+    <div class="map-image-wrapper" @click="openLightbox">
       <img :src="map.image" :alt="map.name" class="map-image" />
       <div class="zoom-hint">{{ t('zoomHint') }}</div>
     </div>
+
+    <JiayeLightbox
+      :visible="lightboxVisible"
+      :image="map.image"
+      @close="lightboxVisible = false"
+    />
   </div>
 
   <div class="container" v-else>
@@ -32,6 +38,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import maps from '../../data/jiaye-maps.json'
+import JiayeLightbox from '../../components/JiayeLightbox.vue'
 import { useI18n, locale, setLocale } from '../../composables/useI18n.js'
 import { jiayeNotesMessages, directionLabels } from '../../locales/jiayeNotes.js'
 
@@ -41,6 +48,7 @@ const props = defineProps({
 
 const { t } = useI18n(jiayeNotesMessages)
 const map = computed(() => maps.find((m) => m.id === props.id))
+const lightboxVisible = ref(false)
 
 const metaText = computed(() => {
   if (!map.value) return ''
@@ -53,10 +61,8 @@ function directionLabel(direction) {
   return directionLabels[locale.value]?.[direction] || directionLabels.zh[direction]
 }
 
-function openImage() {
-  if (map.value?.image) {
-    window.open(map.value.image, '_blank')
-  }
+function openLightbox() {
+  lightboxVisible.value = true
 }
 
 function toggleLocale() {

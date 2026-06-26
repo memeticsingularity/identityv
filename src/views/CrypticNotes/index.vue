@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="page-container">
     <div class="page-header">
       <div class="title-wrap">
         <h1 class="page-title">{{ t('pageTitle') }}</h1>
@@ -30,30 +30,36 @@
     </div>
 
     <div class="grid">
-      <router-link
+      <div
         v-for="m in filteredMaps"
         :key="m.id"
-        :to="`/cryptic-notes/${m.id}`"
         class="map-card"
       >
-        <div class="thumb-wrapper">
+        <div class="thumb-wrapper" @click="openImage(m.image)">
           <img :src="m.image" :alt="m.name" loading="lazy" />
           <span class="number-badge">{{ padNumber(m.number) }}</span>
         </div>
-        <div class="card-info">
+        <router-link :to="`/cryptic-notes/${m.id}`" class="card-info">
           <span class="direction-tag" :class="m.direction">{{ directionLabel(m.direction) }}</span>
           <div class="map-name">{{ m.name }}</div>
-        </div>
-      </router-link>
+        </router-link>
+      </div>
     </div>
 
     <div v-if="!filteredMaps.length" class="empty">{{ t('empty') }}</div>
+
+    <JiayeLightbox
+      :visible="lightboxVisible"
+      :image="lightboxImage"
+      @close="lightboxVisible = false"
+    />
   </div>
 </template>
 
 <script setup>
 import { ref, computed } from 'vue'
 import maps from '../../data/jiaye-maps.json'
+import JiayeLightbox from '../../components/JiayeLightbox.vue'
 import { useI18n, locale, setLocale } from '../../composables/useI18n.js'
 import { jiayeNotesMessages, directionLabels } from '../../locales/jiayeNotes.js'
 
@@ -69,6 +75,8 @@ const directions = computed(() => [
 
 const currentDirection = ref('all')
 const searchKeyword = ref('')
+const lightboxVisible = ref(false)
+const lightboxImage = ref('')
 
 const filteredMaps = computed(() => {
   let result = maps
@@ -91,6 +99,11 @@ function directionLabel(direction) {
   return directionLabels[locale.value]?.[direction] || directionLabels.zh[direction]
 }
 
+function openImage(image) {
+  lightboxImage.value = image
+  lightboxVisible.value = true
+}
+
 function toggleLocale() {
   setLocale(locale.value === 'zh' ? 'en' : 'zh')
 }
@@ -101,6 +114,13 @@ function padNumber(n) {
 </script>
 
 <style scoped>
+.page-container {
+  width: 95%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 .page-header {
   margin-bottom: 20px;
 }
@@ -114,7 +134,7 @@ function padNumber(n) {
 }
 
 .page-title {
-  font-size: 24px;
+  font-size: 26px;
   color: var(--accent-gold);
 }
 
@@ -146,7 +166,7 @@ function padNumber(n) {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .tabs {
@@ -178,7 +198,7 @@ function padNumber(n) {
 }
 
 .search-input {
-  width: 220px;
+  width: 260px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 6px;
@@ -199,8 +219,8 @@ function padNumber(n) {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 24px;
 }
 
 .map-card {
@@ -217,7 +237,6 @@ function padNumber(n) {
   transform: translateY(-3px);
   border-color: var(--accent-gold);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-  text-decoration: none;
 }
 
 .thumb-wrapper {
@@ -227,6 +246,12 @@ function padNumber(n) {
   margin-bottom: 14px;
   background: #3a3228;
   line-height: 0;
+  cursor: zoom-in;
+  transition: box-shadow 0.2s;
+}
+
+.thumb-wrapper:hover {
+  box-shadow: 0 0 0 2px var(--accent-gold);
 }
 
 .thumb-wrapper img {
@@ -240,11 +265,11 @@ function padNumber(n) {
   position: absolute;
   top: 10px;
   left: 10px;
-  min-width: 32px;
+  min-width: 34px;
   text-align: center;
   background: var(--accent-gold);
   color: #1a1510;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   padding: 5px 7px;
   border-radius: 5px;
@@ -254,6 +279,11 @@ function padNumber(n) {
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
+}
+
+.card-info:hover {
+  text-decoration: none;
 }
 
 .direction-tag {
@@ -316,7 +346,7 @@ function padNumber(n) {
   }
 
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 </style>
