@@ -9,14 +9,41 @@
     </div>
 
     <div class="toolbar">
-      <div class="tabs">
+      <div class="compass-tabs">
         <button
-          v-for="d in directions"
-          :key="d.value"
-          :class="['tab', { active: currentDirection === d.value }]"
-          @click="currentDirection = d.value"
+          class="compass-tab all"
+          :class="{ active: currentDirection === 'all' }"
+          @click="currentDirection = 'all'"
         >
-          {{ d.label }}
+          {{ t('all') }}
+        </button>
+        <button
+          class="compass-tab north"
+          :class="{ active: currentDirection === 'north' }"
+          @click="currentDirection = 'north'"
+        >
+          {{ t('north') }}
+        </button>
+        <button
+          class="compass-tab south"
+          :class="{ active: currentDirection === 'south' }"
+          @click="currentDirection = 'south'"
+        >
+          {{ t('south') }}
+        </button>
+        <button
+          class="compass-tab west"
+          :class="{ active: currentDirection === 'left' }"
+          @click="currentDirection = 'left'"
+        >
+          {{ t('left') }}
+        </button>
+        <button
+          class="compass-tab east"
+          :class="{ active: currentDirection === 'right' }"
+          @click="currentDirection = 'right'"
+        >
+          {{ t('right') }}
         </button>
       </div>
       <div class="search">
@@ -64,14 +91,6 @@ import { useI18n, locale, setLocale } from '../../composables/useI18n.js'
 import { jiayeNotesMessages, directionLabels } from '../../locales/jiayeNotes.js'
 
 const { t } = useI18n(jiayeNotesMessages)
-
-const directions = computed(() => [
-  { label: t('all'), value: 'all' },
-  { label: t('right'), value: 'right' },
-  { label: t('left'), value: 'left' },
-  { label: t('south'), value: 'south' },
-  { label: t('north'), value: 'north' },
-])
 
 const currentDirection = ref('all')
 const searchKeyword = ref('')
@@ -181,32 +200,77 @@ function padNumber(n) {
   margin-bottom: 24px;
 }
 
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
+.compass-tabs {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
   gap: 8px;
+  width: fit-content;
+  position: relative;
 }
 
-.tab {
+.compass-tabs::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, transparent calc(50% - 1px), rgba(196, 155, 60, 0.15) calc(50% - 1px), rgba(196, 155, 60, 0.15) calc(50% + 1px), transparent calc(50% + 1px)),
+    linear-gradient(to bottom, transparent calc(50% - 1px), rgba(196, 155, 60, 0.15) calc(50% - 1px), rgba(196, 155, 60, 0.15) calc(50% + 1px), transparent calc(50% + 1px));
+  border-radius: 12px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.compass-tab {
+  position: relative;
+  z-index: 1;
   background: var(--bg-card);
   border: 1px solid var(--border);
   color: var(--text-muted);
-  padding: 8px 16px;
-  border-radius: 6px;
+  padding: 8px 18px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
   transition: all 0.2s;
+  min-width: 64px;
+  text-align: center;
 }
 
-.tab:hover {
+.compass-tab:hover {
   background: var(--bg-hover);
+  border-color: var(--accent-gold);
 }
 
-.tab.active {
+.compass-tab.active {
   background: var(--accent-gold);
   color: #1a1510;
   border-color: var(--accent-gold);
   font-weight: bold;
+}
+
+.compass-tab.all {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.compass-tab.north {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.compass-tab.south {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.compass-tab.west {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.compass-tab.east {
+  grid-column: 3;
+  grid-row: 2;
 }
 
 .search-input {
@@ -377,6 +441,16 @@ function padNumber(n) {
   .toolbar {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .compass-tabs {
+    margin: 0 auto;
+  }
+
+  .compass-tab {
+    padding: 6px 12px;
+    font-size: 13px;
+    min-width: 52px;
   }
 
   .search-input {
