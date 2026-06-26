@@ -25,6 +25,7 @@ const modules = [
     title: '加页手记 Cryptic Notes',
     desc: '地图侧门识别与楼层平面图速查 / Map side-door recognition',
     icon: 'ep:notebook',
+    preview: '/assets/jiaye-notes/thumbs/01-thumb.png',
     color: '#7a9eb8',
     bg: 'rgba(122, 158, 184, 0.08)',
     glow: 'rgba(122, 158, 184, 0.15)',
@@ -94,8 +95,9 @@ const modules = [
         class="link-card"
         :style="{ '--m-color': m.color, '--m-bg': m.bg, '--m-glow': m.glow, '--delay': i * 0.05 + 's' }"
       >
-        <div class="card-icon">
-          <Icon :icon="m.icon" width="22" height="22" />
+        <div class="card-icon" :class="{ preview: m.preview }">
+          <img v-if="m.preview" :src="m.preview" alt="" class="card-preview" />
+          <Icon v-else :icon="m.icon" width="22" height="22" />
         </div>
         <div class="card-body">
           <div class="link-title">{{ m.title }}</div>
@@ -232,6 +234,19 @@ const modules = [
   justify-content: center;
   color: var(--m-color);
   transition: background 0.25s ease, transform 0.25s ease;
+  overflow: hidden;
+}
+
+.card-icon.preview {
+  padding: 0;
+  background: #1a1510;
+}
+
+.card-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .link-card:hover .card-icon {
