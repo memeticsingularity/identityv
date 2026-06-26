@@ -37,7 +37,7 @@
         class="map-card"
       >
         <div class="thumb-wrapper">
-          <img :src="m.thumbnail" :alt="m.name" loading="lazy" />
+          <img :src="m.image" :alt="m.name" loading="lazy" />
           <span class="number-badge">{{ padNumber(m.number) }}</span>
         </div>
         <div class="card-info">
@@ -225,14 +225,14 @@ function padNumber(n) {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 14px;
-  aspect-ratio: 4 / 3;
   background: #3a3228;
+  line-height: 0;
 }
 
 .thumb-wrapper img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   display: block;
 }
 
