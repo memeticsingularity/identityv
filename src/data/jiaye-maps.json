@@ -168,5 +168,55 @@
     "thumbnail": "/assets/jiaye-notes/thumbs/17-thumb.png",
     "image": "/assets/jiaye-notes/maps/17.png",
     "description": "侧门朝右，门口形似锤子"
+  },
+  {
+    "id": "map-18",
+    "number": 18,
+    "name": "狮子门",
+    "direction": "left",
+    "directionLabel": "左",
+    "thumbnail": "/assets/jiaye-notes/thumbs/18-thumb.png",
+    "image": "/assets/jiaye-notes/maps/18.png",
+    "description": "侧门朝左，门口呈狮子门特征"
+  },
+  {
+    "id": "map-19",
+    "number": 19,
+    "name": "红门",
+    "direction": "south",
+    "directionLabel": "南",
+    "thumbnail": "/assets/jiaye-notes/thumbs/19-thumb.png",
+    "image": "/assets/jiaye-notes/maps/19.png",
+    "description": "侧门朝南，红色门口特征"
+  },
+  {
+    "id": "map-20",
+    "number": 20,
+    "name": "骑士门",
+    "direction": "right",
+    "directionLabel": "右",
+    "thumbnail": "/assets/jiaye-notes/thumbs/20-thumb.png",
+    "image": "/assets/jiaye-notes/maps/20.png",
+    "description": "侧门朝右，门口呈骑士门特征"
+  },
+  {
+    "id": "map-21",
+    "number": 21,
+    "name": "对T门",
+    "direction": "left",
+    "directionLabel": "左",
+    "thumbnail": "/assets/jiaye-notes/thumbs/21-thumb.png",
+    "image": "/assets/jiaye-notes/maps/21.png",
+    "description": "侧门朝左，门口呈对T形"
+  },
+  {
+    "id": "map-22",
+    "number": 22,
+    "name": "U门",
+    "direction": "right",
+    "directionLabel": "右",
+    "thumbnail": "/assets/jiaye-notes/thumbs/22-thumb.png",
+    "image": "/assets/jiaye-notes/maps/22.png",
+    "description": "侧门朝右，门口呈U形"
   }
 ]
