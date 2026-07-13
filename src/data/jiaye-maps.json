@@ -218,5 +218,65 @@
     "thumbnail": "/assets/jiaye-notes/thumbs/22-thumb.png",
     "image": "/assets/jiaye-notes/maps/22.png",
     "description": "侧门朝右，门口呈U形"
+  },
+  {
+    "id": "map-23",
+    "number": 23,
+    "name": "沙发门",
+    "direction": "north",
+    "directionLabel": "北",
+    "thumbnail": "/assets/jiaye-notes/thumbs/23-thumb.png",
+    "image": "/assets/jiaye-notes/maps/23.png",
+    "description": "侧门朝北，门口形似沙发"
+  },
+  {
+    "id": "map-24",
+    "number": 24,
+    "name": "Y青蛙门",
+    "direction": "left",
+    "directionLabel": "左",
+    "thumbnail": "/assets/jiaye-notes/thumbs/24-thumb.png",
+    "image": "/assets/jiaye-notes/maps/24.png",
+    "description": "侧门朝左，门口呈Y青蛙门特征"
+  },
+  {
+    "id": "map-25",
+    "number": 25,
+    "name": "orz门",
+    "direction": "south",
+    "directionLabel": "南",
+    "thumbnail": "/assets/jiaye-notes/thumbs/25-thumb.png",
+    "image": "/assets/jiaye-notes/maps/25.png",
+    "description": "侧门朝南，门口形似orz"
+  },
+  {
+    "id": "map-26",
+    "number": 26,
+    "name": "三L门",
+    "direction": "right",
+    "directionLabel": "右",
+    "thumbnail": "/assets/jiaye-notes/thumbs/26-thumb.png",
+    "image": "/assets/jiaye-notes/maps/26.png",
+    "description": "侧门朝右，门口呈三L形"
+  },
+  {
+    "id": "map-27",
+    "number": 27,
+    "name": "锤灯笼门",
+    "direction": "left",
+    "directionLabel": "左",
+    "thumbnail": "/assets/jiaye-notes/thumbs/27-thumb.png",
+    "image": "/assets/jiaye-notes/maps/27.png",
+    "description": "侧门朝左，门口呈锤灯笼特征"
+  },
+  {
+    "id": "map-28",
+    "number": 28,
+    "name": "4安全门",
+    "direction": "north",
+    "directionLabel": "北",
+    "thumbnail": "/assets/jiaye-notes/thumbs/28-thumb.png",
+    "image": "/assets/jiaye-notes/maps/28.png",
+    "description": "侧门朝北，门口为4安全门特征"
   }
 ]
