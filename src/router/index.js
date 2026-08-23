@@ -12,8 +12,8 @@ const RechargeView = () => import('../views/Recharge/index.vue')
 const GachaView = () => import('../views/Gacha/index.vue')
 const ProfileView = () => import('../views/Profile/index.vue')
 const CollectionView = () => import('../views/Collection/index.vue')
-const JiayeNotesView = () => import('../views/CrypticNotes/index.vue')
-const JiayeNotesDetailView = () => import('../views/CrypticNotesDetail/index.vue')
+const CrypticNotesView = () => import('../views/CrypticNotes/index.vue')
+const CrypticNotesDetailView = () => import('../views/CrypticNotesDetail/index.vue')
 
 /**
  * 路由配置表
@@ -47,8 +47,8 @@ const routes = [
 
   // ===== 加页手记 Cryptic Notes =====
   { path: '/cryptic-notes', redirect: '/cryptic-notes/hard' },
-  { path: '/cryptic-notes/:difficulty', name: 'CrypticNotes', component: JiayeNotesView, props: true },
-  { path: '/cryptic-notes/:difficulty/:id', name: 'CrypticNotesDetail', component: JiayeNotesDetailView, props: true },
+  { path: '/cryptic-notes/:difficulty', name: 'CrypticNotes', component: CrypticNotesView, props: true },
+  { path: '/cryptic-notes/:difficulty/:id', name: 'CrypticNotesDetail', component: CrypticNotesDetailView, props: true },
 
   // ===== 个人中心 =====
   { path: '/profile', name: 'Profile', component: ProfileView },

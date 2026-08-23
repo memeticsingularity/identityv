@@ -92,7 +92,7 @@
 
     <div v-if="!filteredMaps.length" class="empty">{{ t('empty') }}</div>
 
-    <JiayeLightbox
+    <CrypticNotesLightbox
       :visible="lightboxVisible"
       :image="lightboxImage"
       @close="lightboxVisible = false"
@@ -103,17 +103,17 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
-import maps from '../../data/jiaye-maps.json'
-import JiayeLightbox from '../../components/JiayeLightbox.vue'
+import maps from '../../data/cryptic-notes-maps.json'
+import CrypticNotesLightbox from '../../components/CrypticNotesLightbox.vue'
 import { useI18n, locale, setLocale } from '../../composables/useI18n.js'
-import { jiayeNotesMessages, directionLabels, difficultyLabels } from '../../locales/jiayeNotes.js'
+import { crypticNotesMessages, directionLabels, difficultyLabels } from '../../locales/crypticNotes.js'
 
 const props = defineProps({
   difficulty: { type: String, default: 'hard' },
 })
 
 const router = useRouter()
-const { t } = useI18n(jiayeNotesMessages)
+const { t } = useI18n(crypticNotesMessages)
 
 const VALID_DIFFICULTIES = ['hard', 'nightmare']
 const currentDifficulty = computed(() =>

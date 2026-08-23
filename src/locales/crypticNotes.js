@@ -1,4 +1,4 @@
-export const jiayeNotesMessages = {
+export const crypticNotesMessages = {
   zh: {
     title: '加页手记',
     subtitle: 'Cryptic Notes',

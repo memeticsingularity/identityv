@@ -25,7 +25,7 @@ const modules = [
     title: '加页手记',
     desc: '地图侧门识别与楼层平面图速查',
     icon: 'ep:notebook',
-    preview: '/assets/jiaye-notes/thumbs/01-thumb.png',
+    preview: '/assets/cryptic-notes/hard/thumbs/01-thumb.png',
     color: '#7a9eb8',
     bg: 'rgba(122, 158, 184, 0.08)',
     glow: 'rgba(122, 158, 184, 0.15)',

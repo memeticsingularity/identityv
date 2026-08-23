@@ -27,7 +27,7 @@
       <div class="zoom-hint">{{ t('zoomHint') }}</div>
     </div>
 
-    <JiayeLightbox
+    <CrypticNotesLightbox
       :visible="lightboxVisible"
       :image="map.image"
       @close="lightboxVisible = false"
@@ -44,17 +44,17 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import maps from '../../data/jiaye-maps.json'
-import JiayeLightbox from '../../components/JiayeLightbox.vue'
+import maps from '../../data/cryptic-notes-maps.json'
+import CrypticNotesLightbox from '../../components/CrypticNotesLightbox.vue'
 import { useI18n, locale, setLocale } from '../../composables/useI18n.js'
-import { jiayeNotesMessages, directionLabels, difficultyLabels } from '../../locales/jiayeNotes.js'
+import { crypticNotesMessages, directionLabels, difficultyLabels } from '../../locales/crypticNotes.js'
 
 const props = defineProps({
   difficulty: { type: String, default: '' },
   id: { type: String, required: true },
 })
 
-const { t } = useI18n(jiayeNotesMessages)
+const { t } = useI18n(crypticNotesMessages)
 const map = computed(() => maps.find((m) => m.id === props.id))
 const lightboxVisible = ref(false)
 const imageError = ref(false)
