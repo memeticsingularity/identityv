@@ -11,7 +11,7 @@
         <router-link to="/">首页</router-link>
         <router-link to="/characters">角色图鉴</router-link>
         <router-link to="/maps">地图</router-link>
-        <router-link to="/cryptic-notes">Cryptic Notes</router-link>
+        <router-link to="/cryptic-notes">加页手记</router-link>
         <router-link to="/stories">剧情收录</router-link>
         <router-link to="/analyses">剧情分析</router-link>
         <router-link to="/recharge">回声充值</router-link>

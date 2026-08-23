@@ -46,8 +46,9 @@ const routes = [
   { path: '/collection', name: 'Collection', component: CollectionView },
 
   // ===== 加页手记 Cryptic Notes =====
-  { path: '/cryptic-notes', name: 'CrypticNotes', component: JiayeNotesView },
-  { path: '/cryptic-notes/:id', name: 'CrypticNotesDetail', component: JiayeNotesDetailView, props: true },
+  { path: '/cryptic-notes', redirect: '/cryptic-notes/hard' },
+  { path: '/cryptic-notes/:difficulty', name: 'CrypticNotes', component: JiayeNotesView, props: true },
+  { path: '/cryptic-notes/:difficulty/:id', name: 'CrypticNotesDetail', component: JiayeNotesDetailView, props: true },
 
   // ===== 个人中心 =====
   { path: '/profile', name: 'Profile', component: ProfileView },

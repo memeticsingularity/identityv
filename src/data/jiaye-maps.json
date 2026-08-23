@@ -7,7 +7,8 @@
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/thumbs/01-thumb.png",
     "image": "/assets/jiaye-notes/maps/01.png",
-    "description": "侧门朝右，门口呈左上右下布局"
+    "description": "侧门朝右，门口呈左上右下布局",
+    "difficulty": "hard"
   },
   {
     "id": "map-02",
@@ -17,7 +18,8 @@
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/thumbs/02-thumb.png",
     "image": "/assets/jiaye-notes/maps/02.png",
-    "description": "侧门朝右，门口呈双L形"
+    "description": "侧门朝右，门口呈双L形",
+    "difficulty": "hard"
   },
   {
     "id": "map-03",
@@ -27,7 +29,8 @@
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/03-thumb.png",
     "image": "/assets/jiaye-notes/maps/03.png",
-    "description": "侧门朝左，门口呈Y字形"
+    "description": "侧门朝左，门口呈Y字形",
+    "difficulty": "hard"
   },
   {
     "id": "map-04",
@@ -37,7 +40,8 @@
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/04-thumb.png",
     "image": "/assets/jiaye-notes/maps/04.png",
-    "description": "侧门朝左，门口形似锤子"
+    "description": "侧门朝左，门口形似锤子",
+    "difficulty": "hard"
   },
   {
     "id": "map-05",
@@ -47,7 +51,8 @@
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/05-thumb.png",
     "image": "/assets/jiaye-notes/maps/05.png",
-    "description": "侧门朝左，门口呈倒T形"
+    "description": "侧门朝左，门口呈倒T形",
+    "difficulty": "hard"
   },
   {
     "id": "map-06",
@@ -57,7 +62,8 @@
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/06-thumb.png",
     "image": "/assets/jiaye-notes/maps/06.png",
-    "description": "侧门朝左，门口呈对角布局"
+    "description": "侧门朝左，门口呈对角布局",
+    "difficulty": "hard"
   },
   {
     "id": "map-07",
@@ -67,7 +73,8 @@
     "directionLabel": "南",
     "thumbnail": "/assets/jiaye-notes/thumbs/07-thumb.png",
     "image": "/assets/jiaye-notes/maps/07.png",
-    "description": "侧门朝南，门口三缺一"
+    "description": "侧门朝南，门口三缺一",
+    "difficulty": "hard"
   },
   {
     "id": "map-08",
@@ -77,7 +84,8 @@
     "directionLabel": "南",
     "thumbnail": "/assets/jiaye-notes/thumbs/08-thumb.png",
     "image": "/assets/jiaye-notes/maps/08.png",
-    "description": "侧门朝南，门口呈十字形"
+    "description": "侧门朝南，门口呈十字形",
+    "difficulty": "hard"
   },
   {
     "id": "map-09",
@@ -87,7 +95,8 @@
     "directionLabel": "南",
     "thumbnail": "/assets/jiaye-notes/thumbs/09-thumb.png",
     "image": "/assets/jiaye-notes/maps/09.png",
-    "description": "侧门朝南，门口呈L形"
+    "description": "侧门朝南，门口呈L形",
+    "difficulty": "hard"
   },
   {
     "id": "map-10",
@@ -97,7 +106,8 @@
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/10-thumb.png",
     "image": "/assets/jiaye-notes/maps/10.png",
-    "description": "侧门朝北，门口形似数字1"
+    "description": "侧门朝北，门口形似数字1",
+    "difficulty": "hard"
   },
   {
     "id": "map-11",
@@ -107,7 +117,8 @@
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/11-thumb.png",
     "image": "/assets/jiaye-notes/maps/11.png",
-    "description": "侧门朝北，门口形似数字4"
+    "description": "侧门朝北，门口形似数字4",
+    "difficulty": "hard"
   },
   {
     "id": "map-12",
@@ -117,7 +128,8 @@
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/12-thumb.png",
     "image": "/assets/jiaye-notes/maps/12.png",
-    "description": "侧门朝北，红色门口特征"
+    "description": "侧门朝北，红色门口特征",
+    "difficulty": "hard"
   },
   {
     "id": "map-13",
@@ -127,7 +139,8 @@
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/13-thumb.png",
     "image": "/assets/jiaye-notes/maps/13.png",
-    "description": "侧门朝北，门口呈凹字形"
+    "description": "侧门朝北，门口呈凹字形",
+    "difficulty": "hard"
   },
   {
     "id": "map-14",
@@ -137,7 +150,8 @@
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/14-thumb.png",
     "image": "/assets/jiaye-notes/maps/14.png",
-    "description": "侧门朝北，门口呈T字形"
+    "description": "侧门朝北，门口呈T字形",
+    "difficulty": "hard"
   },
   {
     "id": "map-15",
@@ -147,7 +161,8 @@
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/15-thumb.png",
     "image": "/assets/jiaye-notes/maps/15.png",
-    "description": "侧门朝左，门口呈音叉形"
+    "description": "侧门朝左，门口呈音叉形",
+    "difficulty": "hard"
   },
   {
     "id": "map-16",
@@ -157,7 +172,8 @@
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/16-thumb.png",
     "image": "/assets/jiaye-notes/maps/16.png",
-    "description": "侧门朝北，红色对角门口"
+    "description": "侧门朝北，红色对角门口",
+    "difficulty": "hard"
   },
   {
     "id": "map-17",
@@ -167,7 +183,8 @@
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/thumbs/17-thumb.png",
     "image": "/assets/jiaye-notes/maps/17.png",
-    "description": "侧门朝右，门口形似锤子"
+    "description": "侧门朝右，门口形似锤子",
+    "difficulty": "hard"
   },
   {
     "id": "map-18",
@@ -177,7 +194,8 @@
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/18-thumb.png",
     "image": "/assets/jiaye-notes/maps/18.png",
-    "description": "侧门朝左，门口呈狮子门特征"
+    "description": "侧门朝左，门口呈狮子门特征",
+    "difficulty": "hard"
   },
   {
     "id": "map-19",
@@ -187,7 +205,8 @@
     "directionLabel": "南",
     "thumbnail": "/assets/jiaye-notes/thumbs/19-thumb.png",
     "image": "/assets/jiaye-notes/maps/19.png",
-    "description": "侧门朝南，红色门口特征"
+    "description": "侧门朝南，红色门口特征",
+    "difficulty": "hard"
   },
   {
     "id": "map-20",
@@ -197,7 +216,8 @@
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/thumbs/20-thumb.png",
     "image": "/assets/jiaye-notes/maps/20.png",
-    "description": "侧门朝右，门口呈骑士门特征"
+    "description": "侧门朝右，门口呈骑士门特征",
+    "difficulty": "hard"
   },
   {
     "id": "map-21",
@@ -207,7 +227,8 @@
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/21-thumb.png",
     "image": "/assets/jiaye-notes/maps/21.png",
-    "description": "侧门朝左，门口呈对T形"
+    "description": "侧门朝左，门口呈对T形",
+    "difficulty": "hard"
   },
   {
     "id": "map-22",
@@ -217,7 +238,8 @@
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/thumbs/22-thumb.png",
     "image": "/assets/jiaye-notes/maps/22.png",
-    "description": "侧门朝右，门口呈U形"
+    "description": "侧门朝右，门口呈U形",
+    "difficulty": "hard"
   },
   {
     "id": "map-23",
@@ -227,7 +249,8 @@
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/23-thumb.png",
     "image": "/assets/jiaye-notes/maps/23.png",
-    "description": "侧门朝北，门口形似沙发"
+    "description": "侧门朝北，门口形似沙发",
+    "difficulty": "hard"
   },
   {
     "id": "map-24",
@@ -237,7 +260,8 @@
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/24-thumb.png",
     "image": "/assets/jiaye-notes/maps/24.png",
-    "description": "侧门朝左，门口呈Y青蛙门特征"
+    "description": "侧门朝左，门口呈Y青蛙门特征",
+    "difficulty": "hard"
   },
   {
     "id": "map-25",
@@ -247,7 +271,8 @@
     "directionLabel": "南",
     "thumbnail": "/assets/jiaye-notes/thumbs/25-thumb.png",
     "image": "/assets/jiaye-notes/maps/25.png",
-    "description": "侧门朝南，门口形似orz"
+    "description": "侧门朝南，门口形似orz",
+    "difficulty": "hard"
   },
   {
     "id": "map-26",
@@ -257,7 +282,8 @@
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/thumbs/26-thumb.png",
     "image": "/assets/jiaye-notes/maps/26.png",
-    "description": "侧门朝右，门口呈三L形"
+    "description": "侧门朝右，门口呈三L形",
+    "difficulty": "hard"
   },
   {
     "id": "map-27",
@@ -267,7 +293,8 @@
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/27-thumb.png",
     "image": "/assets/jiaye-notes/maps/27.png",
-    "description": "侧门朝左，门口呈锤灯笼特征"
+    "description": "侧门朝左，门口呈锤灯笼特征",
+    "difficulty": "hard"
   },
   {
     "id": "map-28",
@@ -277,6 +304,150 @@
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/28-thumb.png",
     "image": "/assets/jiaye-notes/maps/28.png",
-    "description": "侧门朝北，门口为4安全门特征"
+    "description": "侧门朝北，门口为4安全门特征",
+    "difficulty": "hard"
+  },
+  {
+    "id": "nightmare-01",
+    "difficulty": "nightmare",
+    "number": 1,
+    "name": "右 - 长Z门",
+    "direction": "right",
+    "directionLabel": "右",
+    "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/01-thumb.png",
+    "image": "/assets/jiaye-notes/nightmare/maps/01.png",
+    "description": "噩梦难度：侧门朝右，长Z门"
+  },
+  {
+    "id": "nightmare-02",
+    "difficulty": "nightmare",
+    "number": 2,
+    "name": "右 - 短T门",
+    "direction": "right",
+    "directionLabel": "右",
+    "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/02-thumb.png",
+    "image": "/assets/jiaye-notes/nightmare/maps/02.png",
+    "description": "噩梦难度：侧门朝右，短T门"
+  },
+  {
+    "id": "nightmare-03",
+    "difficulty": "nightmare",
+    "number": 3,
+    "name": "右 - 仙人掌门",
+    "direction": "right",
+    "directionLabel": "右",
+    "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/03-thumb.png",
+    "image": "/assets/jiaye-notes/nightmare/maps/03.png",
+    "description": "噩梦难度：侧门朝右，仙人掌门"
+  },
+  {
+    "id": "nightmare-04",
+    "difficulty": "nightmare",
+    "number": 4,
+    "name": "右 - 一闪电门",
+    "direction": "right",
+    "directionLabel": "右",
+    "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/04-thumb.png",
+    "image": "/assets/jiaye-notes/nightmare/maps/04.png",
+    "description": "噩梦难度：侧门朝右，一闪电门"
+  },
+  {
+    "id": "nightmare-05",
+    "difficulty": "nightmare",
+    "number": 5,
+    "name": "右 - 断C门",
+    "direction": "right",
+    "directionLabel": "右",
+    "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/05-thumb.png",
+    "image": "/assets/jiaye-notes/nightmare/maps/05.png",
+    "description": "噩梦难度：侧门朝右，断C门"
+  },
+  {
+    "id": "nightmare-06",
+    "difficulty": "nightmare",
+    "number": 6,
+    "name": "右 - C门",
+    "direction": "right",
+    "directionLabel": "右",
+    "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/06-thumb.png",
+    "image": "/assets/jiaye-notes/nightmare/maps/06.png",
+    "description": "噩梦难度：侧门朝右，C门"
+  },
+  {
+    "id": "nightmare-07",
+    "difficulty": "nightmare",
+    "number": 7,
+    "name": "南 - H门",
+    "direction": "south",
+    "directionLabel": "南",
+    "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/07-thumb.png",
+    "image": "/assets/jiaye-notes/nightmare/maps/07.png",
+    "description": "噩梦难度：侧门朝南，H门"
+  },
+  {
+    "id": "nightmare-08",
+    "difficulty": "nightmare",
+    "number": 8,
+    "name": "南 - 三红门",
+    "direction": "south",
+    "directionLabel": "南",
+    "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/08-thumb.png",
+    "image": "/assets/jiaye-notes/nightmare/maps/08.png",
+    "description": "噩梦难度：侧门朝南，三红门"
+  },
+  {
+    "id": "nightmare-09",
+    "difficulty": "nightmare",
+    "number": 9,
+    "name": "北 - b门",
+    "direction": "north",
+    "directionLabel": "北",
+    "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/09-thumb.png",
+    "image": "/assets/jiaye-notes/nightmare/maps/09.png",
+    "description": "噩梦难度：侧门朝北，b门"
+  },
+  {
+    "id": "nightmare-10",
+    "difficulty": "nightmare",
+    "number": 10,
+    "name": "北 - 仙人掌门",
+    "direction": "north",
+    "directionLabel": "北",
+    "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/10-thumb.png",
+    "image": "/assets/jiaye-notes/nightmare/maps/10.png",
+    "description": "噩梦难度：侧门朝北，仙人掌门"
+  },
+  {
+    "id": "nightmare-11",
+    "difficulty": "nightmare",
+    "number": 11,
+    "name": "北 - 回门",
+    "direction": "north",
+    "directionLabel": "北",
+    "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/11-thumb.png",
+    "image": "/assets/jiaye-notes/nightmare/maps/11.png",
+    "description": "噩梦难度：侧门朝北，回门"
+  },
+  {
+    "id": "nightmare-12",
+    "difficulty": "nightmare",
+    "number": 12,
+    "name": "北 - Z1门",
+    "direction": "north",
+    "directionLabel": "北",
+    "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/12-thumb.png",
+    "image": "/assets/jiaye-notes/nightmare/maps/12.png",
+    "description": "噩梦难度：侧门朝北，Z1门"
+  },
+  {
+    "id": "nightmare-13",
+    "difficulty": "nightmare",
+    "number": 13,
+    "name": "北 - 骑士门",
+    "direction": "north",
+    "directionLabel": "北",
+    "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/13-thumb.png",
+    "image": "/assets/jiaye-notes/nightmare/maps/13.png",
+    "description": "噩梦难度：侧门朝北，骑士门"
   }
 ]

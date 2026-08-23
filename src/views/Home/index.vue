@@ -22,8 +22,8 @@ const modules = [
   },
   {
     to: '/cryptic-notes',
-    title: '加页手记 Cryptic Notes',
-    desc: '地图侧门识别与楼层平面图速查 / Map side-door recognition',
+    title: '加页手记',
+    desc: '地图侧门识别与楼层平面图速查',
     icon: 'ep:notebook',
     preview: '/assets/jiaye-notes/thumbs/01-thumb.png',
     color: '#7a9eb8',

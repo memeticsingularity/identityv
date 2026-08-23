@@ -10,6 +10,9 @@ export const jiayeNotesMessages = {
     left: '左',
     south: '南',
     north: '北',
+    difficulty: '难度',
+    hard: '困难',
+    nightmare: '噩梦',
     empty: '没有找到匹配的地图',
     backToList: '返回加页手记列表',
     notFound: '地图不存在',
@@ -17,6 +20,8 @@ export const jiayeNotesMessages = {
     zoomHint: '点击全屏查看',
     meta: '编号 {number} · {description}',
     localeSwitch: '中 / En',
+    nightmarePlaceholderTitle: '噩梦地图',
+    nightmarePlaceholderHint: '完整地图素材即将更新',
   },
   en: {
     title: 'Cryptic Notes',
@@ -29,6 +34,9 @@ export const jiayeNotesMessages = {
     left: 'Left',
     south: 'South',
     north: 'North',
+    difficulty: 'Difficulty',
+    hard: 'Hard',
+    nightmare: 'Nightmare',
     empty: 'No matching maps found',
     backToList: '← Back to Cryptic Notes',
     notFound: 'Map not found',
@@ -36,6 +44,8 @@ export const jiayeNotesMessages = {
     zoomHint: 'Click to view fullscreen',
     meta: 'No. {number} · {description}',
     localeSwitch: '中 / En',
+    nightmarePlaceholderTitle: 'Nightmare Map',
+    nightmarePlaceholderHint: 'Full map assets coming soon',
   },
 }
 
@@ -51,5 +61,16 @@ export const directionLabels = {
     left: 'Left',
     south: 'South',
     north: 'North',
+  },
+}
+
+export const difficultyLabels = {
+  zh: {
+    hard: '困难',
+    nightmare: '噩梦',
+  },
+  en: {
+    hard: 'Hard',
+    nightmare: 'Nightmare',
   },
 }

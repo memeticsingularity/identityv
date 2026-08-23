@@ -1,13 +1,14 @@
 <template>
   <div class="container" v-if="map">
     <div class="breadcrumb">
-      <router-link to="/cryptic-notes">{{ t('backToList') }}</router-link>
+      <router-link :to="`/cryptic-notes/${map.difficulty}`">{{ t('backToList') }}</router-link>
     </div>
 
     <div class="map-header">
       <div class="title-row">
         <h1 class="map-title">
           <span class="direction-label" :class="map.direction">{{ directionLabel(map.direction) }}</span>
+          <span class="difficulty-label" :class="map.difficulty">{{ difficultyLabel(map.difficulty) }}</span>
           {{ map.name }}
         </h1>
         <button class="locale-switch" @click="toggleLocale">{{ t('localeSwitch') }}</button>
@@ -16,7 +17,13 @@
     </div>
 
     <div class="map-image-wrapper" @click="openLightbox">
-      <img :src="map.image" :alt="map.name" class="map-image" />
+      <img :src="map.image" :alt="map.name" class="map-image" @error="onImageError" />
+      <div v-if="imageError" class="placeholder-overlay">
+        <div class="placeholder-content">
+          <div class="placeholder-title">{{ t('nightmarePlaceholderTitle') }}</div>
+          <div class="placeholder-hint">{{ t('nightmarePlaceholderHint') }}</div>
+        </div>
+      </div>
       <div class="zoom-hint">{{ t('zoomHint') }}</div>
     </div>
 
@@ -30,7 +37,7 @@
   <div class="container" v-else>
     <div class="empty-state">
       <p>{{ t('notFound') }}</p>
-      <router-link to="/cryptic-notes">{{ t('backToListLink') }}</router-link>
+      <router-link to="/cryptic-notes/hard">{{ t('backToListLink') }}</router-link>
     </div>
   </div>
 </template>
@@ -40,15 +47,17 @@ import { ref, computed } from 'vue'
 import maps from '../../data/jiaye-maps.json'
 import JiayeLightbox from '../../components/JiayeLightbox.vue'
 import { useI18n, locale, setLocale } from '../../composables/useI18n.js'
-import { jiayeNotesMessages, directionLabels } from '../../locales/jiayeNotes.js'
+import { jiayeNotesMessages, directionLabels, difficultyLabels } from '../../locales/jiayeNotes.js'
 
 const props = defineProps({
+  difficulty: { type: String, default: '' },
   id: { type: String, required: true },
 })
 
 const { t } = useI18n(jiayeNotesMessages)
 const map = computed(() => maps.find((m) => m.id === props.id))
 const lightboxVisible = ref(false)
+const imageError = ref(false)
 
 const metaText = computed(() => {
   if (!map.value) return ''
@@ -61,8 +70,16 @@ function directionLabel(direction) {
   return directionLabels[locale.value]?.[direction] || directionLabels.zh[direction]
 }
 
+function difficultyLabel(difficulty) {
+  return difficultyLabels[locale.value]?.[difficulty] || difficultyLabels.zh[difficulty]
+}
+
 function openLightbox() {
   lightboxVisible.value = true
+}
+
+function onImageError() {
+  imageError.value = true
 }
 
 function toggleLocale() {
@@ -154,6 +171,27 @@ function padNumber(n) {
   background: rgba(158, 122, 184, 0.1);
 }
 
+.difficulty-label {
+  flex-shrink: 0;
+  font-size: 13px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid;
+  font-weight: bold;
+}
+
+.difficulty-label.hard {
+  color: var(--accent-gold);
+  border-color: rgba(196, 155, 60, 0.5);
+  background: rgba(196, 155, 60, 0.12);
+}
+
+.difficulty-label.nightmare {
+  color: #c95e5e;
+  border-color: rgba(201, 94, 94, 0.5);
+  background: rgba(201, 94, 94, 0.12);
+}
+
 .map-meta {
   font-size: 14px;
   color: var(--text-muted);
@@ -180,6 +218,33 @@ function padNumber(n) {
   height: auto;
   border-radius: 8px;
   display: block;
+}
+
+.placeholder-overlay {
+  position: absolute;
+  inset: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(45, 25, 25, 0.92);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.placeholder-content {
+  text-align: center;
+  color: #c95e5e;
+}
+
+.placeholder-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.placeholder-hint {
+  font-size: 14px;
+  color: #a36666;
 }
 
 .zoom-hint {

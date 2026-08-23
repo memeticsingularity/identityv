@@ -8,6 +8,23 @@
       <p class="page-subtitle">{{ t('pageSubtitle') }}</p>
     </div>
 
+    <div class="difficulty-tabs">
+      <button
+        class="difficulty-tab hard"
+        :class="{ active: currentDifficulty === 'hard' }"
+        @click="setDifficulty('hard')"
+      >
+        {{ difficultyLabel('hard') }}
+      </button>
+      <button
+        class="difficulty-tab nightmare"
+        :class="{ active: currentDifficulty === 'nightmare' }"
+        @click="setDifficulty('nightmare')"
+      >
+        {{ difficultyLabel('nightmare') }}
+      </button>
+    </div>
+
     <div class="toolbar">
       <div class="compass-tabs">
         <button
@@ -56,7 +73,7 @@
       </div>
     </div>
 
-    <div class="grid">
+    <div class="grid" :class="currentDifficulty">
       <div
         v-for="m in filteredMaps"
         :key="m.id"
@@ -66,7 +83,7 @@
           <img :src="m.thumbnail" :alt="m.name" loading="lazy" />
           <span class="number-badge">{{ padNumber(m.number) }}</span>
         </div>
-        <router-link :to="`/cryptic-notes/${m.id}`" class="card-info">
+        <router-link :to="`/cryptic-notes/${m.difficulty}/${m.id}`" class="card-info">
           <span class="direction-tag" :class="m.direction">{{ directionLabel(m.direction) }}</span>
           <div class="map-name">{{ m.name }}</div>
         </router-link>
@@ -85,12 +102,23 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import { useRouter } from 'vue-router'
 import maps from '../../data/jiaye-maps.json'
 import JiayeLightbox from '../../components/JiayeLightbox.vue'
 import { useI18n, locale, setLocale } from '../../composables/useI18n.js'
-import { jiayeNotesMessages, directionLabels } from '../../locales/jiayeNotes.js'
+import { jiayeNotesMessages, directionLabels, difficultyLabels } from '../../locales/jiayeNotes.js'
 
+const props = defineProps({
+  difficulty: { type: String, default: 'hard' },
+})
+
+const router = useRouter()
 const { t } = useI18n(jiayeNotesMessages)
+
+const VALID_DIFFICULTIES = ['hard', 'nightmare']
+const currentDifficulty = computed(() =>
+  VALID_DIFFICULTIES.includes(props.difficulty) ? props.difficulty : 'hard'
+)
 
 const currentDirection = ref('all')
 const searchKeyword = ref('')
@@ -98,7 +126,7 @@ const lightboxVisible = ref(false)
 const lightboxImage = ref('')
 
 const filteredMaps = computed(() => {
-  let result = maps
+  let result = maps.filter((m) => m.difficulty === currentDifficulty.value)
   if (currentDirection.value !== 'all') {
     result = result.filter((m) => m.direction === currentDirection.value)
   }
@@ -116,6 +144,14 @@ const filteredMaps = computed(() => {
 
 function directionLabel(direction) {
   return directionLabels[locale.value]?.[direction] || directionLabels.zh[direction]
+}
+
+function difficultyLabel(difficulty) {
+  return difficultyLabels[locale.value]?.[difficulty] || difficultyLabels.zh[difficulty]
+}
+
+function setDifficulty(difficulty) {
+  router.push(`/cryptic-notes/${difficulty}`)
 }
 
 function openImage(image) {
@@ -198,6 +234,44 @@ function padNumber(n) {
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 24px;
+}
+
+.difficulty-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.difficulty-tab {
+  flex: 1;
+  min-width: 120px;
+  max-width: 200px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.difficulty-tab:hover {
+  background: var(--bg-hover);
+}
+
+.difficulty-tab.hard.active {
+  background: var(--accent-gold);
+  color: #1a1510;
+  border-color: var(--accent-gold);
+}
+
+.difficulty-tab.nightmare.active {
+  background: var(--accent-nightmare, #a13d3d);
+  color: #fff;
+  border-color: var(--accent-nightmare, #a13d3d);
 }
 
 .compass-tabs {
@@ -341,6 +415,11 @@ function padNumber(n) {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
+.grid.nightmare .map-card:hover {
+  border-color: var(--accent-nightmare, #a13d3d);
+  box-shadow: 0 8px 24px rgba(161, 61, 61, 0.25);
+}
+
 .thumb-wrapper {
   position: relative;
   border-radius: 10px;
@@ -354,6 +433,10 @@ function padNumber(n) {
 
 .thumb-wrapper:hover {
   box-shadow: 0 0 0 2px var(--accent-gold);
+}
+
+.grid.nightmare .thumb-wrapper:hover {
+  box-shadow: 0 0 0 2px var(--accent-nightmare, #a13d3d);
 }
 
 .thumb-wrapper img {
@@ -438,6 +521,16 @@ function padNumber(n) {
 }
 
 @media (max-width: 640px) {
+  .difficulty-tabs {
+    width: 100%;
+  }
+
+  .difficulty-tab {
+    max-width: none;
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+
   .toolbar {
     flex-direction: column;
     align-items: stretch;
