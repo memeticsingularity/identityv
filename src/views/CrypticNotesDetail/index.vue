@@ -63,6 +63,7 @@ const metaText = computed(() => {
   if (!map.value) return ''
   return t('meta')
     .replace('{number}', padNumber(map.value.number))
+    .replace('{releaseDate}', formatDate(map.value.releaseDate))
     .replace('{description}', map.value.description)
 })
 
@@ -72,6 +73,13 @@ function directionLabel(direction) {
 
 function difficultyLabel(difficulty) {
   return difficultyLabels[locale.value]?.[difficulty] || difficultyLabels.zh[difficulty]
+}
+
+function formatDate(dateStr) {
+  if (!dateStr) return ''
+  const d = new Date(dateStr)
+  if (Number.isNaN(d.getTime())) return dateStr
+  return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`
 }
 
 function openLightbox() {

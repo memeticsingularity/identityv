@@ -2,310 +2,338 @@
   {
     "id": "map-01",
     "number": 1,
-    "name": "左上右下门",
+    "name": "右 - 左上右下门",
     "direction": "right",
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/thumbs/01-thumb.png",
     "image": "/assets/jiaye-notes/maps/01.png",
     "description": "侧门朝右，门口呈左上右下布局",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-02",
     "number": 2,
-    "name": "双L门",
+    "name": "右 - 双L门",
     "direction": "right",
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/thumbs/02-thumb.png",
     "image": "/assets/jiaye-notes/maps/02.png",
     "description": "侧门朝右，门口呈双L形",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-03",
     "number": 3,
-    "name": "Y门",
+    "name": "左 - Y门",
     "direction": "left",
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/03-thumb.png",
     "image": "/assets/jiaye-notes/maps/03.png",
     "description": "侧门朝左，门口呈Y字形",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-04",
     "number": 4,
-    "name": "锤子门",
+    "name": "左 - 锤子门",
     "direction": "left",
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/04-thumb.png",
     "image": "/assets/jiaye-notes/maps/04.png",
     "description": "侧门朝左，门口形似锤子",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-05",
     "number": 5,
-    "name": "倒T门",
+    "name": "左 - 倒T门",
     "direction": "left",
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/05-thumb.png",
     "image": "/assets/jiaye-notes/maps/05.png",
     "description": "侧门朝左，门口呈倒T形",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-06",
     "number": 6,
-    "name": "对角门",
+    "name": "左 - 对角门",
     "direction": "left",
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/06-thumb.png",
     "image": "/assets/jiaye-notes/maps/06.png",
     "description": "侧门朝左，门口呈对角布局",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-07",
     "number": 7,
-    "name": "三缺一门",
+    "name": "南 - 三缺一门",
     "direction": "south",
     "directionLabel": "南",
     "thumbnail": "/assets/jiaye-notes/thumbs/07-thumb.png",
     "image": "/assets/jiaye-notes/maps/07.png",
     "description": "侧门朝南，门口三缺一",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-08",
     "number": 8,
-    "name": "十字门",
+    "name": "南 - 十字门",
     "direction": "south",
     "directionLabel": "南",
     "thumbnail": "/assets/jiaye-notes/thumbs/08-thumb.png",
     "image": "/assets/jiaye-notes/maps/08.png",
     "description": "侧门朝南，门口呈十字形",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-09",
     "number": 9,
-    "name": "L门",
+    "name": "南 - L门",
     "direction": "south",
     "directionLabel": "南",
     "thumbnail": "/assets/jiaye-notes/thumbs/09-thumb.png",
     "image": "/assets/jiaye-notes/maps/09.png",
     "description": "侧门朝南，门口呈L形",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-10",
     "number": 10,
-    "name": "1门",
+    "name": "北 - 1门",
     "direction": "north",
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/10-thumb.png",
     "image": "/assets/jiaye-notes/maps/10.png",
     "description": "侧门朝北，门口形似数字1",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-11",
     "number": 11,
-    "name": "4门",
+    "name": "北 - 4门",
     "direction": "north",
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/11-thumb.png",
     "image": "/assets/jiaye-notes/maps/11.png",
     "description": "侧门朝北，门口形似数字4",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-12",
     "number": 12,
-    "name": "红门",
+    "name": "北 - 红门",
     "direction": "north",
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/12-thumb.png",
     "image": "/assets/jiaye-notes/maps/12.png",
     "description": "侧门朝北，红色门口特征",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-13",
     "number": 13,
-    "name": "凹门",
+    "name": "北 - 凹门",
     "direction": "north",
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/13-thumb.png",
     "image": "/assets/jiaye-notes/maps/13.png",
     "description": "侧门朝北，门口呈凹字形",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-14",
     "number": 14,
-    "name": "T门",
+    "name": "北 - T门",
     "direction": "north",
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/14-thumb.png",
     "image": "/assets/jiaye-notes/maps/14.png",
     "description": "侧门朝北，门口呈T字形",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-15",
     "number": 15,
-    "name": "音叉门",
+    "name": "左 - 音叉门",
     "direction": "left",
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/15-thumb.png",
     "image": "/assets/jiaye-notes/maps/15.png",
     "description": "侧门朝左，门口呈音叉形",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-16",
     "number": 16,
-    "name": "红对角门",
+    "name": "北 - 红对角门",
     "direction": "north",
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/16-thumb.png",
     "image": "/assets/jiaye-notes/maps/16.png",
     "description": "侧门朝北，红色对角门口",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-18"
   },
   {
     "id": "map-17",
     "number": 17,
-    "name": "锤子门",
+    "name": "右 - 锤子门",
     "direction": "right",
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/thumbs/17-thumb.png",
     "image": "/assets/jiaye-notes/maps/17.png",
     "description": "侧门朝右，门口形似锤子",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-06-25"
   },
   {
     "id": "map-18",
     "number": 18,
-    "name": "狮子门",
+    "name": "左 - 罐子门",
     "direction": "left",
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/18-thumb.png",
     "image": "/assets/jiaye-notes/maps/18.png",
-    "description": "侧门朝左，门口呈狮子门特征",
-    "difficulty": "hard"
+    "description": "侧门朝左，门口呈罐子门特征",
+    "difficulty": "hard",
+    "releaseDate": "2026-07-02"
   },
   {
     "id": "map-19",
     "number": 19,
-    "name": "红门",
+    "name": "南 - 红门",
     "direction": "south",
     "directionLabel": "南",
     "thumbnail": "/assets/jiaye-notes/thumbs/19-thumb.png",
     "image": "/assets/jiaye-notes/maps/19.png",
     "description": "侧门朝南，红色门口特征",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-07-02"
   },
   {
     "id": "map-20",
     "number": 20,
-    "name": "骑士门",
+    "name": "右 - 骑士门",
     "direction": "right",
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/thumbs/20-thumb.png",
     "image": "/assets/jiaye-notes/maps/20.png",
     "description": "侧门朝右，门口呈骑士门特征",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-07-02"
   },
   {
     "id": "map-21",
     "number": 21,
-    "name": "对T门",
+    "name": "左 - 对T门",
     "direction": "left",
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/21-thumb.png",
     "image": "/assets/jiaye-notes/maps/21.png",
     "description": "侧门朝左，门口呈对T形",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-07-02"
   },
   {
     "id": "map-22",
     "number": 22,
-    "name": "U门",
+    "name": "右 - L门",
     "direction": "right",
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/thumbs/22-thumb.png",
     "image": "/assets/jiaye-notes/maps/22.png",
-    "description": "侧门朝右，门口呈U形",
-    "difficulty": "hard"
+    "description": "侧门朝右，门口呈L形",
+    "difficulty": "hard",
+    "releaseDate": "2026-07-02"
   },
   {
     "id": "map-23",
     "number": 23,
-    "name": "沙发门",
+    "name": "北 - 1沙发门",
     "direction": "north",
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/23-thumb.png",
     "image": "/assets/jiaye-notes/maps/23.png",
-    "description": "侧门朝北，门口形似沙发",
-    "difficulty": "hard"
+    "description": "侧门朝北，门口为1沙发门特征",
+    "difficulty": "hard",
+    "releaseDate": "2026-07-09"
   },
   {
     "id": "map-24",
     "number": 24,
-    "name": "Y青蛙门",
+    "name": "左 - 青蛙门",
     "direction": "left",
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/24-thumb.png",
     "image": "/assets/jiaye-notes/maps/24.png",
-    "description": "侧门朝左，门口呈Y青蛙门特征",
-    "difficulty": "hard"
+    "description": "侧门朝左，门口呈青蛙门特征",
+    "difficulty": "hard",
+    "releaseDate": "2026-07-09"
   },
   {
     "id": "map-25",
     "number": 25,
-    "name": "orz门",
+    "name": "南 - orz门",
     "direction": "south",
     "directionLabel": "南",
     "thumbnail": "/assets/jiaye-notes/thumbs/25-thumb.png",
     "image": "/assets/jiaye-notes/maps/25.png",
     "description": "侧门朝南，门口形似orz",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-07-09"
   },
   {
     "id": "map-26",
     "number": 26,
-    "name": "三L门",
+    "name": "右 - 三L门",
     "direction": "right",
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/thumbs/26-thumb.png",
     "image": "/assets/jiaye-notes/maps/26.png",
     "description": "侧门朝右，门口呈三L形",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-07-09"
   },
   {
     "id": "map-27",
     "number": 27,
-    "name": "锤灯笼门",
+    "name": "左 - 锤灯笼门",
     "direction": "left",
     "directionLabel": "左",
     "thumbnail": "/assets/jiaye-notes/thumbs/27-thumb.png",
     "image": "/assets/jiaye-notes/maps/27.png",
     "description": "侧门朝左，门口呈锤灯笼特征",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-07-09"
   },
   {
     "id": "map-28",
     "number": 28,
-    "name": "4安全门",
+    "name": "北 - 4安全门",
     "direction": "north",
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/thumbs/28-thumb.png",
     "image": "/assets/jiaye-notes/maps/28.png",
     "description": "侧门朝北，门口为4安全门特征",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "releaseDate": "2026-07-09"
   },
   {
     "id": "nightmare-01",
@@ -316,7 +344,8 @@
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/01-thumb.png",
     "image": "/assets/jiaye-notes/nightmare/maps/01.png",
-    "description": "噩梦难度：侧门朝右，长Z门"
+    "description": "噩梦难度：侧门朝右，长Z门",
+    "releaseDate": "2026-08-20"
   },
   {
     "id": "nightmare-02",
@@ -327,7 +356,8 @@
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/02-thumb.png",
     "image": "/assets/jiaye-notes/nightmare/maps/02.png",
-    "description": "噩梦难度：侧门朝右，短T门"
+    "description": "噩梦难度：侧门朝右，短T门",
+    "releaseDate": "2026-08-20"
   },
   {
     "id": "nightmare-03",
@@ -338,7 +368,8 @@
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/03-thumb.png",
     "image": "/assets/jiaye-notes/nightmare/maps/03.png",
-    "description": "噩梦难度：侧门朝右，仙人掌门"
+    "description": "噩梦难度：侧门朝右，仙人掌门",
+    "releaseDate": "2026-08-20"
   },
   {
     "id": "nightmare-04",
@@ -349,7 +380,8 @@
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/04-thumb.png",
     "image": "/assets/jiaye-notes/nightmare/maps/04.png",
-    "description": "噩梦难度：侧门朝右，一闪电门"
+    "description": "噩梦难度：侧门朝右，一闪电门",
+    "releaseDate": "2026-08-20"
   },
   {
     "id": "nightmare-05",
@@ -360,7 +392,8 @@
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/05-thumb.png",
     "image": "/assets/jiaye-notes/nightmare/maps/05.png",
-    "description": "噩梦难度：侧门朝右，断C门"
+    "description": "噩梦难度：侧门朝右，断C门",
+    "releaseDate": "2026-08-20"
   },
   {
     "id": "nightmare-06",
@@ -371,7 +404,8 @@
     "directionLabel": "右",
     "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/06-thumb.png",
     "image": "/assets/jiaye-notes/nightmare/maps/06.png",
-    "description": "噩梦难度：侧门朝右，C门"
+    "description": "噩梦难度：侧门朝右，C门",
+    "releaseDate": "2026-08-20"
   },
   {
     "id": "nightmare-07",
@@ -382,7 +416,8 @@
     "directionLabel": "南",
     "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/07-thumb.png",
     "image": "/assets/jiaye-notes/nightmare/maps/07.png",
-    "description": "噩梦难度：侧门朝南，H门"
+    "description": "噩梦难度：侧门朝南，H门",
+    "releaseDate": "2026-08-20"
   },
   {
     "id": "nightmare-08",
@@ -393,7 +428,8 @@
     "directionLabel": "南",
     "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/08-thumb.png",
     "image": "/assets/jiaye-notes/nightmare/maps/08.png",
-    "description": "噩梦难度：侧门朝南，三红门"
+    "description": "噩梦难度：侧门朝南，三红门",
+    "releaseDate": "2026-08-20"
   },
   {
     "id": "nightmare-09",
@@ -404,7 +440,8 @@
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/09-thumb.png",
     "image": "/assets/jiaye-notes/nightmare/maps/09.png",
-    "description": "噩梦难度：侧门朝北，b门"
+    "description": "噩梦难度：侧门朝北，b门",
+    "releaseDate": "2026-08-20"
   },
   {
     "id": "nightmare-10",
@@ -415,7 +452,8 @@
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/10-thumb.png",
     "image": "/assets/jiaye-notes/nightmare/maps/10.png",
-    "description": "噩梦难度：侧门朝北，仙人掌门"
+    "description": "噩梦难度：侧门朝北，仙人掌门",
+    "releaseDate": "2026-08-20"
   },
   {
     "id": "nightmare-11",
@@ -426,7 +464,8 @@
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/11-thumb.png",
     "image": "/assets/jiaye-notes/nightmare/maps/11.png",
-    "description": "噩梦难度：侧门朝北，回门"
+    "description": "噩梦难度：侧门朝北，回门",
+    "releaseDate": "2026-08-20"
   },
   {
     "id": "nightmare-12",
@@ -437,7 +476,8 @@
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/12-thumb.png",
     "image": "/assets/jiaye-notes/nightmare/maps/12.png",
-    "description": "噩梦难度：侧门朝北，Z1门"
+    "description": "噩梦难度：侧门朝北，Z1门",
+    "releaseDate": "2026-08-20"
   },
   {
     "id": "nightmare-13",
@@ -448,6 +488,7 @@
     "directionLabel": "北",
     "thumbnail": "/assets/jiaye-notes/nightmare/thumbs/13-thumb.png",
     "image": "/assets/jiaye-notes/nightmare/maps/13.png",
-    "description": "噩梦难度：侧门朝北，骑士门"
+    "description": "噩梦难度：侧门朝北，骑士门",
+    "releaseDate": "2026-08-20"
   }
 ]
